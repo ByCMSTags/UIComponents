@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-section bg-light">
+  <div class="container">
+    {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-5">{{heading}}</{{@h}}>{{/heading}}
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      {{#items}}<div class="col"><figure class="card h-100 border-0 shadow-sm p-4 mb-0">
+        <span class="text-primary fs-2 mb-2">{{@icon.quote}}</span>
+        <blockquote class="mb-4"><p class="mb-0">{{quote}}</p></blockquote>
+        <figcaption><div class="d-flex align-items-center gap-3 mt-auto">{{#photo}}{{photo sizes="48px" max="48" img="rounded-circle cms-thumb" decorative="true"}}{{/photo}}<div><p class="fw-bold mb-0">{{name}}</p>{{#role}}<p class="small text-body-secondary mb-0">{{role}}</p>{{/role}}</div></div></figcaption>
+      </figure></div>{{/items}}
+    </div>
+  </div>
+</section>

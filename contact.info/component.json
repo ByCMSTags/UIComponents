@@ -1,0 +1,194 @@
+{
+  "id": "contact.info",
+  "category": "contact",
+  "kind": "single",
+  "name": {
+    "en": "Contact details",
+    "ar": "بيانات التواصل"
+  },
+  "description": {
+    "en": "Address, phone, email and opening hours in cards.",
+    "ar": "العنوان والهاتف والبريد وساعات العمل في بطاقات."
+  },
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "titel",
+        "headline",
+        "MainHeading",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      },
+      "localized": true,
+      "aliases": [
+        "description",
+        "body",
+        "subtitle",
+        "intro",
+        "text",
+        "leadleft",
+        "summary"
+      ]
+    },
+    {
+      "key": "address",
+      "type": "longText",
+      "label": {
+        "en": "Address",
+        "ar": "العنوان البريدي"
+      },
+      "localized": true
+    },
+    {
+      "key": "phone",
+      "type": "phone",
+      "label": {
+        "en": "Phone",
+        "ar": "الهاتف"
+      },
+      "aliases": [
+        "phonenumber",
+        "tel",
+        "mobile"
+      ]
+    },
+    {
+      "key": "email",
+      "type": "email",
+      "label": {
+        "en": "Email",
+        "ar": "البريد الإلكتروني"
+      },
+      "aliases": [
+        "mail"
+      ]
+    },
+    {
+      "key": "hours",
+      "type": "longText",
+      "label": {
+        "en": "Opening hours",
+        "ar": "ساعات العمل"
+      },
+      "localized": true,
+      "aliases": [
+        "openingHours",
+        "workingHours",
+        "time"
+      ]
+    },
+    {
+      "key": "mapLink",
+      "type": "url",
+      "label": {
+        "en": "Map link",
+        "ar": "رابط الخريطة"
+      },
+      "aliases": [
+        "map",
+        "mapUrl",
+        "location"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "heading": "Visit or call us",
+      "address": "12 Rainbow Street\nAmman, Jordan",
+      "phone": "+962 6 400 0000",
+      "email": "hello@example.com",
+      "hours": "Sun – Thu: 9:00 – 17:00",
+      "mapLink": "https://maps.google.com"
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "heading": "Visit or call us",
+    "address": "12 Rainbow Street\nAmman, Jordan",
+    "phone": "+962 6 400 0000",
+    "email": "hello@example.com",
+    "hours": "Sun – Thu: 9:00 – 17:00",
+    "mapLink": "https://maps.google.com"
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{lead}}",
+      "field": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      }
+    },
+    {
+      "token": "{{address}}",
+      "field": "address",
+      "type": "longText",
+      "label": {
+        "en": "Address",
+        "ar": "العنوان البريدي"
+      }
+    },
+    {
+      "token": "{{phone}}",
+      "field": "phone",
+      "type": "phone",
+      "label": {
+        "en": "Phone",
+        "ar": "الهاتف"
+      }
+    },
+    {
+      "token": "{{email}}",
+      "field": "email",
+      "type": "email",
+      "label": {
+        "en": "Email",
+        "ar": "البريد الإلكتروني"
+      }
+    },
+    {
+      "token": "{{hours}}",
+      "field": "hours",
+      "type": "longText",
+      "label": {
+        "en": "Opening hours",
+        "ar": "ساعات العمل"
+      }
+    },
+    {
+      "token": "{{mapLink}}",
+      "field": "mapLink",
+      "type": "url",
+      "label": {
+        "en": "Map link",
+        "ar": "رابط الخريطة"
+      }
+    }
+  ]
+}

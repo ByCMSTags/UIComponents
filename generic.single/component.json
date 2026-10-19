@@ -1,0 +1,18 @@
+{
+  "id": "generic.single",
+  "category": "generic",
+  "kind": "single",
+  "name": {
+    "en": "Automatic",
+    "ar": "تلقائي"
+  },
+  "description": {
+    "en": "Shows every field of the section in order.",
+    "ar": "يعرض جميع حقول القسم بالترتيب."
+  },
+  "default": true,
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

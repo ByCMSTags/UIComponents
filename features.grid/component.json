@@ -1,0 +1,268 @@
+{
+  "id": "features.grid",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Feature grid",
+    "ar": "شبكة مزايا"
+  },
+  "description": {
+    "en": "Many short features with an icon each.",
+    "ar": "مزايا قصيرة كثيرة لكل منها أيقونة."
+  },
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "MainHeading",
+        "titel",
+        "headline",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      },
+      "localized": true,
+      "aliases": [
+        "description",
+        "body",
+        "subtitle",
+        "intro",
+        "text",
+        "leadleft",
+        "summary"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Features",
+        "ar": "المزايا"
+      },
+      "subFields": [
+        {
+          "key": "icon",
+          "type": "image",
+          "label": {
+            "en": "Icon",
+            "ar": "الأيقونة"
+          },
+          "aliases": [
+            "image",
+            "imges",
+            "imegs",
+            "img"
+          ]
+        },
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "heading",
+            "headline",
+            "name",
+            "label"
+          ]
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "body",
+            "text",
+            "content",
+            "desc",
+            "summary",
+            "excerpt",
+            "details",
+            "subtitle",
+            "lead",
+            "leadleft",
+            "intro",
+            "paragraph"
+          ]
+        }
+      ],
+      "aliases": [
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "members",
+        "plans",
+        "questions",
+        "testimonials",
+        "reviews",
+        "entries",
+        "rows",
+        "body"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "heading": "Why choose us",
+      "lead": "Everything you need to run a modern website.",
+      "items": [
+        {
+          "title": "Fast pages",
+          "description": "Optimised images and tiny code."
+        },
+        {
+          "title": "Easy editing",
+          "description": "Change texts and photos yourself."
+        },
+        {
+          "title": "Two languages",
+          "description": "Arabic and English, right to left too."
+        },
+        {
+          "title": "Search ready",
+          "description": "Titles, sitemap and sharing tags."
+        },
+        {
+          "title": "Secure",
+          "description": "Strict security headers by default."
+        },
+        {
+          "title": "Support",
+          "description": "A real person answers you."
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "heading": "Why choose us",
+    "lead": "Everything you need to run a modern website.",
+    "items": [
+      {
+        "title": "Fast pages",
+        "description": "Optimised images and tiny code."
+      },
+      {
+        "title": "Easy editing",
+        "description": "Change texts and photos yourself."
+      },
+      {
+        "title": "Two languages",
+        "description": "Arabic and English, right to left too."
+      },
+      {
+        "title": "Search ready",
+        "description": "Titles, sitemap and sharing tags."
+      },
+      {
+        "title": "Secure",
+        "description": "Strict security headers by default."
+      },
+      {
+        "title": "Support",
+        "description": "A real person answers you."
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{lead}}",
+      "field": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Features",
+        "ar": "المزايا"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{icon}}",
+      "field": "items.icon",
+      "type": "image",
+      "label": {
+        "en": "Icon",
+        "ar": "الأيقونة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    }
+  ]
+}

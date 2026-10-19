@@ -1,0 +1,13 @@
+{
+  "name": "cmstags",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Install and publish CmsTags components from the private ByCMSTags/UIComponents repository.",
+  "bin": {
+    "cmstags": "./bin/cmstags.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

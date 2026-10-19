@@ -1,0 +1,187 @@
+{
+  "id": "features.columns",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Text columns",
+    "ar": "أعمدة نصية"
+  },
+  "description": {
+    "en": "A small heading and two or more text columns.",
+    "ar": "عنوان صغير وعمودان نصيان أو أكثر."
+  },
+  "legacy": [
+    "textbox"
+  ],
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "MainHeading",
+        "title",
+        "titel",
+        "headline",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Columns",
+        "ar": "الأعمدة"
+      },
+      "aliases": [
+        "Information",
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "members",
+        "plans",
+        "questions",
+        "testimonials",
+        "reviews",
+        "entries",
+        "rows",
+        "body"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "heading",
+            "headline",
+            "name",
+            "label"
+          ]
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "body",
+            "text",
+            "content",
+            "desc",
+            "summary",
+            "excerpt",
+            "details",
+            "subtitle",
+            "lead",
+            "leadleft",
+            "intro",
+            "paragraph"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "heading": "Who we are",
+      "items": [
+        {
+          "title": "Our story",
+          "description": "We help growing businesses look professional online, with fast pages and content they can update themselves."
+        },
+        {
+          "title": "Our promise",
+          "description": "Honest advice, clear prices and support whenever you need it."
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "heading": "Who we are",
+    "items": [
+      {
+        "title": "Our story",
+        "description": "We help growing businesses look professional online, with fast pages and content they can update themselves."
+      },
+      {
+        "title": "Our promise",
+        "description": "Honest advice, clear prices and support whenever you need it."
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Columns",
+        "ar": "الأعمدة"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    }
+  ]
+}

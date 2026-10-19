@@ -1,0 +1,246 @@
+{
+  "id": "testimonials.carousel",
+  "category": "testimonials",
+  "kind": "single",
+  "name": {
+    "en": "Quote slideshow",
+    "ar": "آراء متتالية"
+  },
+  "description": {
+    "en": "One quote at a time, with arrows.",
+    "ar": "رأي واحد في كل مرة مع أسهم."
+  },
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "titel",
+        "headline",
+        "MainHeading",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Testimonials",
+        "ar": "الآراء"
+      },
+      "aliases": [
+        "testimonials",
+        "reviews",
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "members",
+        "plans",
+        "questions",
+        "entries",
+        "rows",
+        "body"
+      ],
+      "subFields": [
+        {
+          "key": "quote",
+          "type": "longText",
+          "label": {
+            "en": "Quote",
+            "ar": "الرأي"
+          },
+          "localized": true,
+          "aliases": [
+            "text",
+            "review",
+            "body",
+            "description",
+            "comment"
+          ]
+        },
+        {
+          "key": "name",
+          "type": "shortText",
+          "label": {
+            "en": "Name",
+            "ar": "الاسم"
+          },
+          "aliases": [
+            "title",
+            "fullName",
+            "titel",
+            "label"
+          ]
+        },
+        {
+          "key": "role",
+          "type": "shortText",
+          "label": {
+            "en": "Role or company",
+            "ar": "الصفة أو الشركة"
+          },
+          "localized": true,
+          "aliases": [
+            "position",
+            "job",
+            "jobTitle",
+            "company",
+            "subtitle"
+          ]
+        },
+        {
+          "key": "photo",
+          "type": "image",
+          "label": {
+            "en": "Photo",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "image",
+            "avatar",
+            "imges",
+            "imegs",
+            "picture",
+            "img"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "heading": "What our clients say",
+      "items": [
+        {
+          "quote": "They understood our business in one meeting. The new site doubled our bookings.",
+          "name": "Lina Haddad",
+          "role": "Owner, Bloom Salon",
+          "photo": "sample:avatar-1"
+        },
+        {
+          "quote": "Fast, friendly and always on time. We update everything ourselves now.",
+          "name": "Omar Saleh",
+          "role": "Manager, Atlas Travel",
+          "photo": "sample:avatar-2"
+        },
+        {
+          "quote": "Our pages load instantly and look great in Arabic and English.",
+          "name": "Sara Khalil",
+          "role": "Founder, Olive & Co",
+          "photo": "sample:avatar-4"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "heading": "What our clients say",
+    "items": [
+      {
+        "quote": "They understood our business in one meeting. The new site doubled our bookings.",
+        "name": "Lina Haddad",
+        "role": "Owner, Bloom Salon",
+        "photo": "sample:avatar-1"
+      },
+      {
+        "quote": "Fast, friendly and always on time. We update everything ourselves now.",
+        "name": "Omar Saleh",
+        "role": "Manager, Atlas Travel",
+        "photo": "sample:avatar-2"
+      },
+      {
+        "quote": "Our pages load instantly and look great in Arabic and English.",
+        "name": "Sara Khalil",
+        "role": "Founder, Olive & Co",
+        "photo": "sample:avatar-4"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Testimonials",
+        "ar": "الآراء"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{quote}}",
+      "field": "items.quote",
+      "type": "longText",
+      "label": {
+        "en": "Quote",
+        "ar": "الرأي"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{name}}",
+      "field": "items.name",
+      "type": "shortText",
+      "label": {
+        "en": "Name",
+        "ar": "الاسم"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{role}}",
+      "field": "items.role",
+      "type": "shortText",
+      "label": {
+        "en": "Role or company",
+        "ar": "الصفة أو الشركة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{photo}}",
+      "field": "items.photo",
+      "type": "image",
+      "label": {
+        "en": "Photo",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    }
+  ]
+}

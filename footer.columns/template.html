@@ -1,0 +1,24 @@
+<footer class="bg-light border-top pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4 pb-4">
+      <div class="col-md-5">
+        <a class="cms-brand d-inline-flex mb-3 link-dark text-decoration-none" href="{{@home}}">{{#@site.logo}}{{@site.logo sizes="170px" max="170"}}{{/@site.logo}}{{^@site.logo}}<span class="fw-bold text-uppercase fs-5">{{@site.name}}</span>{{/@site.logo}}</a>
+        <ul class="list-unstyled d-grid gap-2 mb-0">
+          {{#@site.phone}}<li><a class="link-secondary text-decoration-none d-inline-flex align-items-center gap-2" href="tel:{{@site.phone|tel}}">{{@icon.phone}}<span dir="ltr">{{@site.phone}}</span></a></li>{{/@site.phone}}
+          {{#@site.email}}<li><a class="link-secondary text-decoration-none d-inline-flex align-items-center gap-2" href="mailto:{{@site.email}}">{{@icon.mail}}{{@site.email}}</a></li>{{/@site.email}}
+        </ul>
+      </div>
+      <nav class="col-6 col-md-4" aria-label="{{@t.pages}}">
+        <p class="fw-bold mb-3">{{@t.pages}}</p>
+        <ul class="list-unstyled d-grid gap-2 mb-0">{{#@nav}}<li><a class="link-secondary text-decoration-none" href="{{href}}">{{label}}</a></li>{{/@nav}}</ul>
+      </nav>
+      <div class="col-6 col-md-3">
+        {{#@social}}{{#@first}}<p class="fw-bold mb-3">{{@t.followUs}}</p><ul class="cms-social list-unstyled d-flex flex-wrap gap-2 mb-0">{{/@first}}{{/@social}}{{#@social}}<li><a class="bg-dark text-white" href="{{href}}" rel="noopener" target="_blank" aria-label="{{name}}">{{icon}}</a></li>{{/@social}}{{#@social}}{{#@last}}</ul>{{/@last}}{{/@social}}
+      </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-between gap-2 border-top pt-3 text-body-secondary">
+      <p class="small mb-0">© {{@site.name}} {{@year}}. {{@t.rights}}</p>
+      <p class="small mb-0">{{@t.createdBy}} <a class="link-secondary" href="https://gipixel.com" rel="noopener" target="_blank">Gipixel</a></p>
+    </div>
+  </div>
+</footer>

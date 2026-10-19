@@ -1,0 +1,15 @@
+<section id="{{@id}}" class="cms-section bg-light">
+  <div class="container">
+    {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-3">{{heading}}</{{@h}}>{{/heading}}
+    {{#lead}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{lead}}</p>{{/lead}}
+    <div class="col-lg-8 mx-auto">
+      <ul class="list-group list-group-flush rounded-4 shadow-sm">
+        {{#items}}<li class="list-group-item p-4 d-flex flex-column flex-sm-row gap-3 align-items-sm-center">
+          <div class="flex-grow-1">{{#heading}}<{{@hsub}} class="h5 fw-bold mb-1">{{name}}</{{@hsub}}>{{/heading}}{{^heading}}<{{@h}} class="h5 fw-bold mb-1">{{name}}</{{@h}}>{{/heading}}{{#featured}} <span class="badge text-bg-primary align-middle">★</span>{{/featured}}{{#description}}<p class="text-body-secondary mb-0">{{description}}</p>{{/description}}</div>
+          <p class="mb-0 text-nowrap"><span class="fs-3 fw-bold">{{price}}</span> {{#period}}<span class="text-body-secondary">{{period}}</span>{{/period}}</p>
+          {{#buttonText}}{{#buttonLink}}<a class="btn btn-primary" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+        </li>{{/items}}
+      </ul>
+    </div>
+  </div>
+</section>

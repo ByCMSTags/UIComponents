@@ -1,0 +1,192 @@
+{
+  "id": "content.media",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Text beside image",
+    "ar": "نص بجانب صورة"
+  },
+  "description": {
+    "en": "Formatted text with a picture beside it.",
+    "ar": "نص منسق مع صورة بجانبه."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      },
+      "localized": true,
+      "aliases": [
+        "tagline",
+        "kicker",
+        "subheading",
+        "overline"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "content",
+        "text",
+        "description",
+        "details",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "aliases": [
+        "photo",
+        "imges",
+        "imegs",
+        "images",
+        "img",
+        "picture",
+        "backgroundimage",
+        "background",
+        "cover",
+        "media"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctalabel",
+        "cta",
+        "ctaText",
+        "buttonLabel",
+        "btnText",
+        "linkText",
+        "linkLabel"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaurl",
+        "ctaLink",
+        "buttonUrl",
+        "btnLink",
+        "url",
+        "link",
+        "href"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "eyebrow": "About",
+      "title": "Ten years of building websites",
+      "body": "<p>We help growing businesses look professional online, with fast pages and content they can update themselves.</p>",
+      "image": "sample:photo-7",
+      "buttonText": "Meet the team",
+      "buttonLink": "#"
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "eyebrow": "About",
+    "title": "Ten years of building websites",
+    "body": "<p>We help growing businesses look professional online, with fast pages and content they can update themselves.</p>",
+    "image": "sample:photo-7",
+    "buttonText": "Meet the team",
+    "buttonLink": "#"
+  },
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{body}}",
+      "field": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ]
+}

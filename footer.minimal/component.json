@@ -1,0 +1,17 @@
+{
+  "id": "footer.minimal",
+  "category": "footer",
+  "kind": "site",
+  "name": {
+    "en": "Minimal",
+    "ar": "بسيط"
+  },
+  "description": {
+    "en": "One line: copyright and social links.",
+    "ar": "سطر واحد: الحقوق وروابط التواصل."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "footer.columns",
+  "category": "footer",
+  "kind": "site",
+  "name": {
+    "en": "Three columns",
+    "ar": "ثلاثة أعمدة"
+  },
+  "description": {
+    "en": "Light: contact details, page links and social links in columns.",
+    "ar": "فاتح: بيانات التواصل وروابط الصفحات والتواصل الاجتماعي في أعمدة."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

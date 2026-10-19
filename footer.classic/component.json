@@ -1,0 +1,18 @@
+{
+  "id": "footer.classic",
+  "category": "footer",
+  "kind": "site",
+  "name": {
+    "en": "Classic dark",
+    "ar": "كلاسيكي داكن"
+  },
+  "description": {
+    "en": "Dark: logo, phone, email and social links, then the copyright.",
+    "ar": "داكن: الشعار والهاتف والبريد وروابط التواصل ثم الحقوق."
+  },
+  "default": true,
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

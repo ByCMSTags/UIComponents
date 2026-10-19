@@ -1,0 +1,12 @@
+{
+  "name": "uicomponents",
+  "private": true,
+  "type": "module",
+  "description": "CmsTags component library. Each top-level folder is one component.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node --test cli/test/*.test.mjs",
+    "cmstags": "node cli/bin/cmstags.js"
+  }
+}

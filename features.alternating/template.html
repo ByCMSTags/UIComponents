@@ -1,0 +1,14 @@
+<section id="{{@id}}" class="cms-section">
+  <div class="container">
+    {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-5">{{heading}}</{{@h}}>{{/heading}}
+    {{#items}}<article class="row align-items-center g-4 g-md-5 cms-alt-row{{#@odd}} flex-lg-row-reverse{{/@odd}}">
+      <div class="col-lg-6 text-center text-lg-start">
+        {{#title}}{{#heading}}<{{@hsub}} class="display-6 fw-bold text-dark mb-3">{{title}}</{{@hsub}}>{{/heading}}{{^heading}}{{#@first}}<{{@h}} class="display-6 fw-bold text-dark mb-3">{{title}}</{{@h}}>{{/@first}}{{^@first}}<h2 class="display-6 fw-bold text-dark mb-3">{{title}}</h2>{{/@first}}{{/heading}}{{/title}}
+        {{#description}}<p class="text-body-secondary mb-0">{{description}}</p>{{/description}}
+      </div>
+      <div class="col-lg-6">
+        <div class="cms-alt-visual mx-auto"><div class="cms-alt-card bg-dark rounded-5 d-flex align-items-center justify-content-center p-4 p-md-5">{{#image}}{{image sizes="300px" max="300"}}{{/image}}</div></div>
+      </div>
+    </article>{{/items}}
+  </div>
+</section>

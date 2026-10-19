@@ -1,0 +1,5 @@
+.cms-quote-control {
+  width: 2.75rem;
+  filter: invert(1) grayscale(1);
+  opacity: 0.8;
+}

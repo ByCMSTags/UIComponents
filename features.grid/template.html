@@ -1,0 +1,17 @@
+<section id="{{@id}}" class="cms-section">
+  <div class="container">
+    {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-3">{{heading}}</{{@h}}>{{/heading}}
+    {{#lead}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{lead}}</p>{{/lead}}
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+      {{#items}}<div class="col">
+        <div class="d-flex gap-3">
+          <div class="flex-shrink-0">{{#icon}}{{icon sizes="48px" max="48" img="rounded-3 cms-thumb" decorative="true"}}{{/icon}}{{^icon}}<span class="d-inline-flex p-2 rounded-3 bg-primary text-white fs-4">{{@icon.check}}</span>{{/icon}}</div>
+          <div>
+            {{#title}}{{#heading}}<{{@hsub}} class="h5 fw-bold">{{title}}</{{@hsub}}>{{/heading}}{{^heading}}<{{@h}} class="h5 fw-bold">{{title}}</{{@h}}>{{/heading}}{{/title}}
+            {{#description}}<p class="text-body-secondary mb-0">{{description}}</p>{{/description}}
+          </div>
+        </div>
+      </div>{{/items}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,142 @@
+{
+  "id": "gallery.masonry",
+  "category": "gallery",
+  "kind": "single",
+  "name": {
+    "en": "Photo wall",
+    "ar": "جدار صور"
+  },
+  "description": {
+    "en": "Photos of any shape in tidy columns.",
+    "ar": "صور بأي شكل في أعمدة مرتبة."
+  },
+  "legacy": [
+    "photogallery"
+  ],
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "titel",
+        "heading",
+        "headline",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "subtitle",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "images",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      },
+      "aliases": [
+        "pictures",
+        "imges",
+        "photos",
+        "imegs",
+        "gallery",
+        "media",
+        "slides"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "title": "Our work",
+      "description": "A few of the projects we are proud of.",
+      "images": [
+        "sample:portrait-1",
+        "sample:photo-2",
+        "sample:square-3",
+        "sample:photo-4",
+        "sample:portrait-5",
+        "sample:photo-6"
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "title": "Our work",
+    "description": "A few of the projects we are proud of.",
+    "images": [
+      "sample:portrait-1",
+      "sample:photo-2",
+      "sample:square-3",
+      "sample:photo-4",
+      "sample:portrait-5",
+      "sample:photo-6"
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      }
+    },
+    {
+      "token": "{{images}}",
+      "field": "images",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      }
+    },
+    {
+      "token": "{{#images}}",
+      "field": "images",
+      "type": "gallery",
+      "role": "open"
+    },
+    {
+      "token": "{{/images}}",
+      "field": "images",
+      "type": "gallery",
+      "role": "close"
+    }
+  ]
+}

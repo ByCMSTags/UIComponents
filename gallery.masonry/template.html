@@ -1,0 +1,7 @@
+<section id="{{@id}}" class="cms-section">
+  <div class="container">
+    {{#title}}<{{@h}} class="h1 fw-bold text-center mb-3">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{description}}</p>{{/description}}
+    <div class="cms-masonry">{{#images}}<figure>{{image sizes="(max-width: 576px) calc(100vw - 24px), (max-width: 992px) 50vw, 424px"}}{{#caption}}<figcaption class="small text-body-secondary mt-1">{{caption}}</figcaption>{{/caption}}</figure>{{/images}}</div>
+  </div>
+</section>

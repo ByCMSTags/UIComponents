@@ -1,0 +1,10 @@
+{
+  "components": {
+    "github": {
+      "owner": "ByCMSTags",
+      "repo": "UIComponents",
+      "ref": "main"
+    },
+    "installDir": "."
+  }
+}

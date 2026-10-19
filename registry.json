@@ -1,0 +1,366 @@
+{
+  "format": 1,
+  "repository": "ByCMSTags/UIComponents",
+  "components": [
+    {
+      "id": "contact.info",
+      "version": "1.0.0",
+      "category": "contact",
+      "kind": "single",
+      "name": {
+        "en": "Contact details",
+        "ar": "بيانات التواصل"
+      }
+    },
+    {
+      "id": "content.media",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Text beside image",
+        "ar": "نص بجانب صورة"
+      }
+    },
+    {
+      "id": "content.text",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Text block",
+        "ar": "كتلة نص"
+      }
+    },
+    {
+      "id": "cta.banner",
+      "version": "1.0.0",
+      "category": "cta",
+      "kind": "single",
+      "name": {
+        "en": "Call-to-action banner",
+        "ar": "شريط دعوة"
+      }
+    },
+    {
+      "id": "cta.carousel",
+      "version": "1.0.0",
+      "category": "cta",
+      "kind": "single",
+      "name": {
+        "en": "Offer with slideshow",
+        "ar": "عرض مع شرائح"
+      }
+    },
+    {
+      "id": "faq.accordion",
+      "version": "1.0.0",
+      "category": "faq",
+      "kind": "single",
+      "name": {
+        "en": "Questions and answers",
+        "ar": "أسئلة وأجوبة"
+      }
+    },
+    {
+      "id": "features.alternating",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Alternating rows",
+        "ar": "صفوف متناوبة"
+      }
+    },
+    {
+      "id": "features.cards",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Picture cards",
+        "ar": "بطاقات بالصور"
+      }
+    },
+    {
+      "id": "features.columns",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Text columns",
+        "ar": "أعمدة نصية"
+      }
+    },
+    {
+      "id": "features.grid",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Feature grid",
+        "ar": "شبكة مزايا"
+      }
+    },
+    {
+      "id": "footer.classic",
+      "version": "1.0.0",
+      "category": "footer",
+      "kind": "site",
+      "name": {
+        "en": "Classic dark",
+        "ar": "كلاسيكي داكن"
+      }
+    },
+    {
+      "id": "footer.columns",
+      "version": "1.0.0",
+      "category": "footer",
+      "kind": "site",
+      "name": {
+        "en": "Three columns",
+        "ar": "ثلاثة أعمدة"
+      }
+    },
+    {
+      "id": "footer.minimal",
+      "version": "1.0.0",
+      "category": "footer",
+      "kind": "site",
+      "name": {
+        "en": "Minimal",
+        "ar": "بسيط"
+      }
+    },
+    {
+      "id": "form.card",
+      "version": "1.0.0",
+      "category": "form",
+      "kind": "form",
+      "name": {
+        "en": "Form card",
+        "ar": "بطاقة نموذج"
+      }
+    },
+    {
+      "id": "gallery.carousel",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Slideshow",
+        "ar": "عرض شرائح"
+      }
+    },
+    {
+      "id": "gallery.masonry",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Photo wall",
+        "ar": "جدار صور"
+      }
+    },
+    {
+      "id": "generic.list",
+      "version": "1.0.0",
+      "category": "generic",
+      "kind": "list",
+      "name": {
+        "en": "Automatic",
+        "ar": "تلقائي"
+      }
+    },
+    {
+      "id": "generic.single",
+      "version": "1.0.0",
+      "category": "generic",
+      "kind": "single",
+      "name": {
+        "en": "Automatic",
+        "ar": "تلقائي"
+      }
+    },
+    {
+      "id": "header.centered",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Centred logo",
+        "ar": "شعار في الوسط"
+      }
+    },
+    {
+      "id": "header.classic",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Classic dark",
+        "ar": "كلاسيكي داكن"
+      }
+    },
+    {
+      "id": "header.light",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Light with button",
+        "ar": "فاتح مع زر"
+      }
+    },
+    {
+      "id": "hero.centered",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Centred with image",
+        "ar": "في الوسط مع صورة"
+      }
+    },
+    {
+      "id": "hero.cover",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Full-screen image",
+        "ar": "صورة بملء الشاشة"
+      }
+    },
+    {
+      "id": "hero.minimal",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Text only",
+        "ar": "نص فقط"
+      }
+    },
+    {
+      "id": "hero.page",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Page cover",
+        "ar": "غلاف الصفحة"
+      }
+    },
+    {
+      "id": "hero.split",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Text and image",
+        "ar": "نص وصورة"
+      }
+    },
+    {
+      "id": "list.cards",
+      "version": "1.0.0",
+      "category": "list",
+      "kind": "list",
+      "name": {
+        "en": "Cards",
+        "ar": "بطاقات"
+      }
+    },
+    {
+      "id": "list.simple",
+      "version": "1.0.0",
+      "category": "list",
+      "kind": "list",
+      "name": {
+        "en": "Simple list",
+        "ar": "قائمة بسيطة"
+      }
+    },
+    {
+      "id": "logos.strip",
+      "version": "1.0.0",
+      "category": "logos",
+      "kind": "single",
+      "name": {
+        "en": "Logo strip",
+        "ar": "شريط شعارات"
+      }
+    },
+    {
+      "id": "pricing.cards",
+      "version": "1.0.0",
+      "category": "pricing",
+      "kind": "single",
+      "name": {
+        "en": "Price cards",
+        "ar": "بطاقات أسعار"
+      }
+    },
+    {
+      "id": "pricing.list",
+      "version": "1.0.0",
+      "category": "pricing",
+      "kind": "single",
+      "name": {
+        "en": "Price list",
+        "ar": "قائمة أسعار"
+      }
+    },
+    {
+      "id": "stats.background",
+      "version": "1.0.0",
+      "category": "stats",
+      "kind": "single",
+      "name": {
+        "en": "Numbers on a photo",
+        "ar": "أرقام على صورة"
+      }
+    },
+    {
+      "id": "stats.simple",
+      "version": "1.0.0",
+      "category": "stats",
+      "kind": "single",
+      "name": {
+        "en": "Number cards",
+        "ar": "بطاقات أرقام"
+      }
+    },
+    {
+      "id": "team.grid",
+      "version": "1.0.0",
+      "category": "team",
+      "kind": "single",
+      "name": {
+        "en": "Team grid",
+        "ar": "شبكة الفريق"
+      }
+    },
+    {
+      "id": "testimonials.cards",
+      "version": "1.0.0",
+      "category": "testimonials",
+      "kind": "single",
+      "name": {
+        "en": "Quote cards",
+        "ar": "بطاقات آراء"
+      }
+    },
+    {
+      "id": "testimonials.carousel",
+      "version": "1.0.0",
+      "category": "testimonials",
+      "kind": "single",
+      "name": {
+        "en": "Quote slideshow",
+        "ar": "آراء متتالية"
+      }
+    }
+  ]
+}

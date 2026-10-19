@@ -1,0 +1,9 @@
+<section id="{{@id}}" class="cms-section bg-light">
+  <div class="container">
+    {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-3">{{heading}}</{{@h}}>{{/heading}}
+    {{#lead}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{lead}}</p>{{/lead}}
+    <div class="row row-cols-2 row-cols-lg-4 g-3 g-md-4 text-center">
+      {{#items}}<div class="col"><div class="bg-white rounded-4 shadow-sm p-4 h-100"><p class="display-5 fw-bold text-primary mb-1">{{value}}</p><p class="text-body-secondary mb-0">{{label}}</p></div></div>{{/items}}
+    </div>
+  </div>
+</section>

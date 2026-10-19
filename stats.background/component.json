@@ -1,0 +1,260 @@
+{
+  "id": "stats.background",
+  "category": "stats",
+  "kind": "single",
+  "name": {
+    "en": "Numbers on a photo",
+    "ar": "أرقام على صورة"
+  },
+  "description": {
+    "en": "Big numbers over a darkened photo.",
+    "ar": "أرقام كبيرة فوق صورة معتمة."
+  },
+  "legacy": [
+    "numbersandstatistics"
+  ],
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "titel",
+        "headline",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "subtitle",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Background image",
+        "ar": "صورة الخلفية"
+      },
+      "aliases": [
+        "Background",
+        "imges",
+        "imegs",
+        "images",
+        "img",
+        "photo",
+        "picture",
+        "backgroundimage",
+        "cover",
+        "media"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Numbers",
+        "ar": "الأرقام"
+      },
+      "aliases": [
+        "Numbers",
+        "stats",
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "members",
+        "plans",
+        "questions",
+        "testimonials",
+        "reviews",
+        "entries",
+        "rows"
+      ],
+      "subFields": [
+        {
+          "key": "value",
+          "type": "number",
+          "label": {
+            "en": "Number",
+            "ar": "الرقم"
+          },
+          "aliases": [
+            "Numbers",
+            "number",
+            "namber",
+            "count",
+            "rates",
+            "rate",
+            "amount",
+            "percent"
+          ]
+        },
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Label",
+            "ar": "الوصف"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "title",
+            "name"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "title": "Numbers we are proud of",
+      "description": "Results from the last few years.",
+      "image": "sample:wide-6",
+      "items": [
+        {
+          "value": 120,
+          "label": "Websites"
+        },
+        {
+          "value": 98,
+          "label": "Happy clients"
+        },
+        {
+          "value": 12,
+          "label": "Countries"
+        },
+        {
+          "value": 10,
+          "label": "Years"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "title": "Numbers we are proud of",
+    "description": "Results from the last few years.",
+    "image": "sample:wide-6",
+    "items": [
+      {
+        "value": 120,
+        "label": "Websites"
+      },
+      {
+        "value": 98,
+        "label": "Happy clients"
+      },
+      {
+        "value": 12,
+        "label": "Countries"
+      },
+      {
+        "value": 10,
+        "label": "Years"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Background image",
+        "ar": "صورة الخلفية"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Numbers",
+        "ar": "الأرقام"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{value}}",
+      "field": "items.value",
+      "type": "number",
+      "label": {
+        "en": "Number",
+        "ar": "الرقم"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{label}}",
+      "field": "items.label",
+      "type": "shortText",
+      "label": {
+        "en": "Label",
+        "ar": "الوصف"
+      },
+      "scope": "items"
+    }
+  ]
+}

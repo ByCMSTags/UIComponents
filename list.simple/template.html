@@ -1,0 +1,15 @@
+<section id="{{@id}}" class="cms-section">
+  <div class="container">
+    <div class="col-lg-9 mx-auto">
+      <{{@h}} class="h1 fw-bold mb-4">{{@label}}</{{@h}}>
+      <div class="list-group list-group-flush border-top border-bottom">
+        {{#@items}}<article class="list-group-item py-4 px-0 position-relative">
+          {{#date}}<p class="small text-body-secondary mb-1">{{date}}</p>{{/date}}
+          {{#title}}<{{@hsub}} class="h5 fw-bold mb-1">{{#link}}<a class="stretched-link link-dark text-decoration-none" href="{{link}}">{{title}}</a>{{/link}}{{^link}}{{title}}{{/link}}</{{@hsub}}>{{/title}}
+          {{#description}}<p class="text-body-secondary mb-0">{{description}}</p>{{/description}}
+        </article>{{/@items}}
+      </div>
+      {{^@items}}<p class="text-body-secondary">{{@t.empty}}</p>{{/@items}}
+    </div>
+  </div>
+</section>

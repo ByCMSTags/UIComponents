@@ -1,0 +1,220 @@
+{
+  "id": "features.alternating",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Alternating rows",
+    "ar": "صفوف متناوبة"
+  },
+  "description": {
+    "en": "Text and picture side by side, swapping sides on each row.",
+    "ar": "نص وصورة متجاوران يتبادلان المكان في كل صف."
+  },
+  "legacy": [
+    "service"
+  ],
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "titel",
+        "headline",
+        "MainHeading",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Rows",
+        "ar": "الصفوف"
+      },
+      "aliases": [
+        "Service",
+        "services",
+        "highlights",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "members",
+        "plans",
+        "questions",
+        "testimonials",
+        "reviews",
+        "entries",
+        "rows",
+        "body"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "heading",
+            "headline",
+            "name",
+            "label"
+          ]
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "body",
+            "text",
+            "content",
+            "desc",
+            "summary",
+            "excerpt",
+            "details",
+            "subtitle",
+            "lead",
+            "leadleft",
+            "intro",
+            "paragraph"
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "Serviceimage",
+            "imges",
+            "imegs",
+            "images",
+            "img",
+            "photo",
+            "picture",
+            "backgroundimage",
+            "background",
+            "cover",
+            "media"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "items": [
+        {
+          "title": "Branding",
+          "description": "We help growing businesses look professional online, with fast pages and content they can update themselves.",
+          "image": "sample:square-3"
+        },
+        {
+          "title": "Websites",
+          "description": "Fast, accessible pages in Arabic and English.",
+          "image": "sample:square-6"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "items": [
+      {
+        "title": "Branding",
+        "description": "We help growing businesses look professional online, with fast pages and content they can update themselves.",
+        "image": "sample:square-3"
+      },
+      {
+        "title": "Websites",
+        "description": "Fast, accessible pages in Arabic and English.",
+        "image": "sample:square-6"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Rows",
+        "ar": "الصفوف"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    }
+  ]
+}

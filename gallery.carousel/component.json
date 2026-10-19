@@ -1,0 +1,131 @@
+{
+  "id": "gallery.carousel",
+  "category": "gallery",
+  "kind": "single",
+  "name": {
+    "en": "Slideshow",
+    "ar": "عرض شرائح"
+  },
+  "description": {
+    "en": "One large photo at a time, with arrows.",
+    "ar": "صورة كبيرة واحدة في كل مرة مع أسهم."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "titel",
+        "heading",
+        "headline",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "subtitle",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "images",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      },
+      "aliases": [
+        "pictures",
+        "imges",
+        "photos",
+        "imegs",
+        "gallery",
+        "media",
+        "slides"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "title": "Inside the studio",
+      "images": [
+        "sample:wide-1",
+        "sample:wide-2",
+        "sample:wide-5"
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "title": "Inside the studio",
+    "images": [
+      "sample:wide-1",
+      "sample:wide-2",
+      "sample:wide-5"
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      }
+    },
+    {
+      "token": "{{images}}",
+      "field": "images",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      }
+    },
+    {
+      "token": "{{#images}}",
+      "field": "images",
+      "type": "gallery",
+      "role": "open"
+    },
+    {
+      "token": "{{/images}}",
+      "field": "images",
+      "type": "gallery",
+      "role": "close"
+    }
+  ]
+}

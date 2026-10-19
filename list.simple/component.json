@@ -1,0 +1,162 @@
+{
+  "id": "list.simple",
+  "category": "list",
+  "kind": "list",
+  "name": {
+    "en": "Simple list",
+    "ar": "قائمة بسيطة"
+  },
+  "description": {
+    "en": "Records as a clean list with date, title and text.",
+    "ar": "السجلات كقائمة مرتبة بالتاريخ والعنوان والنص."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "name",
+        "headline",
+        "titel",
+        "heading",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Short text",
+        "ar": "نص قصير"
+      },
+      "localized": true,
+      "aliases": [
+        "summary",
+        "excerpt",
+        "body",
+        "text",
+        "content",
+        "desc",
+        "details",
+        "subtitle",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "date",
+      "type": "date",
+      "label": {
+        "en": "Date",
+        "ar": "التاريخ"
+      },
+      "aliases": [
+        "publishedAt",
+        "publishDate",
+        "day"
+      ]
+    },
+    {
+      "key": "link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "aliases": [
+        "url",
+        "href",
+        "ctaurl",
+        "buttonLink"
+      ]
+    }
+  ],
+  "sample": {
+    "items": [
+      {
+        "title": "New office in Dubai",
+        "description": "We are closer to our clients in the Gulf.",
+        "date": "2026-09-14",
+        "link": "#"
+      },
+      {
+        "title": "Website awards 2026",
+        "description": "Two of our projects made the shortlist.",
+        "date": "2026-08-02",
+        "link": "#"
+      },
+      {
+        "title": "Summer hours",
+        "description": "Our team works 8:00 – 15:00 until September.",
+        "date": "2026-06-20"
+      }
+    ]
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "items": [
+      {
+        "title": "New office in Dubai",
+        "description": "We are closer to our clients in the Gulf.",
+        "date": "2026-09-14",
+        "link": "#"
+      },
+      {
+        "title": "Website awards 2026",
+        "description": "Two of our projects made the shortlist.",
+        "date": "2026-08-02",
+        "link": "#"
+      },
+      {
+        "title": "Summer hours",
+        "description": "Our team works 8:00 – 15:00 until September.",
+        "date": "2026-06-20"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Short text",
+        "ar": "نص قصير"
+      }
+    },
+    {
+      "token": "{{date}}",
+      "field": "date",
+      "type": "date",
+      "label": {
+        "en": "Date",
+        "ar": "التاريخ"
+      }
+    },
+    {
+      "token": "{{link}}",
+      "field": "link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      }
+    }
+  ]
+}

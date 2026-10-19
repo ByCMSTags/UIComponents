@@ -1,0 +1,17 @@
+{
+  "id": "header.centered",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Centred logo",
+    "ar": "شعار في الوسط"
+  },
+  "description": {
+    "en": "Logo in the middle, menu on its own line below.",
+    "ar": "الشعار في المنتصف والقائمة في سطر أسفله."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

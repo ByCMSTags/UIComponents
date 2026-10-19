@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="position-relative overflow-hidden bg-dark text-white text-center d-flex align-items-center min-vh-75">
+  {{#image}}{{image sizes="100vw" class="position-absolute top-0 start-0 w-100 h-100 cms-cover" decorative="true"}}{{/image}}
+  <div class="position-absolute top-0 start-0 w-100 h-100 cms-overlay"></div>
+  <div class="container position-relative z-1 py-5">
+    <div class="col-lg-9 mx-auto py-5">
+      {{#title}}<{{@h}} class="display-3 fw-bold mb-3">{{title}}</{{@h}}>{{/title}}
+      {{#description}}<p class="lead mb-4 text-white-85">{{description}}</p>{{/description}}
+      {{#buttonText}}{{#buttonLink}}<a class="btn btn-primary btn-lg" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+      {{^buttonLink}}{{#@next}}<a class="btn btn-primary btn-lg" href="{{@next}}">{{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}{{@t.learnMore}}{{/buttonText}}</a>{{/@next}}{{/buttonLink}}
+    </div>
+  </div>
+</section>

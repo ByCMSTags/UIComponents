@@ -1,0 +1,215 @@
+{
+  "id": "cta.carousel",
+  "category": "cta",
+  "kind": "single",
+  "name": {
+    "en": "Offer with slideshow",
+    "ar": "عرض مع شرائح"
+  },
+  "description": {
+    "en": "An offer card beside a photo slideshow.",
+    "ar": "بطاقة عرض بجانب عرض صور."
+  },
+  "legacy": [
+    "extract"
+  ],
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "titel",
+        "headline",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "subtitle",
+      "type": "shortText",
+      "label": {
+        "en": "Card title",
+        "ar": "عنوان البطاقة"
+      },
+      "localized": true,
+      "aliases": [
+        "Subheading",
+        "tagline"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Card text",
+        "ar": "نص البطاقة"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "subtitle",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctalabel",
+        "cta",
+        "ctaText",
+        "buttonLabel",
+        "btnText",
+        "linkText",
+        "linkLabel"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaurl",
+        "ctaLink",
+        "buttonUrl",
+        "btnLink",
+        "url",
+        "link",
+        "href"
+      ]
+    },
+    {
+      "key": "images",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      },
+      "aliases": [
+        "imges",
+        "pictures",
+        "imegs",
+        "photos",
+        "gallery",
+        "media",
+        "slides"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "title": "This month only",
+      "subtitle": "20% off new websites",
+      "description": "Book before the end of the month and get a free logo refresh.",
+      "buttonText": "Book now",
+      "buttonLink": "#",
+      "images": [
+        "sample:photo-3",
+        "sample:photo-9"
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "title": "This month only",
+    "subtitle": "20% off new websites",
+    "description": "Book before the end of the month and get a free logo refresh.",
+    "buttonText": "Book now",
+    "buttonLink": "#",
+    "images": [
+      "sample:photo-3",
+      "sample:photo-9"
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{subtitle}}",
+      "field": "subtitle",
+      "type": "shortText",
+      "label": {
+        "en": "Card title",
+        "ar": "عنوان البطاقة"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Card text",
+        "ar": "نص البطاقة"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    },
+    {
+      "token": "{{images}}",
+      "field": "images",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      }
+    },
+    {
+      "token": "{{#images}}",
+      "field": "images",
+      "type": "gallery",
+      "role": "open"
+    },
+    {
+      "token": "{{/images}}",
+      "field": "images",
+      "type": "gallery",
+      "role": "close"
+    }
+  ]
+}

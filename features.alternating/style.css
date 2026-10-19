@@ -1,0 +1,45 @@
+.cms-alt-row + .cms-alt-row {
+  margin-top: 3rem;
+}
+
+.cms-alt-visual {
+  position: relative;
+  max-width: 420px;
+}
+
+.cms-alt-visual::before, .cms-alt-visual::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #f26b21;
+  border-radius: 10px;
+}
+
+.cms-alt-visual::before {
+  top: -22px;
+  left: -22px;
+}
+
+.cms-alt-visual::after {
+  bottom: -22px;
+  right: -22px;
+}
+
+.cms-alt-card {
+  position: relative;
+  z-index: 1;
+  min-height: 340px;
+}
+
+.cms-alt-card img {
+  width: min(100%, 300px);
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 992px) {
+  .cms-alt-row .text-lg-start {
+    max-width: 520px;
+  }
+}

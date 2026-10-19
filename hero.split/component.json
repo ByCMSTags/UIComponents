@@ -1,0 +1,250 @@
+{
+  "id": "hero.split",
+  "category": "hero",
+  "kind": "single",
+  "name": {
+    "en": "Text and image",
+    "ar": "نص وصورة"
+  },
+  "description": {
+    "en": "Title, text and buttons beside a picture.",
+    "ar": "عنوان ونص وأزرار بجانب صورة."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      },
+      "localized": true,
+      "aliases": [
+        "tagline",
+        "kicker",
+        "subheading",
+        "overline"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "homesection1",
+        "headline",
+        "heading",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      },
+      "localized": true,
+      "aliases": [
+        "Coverdescription",
+        "subtitle",
+        "body",
+        "text",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "aliases": [
+        "imges",
+        "Coverbackground",
+        "photo",
+        "imegs",
+        "images",
+        "img",
+        "picture",
+        "backgroundimage",
+        "background",
+        "cover",
+        "media"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctalabel",
+        "cta",
+        "ctaText",
+        "buttonLabel",
+        "btnText",
+        "linkText",
+        "linkLabel"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaurl",
+        "ctaLink",
+        "buttonUrl",
+        "btnLink",
+        "url",
+        "link",
+        "href"
+      ]
+    },
+    {
+      "key": "secondaryText",
+      "type": "shortText",
+      "label": {
+        "en": "Second button text",
+        "ar": "نص الزر الثاني"
+      },
+      "localized": true,
+      "aliases": [
+        "secondaryLabel",
+        "cta2label"
+      ]
+    },
+    {
+      "key": "secondaryLink",
+      "type": "url",
+      "label": {
+        "en": "Second button link",
+        "ar": "رابط الزر الثاني"
+      },
+      "aliases": [
+        "secondaryUrl",
+        "cta2url"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "eyebrow": "Digital studio",
+      "title": "Grow your business online",
+      "description": "We help growing businesses look professional online, with fast pages and content they can update themselves.",
+      "image": "sample:photo-2",
+      "buttonText": "Start now",
+      "buttonLink": "#",
+      "secondaryText": "Our work",
+      "secondaryLink": "#"
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "eyebrow": "Digital studio",
+    "title": "Grow your business online",
+    "description": "We help growing businesses look professional online, with fast pages and content they can update themselves.",
+    "image": "sample:photo-2",
+    "buttonText": "Start now",
+    "buttonLink": "#",
+    "secondaryText": "Our work",
+    "secondaryLink": "#"
+  },
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    },
+    {
+      "token": "{{secondaryText}}",
+      "field": "secondaryText",
+      "type": "shortText",
+      "label": {
+        "en": "Second button text",
+        "ar": "نص الزر الثاني"
+      }
+    },
+    {
+      "token": "{{secondaryLink}}",
+      "field": "secondaryLink",
+      "type": "url",
+      "label": {
+        "en": "Second button link",
+        "ar": "رابط الزر الثاني"
+      }
+    }
+  ]
+}

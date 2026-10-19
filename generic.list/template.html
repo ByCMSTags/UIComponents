@@ -1,0 +1,7 @@
+<section id="{{@id}}" class="cms-section cms-generic">
+  <div class="container">
+    <{{@h}} class="h2 fw-bold mb-4">{{@label}}</{{@h}}>
+    {{#@items}}{{#@first}}<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">{{/@first}}<div class="col"><article class="card h-100"><div class="card-body">{{@record}}</div></article></div>{{#@last}}</div>{{/@last}}{{/@items}}
+    {{^@items}}<p class="text-body-secondary">{{@t.empty}}</p>{{/@items}}
+  </div>
+</section>

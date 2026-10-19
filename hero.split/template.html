@@ -1,0 +1,18 @@
+<section id="{{@id}}" class="cms-section bg-light">
+  <div class="container">
+    <div class="row align-items-center g-4 g-md-5">
+      <div class="col-lg-6">
+        {{#eyebrow}}<p class="cms-eyebrow mb-3">{{eyebrow}}</p>{{/eyebrow}}
+        {{#title}}<{{@h}} class="display-4 fw-bold mb-3">{{title}}</{{@h}}>{{/title}}
+        {{#description}}<p class="lead text-body-secondary mb-4">{{description}}</p>{{/description}}
+        <div class="d-flex flex-wrap gap-2">
+          {{#buttonText}}{{#buttonLink}}<a class="btn btn-primary btn-lg" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+          {{#secondaryText}}{{#secondaryLink}}<a class="btn btn-outline-dark btn-lg" href="{{secondaryLink}}">{{secondaryText}}</a>{{/secondaryLink}}{{/secondaryText}}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        {{#image}}{{image sizes="(max-width: 992px) calc(100vw - 24px), 636px" class="rounded-4 overflow-hidden shadow" img="w-100"}}{{/image}}
+      </div>
+    </div>
+  </div>
+</section>

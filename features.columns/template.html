@@ -1,0 +1,11 @@
+<section id="{{@id}}" class="cms-section">
+  <div class="container">
+    {{#heading}}<{{@h}} class="cms-eyebrow text-center mb-5">{{heading}}</{{@h}}>{{/heading}}
+    <div class="row row-cols-1 row-cols-md-2 g-4 g-md-5">
+      {{#items}}<div class="col">
+        {{#title}}{{#heading}}<{{@hsub}} class="h4 fw-bold">{{title}}</{{@hsub}}>{{/heading}}{{^heading}}<{{@h}} class="h4 fw-bold">{{title}}</{{@h}}>{{/heading}}{{/title}}
+        {{#description}}<p class="text-body-secondary mb-0">{{description}}</p>{{/description}}
+      </div>{{/items}}
+    </div>
+  </div>
+</section>

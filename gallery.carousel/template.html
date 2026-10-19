@@ -1,0 +1,13 @@
+<section id="{{@id}}" class="cms-section bg-light">
+  <div class="container">
+    {{#title}}<{{@h}} class="h1 fw-bold text-center mb-3">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{description}}</p>{{/description}}
+    <div id="{{@id}}-carousel" class="carousel slide rounded-4 overflow-hidden shadow-sm" role="region" aria-roledescription="carousel" aria-label="{{#title}}{{title}}{{/title}}{{^title}}{{@t.gallery}}{{/title}}">
+      <div class="carousel-inner">
+        {{#images}}<div class="carousel-item{{#@first}} active{{/@first}}" role="group" aria-roledescription="slide" aria-label="{{@number}}">{{image sizes="(max-width: 1320px) calc(100vw - 24px), 1296px" img="d-block cms-slide-wide"}}</div>{{/images}}
+      </div>
+      {{#images}}{{#@first}}{{^@last}}<button class="carousel-control-prev" type="button" data-bs-target="#{{@id}}-carousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">{{@t.prevSlide}}</span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#{{@id}}-carousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">{{@t.nextSlide}}</span></button>{{/@last}}{{/@first}}{{/images}}
+    </div>
+  </div>
+</section>

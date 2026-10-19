@@ -1,0 +1,142 @@
+{
+  "id": "cta.banner",
+  "category": "cta",
+  "kind": "single",
+  "name": {
+    "en": "Call-to-action banner",
+    "ar": "شريط دعوة"
+  },
+  "description": {
+    "en": "A coloured band with a short message and a button.",
+    "ar": "شريط ملوّن برسالة قصيرة وزر."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "titel",
+        "headline",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      },
+      "localized": true,
+      "aliases": [
+        "text",
+        "body",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "subtitle",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctalabel",
+        "cta",
+        "ctaText",
+        "buttonLabel",
+        "btnText",
+        "linkText",
+        "linkLabel"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaurl",
+        "ctaLink",
+        "buttonUrl",
+        "btnLink",
+        "url",
+        "link",
+        "href"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "title": "Ready to start your website?",
+      "description": "Tell us about your project and get a free plan within a day.",
+      "buttonText": "Contact us",
+      "buttonLink": "#"
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "title": "Ready to start your website?",
+    "description": "Tell us about your project and get a free plan within a day.",
+    "buttonText": "Contact us",
+    "buttonLink": "#"
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ]
+}

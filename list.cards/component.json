@@ -1,0 +1,171 @@
+{
+  "id": "list.cards",
+  "category": "list",
+  "kind": "list",
+  "name": {
+    "en": "Cards",
+    "ar": "بطاقات"
+  },
+  "description": {
+    "en": "Each record as a card with picture, title and text.",
+    "ar": "كل سجل كبطاقة فيها صورة وعنوان ونص."
+  },
+  "fields": [
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "aliases": [
+        "photo",
+        "cover",
+        "imges",
+        "imegs",
+        "images",
+        "img",
+        "picture",
+        "backgroundimage",
+        "background",
+        "media"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "name",
+        "headline",
+        "titel",
+        "heading",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Short text",
+        "ar": "نص قصير"
+      },
+      "localized": true,
+      "aliases": [
+        "summary",
+        "excerpt",
+        "body",
+        "text",
+        "content",
+        "desc",
+        "details",
+        "subtitle",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "aliases": [
+        "url",
+        "href",
+        "ctaurl",
+        "buttonLink"
+      ]
+    }
+  ],
+  "sample": {
+    "items": [
+      {
+        "image": "sample:photo-1",
+        "title": "Five tips for a faster website",
+        "description": "Small changes that make pages load in a blink.",
+        "link": "#"
+      },
+      {
+        "image": "sample:photo-4",
+        "title": "Writing for two languages",
+        "description": "How to plan Arabic and English content together.",
+        "link": "#"
+      },
+      {
+        "image": "sample:photo-6",
+        "title": "Photos that sell",
+        "description": "Simple rules for product pictures.",
+        "link": "#"
+      }
+    ]
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "items": [
+      {
+        "image": "sample:photo-1",
+        "title": "Five tips for a faster website",
+        "description": "Small changes that make pages load in a blink.",
+        "link": "#"
+      },
+      {
+        "image": "sample:photo-4",
+        "title": "Writing for two languages",
+        "description": "How to plan Arabic and English content together.",
+        "link": "#"
+      },
+      {
+        "image": "sample:photo-6",
+        "title": "Photos that sell",
+        "description": "Simple rules for product pictures.",
+        "link": "#"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Short text",
+        "ar": "نص قصير"
+      }
+    },
+    {
+      "token": "{{link}}",
+      "field": "link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      }
+    }
+  ]
+}

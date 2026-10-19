@@ -1,0 +1,11 @@
+<section id="{{@id}}" class="position-relative overflow-hidden bg-dark text-white text-center cms-section">
+  {{#image}}{{image sizes="100vw" class="position-absolute top-0 start-0 w-100 h-100 cms-cover" decorative="true"}}{{/image}}
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75"></div>
+  <div class="container position-relative z-1">
+    {{#title}}<{{@h}} class="h1 fw-bold mb-3">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="lead text-white-85 cms-lead mb-5">{{description}}</p>{{/description}}
+    <div class="row row-cols-2 row-cols-lg-4 g-4">
+      {{#items}}<div class="col"><p class="display-4 fw-bold mb-1">{{value}}</p><p class="mb-0">{{label}}</p></div>{{/items}}
+    </div>
+  </div>
+</section>

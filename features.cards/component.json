@@ -1,0 +1,310 @@
+{
+  "id": "features.cards",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Picture cards",
+    "ar": "بطاقات بالصور"
+  },
+  "description": {
+    "en": "Cards with a picture, a title, text and a link.",
+    "ar": "بطاقات فيها صورة وعنوان ونص ورابط."
+  },
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "titel",
+        "headline",
+        "MainHeading",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      },
+      "localized": true,
+      "aliases": [
+        "description",
+        "body",
+        "subtitle",
+        "intro",
+        "text",
+        "leadleft",
+        "summary"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Cards",
+        "ar": "البطاقات"
+      },
+      "subFields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "imges",
+            "imegs",
+            "images",
+            "img",
+            "photo",
+            "picture",
+            "backgroundimage",
+            "background",
+            "cover",
+            "media"
+          ]
+        },
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "heading",
+            "headline",
+            "name",
+            "label"
+          ]
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "body",
+            "text",
+            "content",
+            "desc",
+            "summary",
+            "excerpt",
+            "details",
+            "subtitle",
+            "lead",
+            "leadleft",
+            "intro",
+            "paragraph"
+          ]
+        },
+        {
+          "key": "linkText",
+          "type": "shortText",
+          "label": {
+            "en": "Link text",
+            "ar": "نص الرابط"
+          },
+          "localized": true,
+          "aliases": [
+            "ctalabel",
+            "buttonText",
+            "linkLabel"
+          ]
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": {
+            "en": "Link",
+            "ar": "الرابط"
+          },
+          "aliases": [
+            "url",
+            "href",
+            "ctaurl",
+            "buttonLink"
+          ]
+        }
+      ],
+      "aliases": [
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "members",
+        "plans",
+        "questions",
+        "testimonials",
+        "reviews",
+        "entries",
+        "rows",
+        "body"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "heading": "Our services",
+      "lead": "From the first idea to a site that sells.",
+      "items": [
+        {
+          "image": "sample:photo-1",
+          "title": "Web design",
+          "description": "Clean pages that fit your brand.",
+          "link": "#"
+        },
+        {
+          "image": "sample:photo-5",
+          "title": "Online shops",
+          "description": "Sell your products with ease.",
+          "link": "#"
+        },
+        {
+          "image": "sample:photo-8",
+          "title": "Marketing",
+          "description": "Reach the right people.",
+          "link": "#"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "heading": "Our services",
+    "lead": "From the first idea to a site that sells.",
+    "items": [
+      {
+        "image": "sample:photo-1",
+        "title": "Web design",
+        "description": "Clean pages that fit your brand.",
+        "link": "#"
+      },
+      {
+        "image": "sample:photo-5",
+        "title": "Online shops",
+        "description": "Sell your products with ease.",
+        "link": "#"
+      },
+      {
+        "image": "sample:photo-8",
+        "title": "Marketing",
+        "description": "Reach the right people.",
+        "link": "#"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{lead}}",
+      "field": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Cards",
+        "ar": "البطاقات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{linkText}}",
+      "field": "items.linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link}}",
+      "field": "items.link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "scope": "items"
+    }
+  ]
+}

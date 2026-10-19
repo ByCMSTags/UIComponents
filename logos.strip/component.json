@@ -1,0 +1,100 @@
+{
+  "id": "logos.strip",
+  "category": "logos",
+  "kind": "single",
+  "name": {
+    "en": "Logo strip",
+    "ar": "شريط شعارات"
+  },
+  "description": {
+    "en": "Client or partner logos in one row.",
+    "ar": "شعارات العملاء أو الشركاء في صف واحد."
+  },
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "titel",
+        "headline",
+        "MainHeading",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "logos",
+      "type": "gallery",
+      "label": {
+        "en": "Logos",
+        "ar": "الشعارات"
+      },
+      "aliases": [
+        "images",
+        "clients",
+        "partners",
+        "imges",
+        "brands"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "heading": "Trusted by",
+      "logos": [
+        "sample:logo-1",
+        "sample:logo-2",
+        "sample:logo-3",
+        "sample:logo-4"
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "heading": "Trusted by",
+    "logos": [
+      "sample:logo-1",
+      "sample:logo-2",
+      "sample:logo-3",
+      "sample:logo-4"
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{logos}}",
+      "field": "logos",
+      "type": "gallery",
+      "label": {
+        "en": "Logos",
+        "ar": "الشعارات"
+      }
+    },
+    {
+      "token": "{{#logos}}",
+      "field": "logos",
+      "type": "gallery",
+      "role": "open"
+    },
+    {
+      "token": "{{/logos}}",
+      "field": "logos",
+      "type": "gallery",
+      "role": "close"
+    }
+  ]
+}

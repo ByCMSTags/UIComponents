@@ -1,0 +1,390 @@
+{
+  "id": "pricing.list",
+  "category": "pricing",
+  "kind": "single",
+  "name": {
+    "en": "Price list",
+    "ar": "قائمة أسعار"
+  },
+  "description": {
+    "en": "A compact list of services and prices.",
+    "ar": "قائمة مختصرة بالخدمات والأسعار."
+  },
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "titel",
+        "headline",
+        "MainHeading",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      },
+      "localized": true,
+      "aliases": [
+        "description",
+        "body",
+        "subtitle",
+        "intro",
+        "text",
+        "leadleft",
+        "summary"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Plans",
+        "ar": "الباقات"
+      },
+      "aliases": [
+        "plans",
+        "prices",
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "members",
+        "questions",
+        "testimonials",
+        "reviews",
+        "entries",
+        "rows",
+        "body"
+      ],
+      "subFields": [
+        {
+          "key": "name",
+          "type": "shortText",
+          "label": {
+            "en": "Plan name",
+            "ar": "اسم الباقة"
+          },
+          "localized": true,
+          "aliases": [
+            "title",
+            "fullName",
+            "titel",
+            "label"
+          ]
+        },
+        {
+          "key": "price",
+          "type": "shortText",
+          "label": {
+            "en": "Price",
+            "ar": "السعر"
+          },
+          "aliases": [
+            "amount",
+            "cost"
+          ]
+        },
+        {
+          "key": "period",
+          "type": "shortText",
+          "label": {
+            "en": "Period (e.g. / month)",
+            "ar": "المدة (مثل: شهريًا)"
+          },
+          "localized": true
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Short description",
+            "ar": "وصف قصير"
+          },
+          "localized": true,
+          "aliases": [
+            "body",
+            "text",
+            "content",
+            "desc",
+            "summary",
+            "excerpt",
+            "details",
+            "subtitle",
+            "lead",
+            "leadleft",
+            "intro",
+            "paragraph"
+          ]
+        },
+        {
+          "key": "features",
+          "type": "longText",
+          "label": {
+            "en": "Included (one per line)",
+            "ar": "المزايا (واحدة في كل سطر)"
+          },
+          "localized": true,
+          "aliases": [
+            "includes",
+            "list",
+            "body"
+          ]
+        },
+        {
+          "key": "buttonText",
+          "type": "shortText",
+          "label": {
+            "en": "Button text",
+            "ar": "نص الزر"
+          },
+          "localized": true,
+          "aliases": [
+            "ctalabel",
+            "cta",
+            "ctaText",
+            "buttonLabel",
+            "btnText",
+            "linkText",
+            "linkLabel"
+          ]
+        },
+        {
+          "key": "buttonLink",
+          "type": "url",
+          "label": {
+            "en": "Button link",
+            "ar": "رابط الزر"
+          },
+          "aliases": [
+            "ctaurl",
+            "ctaLink",
+            "buttonUrl",
+            "btnLink",
+            "url",
+            "link",
+            "href"
+          ]
+        },
+        {
+          "key": "featured",
+          "type": "boolean",
+          "label": {
+            "en": "Highlight this plan",
+            "ar": "تمييز هذه الباقة"
+          }
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "heading": "Simple pricing",
+      "lead": "Pick a plan. Change it anytime.",
+      "items": [
+        {
+          "name": "Starter",
+          "price": "$19",
+          "period": "/ month",
+          "description": "For a first website.",
+          "features": "5 pages\nArabic and English\nContact form",
+          "buttonText": "Choose",
+          "buttonLink": "#"
+        },
+        {
+          "name": "Business",
+          "price": "$49",
+          "period": "/ month",
+          "description": "For growing teams.",
+          "features": "20 pages\nBlog and gallery\nSearch engine setup\nPriority support",
+          "buttonText": "Choose",
+          "buttonLink": "#",
+          "featured": true
+        },
+        {
+          "name": "Pro",
+          "price": "$99",
+          "period": "/ month",
+          "description": "For busy sites.",
+          "features": "Unlimited pages\nOnline shop\nDedicated manager",
+          "buttonText": "Choose",
+          "buttonLink": "#"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "heading": "Simple pricing",
+    "lead": "Pick a plan. Change it anytime.",
+    "items": [
+      {
+        "name": "Starter",
+        "price": "$19",
+        "period": "/ month",
+        "description": "For a first website.",
+        "features": "5 pages\nArabic and English\nContact form",
+        "buttonText": "Choose",
+        "buttonLink": "#"
+      },
+      {
+        "name": "Business",
+        "price": "$49",
+        "period": "/ month",
+        "description": "For growing teams.",
+        "features": "20 pages\nBlog and gallery\nSearch engine setup\nPriority support",
+        "buttonText": "Choose",
+        "buttonLink": "#",
+        "featured": true
+      },
+      {
+        "name": "Pro",
+        "price": "$99",
+        "period": "/ month",
+        "description": "For busy sites.",
+        "features": "Unlimited pages\nOnline shop\nDedicated manager",
+        "buttonText": "Choose",
+        "buttonLink": "#"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{lead}}",
+      "field": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Plans",
+        "ar": "الباقات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{name}}",
+      "field": "items.name",
+      "type": "shortText",
+      "label": {
+        "en": "Plan name",
+        "ar": "اسم الباقة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{price}}",
+      "field": "items.price",
+      "type": "shortText",
+      "label": {
+        "en": "Price",
+        "ar": "السعر"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{period}}",
+      "field": "items.period",
+      "type": "shortText",
+      "label": {
+        "en": "Period (e.g. / month)",
+        "ar": "المدة (مثل: شهريًا)"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Short description",
+        "ar": "وصف قصير"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{features}}",
+      "field": "items.features",
+      "type": "longText",
+      "label": {
+        "en": "Included (one per line)",
+        "ar": "المزايا (واحدة في كل سطر)"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "items.buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "items.buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{featured}}",
+      "field": "items.featured",
+      "type": "boolean",
+      "label": {
+        "en": "Highlight this plan",
+        "ar": "تمييز هذه الباقة"
+      },
+      "scope": "items"
+    }
+  ]
+}

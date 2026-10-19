@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-section">
+  <div class="container">
+    {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-3">{{heading}}</{{@h}}>{{/heading}}
+    {{#lead}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{lead}}</p>{{/lead}}
+    <div class="accordion col-lg-9 mx-auto" id="{{@id}}-faq">
+      {{#items}}<div class="accordion-item">
+        <{{@hsub}} class="accordion-header"><button class="accordion-button fw-semibold{{^@first}} collapsed{{/@first}}" type="button" data-bs-toggle="collapse" data-bs-target="#{{@id}}-q{{@number}}" aria-expanded="{{#@first}}true{{/@first}}{{^@first}}false{{/@first}}" aria-controls="{{@id}}-q{{@number}}">{{question}}</button></{{@hsub}}>
+        <div id="{{@id}}-q{{@number}}" class="accordion-collapse collapse{{#@first}} show{{/@first}}" data-bs-parent="#{{@id}}-faq"><div class="accordion-body text-body-secondary">{{answer}}</div></div>
+      </div>{{/items}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+<section id="{{@id}}" class="cms-section text-center">
+  <div class="container">
+    <div class="col-lg-8 mx-auto">
+      {{#title}}<{{@h}} class="display-4 fw-bold mb-3">{{title}}</{{@h}}>{{/title}}
+      {{#description}}<p class="lead text-body-secondary mb-4">{{description}}</p>{{/description}}
+      {{#buttonText}}{{#buttonLink}}<a class="btn btn-primary btn-lg" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+    </div>
+    {{#image}}<div class="mt-5">{{image sizes="(max-width: 1320px) calc(100vw - 24px), 1296px" class="rounded-4 overflow-hidden shadow-sm" img="w-100"}}</div>{{/image}}
+  </div>
+</section>

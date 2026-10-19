@@ -1,0 +1,18 @@
+{
+  "id": "header.classic",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Classic dark",
+    "ar": "كلاسيكي داكن"
+  },
+  "description": {
+    "en": "Dark bar: logo, centred menu, languages and phone.",
+    "ar": "شريط داكن: الشعار، القائمة في الوسط، اللغات والهاتف."
+  },
+  "default": true,
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

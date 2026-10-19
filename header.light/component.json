@@ -1,0 +1,17 @@
+{
+  "id": "header.light",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Light with button",
+    "ar": "فاتح مع زر"
+  },
+  "description": {
+    "en": "White bar: logo, menu on the side and a call button.",
+    "ar": "شريط أبيض: الشعار، القائمة جانبًا وزر اتصال."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

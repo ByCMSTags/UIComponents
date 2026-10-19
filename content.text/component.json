@@ -1,0 +1,78 @@
+{
+  "id": "content.text",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Text block",
+    "ar": "كتلة نص"
+  },
+  "description": {
+    "en": "A title and formatted text in a readable column.",
+    "ar": "عنوان ونص منسق في عمود سهل القراءة."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "content",
+        "text",
+        "description",
+        "details",
+        "paragraph"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "title": "Our approach",
+      "body": "<p>We help growing businesses look professional online, with fast pages and content they can update themselves.</p><p>We listen first, then design. Every page is tested on phones and computers before it goes live.</p>"
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "title": "Our approach",
+    "body": "<p>We help growing businesses look professional online, with fast pages and content they can update themselves.</p><p>We listen first, then design. Every page is tested on phones and computers before it goes live.</p>"
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{body}}",
+      "field": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "hero.page",
+  "category": "hero",
+  "kind": "single",
+  "name": {
+    "en": "Page cover",
+    "ar": "غلاف الصفحة"
+  },
+  "description": {
+    "en": "A shorter photo banner with the page title.",
+    "ar": "شريط صورة أقصر مع عنوان الصفحة."
+  },
+  "legacy": [
+    "pagecover"
+  ],
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "headline",
+        "heading",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      },
+      "localized": true,
+      "aliases": [
+        "subtitle",
+        "body",
+        "text",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Background image",
+        "ar": "صورة الخلفية"
+      },
+      "aliases": [
+        "Coverbackground",
+        "imges",
+        "background",
+        "imegs",
+        "images",
+        "img",
+        "photo",
+        "picture",
+        "backgroundimage",
+        "cover",
+        "media"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "title": "About us",
+      "description": "A small team with a big love for clear, fast websites.",
+      "image": "sample:wide-3"
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "title": "About us",
+    "description": "A small team with a big love for clear, fast websites.",
+    "image": "sample:wide-3"
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Background image",
+        "ar": "صورة الخلفية"
+      }
+    }
+  ]
+}

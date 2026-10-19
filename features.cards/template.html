@@ -1,0 +1,18 @@
+<section id="{{@id}}" class="cms-section bg-light">
+  <div class="container">
+    {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-3">{{heading}}</{{@h}}>{{/heading}}
+    {{#lead}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{lead}}</p>{{/lead}}
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      {{#items}}<div class="col">
+        <article class="card h-100 border-0 shadow-sm overflow-hidden">
+          {{#image}}{{image sizes="(max-width: 768px) calc(100vw - 24px), (max-width: 992px) 50vw, 416px" img="card-img-top cms-slide"}}{{/image}}
+          <div class="card-body p-4">
+            {{#title}}{{#heading}}<{{@hsub}} class="h5 fw-bold card-title">{{title}}</{{@hsub}}>{{/heading}}{{^heading}}<{{@h}} class="h5 fw-bold card-title">{{title}}</{{@h}}>{{/heading}}{{/title}}
+            {{#description}}<p class="card-text text-body-secondary">{{description}}</p>{{/description}}
+            {{#link}}<a class="fw-semibold" href="{{link}}">{{#linkText}}{{linkText}}{{/linkText}}{{^linkText}}{{@t.learnMore}}{{/linkText}}</a>{{/link}}
+          </div>
+        </article>
+      </div>{{/items}}
+    </div>
+  </div>
+</section>

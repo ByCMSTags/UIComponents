@@ -1,0 +1,16 @@
+<section id="{{@id}}" class="cms-section">
+  <div class="container">
+    <{{@h}} class="h1 fw-bold mb-4">{{@label}}</{{@h}}>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+      {{#@items}}<div class="col"><article class="card h-100 shadow-sm border-0 overflow-hidden">
+        {{#image}}{{image sizes="(max-width: 576px) calc(100vw - 24px), (max-width: 992px) 50vw, 416px" img="card-img-top cms-slide"}}{{/image}}
+        <div class="card-body">
+          {{#title}}<{{@hsub}} class="h5 card-title fw-bold">{{title}}</{{@hsub}}>{{/title}}
+          {{#description}}<p class="card-text text-body-secondary">{{description}}</p>{{/description}}
+          {{#link}}<a class="stretched-link" href="{{link}}">{{@t.learnMore}}<span class="visually-hidden"> — {{title}}</span></a>{{/link}}
+        </div>
+      </article></div>{{/@items}}
+      {{^@items}}<p class="text-body-secondary">{{@t.empty}}</p>{{/@items}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+<section id="{{@id}}" class="cms-section">
+  <div class="container">
+    {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-3">{{heading}}</{{@h}}>{{/heading}}
+    {{#lead}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{lead}}</p>{{/lead}}
+    <div class="row row-cols-1 row-cols-md-3 g-4 align-items-stretch">
+      {{#items}}<div class="col"><article class="card h-100 rounded-4{{#featured}} border-primary border-2 shadow{{/featured}}{{^featured}} shadow-sm{{/featured}}">
+        <div class="card-body p-4 d-flex flex-column">
+          {{#heading}}<{{@hsub}} class="h4 fw-bold">{{name}}</{{@hsub}}>{{/heading}}{{^heading}}<{{@h}} class="h4 fw-bold">{{name}}</{{@h}}>{{/heading}}
+          {{#description}}<p class="text-body-secondary">{{description}}</p>{{/description}}
+          <p class="mb-4"><span class="display-5 fw-bold">{{price}}</span> {{#period}}<span class="text-body-secondary">{{period}}</span>{{/period}}</p>
+          <ul class="list-unstyled d-grid gap-2 mb-4">{{#features|lines}}<li class="d-flex gap-2"><span class="text-success">{{@icon.check}}</span>{{.}}</li>{{/features|lines}}</ul>
+          {{#buttonText}}{{#buttonLink}}<a class="btn {{#featured}}btn-primary{{/featured}}{{^featured}}btn-outline-dark{{/featured}} btn-lg mt-auto" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+        </div>
+      </article></div>{{/items}}
+    </div>
+  </div>
+</section>

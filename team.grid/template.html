@@ -1,0 +1,14 @@
+<section id="{{@id}}" class="cms-section">
+  <div class="container">
+    {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-3">{{heading}}</{{@h}}>{{/heading}}
+    {{#lead}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{lead}}</p>{{/lead}}
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+      {{#items}}<div class="col">
+        {{#photo}}{{photo sizes="(max-width: 768px) 45vw, 300px" max="300" class="mb-3 rounded-4 overflow-hidden" img="w-100 cms-avatar" decorative="true"}}{{/photo}}
+        {{#heading}}<{{@hsub}} class="h5 fw-bold mb-1">{{name}}</{{@hsub}}>{{/heading}}{{^heading}}<{{@h}} class="h5 fw-bold mb-1">{{name}}</{{@h}}>{{/heading}}
+        {{#role}}<p class="text-primary fw-semibold mb-2">{{role}}</p>{{/role}}
+        {{#bio}}<p class="small text-body-secondary mb-0">{{bio}}</p>{{/bio}}
+      </div>{{/items}}
+    </div>
+  </div>
+</section>

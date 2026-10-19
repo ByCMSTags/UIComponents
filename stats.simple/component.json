@@ -1,0 +1,220 @@
+{
+  "id": "stats.simple",
+  "category": "stats",
+  "kind": "single",
+  "name": {
+    "en": "Number cards",
+    "ar": "بطاقات أرقام"
+  },
+  "description": {
+    "en": "Numbers in white cards on a light background.",
+    "ar": "أرقام في بطاقات بيضاء على خلفية فاتحة."
+  },
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "titel",
+        "headline",
+        "MainHeading",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      },
+      "localized": true,
+      "aliases": [
+        "description",
+        "body",
+        "subtitle",
+        "intro",
+        "text",
+        "leadleft",
+        "summary"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Numbers",
+        "ar": "الأرقام"
+      },
+      "aliases": [
+        "Numbers",
+        "stats",
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "members",
+        "plans",
+        "questions",
+        "testimonials",
+        "reviews",
+        "entries",
+        "rows"
+      ],
+      "subFields": [
+        {
+          "key": "value",
+          "type": "number",
+          "label": {
+            "en": "Number",
+            "ar": "الرقم"
+          },
+          "aliases": [
+            "Numbers",
+            "number",
+            "namber",
+            "count",
+            "rates",
+            "rate",
+            "amount",
+            "percent"
+          ]
+        },
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Label",
+            "ar": "الوصف"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "title",
+            "name"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "heading": "In numbers",
+      "items": [
+        {
+          "value": 350,
+          "label": "Projects"
+        },
+        {
+          "value": 24,
+          "label": "Team members"
+        },
+        {
+          "value": 15,
+          "label": "Awards"
+        },
+        {
+          "value": 7,
+          "label": "Offices"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "heading": "In numbers",
+    "items": [
+      {
+        "value": 350,
+        "label": "Projects"
+      },
+      {
+        "value": 24,
+        "label": "Team members"
+      },
+      {
+        "value": 15,
+        "label": "Awards"
+      },
+      {
+        "value": 7,
+        "label": "Offices"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{lead}}",
+      "field": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Numbers",
+        "ar": "الأرقام"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{value}}",
+      "field": "items.value",
+      "type": "number",
+      "label": {
+        "en": "Number",
+        "ar": "الرقم"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{label}}",
+      "field": "items.label",
+      "type": "shortText",
+      "label": {
+        "en": "Label",
+        "ar": "الوصف"
+      },
+      "scope": "items"
+    }
+  ]
+}

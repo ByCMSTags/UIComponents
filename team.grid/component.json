@@ -1,0 +1,271 @@
+{
+  "id": "team.grid",
+  "category": "team",
+  "kind": "single",
+  "name": {
+    "en": "Team grid",
+    "ar": "شبكة الفريق"
+  },
+  "description": {
+    "en": "Photos, names and roles of the people.",
+    "ar": "صور وأسماء ومناصب الأشخاص."
+  },
+  "fields": [
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "titel",
+        "headline",
+        "MainHeading",
+        "name",
+        "eyebrow"
+      ]
+    },
+    {
+      "key": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      },
+      "localized": true,
+      "aliases": [
+        "description",
+        "body",
+        "subtitle",
+        "intro",
+        "text",
+        "leadleft",
+        "summary"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "People",
+        "ar": "الأشخاص"
+      },
+      "aliases": [
+        "members",
+        "team",
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "plans",
+        "questions",
+        "testimonials",
+        "reviews",
+        "entries",
+        "rows",
+        "body"
+      ],
+      "subFields": [
+        {
+          "key": "photo",
+          "type": "image",
+          "label": {
+            "en": "Photo",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "image",
+            "imges",
+            "imegs",
+            "avatar",
+            "picture",
+            "img"
+          ]
+        },
+        {
+          "key": "name",
+          "type": "shortText",
+          "label": {
+            "en": "Name",
+            "ar": "الاسم"
+          },
+          "aliases": [
+            "title",
+            "fullName",
+            "titel",
+            "label"
+          ]
+        },
+        {
+          "key": "role",
+          "type": "shortText",
+          "label": {
+            "en": "Role",
+            "ar": "المنصب"
+          },
+          "localized": true,
+          "aliases": [
+            "position",
+            "job",
+            "jobTitle",
+            "company",
+            "subtitle"
+          ]
+        },
+        {
+          "key": "bio",
+          "type": "longText",
+          "label": {
+            "en": "Short bio",
+            "ar": "نبذة"
+          },
+          "localized": true
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "heading": "Meet the team",
+      "items": [
+        {
+          "photo": "sample:avatar-1",
+          "name": "Lina Haddad",
+          "role": "Design"
+        },
+        {
+          "photo": "sample:avatar-2",
+          "name": "Omar Saleh",
+          "role": "Development"
+        },
+        {
+          "photo": "sample:avatar-4",
+          "name": "Sara Khalil",
+          "role": "Marketing"
+        },
+        {
+          "photo": "sample:avatar-6",
+          "name": "Yousef Nasser",
+          "role": "Support"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "heading": "Meet the team",
+    "items": [
+      {
+        "photo": "sample:avatar-1",
+        "name": "Lina Haddad",
+        "role": "Design"
+      },
+      {
+        "photo": "sample:avatar-2",
+        "name": "Omar Saleh",
+        "role": "Development"
+      },
+      {
+        "photo": "sample:avatar-4",
+        "name": "Sara Khalil",
+        "role": "Marketing"
+      },
+      {
+        "photo": "sample:avatar-6",
+        "name": "Yousef Nasser",
+        "role": "Support"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{lead}}",
+      "field": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "People",
+        "ar": "الأشخاص"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{photo}}",
+      "field": "items.photo",
+      "type": "image",
+      "label": {
+        "en": "Photo",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{name}}",
+      "field": "items.name",
+      "type": "shortText",
+      "label": {
+        "en": "Name",
+        "ar": "الاسم"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{role}}",
+      "field": "items.role",
+      "type": "shortText",
+      "label": {
+        "en": "Role",
+        "ar": "المنصب"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{bio}}",
+      "field": "items.bio",
+      "type": "longText",
+      "label": {
+        "en": "Short bio",
+        "ar": "نبذة"
+      },
+      "scope": "items"
+    }
+  ]
+}

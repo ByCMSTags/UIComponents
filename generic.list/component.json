@@ -1,0 +1,18 @@
+{
+  "id": "generic.list",
+  "category": "generic",
+  "kind": "list",
+  "name": {
+    "en": "Automatic",
+    "ar": "تلقائي"
+  },
+  "description": {
+    "en": "Shows every record as a card with all its fields.",
+    "ar": "يعرض كل سجل كبطاقة بكل حقوله."
+  },
+  "default": true,
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

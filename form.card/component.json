@@ -1,0 +1,18 @@
+{
+  "id": "form.card",
+  "category": "form",
+  "kind": "form",
+  "name": {
+    "en": "Form card",
+    "ar": "بطاقة نموذج"
+  },
+  "description": {
+    "en": "A form in a white card.",
+    "ar": "نموذج داخل بطاقة بيضاء."
+  },
+  "default": true,
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

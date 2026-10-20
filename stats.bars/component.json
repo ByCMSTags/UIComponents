@@ -1,0 +1,257 @@
+{
+  "id": "stats.bars",
+  "category": "stats",
+  "kind": "single",
+  "name": {
+    "en": "Text beside progress bars",
+    "ar": "نص بجانب أشرطة نسب"
+  },
+  "description": {
+    "en": "An intro on one side and labeled percentage bars on the other, over a faint background image.",
+    "ar": "مقدمة في جهة وأشرطة نسب مع تسميات في الجهة الأخرى، فوق صورة خلفية خافتة."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      },
+      "localized": true,
+      "aliases": [
+        "tagline",
+        "kicker",
+        "subheading",
+        "overline"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Background image",
+        "ar": "صورة الخلفية"
+      },
+      "aliases": [
+        "Background",
+        "photo",
+        "imges",
+        "imegs",
+        "images",
+        "img",
+        "picture",
+        "backgroundimage",
+        "cover",
+        "media"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Percentages",
+        "ar": "النسب"
+      },
+      "aliases": [
+        "stats",
+        "Numbers",
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "rates",
+        "entries",
+        "rows",
+        "bars"
+      ],
+      "subFields": [
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Label",
+            "ar": "التسمية"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "title",
+            "heading",
+            "headline",
+            "name"
+          ]
+        },
+        {
+          "key": "value",
+          "type": "number",
+          "label": {
+            "en": "Percent",
+            "ar": "النسبة"
+          },
+          "aliases": [
+            "Numbers",
+            "number",
+            "namber",
+            "count",
+            "rates",
+            "rate",
+            "amount",
+            "percent",
+            "pct",
+            "score"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "eyebrow": "Arch Philosophy",
+      "title": "Trusted Expertise",
+      "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions.",
+      "image": "sample:wide-7",
+      "items": [
+        { "label": "Renovation", "value": 87 },
+        { "label": "Functional Spaces", "value": 67 },
+        { "label": "Architecture", "value": 93 }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "eyebrow": "Arch Philosophy",
+    "title": "Trusted Expertise",
+    "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions.",
+    "image": "sample:wide-7",
+    "items": [
+      { "label": "Renovation", "value": 87 },
+      { "label": "Functional Spaces", "value": 67 },
+      { "label": "Architecture", "value": 93 }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Background image",
+        "ar": "صورة الخلفية"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Percentages",
+        "ar": "النسب"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{label}}",
+      "field": "items.label",
+      "type": "shortText",
+      "label": {
+        "en": "Label",
+        "ar": "التسمية"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{value}}",
+      "field": "items.value",
+      "type": "number",
+      "label": {
+        "en": "Percent",
+        "ar": "النسبة"
+      },
+      "scope": "items"
+    }
+  ]
+}

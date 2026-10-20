@@ -1,0 +1,21 @@
+<section id="{{@id}}" class="cms-stat-bars">
+  {{#image}}{{image sizes="100vw" class="cms-stat-bars__photo" decorative="true"}}{{/image}}
+  <div class="cms-stat-bars__layout">
+    <div class="cms-stat-bars__copy">
+      {{#eyebrow}}<p class="cms-stat-bars__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-stat-bars__title">{{title}}</{{@h}}>{{/title}}
+      {{#description}}<p class="cms-stat-bars__text">{{description}}</p>{{/description}}
+    </div>
+    <div class="cms-stat-bars__panel">
+      {{#items}}<div class="cms-stat-bars__item" data-cms-bar="{{value}}">
+        <div class="cms-stat-bars__meta">
+          {{#label}}<span class="cms-stat-bars__label">{{label}}</span>{{/label}}
+          {{#value}}<span class="cms-stat-bars__value">{{value}}%</span>{{/value}}
+        </div>
+        <div class="cms-stat-bars__track" role="meter" aria-valuemin="0" aria-valuemax="100">
+          <span class="cms-stat-bars__fill"></span>
+        </div>
+      </div>{{/items}}
+    </div>
+  </div>
+</section>

@@ -393,6 +393,16 @@
       }
     },
     {
+      "id": "stats.bars",
+      "version": "1.0.0",
+      "category": "stats",
+      "kind": "single",
+      "name": {
+        "en": "Text beside progress bars",
+        "ar": "نص بجانب أشرطة نسب"
+      }
+    },
+    {
       "id": "stats.simple",
       "version": "1.0.0",
       "category": "stats",

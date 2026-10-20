@@ -1,0 +1,121 @@
+.cms-stat-bars {
+  --cms-stat-bars-ink: #111;
+  --cms-stat-bars-body: #6a6a6a;
+  --cms-stat-bars-track: #e4e4e4;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-width: 0;
+  background: #fff;
+}
+
+.cms-stat-bars__photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 78% 58%;
+  opacity: 0.16;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.cms-stat-bars__layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
+  padding: clamp(4.5rem, 11vw, 8rem) clamp(1.35rem, 6vw, 6.5rem);
+}
+
+.cms-stat-bars__copy {
+  min-width: 0;
+}
+
+.cms-stat-bars__eyebrow {
+  margin: 0 0 1.15rem;
+  color: var(--cms-stat-bars-ink);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.cms-stat-bars__eyebrow::before {
+  content: "— ";
+}
+
+.cms-stat-bars__title {
+  margin: 0 0 1.15rem;
+  max-width: 9.5em;
+  color: var(--cms-stat-bars-ink);
+  font-size: clamp(2rem, 4.4vw, 3.15rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.cms-stat-bars__text {
+  margin: 0;
+  max-width: 26rem;
+  color: var(--cms-stat-bars-body);
+  font-size: 0.94rem;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+.cms-stat-bars__panel {
+  display: grid;
+  gap: 1.65rem;
+  min-width: 0;
+}
+
+.cms-stat-bars__item {
+  min-width: 0;
+}
+
+.cms-stat-bars__meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.55rem;
+  color: var(--cms-stat-bars-ink);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.cms-stat-bars__value {
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.cms-stat-bars__track {
+  position: relative;
+  height: 1px;
+  background: var(--cms-stat-bars-track);
+}
+
+.cms-stat-bars__fill {
+  position: absolute;
+  inset-block: -0.5px;
+  inset-inline-start: 0;
+  width: calc(var(--cms-bar, 0) * 1%);
+  background: var(--cms-stat-bars-ink);
+}
+
+@media (min-width: 992px) {
+  .cms-stat-bars__layout {
+    grid-template-columns: minmax(16rem, 0.92fr) minmax(18rem, 1.08fr);
+    column-gap: clamp(3rem, 8vw, 7rem);
+  }
+}

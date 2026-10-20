@@ -1,0 +1,64 @@
+.cms-feat-plus__eyebrow {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  padding: 0.28rem 0.55rem;
+  background: #ececec;
+  color: #6a6a6a;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-radius: 0.2rem;
+}
+
+.cms-feat-plus__title {
+  margin: 0 0 3rem;
+  max-width: 54rem;
+  color: #111;
+  font-size: clamp(1.2rem, 2.1vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+}
+
+.cms-feat-plus__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 1;
+  column-gap: 4rem;
+}
+
+.cms-feat-plus__item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  break-inside: avoid;
+  padding: 0.45rem 0;
+  color: #111;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cms-feat-plus__mark {
+  flex-shrink: 0;
+  color: #111;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .cms-feat-plus__items {
+    columns: 2;
+    column-rule: 1px solid #ececec;
+  }
+}
+
+@media (min-width: 992px) {
+  .cms-feat-plus__items {
+    columns: 3;
+  }
+}

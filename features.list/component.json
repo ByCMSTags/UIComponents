@@ -1,0 +1,173 @@
+{
+  "id": "features.list",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Plus list",
+    "ar": "قائمة بعلامة زائد"
+  },
+  "description": {
+    "en": "A short intro and a list of topics marked with a plus, in columns.",
+    "ar": "مقدمة قصيرة وقائمة مواضيع بعلامة زائد على أعمدة."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      },
+      "localized": true,
+      "aliases": [
+        "tagline",
+        "kicker",
+        "subheading",
+        "overline"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "longText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "MainHeading",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Topics",
+        "ar": "المواضيع"
+      },
+      "aliases": [
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "tags",
+        "entries",
+        "rows",
+        "body"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Topic",
+            "ar": "الموضوع"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "heading",
+            "headline",
+            "name",
+            "label"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "eyebrow": "About us",
+      "title": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary with specializations.",
+      "items": [
+        { "title": "Urban Codes" },
+        { "title": "Interior Design" },
+        { "title": "City Planning" },
+        { "title": "Residential" },
+        { "title": "Construction" },
+        { "title": "Landscapes" },
+        { "title": "Innovative Design" },
+        { "title": "Facility Optimization" },
+        { "title": "Consulting" }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "eyebrow": "About us",
+    "title": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary with specializations.",
+    "items": [
+      { "title": "Urban Codes" },
+      { "title": "Interior Design" },
+      { "title": "City Planning" },
+      { "title": "Residential" },
+      { "title": "Construction" },
+      { "title": "Landscapes" },
+      { "title": "Innovative Design" },
+      { "title": "Facility Optimization" },
+      { "title": "Consulting" }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "longText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Topics",
+        "ar": "المواضيع"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Topic",
+        "ar": "الموضوع"
+      },
+      "scope": "items"
+    }
+  ]
+}

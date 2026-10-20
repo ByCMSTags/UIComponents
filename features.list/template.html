@@ -1,0 +1,7 @@
+<section id="{{@id}}" class="cms-section cms-feat-plus">
+  <div class="container">
+    {{#eyebrow}}<p class="cms-feat-plus__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-feat-plus__title">{{title}}</{{@h}}>{{/title}}
+    {{#items}}{{#@first}}<ul class="cms-feat-plus__items">{{/@first}}<li class="cms-feat-plus__item"><span class="cms-feat-plus__mark" aria-hidden="true">+</span>{{title}}</li>{{#@last}}</ul>{{/@last}}{{/items}}
+  </div>
+</section>

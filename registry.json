@@ -133,6 +133,16 @@
       }
     },
     {
+      "id": "features.list",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Plus list",
+        "ar": "قائمة بعلامة زائد"
+      }
+    },
+    {
       "id": "features.steps",
       "version": "1.0.0",
       "category": "features",

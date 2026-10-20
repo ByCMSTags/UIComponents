@@ -213,6 +213,16 @@
       }
     },
     {
+      "id": "hero.band",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Photo with info bar",
+        "ar": "صورة مع شريط معلومات"
+      }
+    },
+    {
       "id": "hero.centered",
       "version": "1.0.0",
       "category": "hero",

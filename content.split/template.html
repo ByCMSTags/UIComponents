@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-split-story">
+  <div class="cms-split-story__media">
+    {{#image}}{{image sizes="(max-width: 992px) 100vw, 50vw" class="cms-split-story__photo" decorative="true"}}{{/image}}
+  </div>
+  <div class="cms-split-story__copy">
+    {{#eyebrow}}<p class="cms-split-story__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-split-story__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-split-story__text">{{description}}</p>{{/description}}
+    {{#buttonText}}{{#buttonLink}}<a class="cms-split-story__more" href="{{buttonLink}}"><span aria-hidden="true">—</span> {{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+    {{^buttonLink}}{{#@next}}<a class="cms-split-story__more" href="{{@next}}"><span aria-hidden="true">—</span> {{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}{{@t.learnMore}}{{/buttonText}}</a>{{/@next}}{{/buttonLink}}
+  </div>
+</section>

@@ -1,0 +1,200 @@
+{
+  "id": "content.split",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Photo then text",
+    "ar": "صورة ثم نص"
+  },
+  "description": {
+    "en": "A large photo on one side and a title, text and link on the other.",
+    "ar": "صورة كبيرة في جهة وعنوان ونص ورابط في الجهة الأخرى."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      },
+      "localized": true,
+      "aliases": [
+        "tagline",
+        "kicker",
+        "subheading",
+        "overline"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "Coverdescription",
+        "body",
+        "text",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "aliases": [
+        "photo",
+        "imges",
+        "imegs",
+        "images",
+        "img",
+        "picture",
+        "backgroundimage",
+        "background",
+        "cover",
+        "media"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      },
+      "localized": true,
+      "aliases": [
+        "ctalabel",
+        "cta",
+        "ctaText",
+        "buttonLabel",
+        "btnText",
+        "linkText",
+        "linkLabel"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "aliases": [
+        "ctaurl",
+        "ctaLink",
+        "buttonUrl",
+        "btnLink",
+        "url",
+        "link",
+        "href"
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "eyebrow": "About us",
+      "title": "Influential - and impactful",
+      "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions to customers and stakeholders across a broad range of industry sectors. Urban design draws together the many strands of place-making, environmental stewardship, social equity and economic viability into the creation of places with distinct beauty and identity.",
+      "image": "sample:wide-4",
+      "buttonText": "Learn more",
+      "buttonLink": "#"
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "eyebrow": "About us",
+    "title": "Influential - and impactful",
+    "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions to customers and stakeholders across a broad range of industry sectors. Urban design draws together the many strands of place-making, environmental stewardship, social equity and economic viability into the creation of places with distinct beauty and identity.",
+    "image": "sample:wide-4",
+    "buttonText": "Learn more",
+    "buttonLink": "#"
+  },
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      }
+    }
+  ]
+}

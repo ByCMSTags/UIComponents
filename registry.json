@@ -33,6 +33,16 @@
       }
     },
     {
+      "id": "content.tabs",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Tabs beside image",
+        "ar": "تبويبات بجانب صورة"
+      }
+    },
+    {
       "id": "content.text",
       "version": "1.0.0",
       "category": "content",

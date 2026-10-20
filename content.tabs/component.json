@@ -1,0 +1,246 @@
+{
+  "id": "content.tabs",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Tabs beside image",
+    "ar": "تبويبات بجانب صورة"
+  },
+  "description": {
+    "en": "A title and tabs on one side, with text and a photo that change when a tab is selected.",
+    "ar": "عنوان وتبويبات في جهة، مع نص وصورة يتغيران عند اختيار تبويب."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      },
+      "localized": true,
+      "aliases": [
+        "tagline",
+        "kicker",
+        "subheading",
+        "overline"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Tabs",
+        "ar": "التبويبات"
+      },
+      "aliases": [
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "entries",
+        "rows",
+        "body"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Tab name",
+            "ar": "اسم التبويب"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "heading",
+            "headline",
+            "name",
+            "label"
+          ]
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "body",
+            "text",
+            "content",
+            "desc",
+            "summary",
+            "excerpt",
+            "details",
+            "subtitle",
+            "lead",
+            "leadleft",
+            "intro",
+            "paragraph"
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "photo",
+            "imges",
+            "imegs",
+            "images",
+            "img",
+            "picture",
+            "backgroundimage",
+            "background",
+            "cover",
+            "media"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "eyebrow": "Functional space",
+      "title": "Passionate -architecture",
+      "items": [
+        {
+          "title": "Interior Design",
+          "description": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary with specializations for each project type, technological expertise. Through a unique combination of engineering, construction and design disciplines and expertise.",
+          "image": "sample:wide-0"
+        },
+        {
+          "title": "Residence",
+          "description": "Homes shaped around daily life, with careful light, material and a calm plan that lasts.",
+          "image": "sample:wide-1"
+        },
+        {
+          "title": "Renovation",
+          "description": "Existing buildings brought forward with a unique combination of engineering, construction and design disciplines and expertise.",
+          "image": "sample:wide-2"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "eyebrow": "Functional space",
+    "title": "Passionate -architecture",
+    "items": [
+      {
+        "title": "Interior Design",
+        "description": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary with specializations for each project type, technological expertise. Through a unique combination of engineering, construction and design disciplines and expertise.",
+        "image": "sample:wide-0"
+      },
+      {
+        "title": "Residence",
+        "description": "Homes shaped around daily life, with careful light, material and a calm plan that lasts.",
+        "image": "sample:wide-1"
+      },
+      {
+        "title": "Renovation",
+        "description": "Existing buildings brought forward with a unique combination of engineering, construction and design disciplines and expertise.",
+        "image": "sample:wide-2"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Tabs",
+        "ar": "التبويبات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Tab name",
+        "ar": "اسم التبويب"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    }
+  ]
+}

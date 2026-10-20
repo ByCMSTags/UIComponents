@@ -1,0 +1,29 @@
+<section id="{{@id}}" class="cms-gal-panels">
+  {{#items}}{{#@first}}{{^@last}}<div class="cms-gal-panels__nav" data-cms-nav>
+    <button class="cms-gal-panels__arrow" type="button" data-cms-prev>
+      <span class="visually-hidden">{{@t.prevSlide}}</span>
+      {{@icon.prev}}
+    </button>
+    <button class="cms-gal-panels__arrow" type="button" data-cms-next>
+      <span class="visually-hidden">{{@t.nextSlide}}</span>
+      {{@icon.next}}
+    </button>
+  </div>{{/@last}}{{/@first}}{{/items}}
+  <div class="cms-gal-panels__viewport" data-cms-viewport>
+    <div class="cms-gal-panels__track" data-cms-track>
+      {{#items}}<article class="cms-gal-panels__slide" data-cms-slide{{#description}} data-cms-copy{{/description}}>
+        <div class="cms-gal-panels__media">
+          {{#image}}{{image sizes="(max-width: 768px) 100vw, 25vw" class="cms-gal-panels__photo"}}{{/image}}
+          {{#title}}<span class="cms-gal-panels__caption">{{title}}</span>{{/title}}
+        </div>
+        {{#description}}<div class="cms-gal-panels__card">
+          {{#title}}<{{@hsub}} class="cms-gal-panels__card-title">{{title}}</{{@hsub}}>{{/title}}
+          <p class="cms-gal-panels__card-text">{{description}}</p>
+        </div>
+        <button class="cms-gal-panels__toggle" type="button" data-cms-toggle aria-expanded="false">
+          <span class="visually-hidden">{{title}}</span>
+        </button>{{/description}}
+      </article>{{/items}}
+    </div>
+  </div>
+</section>

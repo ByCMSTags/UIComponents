@@ -223,6 +223,16 @@
       }
     },
     {
+      "id": "gallery.panels",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Photo panels",
+        "ar": "ألواح صور"
+      }
+    },
+    {
       "id": "generic.list",
       "version": "1.0.0",
       "category": "generic",

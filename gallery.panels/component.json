@@ -1,0 +1,218 @@
+{
+  "id": "gallery.panels",
+  "category": "gallery",
+  "kind": "single",
+  "name": {
+    "en": "Photo panels",
+    "ar": "ألواح صور"
+  },
+  "description": {
+    "en": "A full-width strip of photos with arrows. A photo that has text opens as a white card.",
+    "ar": "شريط صور بعرض الصفحة مع أسهم. الصورة التي معها نص تُفتح كبطاقة بيضاء."
+  },
+  "fields": [
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Panels",
+        "ar": "الألواح"
+      },
+      "aliases": [
+        "projects",
+        "cases",
+        "highlights",
+        "gallery",
+        "list",
+        "cards",
+        "entries",
+        "rows",
+        "slides",
+        "photos"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "required": true,
+          "aliases": [
+            "titel",
+            "heading",
+            "headline",
+            "name",
+            "label",
+            "caption"
+          ]
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "body",
+            "text",
+            "content",
+            "desc",
+            "summary",
+            "excerpt",
+            "details",
+            "lead",
+            "intro",
+            "paragraph"
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "photo",
+            "imges",
+            "imegs",
+            "images",
+            "img",
+            "picture",
+            "cover",
+            "media"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "items": [
+        {
+          "title": "Award-Winning Architecture",
+          "description": "Architecture that earns recognition through craft, restraint, and a clear idea of place.",
+          "image": "sample:wide-0"
+        },
+        {
+          "title": "Influential and Impactful",
+          "description": "Urban design draws together the many strands of place-making, environmental stewardship, social equity and economic viability into the creation of places with distinct beauty and identity.",
+          "image": "sample:wide-1"
+        },
+        {
+          "title": "Functional Interior Design",
+          "description": "Interiors planned around how people move, work, and linger — useful first, then memorable.",
+          "image": "sample:wide-2"
+        },
+        {
+          "title": "Award-Winning Architecture",
+          "description": "Towers and civic rooms that hold their own against climate, traffic, and time.",
+          "image": "sample:wide-3"
+        },
+        {
+          "title": "City Marks",
+          "description": "Landmarks that give a skyline a readable silhouette without shouting.",
+          "image": "sample:wide-4"
+        },
+        {
+          "title": "Residence",
+          "description": "Homes that keep the city at a distance while still belonging to it.",
+          "image": "sample:wide-5"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "items": [
+      {
+        "title": "Award-Winning Architecture",
+        "description": "Architecture that earns recognition through craft, restraint, and a clear idea of place.",
+        "image": "sample:wide-0"
+      },
+      {
+        "title": "Influential and Impactful",
+        "description": "Urban design draws together the many strands of place-making, environmental stewardship, social equity and economic viability into the creation of places with distinct beauty and identity.",
+        "image": "sample:wide-1"
+      },
+      {
+        "title": "Functional Interior Design",
+        "description": "Interiors planned around how people move, work, and linger — useful first, then memorable.",
+        "image": "sample:wide-2"
+      },
+      {
+        "title": "Award-Winning Architecture",
+        "description": "Towers and civic rooms that hold their own against climate, traffic, and time.",
+        "image": "sample:wide-3"
+      },
+      {
+        "title": "City Marks",
+        "description": "Landmarks that give a skyline a readable silhouette without shouting.",
+        "image": "sample:wide-4"
+      },
+      {
+        "title": "Residence",
+        "description": "Homes that keep the city at a distance while still belonging to it.",
+        "image": "sample:wide-5"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Panels",
+        "ar": "الألواح"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "id": "gallery.cases",
+  "category": "gallery",
+  "kind": "single",
+  "name": {
+    "en": "Case studies carousel",
+    "ar": "سلايدر دراسات حالة"
+  },
+  "description": {
+    "en": "A filter list beside a large photo carousel of projects.",
+    "ar": "قائمة تصفية بجانب سلايدر صور للمشاريع."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      },
+      "localized": true,
+      "aliases": [
+        "tagline",
+        "kicker",
+        "subheading",
+        "overline"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "allLabel",
+      "type": "shortText",
+      "label": {
+        "en": "All-projects label",
+        "ar": "نص كل المشاريع"
+      },
+      "localized": true,
+      "aliases": [
+        "all",
+        "allText"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Projects",
+        "ar": "المشاريع"
+      },
+      "aliases": [
+        "projects",
+        "cases",
+        "highlights",
+        "gallery",
+        "list",
+        "cards",
+        "entries",
+        "rows"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Caption",
+            "ar": "التسمية"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "heading",
+            "headline",
+            "name",
+            "label",
+            "caption"
+          ]
+        },
+        {
+          "key": "category",
+          "type": "shortText",
+          "label": {
+            "en": "Category",
+            "ar": "التصنيف"
+          },
+          "localized": true,
+          "aliases": [
+            "tag",
+            "type",
+            "topic",
+            "group"
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "photo",
+            "imges",
+            "imegs",
+            "images",
+            "img",
+            "picture",
+            "cover",
+            "media"
+          ]
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": {
+            "en": "Link",
+            "ar": "الرابط"
+          },
+          "aliases": [
+            "url",
+            "href",
+            "buttonLink"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "eyebrow": "Latest projects",
+      "title": "Selected case studies",
+      "allLabel": "All Projects",
+      "items": [
+        {
+          "title": "Modern Architecture",
+          "category": "Architecture",
+          "image": "sample:wide-0",
+          "link": "#"
+        },
+        {
+          "title": "Case Study",
+          "category": "Interior Design",
+          "image": "sample:wide-1",
+          "link": "#"
+        },
+        {
+          "title": "Modern Architecture",
+          "category": "Residence",
+          "image": "sample:wide-2",
+          "link": "#"
+        },
+        {
+          "title": "City Marks",
+          "category": "City Marks",
+          "image": "sample:wide-3",
+          "link": "#"
+        },
+        {
+          "title": "Architecture",
+          "category": "Architecture",
+          "image": "sample:wide-4",
+          "link": "#"
+        },
+        {
+          "title": "Residence",
+          "category": "Residence",
+          "image": "sample:wide-5",
+          "link": "#"
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "eyebrow": "Latest projects",
+    "title": "Selected case studies",
+    "allLabel": "All Projects",
+    "items": [
+      {
+        "title": "Modern Architecture",
+        "category": "Architecture",
+        "image": "sample:wide-0",
+        "link": "#"
+      },
+      {
+        "title": "Case Study",
+        "category": "Interior Design",
+        "image": "sample:wide-1",
+        "link": "#"
+      },
+      {
+        "title": "Modern Architecture",
+        "category": "Residence",
+        "image": "sample:wide-2",
+        "link": "#"
+      },
+      {
+        "title": "City Marks",
+        "category": "City Marks",
+        "image": "sample:wide-3",
+        "link": "#"
+      },
+      {
+        "title": "Architecture",
+        "category": "Architecture",
+        "image": "sample:wide-4",
+        "link": "#"
+      },
+      {
+        "title": "Residence",
+        "category": "Residence",
+        "image": "sample:wide-5",
+        "link": "#"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{allLabel}}",
+      "field": "allLabel",
+      "type": "shortText",
+      "label": {
+        "en": "All-projects label",
+        "ar": "نص كل المشاريع"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Projects",
+        "ar": "المشاريع"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Caption",
+        "ar": "التسمية"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{category}}",
+      "field": "items.category",
+      "type": "shortText",
+      "label": {
+        "en": "Category",
+        "ar": "التصنيف"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link}}",
+      "field": "items.link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "scope": "items"
+    }
+  ]
+}

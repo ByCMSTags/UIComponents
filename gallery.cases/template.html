@@ -1,0 +1,27 @@
+<section id="{{@id}}" class="cms-cases" data-cms-all="{{#allLabel}}{{allLabel}}{{/allLabel}}{{^allLabel}}All Projects{{/allLabel}}">
+  <div class="cms-cases__side">
+    {{#eyebrow}}<p class="cms-cases__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-cases__title">{{title}}</{{@h}}>{{/title}}
+    <div class="cms-cases__filters" data-cms-filters hidden></div>
+  </div>
+  <div class="cms-cases__stage">
+    <div class="cms-cases__track" data-cms-track>
+      {{#items}}<article class="cms-cases__slide" data-cms-slide data-category="{{category}}">
+        {{#link}}<a class="cms-cases__hit" href="{{link}}">{{/link}}
+          {{#image}}{{image sizes="(max-width: 992px) 100vw, 70vw" class="cms-cases__photo"}}{{/image}}
+          {{#title}}<span class="cms-cases__label"><span class="cms-cases__label-text">— {{title}}</span></span>{{/title}}
+        {{#link}}</a>{{/link}}
+      </article>{{/items}}
+    </div>
+    {{#items}}{{#@first}}{{^@last}}<div class="cms-cases__nav" data-cms-nav>
+      <button class="cms-cases__arrow" type="button" data-cms-prev>
+        <span class="visually-hidden">{{@t.prevSlide}}</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M15.4 5.3 8.7 12l6.7 6.7 1.4-1.4L11.5 12l5.3-5.3z"/></svg>
+      </button>
+      <button class="cms-cases__arrow" type="button" data-cms-next>
+        <span class="visually-hidden">{{@t.nextSlide}}</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8.6 5.3 14.9 12l-6.3 6.7-1.4-1.4L12.5 12 7.2 6.7z"/></svg>
+      </button>
+    </div>{{/@last}}{{/@first}}{{/items}}
+  </div>
+</section>

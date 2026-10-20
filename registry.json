@@ -203,6 +203,16 @@
       }
     },
     {
+      "id": "gallery.cases",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Case studies carousel",
+        "ar": "سلايدر دراسات حالة"
+      }
+    },
+    {
       "id": "gallery.masonry",
       "version": "1.0.0",
       "category": "gallery",

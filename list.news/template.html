@@ -1,0 +1,22 @@
+<section id="{{@id}}" class="cms-list-news">
+  <div class="cms-list-news__intro">
+    {{#@label}}<{{@h}} class="cms-list-news__title">{{@label}}</{{@h}}>{{/@label}}
+    {{#@description}}<p class="cms-list-news__lead">{{@description}}</p>{{/@description}}
+  </div>
+  <div class="cms-list-news__grid">
+    {{#@items}}<article class="cms-list-news__card">
+      {{#link}}<a class="cms-list-news__hit" href="{{link}}">{{/link}}
+        <div class="cms-list-news__media">
+          {{#image}}{{image sizes="(max-width: 768px) 100vw, 33vw" class="cms-list-news__photo"}}{{/image}}
+          <div class="cms-list-news__tags">
+            {{#date}}<time class="cms-list-news__date" datetime="{{date}}" data-cms-date="{{date}}">{{date}}</time>{{/date}}
+            {{#category}}<span class="cms-list-news__cat">{{category}}</span>{{/category}}
+          </div>
+        </div>
+        {{#title}}<{{@hsub}} class="cms-list-news__headline">{{title}}</{{@hsub}}>{{/title}}
+        {{#description}}<p class="cms-list-news__excerpt">{{description}}</p>{{/description}}
+      {{#link}}</a>{{/link}}
+    </article>{{/@items}}
+  </div>
+  {{^@items}}<p class="cms-list-news__empty">{{@t.empty}}</p>{{/@items}}
+</section>

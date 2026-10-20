@@ -1,0 +1,261 @@
+{
+  "id": "list.news",
+  "category": "list",
+  "kind": "list",
+  "name": {
+    "en": "News cards",
+    "ar": "بطاقات أخبار"
+  },
+  "description": {
+    "en": "A heading and intro above a row of news cards: photo, date, topic, title and excerpt.",
+    "ar": "عنوان ومقدمة فوق صف بطاقات أخبار: صورة وتاريخ وتصنيف وعنوان ونص قصير."
+  },
+  "fields": [
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "aliases": [
+        "photo",
+        "cover",
+        "imges",
+        "imegs",
+        "images",
+        "img",
+        "picture",
+        "backgroundimage",
+        "background",
+        "media"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "name",
+        "headline",
+        "titel",
+        "heading",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Short text",
+        "ar": "نص قصير"
+      },
+      "localized": true,
+      "aliases": [
+        "summary",
+        "excerpt",
+        "body",
+        "text",
+        "content",
+        "desc",
+        "details",
+        "subtitle",
+        "lead",
+        "leadleft",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "date",
+      "type": "date",
+      "label": {
+        "en": "Date",
+        "ar": "التاريخ"
+      },
+      "aliases": [
+        "publishedAt",
+        "publishDate",
+        "day"
+      ]
+    },
+    {
+      "key": "category",
+      "type": "shortText",
+      "label": {
+        "en": "Topic",
+        "ar": "التصنيف"
+      },
+      "localized": true,
+      "aliases": [
+        "tag",
+        "topic",
+        "type",
+        "group",
+        "section"
+      ]
+    },
+    {
+      "key": "link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "aliases": [
+        "url",
+        "href",
+        "ctaurl",
+        "buttonLink"
+      ]
+    }
+  ],
+  "sample": {
+    "items": [
+      {
+        "title": "Building the architecture of the future cities",
+        "description": "I think that you should be able to select more than one reason for rating.",
+        "date": "2026-03-20",
+        "category": "Office",
+        "image": "sample:wide-0",
+        "link": "#"
+      },
+      {
+        "title": "Collective Living Challenge in modern design",
+        "description": "Success needs hard work. Don't listen to these 'get rich quick' schemes.",
+        "date": "2026-03-20",
+        "category": "Interior",
+        "image": "sample:wide-1",
+        "link": "#"
+      },
+      {
+        "title": "Utilizing wood in architecture",
+        "description": "I think that you should be able to select more than one reason for rating.",
+        "date": "2026-03-20",
+        "category": "News",
+        "image": "sample:wide-2",
+        "link": "#"
+      }
+    ]
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "items": [
+      {
+        "title": "Building the architecture of the future cities",
+        "description": "I think that you should be able to select more than one reason for rating.",
+        "date": "2026-03-20",
+        "category": "Office",
+        "image": "sample:wide-0",
+        "link": "#"
+      },
+      {
+        "title": "Collective Living Challenge in modern design",
+        "description": "Success needs hard work. Don't listen to these 'get rich quick' schemes.",
+        "date": "2026-03-20",
+        "category": "Interior",
+        "image": "sample:wide-1",
+        "link": "#"
+      },
+      {
+        "title": "Utilizing wood in architecture",
+        "description": "I think that you should be able to select more than one reason for rating.",
+        "date": "2026-03-20",
+        "category": "News",
+        "image": "sample:wide-2",
+        "link": "#"
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{@label}}",
+      "field": "@label",
+      "type": "shortText",
+      "label": {
+        "en": "List title",
+        "ar": "عنوان القائمة"
+      }
+    },
+    {
+      "token": "{{@description}}",
+      "field": "@description",
+      "type": "longText",
+      "label": {
+        "en": "Introduction",
+        "ar": "المقدمة"
+      }
+    },
+    {
+      "token": "{{#@items}}",
+      "field": "@items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/@items}}",
+      "field": "@items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Short text",
+        "ar": "نص قصير"
+      }
+    },
+    {
+      "token": "{{date}}",
+      "field": "date",
+      "type": "date",
+      "label": {
+        "en": "Date",
+        "ar": "التاريخ"
+      }
+    },
+    {
+      "token": "{{category}}",
+      "field": "category",
+      "type": "shortText",
+      "label": {
+        "en": "Topic",
+        "ar": "التصنيف"
+      }
+    },
+    {
+      "token": "{{link}}",
+      "field": "link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      }
+    }
+  ]
+}

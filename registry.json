@@ -353,6 +353,16 @@
       }
     },
     {
+      "id": "list.news",
+      "version": "1.0.0",
+      "category": "list",
+      "kind": "list",
+      "name": {
+        "en": "News cards",
+        "ar": "بطاقات أخبار"
+      }
+    },
+    {
       "id": "list.simple",
       "version": "1.0.0",
       "category": "list",

@@ -1,0 +1,17 @@
+{
+  "id": "header.offcanvas",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Offcanvas menu",
+    "ar": "قائمة جانبية"
+  },
+  "description": {
+    "en": "Bootstrap navbar that opens a side panel on small screens.",
+    "ar": "شريط Bootstrap يفتح لوحة جانبية على الشاشات الصغيرة."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

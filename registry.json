@@ -253,6 +253,16 @@
       }
     },
     {
+      "id": "header.basic",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Bootstrap bar",
+        "ar": "شريط Bootstrap"
+      }
+    },
+    {
       "id": "header.centered",
       "version": "1.0.0",
       "category": "header",
@@ -273,6 +283,16 @@
       }
     },
     {
+      "id": "header.darkbar",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Dark Bootstrap bar",
+        "ar": "شريط Bootstrap داكن"
+      }
+    },
+    {
       "id": "header.light",
       "version": "1.0.0",
       "category": "header",
@@ -280,6 +300,16 @@
       "name": {
         "en": "Light with button",
         "ar": "فاتح مع زر"
+      }
+    },
+    {
+      "id": "header.offcanvas",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Offcanvas menu",
+        "ar": "قائمة جانبية"
       }
     },
     {

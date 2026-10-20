@@ -1,0 +1,17 @@
+{
+  "id": "header.darkbar",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Dark Bootstrap bar",
+    "ar": "شريط Bootstrap داكن"
+  },
+  "description": {
+    "en": "Dark Bootstrap navbar: logo on the left, links, languages and phone.",
+    "ar": "شريط Bootstrap داكن: الشعار يساراً ثم الروابط واللغات والهاتف."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

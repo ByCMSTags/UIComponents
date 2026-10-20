@@ -1,0 +1,24 @@
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="{{@t.menu}}">
+    <div class="container-fluid">
+      <a class="navbar-brand cms-brand d-flex align-items-center" href="{{@home}}">{{#@site.logo}}{{@site.logo sizes="160px" max="160" eager="true"}}{{/@site.logo}}{{^@site.logo}}{{@site.name}}{{/@site.logo}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-offcanvas" aria-controls="navbar-offcanvas" aria-label="{{@t.menu}}"><span class="navbar-toggler-icon"></span></button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="navbar-offcanvas" aria-labelledby="navbar-offcanvas-label">
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title h5" id="navbar-offcanvas-label">{{@site.name}}</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="{{@t.menu}}"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">{{#@nav}}<li class="nav-item"><a class="nav-link{{#current}} active{{/current}}" href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a></li>{{/@nav}}</ul>
+          <div class="d-flex flex-wrap align-items-center gap-2 mt-3 mt-lg-0 ms-lg-3">
+            {{#@multilingual}}<div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">{{@t.language}}: </span>{{@lang}}</button>
+              <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="static">{{#@langs}}<li><a class="dropdown-item" href="{{href}}" lang="{{code}}" hreflang="{{code}}"{{#current}} aria-current="true"{{/current}}>{{label}}</a></li>{{/@langs}}</ul>
+            </div>{{/@multilingual}}
+            {{#@site.phone}}<a class="btn btn-outline-secondary" href="tel:{{@site.phone|tel}}">{{@icon.phone}}<span class="ms-2" dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

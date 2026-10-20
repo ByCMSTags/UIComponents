@@ -1,0 +1,17 @@
+{
+  "id": "header.basic",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Bootstrap bar",
+    "ar": "شريط Bootstrap"
+  },
+  "description": {
+    "en": "Light Bootstrap navbar: logo, links, languages and a search field.",
+    "ar": "شريط Bootstrap فاتح: الشعار والروابط واللغات وحقل بحث."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "defaults": {},
+  "placeholders": []
+}

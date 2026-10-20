@@ -113,6 +113,16 @@
       }
     },
     {
+      "id": "features.steps",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Numbered columns",
+        "ar": "أعمدة مرقّمة"
+      }
+    },
+    {
       "id": "footer.classic",
       "version": "1.0.0",
       "category": "footer",

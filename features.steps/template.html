@@ -1,0 +1,15 @@
+<section id="{{@id}}" class="cms-section cms-feat-steps">
+  <div class="container-fluid px-4 px-xl-5">
+    {{#heading}}<{{@h}} class="h2 fw-bold text-center mb-5">{{heading}}</{{@h}}>{{/heading}}
+    <div class="cms-feat-steps__row">
+      {{#items}}<article class="cms-feat-steps__item">
+        <div class="cms-feat-steps__top">
+          <div class="cms-feat-steps__icon">{{#icon}}{{icon sizes="64px" max="64" decorative="true"}}{{/icon}}{{^icon}}{{@icon.check}}{{/icon}}</div>
+          <span class="cms-feat-steps__num">{{@number}}</span>
+        </div>
+        {{#title}}{{#heading}}<{{@hsub}} class="cms-feat-steps__title">{{title}}</{{@hsub}}>{{/heading}}{{^heading}}{{#@first}}<{{@h}} class="cms-feat-steps__title">{{title}}</{{@h}}>{{/@first}}{{^@first}}<h3 class="cms-feat-steps__title">{{title}}</h3>{{/@first}}{{/heading}}{{/title}}
+        {{#description}}<p class="cms-feat-steps__text">{{description}}</p>{{/description}}
+      </article>{{/items}}
+    </div>
+  </div>
+</section>

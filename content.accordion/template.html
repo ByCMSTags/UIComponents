@@ -1,0 +1,26 @@
+<section id="{{@id}}" class="cms-section cms-split-acc">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-6">
+        <div class="cms-split-acc__intro">
+          {{#eyebrow}}<p class="cms-split-acc__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+          {{#title}}<{{@h}} class="cms-split-acc__title">{{title}}</{{@h}}>{{/title}}
+          {{#buttonText}}{{#buttonLink}}<a class="cms-split-acc__more" href="{{buttonLink}}"><span aria-hidden="true">—</span> {{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+          {{^buttonLink}}{{#@next}}<a class="cms-split-acc__more" href="{{@next}}"><span aria-hidden="true">—</span> {{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}{{@t.learnMore}}{{/buttonText}}</a>{{/@next}}{{/buttonLink}}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="accordion cms-split-acc__list" id="{{@id}}-acc">
+          {{#items}}<div class="accordion-item">
+            <{{@hsub}} class="accordion-header">
+              <button class="accordion-button{{^@first}} collapsed{{/@first}}" type="button" data-bs-toggle="collapse" data-bs-target="#{{@id}}-p{{@number}}" aria-expanded="{{#@first}}true{{/@first}}{{^@first}}false{{/@first}}" aria-controls="{{@id}}-p{{@number}}"><span class="cms-split-acc__topic">{{title}}</span></button>
+            </{{@hsub}}>
+            <div id="{{@id}}-p{{@number}}" class="accordion-collapse collapse{{#@first}} show{{/@first}}" data-bs-parent="#{{@id}}-acc">
+              {{#description}}<div class="accordion-body">{{description}}</div>{{/description}}
+            </div>
+          </div>{{/items}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,262 @@
+{
+  "id": "content.accordion",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Text beside accordion",
+    "ar": "نص بجانب قائمة قابلة للفتح"
+  },
+  "description": {
+    "en": "An intro on one side and expandable topics on the other.",
+    "ar": "مقدمة في جهة ومواضيع قابلة للفتح في الجهة الأخرى."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      },
+      "localized": true,
+      "aliases": [
+        "tagline",
+        "kicker",
+        "subheading",
+        "overline"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "richText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      },
+      "localized": true,
+      "aliases": [
+        "ctalabel",
+        "cta",
+        "ctaText",
+        "buttonLabel",
+        "btnText",
+        "linkText",
+        "linkLabel"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "aliases": [
+        "ctaurl",
+        "ctaLink",
+        "buttonUrl",
+        "btnLink",
+        "url",
+        "link",
+        "href"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Topics",
+        "ar": "المواضيع"
+      },
+      "aliases": [
+        "questions",
+        "faq",
+        "highlights",
+        "services",
+        "group",
+        "groub",
+        "list",
+        "cards",
+        "features",
+        "steps",
+        "points",
+        "entries",
+        "rows",
+        "body"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "titel",
+            "heading",
+            "headline",
+            "name",
+            "question",
+            "label"
+          ]
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "text",
+            "answer",
+            "body",
+            "content"
+          ]
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "data": {
+      "eyebrow": "About",
+      "title": "Through a unique combination of engineering, construction and <u>design</u> <u>disciplines</u> and expertise.",
+      "buttonText": "Learn more",
+      "buttonLink": "#",
+      "items": [
+        {
+          "title": "Building the Future Cities",
+          "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions to customers and stakeholders across a broad range of industry sectors."
+        },
+        {
+          "title": "Unique and Influential Design",
+          "description": "We shape spaces that last, with careful detailing and a clear point of view."
+        },
+        {
+          "title": "Award-Winning Architecture",
+          "description": "Recognised work across civic, cultural and commercial buildings."
+        }
+      ]
+    }
+  },
+  "version": "1.0.0",
+  "defaults": {
+    "eyebrow": "About",
+    "title": "Through a unique combination of engineering, construction and <u>design</u> <u>disciplines</u> and expertise.",
+    "buttonText": "Learn more",
+    "buttonLink": "#",
+    "items": [
+      {
+        "title": "Building the Future Cities",
+        "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions to customers and stakeholders across a broad range of industry sectors."
+      },
+      {
+        "title": "Unique and Influential Design",
+        "description": "We shape spaces that last, with careful detailing and a clear point of view."
+      },
+      {
+        "title": "Award-Winning Architecture",
+        "description": "Recognised work across civic, cultural and commercial buildings."
+      }
+    ]
+  },
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "richText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Topics",
+        "ar": "المواضيع"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    }
+  ]
+}

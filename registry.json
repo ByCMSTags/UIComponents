@@ -13,6 +13,16 @@
       }
     },
     {
+      "id": "content.accordion",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Text beside accordion",
+        "ar": "نص بجانب قائمة قابلة للفتح"
+      }
+    },
+    {
       "id": "content.media",
       "version": "1.0.0",
       "category": "content",

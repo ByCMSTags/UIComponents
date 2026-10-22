@@ -114,25 +114,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "eyebrow": "About",
-      "title": "Ten years of building websites",
-      "body": "<p>We help growing businesses look professional online, with fast pages and content they can update themselves.</p>",
-      "image": "sample:photo-7",
-      "buttonText": "Meet the team",
-      "buttonLink": "#"
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "eyebrow": "About",
-    "title": "Ten years of building websites",
-    "body": "<p>We help growing businesses look professional online, with fast pages and content they can update themselves.</p>",
-    "image": "sample:photo-7",
-    "buttonText": "Meet the team",
-    "buttonLink": "#"
-  },
   "placeholders": [
     {
       "token": "{{eyebrow}}",

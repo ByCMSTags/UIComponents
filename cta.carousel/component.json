@@ -119,31 +119,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "title": "This month only",
-      "subtitle": "20% off new websites",
-      "description": "Book before the end of the month and get a free logo refresh.",
-      "buttonText": "Book now",
-      "buttonLink": "#",
-      "images": [
-        "sample:photo-3",
-        "sample:photo-9"
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "title": "This month only",
-    "subtitle": "20% off new websites",
-    "description": "Book before the end of the month and get a free logo refresh.",
-    "buttonText": "Book now",
-    "buttonLink": "#",
-    "images": [
-      "sample:photo-3",
-      "sample:photo-9"
-    ]
-  },
   "placeholders": [
     {
       "token": "{{title}}",

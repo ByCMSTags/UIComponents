@@ -150,29 +150,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "eyebrow": "Digital studio",
-      "title": "Grow your business online",
-      "description": "We help growing businesses look professional online, with fast pages and content they can update themselves.",
-      "image": "sample:photo-2",
-      "buttonText": "Start now",
-      "buttonLink": "#",
-      "secondaryText": "Our work",
-      "secondaryLink": "#"
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "eyebrow": "Digital studio",
-    "title": "Grow your business online",
-    "description": "We help growing businesses look professional online, with fast pages and content they can update themselves.",
-    "image": "sample:photo-2",
-    "buttonText": "Start now",
-    "buttonLink": "#",
-    "secondaryText": "Our work",
-    "secondaryLink": "#"
-  },
   "placeholders": [
     {
       "token": "{{eyebrow}}",

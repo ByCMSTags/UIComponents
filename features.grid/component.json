@@ -131,69 +131,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "Why choose us",
-      "lead": "Everything you need to run a modern website.",
-      "items": [
-        {
-          "title": "Fast pages",
-          "description": "Optimised images and tiny code."
-        },
-        {
-          "title": "Easy editing",
-          "description": "Change texts and photos yourself."
-        },
-        {
-          "title": "Two languages",
-          "description": "Arabic and English, right to left too."
-        },
-        {
-          "title": "Search ready",
-          "description": "Titles, sitemap and sharing tags."
-        },
-        {
-          "title": "Secure",
-          "description": "Strict security headers by default."
-        },
-        {
-          "title": "Support",
-          "description": "A real person answers you."
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "Why choose us",
-    "lead": "Everything you need to run a modern website.",
-    "items": [
-      {
-        "title": "Fast pages",
-        "description": "Optimised images and tiny code."
-      },
-      {
-        "title": "Easy editing",
-        "description": "Change texts and photos yourself."
-      },
-      {
-        "title": "Two languages",
-        "description": "Arabic and English, right to left too."
-      },
-      {
-        "title": "Search ready",
-        "description": "Titles, sitemap and sharing tags."
-      },
-      {
-        "title": "Secure",
-        "description": "Strict security headers by default."
-      },
-      {
-        "title": "Support",
-        "description": "A real person answers you."
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

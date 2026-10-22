@@ -111,51 +111,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "In numbers",
-      "items": [
-        {
-          "value": 350,
-          "label": "Projects"
-        },
-        {
-          "value": 24,
-          "label": "Team members"
-        },
-        {
-          "value": 15,
-          "label": "Awards"
-        },
-        {
-          "value": 7,
-          "label": "Offices"
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "In numbers",
-    "items": [
-      {
-        "value": 350,
-        "label": "Projects"
-      },
-      {
-        "value": 24,
-        "label": "Team members"
-      },
-      {
-        "value": 15,
-        "label": "Awards"
-      },
-      {
-        "value": 7,
-        "label": "Offices"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

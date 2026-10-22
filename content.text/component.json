@@ -44,17 +44,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "title": "Our approach",
-      "body": "<p>We help growing businesses look professional online, with fast pages and content they can update themselves.</p><p>We listen first, then design. Every page is tested on phones and computers before it goes live.</p>"
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "title": "Our approach",
-    "body": "<p>We help growing businesses look professional online, with fast pages and content they can update themselves.</p><p>We listen first, then design. Every page is tested on phones and computers before it goes live.</p>"
-  },
   "placeholders": [
     {
       "token": "{{title}}",

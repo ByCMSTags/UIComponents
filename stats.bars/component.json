@@ -150,31 +150,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "eyebrow": "Arch Philosophy",
-      "title": "Trusted Expertise",
-      "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions.",
-      "image": "sample:wide-7",
-      "items": [
-        { "label": "Renovation", "value": 87 },
-        { "label": "Functional Spaces", "value": 67 },
-        { "label": "Architecture", "value": 93 }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "eyebrow": "Arch Philosophy",
-    "title": "Trusted Expertise",
-    "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions.",
-    "image": "sample:wide-7",
-    "items": [
-      { "label": "Renovation", "value": 87 },
-      { "label": "Functional Spaces", "value": 67 },
-      { "label": "Architecture", "value": 93 }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{eyebrow}}",

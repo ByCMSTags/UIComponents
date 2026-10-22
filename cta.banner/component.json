@@ -86,21 +86,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "title": "Ready to start your website?",
-      "description": "Tell us about your project and get a free plan within a day.",
-      "buttonText": "Contact us",
-      "buttonLink": "#"
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "title": "Ready to start your website?",
-    "description": "Tell us about your project and get a free plan within a day.",
-    "buttonText": "Contact us",
-    "buttonLink": "#"
-  },
   "placeholders": [
     {
       "token": "{{title}}",

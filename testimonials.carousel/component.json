@@ -122,55 +122,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "What our clients say",
-      "items": [
-        {
-          "quote": "They understood our business in one meeting. The new site doubled our bookings.",
-          "name": "Lina Haddad",
-          "role": "Owner, Bloom Salon",
-          "photo": "sample:avatar-1"
-        },
-        {
-          "quote": "Fast, friendly and always on time. We update everything ourselves now.",
-          "name": "Omar Saleh",
-          "role": "Manager, Atlas Travel",
-          "photo": "sample:avatar-2"
-        },
-        {
-          "quote": "Our pages load instantly and look great in Arabic and English.",
-          "name": "Sara Khalil",
-          "role": "Founder, Olive & Co",
-          "photo": "sample:avatar-4"
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "What our clients say",
-    "items": [
-      {
-        "quote": "They understood our business in one meeting. The new site doubled our bookings.",
-        "name": "Lina Haddad",
-        "role": "Owner, Bloom Salon",
-        "photo": "sample:avatar-1"
-      },
-      {
-        "quote": "Fast, friendly and always on time. We update everything ourselves now.",
-        "name": "Omar Saleh",
-        "role": "Manager, Atlas Travel",
-        "photo": "sample:avatar-2"
-      },
-      {
-        "quote": "Our pages load instantly and look great in Arabic and English.",
-        "name": "Sara Khalil",
-        "role": "Founder, Olive & Co",
-        "photo": "sample:avatar-4"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

@@ -78,49 +78,7 @@
       ]
     }
   ],
-  "sample": {
-    "items": [
-      {
-        "title": "New office in Dubai",
-        "description": "We are closer to our clients in the Gulf.",
-        "date": "2026-09-14",
-        "link": "#"
-      },
-      {
-        "title": "Website awards 2026",
-        "description": "Two of our projects made the shortlist.",
-        "date": "2026-08-02",
-        "link": "#"
-      },
-      {
-        "title": "Summer hours",
-        "description": "Our team works 8:00 – 15:00 until September.",
-        "date": "2026-06-20"
-      }
-    ]
-  },
   "version": "1.0.0",
-  "defaults": {
-    "items": [
-      {
-        "title": "New office in Dubai",
-        "description": "We are closer to our clients in the Gulf.",
-        "date": "2026-09-14",
-        "link": "#"
-      },
-      {
-        "title": "Website awards 2026",
-        "description": "Two of our projects made the shortlist.",
-        "date": "2026-08-02",
-        "link": "#"
-      },
-      {
-        "title": "Summer hours",
-        "description": "Our team works 8:00 – 15:00 until September.",
-        "date": "2026-06-20"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{title}}",

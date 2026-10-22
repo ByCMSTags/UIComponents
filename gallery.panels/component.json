@@ -91,77 +91,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "items": [
-        {
-          "title": "Award-Winning Architecture",
-          "description": "Architecture that earns recognition through craft, restraint, and a clear idea of place.",
-          "image": "sample:wide-0"
-        },
-        {
-          "title": "Influential and Impactful",
-          "description": "Urban design draws together the many strands of place-making, environmental stewardship, social equity and economic viability into the creation of places with distinct beauty and identity.",
-          "image": "sample:wide-1"
-        },
-        {
-          "title": "Functional Interior Design",
-          "description": "Interiors planned around how people move, work, and linger — useful first, then memorable.",
-          "image": "sample:wide-2"
-        },
-        {
-          "title": "Award-Winning Architecture",
-          "description": "Towers and civic rooms that hold their own against climate, traffic, and time.",
-          "image": "sample:wide-3"
-        },
-        {
-          "title": "City Marks",
-          "description": "Landmarks that give a skyline a readable silhouette without shouting.",
-          "image": "sample:wide-4"
-        },
-        {
-          "title": "Residence",
-          "description": "Homes that keep the city at a distance while still belonging to it.",
-          "image": "sample:wide-5"
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "items": [
-      {
-        "title": "Award-Winning Architecture",
-        "description": "Architecture that earns recognition through craft, restraint, and a clear idea of place.",
-        "image": "sample:wide-0"
-      },
-      {
-        "title": "Influential and Impactful",
-        "description": "Urban design draws together the many strands of place-making, environmental stewardship, social equity and economic viability into the creation of places with distinct beauty and identity.",
-        "image": "sample:wide-1"
-      },
-      {
-        "title": "Functional Interior Design",
-        "description": "Interiors planned around how people move, work, and linger — useful first, then memorable.",
-        "image": "sample:wide-2"
-      },
-      {
-        "title": "Award-Winning Architecture",
-        "description": "Towers and civic rooms that hold their own against climate, traffic, and time.",
-        "image": "sample:wide-3"
-      },
-      {
-        "title": "City Marks",
-        "description": "Landmarks that give a skyline a readable silhouette without shouting.",
-        "image": "sample:wide-4"
-      },
-      {
-        "title": "Residence",
-        "description": "Homes that keep the city at a distance while still belonging to it.",
-        "image": "sample:wide-5"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{items}}",

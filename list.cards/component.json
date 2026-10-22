@@ -85,51 +85,7 @@
       ]
     }
   ],
-  "sample": {
-    "items": [
-      {
-        "image": "sample:photo-1",
-        "title": "Five tips for a faster website",
-        "description": "Small changes that make pages load in a blink.",
-        "link": "#"
-      },
-      {
-        "image": "sample:photo-4",
-        "title": "Writing for two languages",
-        "description": "How to plan Arabic and English content together.",
-        "link": "#"
-      },
-      {
-        "image": "sample:photo-6",
-        "title": "Photos that sell",
-        "description": "Simple rules for product pictures.",
-        "link": "#"
-      }
-    ]
-  },
   "version": "1.0.0",
-  "defaults": {
-    "items": [
-      {
-        "image": "sample:photo-1",
-        "title": "Five tips for a faster website",
-        "description": "Small changes that make pages load in a blink.",
-        "link": "#"
-      },
-      {
-        "image": "sample:photo-4",
-        "title": "Writing for two languages",
-        "description": "How to plan Arabic and English content together.",
-        "link": "#"
-      },
-      {
-        "image": "sample:photo-6",
-        "title": "Photos that sell",
-        "description": "Simple rules for product pictures.",
-        "link": "#"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{image}}",

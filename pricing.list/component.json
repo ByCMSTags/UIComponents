@@ -195,77 +195,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "Simple pricing",
-      "lead": "Pick a plan. Change it anytime.",
-      "items": [
-        {
-          "name": "Starter",
-          "price": "$19",
-          "period": "/ month",
-          "description": "For a first website.",
-          "features": "5 pages\nArabic and English\nContact form",
-          "buttonText": "Choose",
-          "buttonLink": "#"
-        },
-        {
-          "name": "Business",
-          "price": "$49",
-          "period": "/ month",
-          "description": "For growing teams.",
-          "features": "20 pages\nBlog and gallery\nSearch engine setup\nPriority support",
-          "buttonText": "Choose",
-          "buttonLink": "#",
-          "featured": true
-        },
-        {
-          "name": "Pro",
-          "price": "$99",
-          "period": "/ month",
-          "description": "For busy sites.",
-          "features": "Unlimited pages\nOnline shop\nDedicated manager",
-          "buttonText": "Choose",
-          "buttonLink": "#"
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "Simple pricing",
-    "lead": "Pick a plan. Change it anytime.",
-    "items": [
-      {
-        "name": "Starter",
-        "price": "$19",
-        "period": "/ month",
-        "description": "For a first website.",
-        "features": "5 pages\nArabic and English\nContact form",
-        "buttonText": "Choose",
-        "buttonLink": "#"
-      },
-      {
-        "name": "Business",
-        "price": "$49",
-        "period": "/ month",
-        "description": "For growing teams.",
-        "features": "20 pages\nBlog and gallery\nSearch engine setup\nPriority support",
-        "buttonText": "Choose",
-        "buttonLink": "#",
-        "featured": true
-      },
-      {
-        "name": "Pro",
-        "price": "$99",
-        "period": "/ month",
-        "description": "For busy sites.",
-        "features": "Unlimited pages\nOnline shop\nDedicated manager",
-        "buttonText": "Choose",
-        "buttonLink": "#"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

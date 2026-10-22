@@ -86,39 +86,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "eyebrow": "About us",
-      "title": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary with specializations.",
-      "items": [
-        { "title": "Urban Codes" },
-        { "title": "Interior Design" },
-        { "title": "City Planning" },
-        { "title": "Residential" },
-        { "title": "Construction" },
-        { "title": "Landscapes" },
-        { "title": "Innovative Design" },
-        { "title": "Facility Optimization" },
-        { "title": "Consulting" }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "eyebrow": "About us",
-    "title": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary with specializations.",
-    "items": [
-      { "title": "Urban Codes" },
-      { "title": "Interior Design" },
-      { "title": "City Planning" },
-      { "title": "Residential" },
-      { "title": "Construction" },
-      { "title": "Landscapes" },
-      { "title": "Innovative Design" },
-      { "title": "Facility Optimization" },
-      { "title": "Consulting" }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{eyebrow}}",

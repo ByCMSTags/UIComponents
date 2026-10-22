@@ -44,27 +44,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "Trusted by",
-      "logos": [
-        "sample:logo-1",
-        "sample:logo-2",
-        "sample:logo-3",
-        "sample:logo-4"
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "Trusted by",
-    "logos": [
-      "sample:logo-1",
-      "sample:logo-2",
-      "sample:logo-3",
-      "sample:logo-4"
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

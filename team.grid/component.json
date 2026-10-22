@@ -134,59 +134,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "Meet the team",
-      "items": [
-        {
-          "photo": "sample:avatar-1",
-          "name": "Lina Haddad",
-          "role": "Design"
-        },
-        {
-          "photo": "sample:avatar-2",
-          "name": "Omar Saleh",
-          "role": "Development"
-        },
-        {
-          "photo": "sample:avatar-4",
-          "name": "Sara Khalil",
-          "role": "Marketing"
-        },
-        {
-          "photo": "sample:avatar-6",
-          "name": "Yousef Nasser",
-          "role": "Support"
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "Meet the team",
-    "items": [
-      {
-        "photo": "sample:avatar-1",
-        "name": "Lina Haddad",
-        "role": "Design"
-      },
-      {
-        "photo": "sample:avatar-2",
-        "name": "Omar Saleh",
-        "role": "Development"
-      },
-      {
-        "photo": "sample:avatar-4",
-        "name": "Sara Khalil",
-        "role": "Marketing"
-      },
-      {
-        "photo": "sample:avatar-6",
-        "name": "Yousef Nasser",
-        "role": "Support"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

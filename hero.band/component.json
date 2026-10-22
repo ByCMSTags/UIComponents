@@ -127,25 +127,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "title": "Tokyo City Museum",
-      "description": "We build cities through a unique combination of engineering, construction and design.",
-      "subtitle": "We embrace holistic development and support for employees with the aim of being a first-choice employer within our sectors.",
-      "image": "sample:wide-0",
-      "buttonText": "See case studies",
-      "buttonLink": "#"
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "title": "Tokyo City Museum",
-    "description": "We build cities through a unique combination of engineering, construction and design.",
-    "subtitle": "We embrace holistic development and support for employees with the aim of being a first-choice employer within our sectors.",
-    "image": "sample:wide-0",
-    "buttonText": "See case studies",
-    "buttonLink": "#"
-  },
   "placeholders": [
     {
       "token": "{{title}}",

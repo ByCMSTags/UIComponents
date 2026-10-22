@@ -124,37 +124,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "items": [
-        {
-          "title": "Branding",
-          "description": "We help growing businesses look professional online, with fast pages and content they can update themselves.",
-          "image": "sample:square-3"
-        },
-        {
-          "title": "Websites",
-          "description": "Fast, accessible pages in Arabic and English.",
-          "image": "sample:square-6"
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "items": [
-      {
-        "title": "Branding",
-        "description": "We help growing businesses look professional online, with fast pages and content they can update themselves.",
-        "image": "sample:square-3"
-      },
-      {
-        "title": "Websites",
-        "description": "Fast, accessible pages in Arabic and English.",
-        "image": "sample:square-6"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

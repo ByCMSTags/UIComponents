@@ -106,49 +106,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "items": [
-        {
-          "title": "Project analysis",
-          "description": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary."
-        },
-        {
-          "title": "Functional Spaces",
-          "description": "Through a unique combination of engineering, construction and design disciplines and expertise."
-        },
-        {
-          "title": "Residence - Condo",
-          "description": "We embrace holistic development and support for employees with the aim of being a first-choice employer."
-        },
-        {
-          "title": "Construction",
-          "description": "Urban design draws together the many strands of place-making, environmental stewardship and social life."
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "items": [
-      {
-        "title": "Project analysis",
-        "description": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary."
-      },
-      {
-        "title": "Functional Spaces",
-        "description": "Through a unique combination of engineering, construction and design disciplines and expertise."
-      },
-      {
-        "title": "Residence - Condo",
-        "description": "We embrace holistic development and support for employees with the aim of being a first-choice employer."
-      },
-      {
-        "title": "Construction",
-        "description": "Urban design draws together the many strands of place-making, environmental stewardship and social life."
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

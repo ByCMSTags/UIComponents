@@ -71,33 +71,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "title": "Our work",
-      "description": "A few of the projects we are proud of.",
-      "images": [
-        "sample:portrait-1",
-        "sample:photo-2",
-        "sample:square-3",
-        "sample:photo-4",
-        "sample:portrait-5",
-        "sample:photo-6"
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "title": "Our work",
-    "description": "A few of the projects we are proud of.",
-    "images": [
-      "sample:portrait-1",
-      "sample:photo-2",
-      "sample:square-3",
-      "sample:photo-4",
-      "sample:portrait-5",
-      "sample:photo-6"
-    ]
-  },
   "placeholders": [
     {
       "token": "{{title}}",

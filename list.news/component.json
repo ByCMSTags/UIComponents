@@ -115,63 +115,7 @@
       ]
     }
   ],
-  "sample": {
-    "items": [
-      {
-        "title": "Building the architecture of the future cities",
-        "description": "I think that you should be able to select more than one reason for rating.",
-        "date": "2026-03-20",
-        "category": "Office",
-        "image": "sample:wide-0",
-        "link": "#"
-      },
-      {
-        "title": "Collective Living Challenge in modern design",
-        "description": "Success needs hard work. Don't listen to these 'get rich quick' schemes.",
-        "date": "2026-03-20",
-        "category": "Interior",
-        "image": "sample:wide-1",
-        "link": "#"
-      },
-      {
-        "title": "Utilizing wood in architecture",
-        "description": "I think that you should be able to select more than one reason for rating.",
-        "date": "2026-03-20",
-        "category": "News",
-        "image": "sample:wide-2",
-        "link": "#"
-      }
-    ]
-  },
   "version": "1.0.0",
-  "defaults": {
-    "items": [
-      {
-        "title": "Building the architecture of the future cities",
-        "description": "I think that you should be able to select more than one reason for rating.",
-        "date": "2026-03-20",
-        "category": "Office",
-        "image": "sample:wide-0",
-        "link": "#"
-      },
-      {
-        "title": "Collective Living Challenge in modern design",
-        "description": "Success needs hard work. Don't listen to these 'get rich quick' schemes.",
-        "date": "2026-03-20",
-        "category": "Interior",
-        "image": "sample:wide-1",
-        "link": "#"
-      },
-      {
-        "title": "Utilizing wood in architecture",
-        "description": "I think that you should be able to select more than one reason for rating.",
-        "date": "2026-03-20",
-        "category": "News",
-        "image": "sample:wide-2",
-        "link": "#"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{@label}}",

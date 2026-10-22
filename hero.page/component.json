@@ -76,19 +76,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "title": "About us",
-      "description": "A small team with a big love for clear, fast websites.",
-      "image": "sample:wide-3"
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "title": "About us",
-    "description": "A small team with a big love for clear, fast websites.",
-    "image": "sample:wide-3"
-  },
   "placeholders": [
     {
       "token": "{{title}}",

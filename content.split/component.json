@@ -122,25 +122,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "eyebrow": "About us",
-      "title": "Influential - and impactful",
-      "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions to customers and stakeholders across a broad range of industry sectors. Urban design draws together the many strands of place-making, environmental stewardship, social equity and economic viability into the creation of places with distinct beauty and identity.",
-      "image": "sample:wide-4",
-      "buttonText": "Learn more",
-      "buttonLink": "#"
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "eyebrow": "About us",
-    "title": "Influential - and impactful",
-    "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions to customers and stakeholders across a broad range of industry sectors. Urban design draws together the many strands of place-making, environmental stewardship, social equity and economic viability into the creation of places with distinct beauty and identity.",
-    "image": "sample:wide-4",
-    "buttonText": "Learn more",
-    "buttonLink": "#"
-  },
   "placeholders": [
     {
       "token": "{{eyebrow}}",

@@ -165,57 +165,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "Our services",
-      "lead": "From the first idea to a site that sells.",
-      "items": [
-        {
-          "image": "sample:photo-1",
-          "title": "Web design",
-          "description": "Clean pages that fit your brand.",
-          "link": "#"
-        },
-        {
-          "image": "sample:photo-5",
-          "title": "Online shops",
-          "description": "Sell your products with ease.",
-          "link": "#"
-        },
-        {
-          "image": "sample:photo-8",
-          "title": "Marketing",
-          "description": "Reach the right people.",
-          "link": "#"
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "Our services",
-    "lead": "From the first idea to a site that sells.",
-    "items": [
-      {
-        "image": "sample:photo-1",
-        "title": "Web design",
-        "description": "Clean pages that fit your brand.",
-        "link": "#"
-      },
-      {
-        "image": "sample:photo-5",
-        "title": "Online shops",
-        "description": "Sell your products with ease.",
-        "link": "#"
-      },
-      {
-        "image": "sample:photo-8",
-        "title": "Marketing",
-        "description": "Reach the right people.",
-        "link": "#"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

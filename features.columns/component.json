@@ -103,35 +103,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "Who we are",
-      "items": [
-        {
-          "title": "Our story",
-          "description": "We help growing businesses look professional online, with fast pages and content they can update themselves."
-        },
-        {
-          "title": "Our promise",
-          "description": "Honest advice, clear prices and support whenever you need it."
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "Who we are",
-    "items": [
-      {
-        "title": "Our story",
-        "description": "We help growing businesses look professional online, with fast pages and content they can update themselves."
-      },
-      {
-        "title": "Our promise",
-        "description": "Honest advice, clear prices and support whenever you need it."
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

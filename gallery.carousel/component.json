@@ -68,25 +68,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "title": "Inside the studio",
-      "images": [
-        "sample:wide-1",
-        "sample:wide-2",
-        "sample:wide-5"
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "title": "Inside the studio",
-    "images": [
-      "sample:wide-1",
-      "sample:wide-2",
-      "sample:wide-5"
-    ]
-  },
   "placeholders": [
     {
       "token": "{{title}}",

@@ -137,49 +137,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "eyebrow": "About",
-      "title": "Through a unique combination of engineering, construction and <u>design</u> <u>disciplines</u> and expertise.",
-      "buttonText": "Learn more",
-      "buttonLink": "#",
-      "items": [
-        {
-          "title": "Building the Future Cities",
-          "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions to customers and stakeholders across a broad range of industry sectors."
-        },
-        {
-          "title": "Unique and Influential Design",
-          "description": "We shape spaces that last, with careful detailing and a clear point of view."
-        },
-        {
-          "title": "Award-Winning Architecture",
-          "description": "Recognised work across civic, cultural and commercial buildings."
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "eyebrow": "About",
-    "title": "Through a unique combination of engineering, construction and <u>design</u> <u>disciplines</u> and expertise.",
-    "buttonText": "Learn more",
-    "buttonLink": "#",
-    "items": [
-      {
-        "title": "Building the Future Cities",
-        "description": "Through a unique combination of engineering, construction and design disciplines and expertise, Concor delivers world class infrastructure solutions to customers and stakeholders across a broad range of industry sectors."
-      },
-      {
-        "title": "Unique and Influential Design",
-        "description": "We shape spaces that last, with careful detailing and a clear point of view."
-      },
-      {
-        "title": "Award-Winning Architecture",
-        "description": "Recognised work across civic, cultural and commercial buildings."
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{eyebrow}}",

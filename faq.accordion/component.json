@@ -106,43 +106,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "Frequently asked questions",
-      "items": [
-        {
-          "question": "How long does a website take?",
-          "answer": "Most websites are ready in two to four weeks."
-        },
-        {
-          "question": "Can I edit the content myself?",
-          "answer": "Yes. You change texts and photos from your control panel."
-        },
-        {
-          "question": "Do you support Arabic?",
-          "answer": "Every website works in Arabic and English, right to left included."
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "Frequently asked questions",
-    "items": [
-      {
-        "question": "How long does a website take?",
-        "answer": "Most websites are ready in two to four weeks."
-      },
-      {
-        "question": "Can I edit the content myself?",
-        "answer": "Yes. You change texts and photos from your control panel."
-      },
-      {
-        "question": "Do you support Arabic?",
-        "answer": "Every website works in Arabic and English, right to left included."
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

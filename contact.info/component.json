@@ -107,25 +107,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "heading": "Visit or call us",
-      "address": "12 Rainbow Street\nAmman, Jordan",
-      "phone": "+962 6 400 0000",
-      "email": "hello@example.com",
-      "hours": "Sun – Thu: 9:00 – 17:00",
-      "mapLink": "https://maps.google.com"
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "heading": "Visit or call us",
-    "address": "12 Rainbow Street\nAmman, Jordan",
-    "phone": "+962 6 400 0000",
-    "email": "hello@example.com",
-    "hours": "Sun – Thu: 9:00 – 17:00",
-    "mapLink": "https://maps.google.com"
-  },
   "placeholders": [
     {
       "token": "{{heading}}",

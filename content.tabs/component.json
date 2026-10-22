@@ -127,51 +127,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "eyebrow": "Functional space",
-      "title": "Passionate -architecture",
-      "items": [
-        {
-          "title": "Interior Design",
-          "description": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary with specializations for each project type, technological expertise. Through a unique combination of engineering, construction and design disciplines and expertise.",
-          "image": "sample:wide-0"
-        },
-        {
-          "title": "Residence",
-          "description": "Homes shaped around daily life, with careful light, material and a calm plan that lasts.",
-          "image": "sample:wide-1"
-        },
-        {
-          "title": "Renovation",
-          "description": "Existing buildings brought forward with a unique combination of engineering, construction and design disciplines and expertise.",
-          "image": "sample:wide-2"
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "eyebrow": "Functional space",
-    "title": "Passionate -architecture",
-    "items": [
-      {
-        "title": "Interior Design",
-        "description": "Since the 1980s, as the complexity of buildings began to increase, the field of architecture became multi-disciplinary with specializations for each project type, technological expertise. Through a unique combination of engineering, construction and design disciplines and expertise.",
-        "image": "sample:wide-0"
-      },
-      {
-        "title": "Residence",
-        "description": "Homes shaped around daily life, with careful light, material and a calm plan that lasts.",
-        "image": "sample:wide-1"
-      },
-      {
-        "title": "Renovation",
-        "description": "Existing buildings brought forward with a unique combination of engineering, construction and design disciplines and expertise.",
-        "image": "sample:wide-2"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{eyebrow}}",

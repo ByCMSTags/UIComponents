@@ -138,55 +138,7 @@
       ]
     }
   ],
-  "sample": {
-    "data": {
-      "title": "Numbers we are proud of",
-      "description": "Results from the last few years.",
-      "image": "sample:wide-6",
-      "items": [
-        {
-          "value": 120,
-          "label": "Websites"
-        },
-        {
-          "value": 98,
-          "label": "Happy clients"
-        },
-        {
-          "value": 12,
-          "label": "Countries"
-        },
-        {
-          "value": 10,
-          "label": "Years"
-        }
-      ]
-    }
-  },
   "version": "1.0.0",
-  "defaults": {
-    "title": "Numbers we are proud of",
-    "description": "Results from the last few years.",
-    "image": "sample:wide-6",
-    "items": [
-      {
-        "value": 120,
-        "label": "Websites"
-      },
-      {
-        "value": 98,
-        "label": "Happy clients"
-      },
-      {
-        "value": 12,
-        "label": "Countries"
-      },
-      {
-        "value": 10,
-        "label": "Years"
-      }
-    ]
-  },
   "placeholders": [
     {
       "token": "{{title}}",

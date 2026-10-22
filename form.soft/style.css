@@ -1,0 +1,53 @@
+.cms-form-soft-panel {
+  background: #f6f5f3;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+}
+
+.cms-form.cms-form--soft {
+  --bs-gutter-y: 1.25rem;
+}
+
+.cms-form.cms-form--soft .cms-form-label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #5c5c5c;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.cms-form.cms-form--soft .form-control,
+.cms-form.cms-form--soft .form-select {
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: none;
+  padding: 0.85rem 1.1rem;
+}
+
+.cms-form.cms-form--soft textarea.form-control {
+  border-radius: 18px;
+  min-height: 8rem;
+}
+
+.cms-form.cms-form--soft .form-control:focus,
+.cms-form.cms-form--soft .form-select:focus {
+  box-shadow: 0 0 0 2px rgba(28, 28, 28, 0.12);
+}
+
+.cms-form.cms-form--soft .cms-form-submit {
+  width: 100%;
+  margin-top: 0.5rem;
+  border: 0;
+  border-radius: 999px;
+  background: #2b2b2b;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.95rem 1rem;
+}
+
+.cms-form.cms-form--soft .cms-form-submit:hover,
+.cms-form.cms-form--soft .cms-form-submit:focus {
+  background: #000;
+  color: #fff;
+}

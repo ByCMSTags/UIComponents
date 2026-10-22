@@ -1,1 +1,43 @@
-/* form.card */
+.cms-form.cms-form--card {
+  --bs-gutter-y: 1.25rem;
+}
+
+.cms-form.cms-form--card .cms-form-label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #333;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.cms-form.cms-form--card .form-control,
+.cms-form.cms-form--card .form-select {
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: none;
+  padding: 0.75rem 0.9rem;
+}
+
+.cms-form.cms-form--card .form-control:focus,
+.cms-form.cms-form--card .form-select:focus {
+  border-color: #1c1c1c;
+  box-shadow: none;
+}
+
+.cms-form.cms-form--card .cms-form-submit {
+  width: 100%;
+  margin-top: 0.5rem;
+  border: 0;
+  border-radius: 10px;
+  background: #1c1c1c;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.9rem 1rem;
+}
+
+.cms-form.cms-form--card .cms-form-submit:hover,
+.cms-form.cms-form--card .cms-form-submit:focus {
+  background: #000;
+  color: #fff;
+}

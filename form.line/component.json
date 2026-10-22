@@ -1,0 +1,11 @@
+{
+  "id": "form.line",
+  "category": "form",
+  "kind": "form",
+  "name": { "en": "Underline", "ar": "خط سفلي" },
+  "description": {
+    "en": "Small gray labels, an underline, and a full-width black button. The fields are the ones on the form.",
+    "ar": "عناوين رمادية صغيرة وخط سفلي وزر أسود بعرض النموذج. الحقول هي حقول النموذج."
+  },
+  "fields": []
+}

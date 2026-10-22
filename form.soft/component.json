@@ -1,0 +1,11 @@
+{
+  "id": "form.soft",
+  "category": "form",
+  "kind": "form",
+  "name": { "en": "Soft panel", "ar": "لوحة ناعمة" },
+  "description": {
+    "en": "Rounded fields on a warm panel. The fields are the ones on the form.",
+    "ar": "حقول دائرية على لوحة دافئة. الحقول هي حقول النموذج."
+  },
+  "fields": []
+}

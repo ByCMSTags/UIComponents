@@ -3,12 +3,14 @@
   window.CmsTagsComponents = window.CmsTagsComponents || {};
   window.CmsTagsComponents["header.basic"] = {
     init: function (root) {
-      var form = root.querySelector('form[role="search"]');
-      if (form) {
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-        });
+      if (!root) return;
+      function sync() {
+        root.classList.toggle("is-scrolled", window.scrollY > 6);
       }
+      if (root._cmsScroll) window.removeEventListener("scroll", root._cmsScroll);
+      root._cmsScroll = sync;
+      window.addEventListener("scroll", sync, { passive: true });
+      sync();
     },
   };
 })();

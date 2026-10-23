@@ -2,8 +2,8 @@
   <div class="container">
     <div class="d-flex flex-column align-items-start gap-2 pb-4">
       <a class="cms-brand d-inline-flex mb-3 link-light text-decoration-none" href="{{@home}}">{{#@site.logo}}{{@site.logo sizes="170px" max="170"}}{{/@site.logo}}{{^@site.logo}}<span class="fw-bold text-uppercase fs-5">{{@site.name}}</span>{{/@site.logo}}</a>
-      {{#@site.phone}}<a class="link-light text-decoration-none d-inline-flex align-items-center gap-2" href="tel:{{@site.phone|tel}}">{{@icon.phone}}<span dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
-      {{#@site.email}}<a class="link-light text-decoration-none d-inline-flex align-items-center gap-2" href="mailto:{{@site.email}}">{{@icon.mail}}{{@site.email}}</a>{{/@site.email}}
+      {{#@site.phone}}<a class="link-light text-decoration-none d-inline-flex align-items-center gap-2" href="tel:{{@site.phone|tel}}">{{@site.phoneIcon}}<span dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
+      {{#@site.email}}<a class="link-light text-decoration-none d-inline-flex align-items-center gap-2" href="mailto:{{@site.email}}">{{@site.emailIcon}}{{@site.email}}</a>{{/@site.email}}
       {{#@social}}{{#@first}}<ul class="cms-social list-unstyled d-flex gap-2 mt-2 mb-0">{{/@first}}{{/@social}}{{#@social}}<li><a class="bg-white text-dark" href="{{href}}" rel="noopener" target="_blank" aria-label="{{name}}">{{icon}}</a></li>{{/@social}}{{#@social}}{{#@last}}</ul>{{/@last}}{{/@social}}
     </div>
     <div class="d-flex align-items-center justify-content-between gap-3 border-top border-secondary pt-3">
@@ -11,7 +11,7 @@
         <p class="small mb-1">© {{@site.name}} {{@year}}. {{@t.rights}}</p>
         <p class="small mb-0">{{@t.createdBy}} <a class="link-light" href="https://gipixel.com" rel="noopener" target="_blank">Gipixel</a></p>
       </div>
-      <a class="cms-icon-btn link-light bg-white bg-opacity-10" href="#main" aria-label="{{@t.backToTop}}">{{@icon.up}}</a>
+      {{#@site.upIcon}}<a class="cms-icon-btn link-light bg-white bg-opacity-10" href="#main" aria-label="{{@t.backToTop}}">{{@site.upIcon}}</a>{{/@site.upIcon}}
     </div>
   </div>
 </footer>

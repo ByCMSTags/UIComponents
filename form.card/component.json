@@ -2,16 +2,10 @@
   "id": "form.card",
   "category": "form",
   "kind": "form",
-  "name": {
-    "en": "Form card",
-    "ar": "بطاقة نموذج"
-  },
+  "name": { "en": "Card", "ar": "بطاقة" },
   "description": {
-    "en": "A form in a white card.",
-    "ar": "نموذج داخل بطاقة بيضاء."
+    "en": "Fields inside a white card with a soft shadow. The fields are the ones on the form.",
+    "ar": "الحقول داخل بطاقة بيضاء بظل خفيف. الحقول هي حقول النموذج."
   },
-  "default": true,
-  "fields": [],
-  "version": "1.0.0",
-  "placeholders": []
+  "fields": []
 }

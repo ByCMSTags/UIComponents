@@ -1,0 +1,11 @@
+<section id="{{@id}}" class="cms-process">
+  <div class="cms-process__intro">
+    {{#eyebrow}}<p class="cms-process__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-process__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-process__lead">{{description}}</p>{{/description}}
+  </div>
+  {{#items}}{{#@first}}<ol class="cms-process__steps">{{/@first}}<li class="cms-process__step">
+    <{{@hsub}} class="cms-process__head"><span class="cms-process__num" aria-hidden="true"></span><span class="cms-process__name">{{title}}</span></{{@hsub}}>
+    {{#description}}<p class="cms-process__text">{{description}}</p>{{/description}}
+  </li>{{#@last}}</ol>{{/@last}}{{/items}}
+</section>

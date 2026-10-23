@@ -1,0 +1,27 @@
+<footer class="cms-fstudio">
+  <div class="cms-fstudio__wrap">
+    <div class="cms-fstudio__top">
+      <div class="cms-fstudio__lead">
+        <a class="cms-fstudio__brand" href="{{@home}}">{{#@site.logo}}{{@site.logo sizes="180px" max="360" img="cms-fstudio__logo"}}{{/@site.logo}}{{^@site.logo}}<span class="cms-fstudio__name">{{@site.name}}</span>{{/@site.logo}}</a>
+        {{#@site.tagline}}<p class="cms-fstudio__tagline">{{@site.tagline}}</p>{{/@site.tagline}}
+      </div>
+      <div class="cms-fstudio__reach">
+        {{#@site.phone}}<div class="cms-fstudio__reach-item"><p class="cms-fstudio__label">{{@t.callUs}}</p><a class="cms-fstudio__big" href="tel:{{@site.phone|tel}}" dir="ltr">{{@site.phone}}</a></div>{{/@site.phone}}
+        {{#@site.email}}<div class="cms-fstudio__reach-item"><p class="cms-fstudio__label">{{@t.writeUs}}</p><a class="cms-fstudio__big" href="mailto:{{@site.email}}">{{@site.email}}</a></div>{{/@site.email}}
+        {{#@site.address}}<div class="cms-fstudio__reach-item"><p class="cms-fstudio__label">{{@t.visitUs}}</p><p class="cms-fstudio__big">{{@site.address}}</p></div>{{/@site.address}}
+      </div>
+    </div>
+    <div class="cms-fstudio__cols">
+      <nav class="cms-fstudio__col" aria-label="{{@t.pages}}">
+        <p class="cms-fstudio__label">{{@t.pages}}</p>
+        <ul class="cms-fstudio__list">{{#@nav}}<li><a href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a></li>{{/@nav}}</ul>
+      </nav>
+      {{#@social}}{{#@first}}<div class="cms-fstudio__col"><p class="cms-fstudio__label">{{@t.followUs}}</p><ul class="cms-fstudio__list">{{/@first}}<li><a href="{{href}}" rel="noopener" target="_blank">{{icon}}<span>{{name}}</span></a></li>{{#@last}}</ul></div>{{/@last}}{{/@social}}
+      {{#@site.hours}}<div class="cms-fstudio__col"><p class="cms-fstudio__label">{{@t.hours}}</p><p class="cms-fstudio__text">{{@site.hours}}</p></div>{{/@site.hours}}
+    </div>
+    <div class="cms-fstudio__bottom">
+      <p class="cms-fstudio__copy">© {{@year}} {{@site.name}}. {{@t.rights}}</p>
+      <a class="cms-fstudio__up" href="#main"><span>{{@t.backToTop}}</span>{{@site.upIcon}}</a>
+    </div>
+  </div>
+</footer>

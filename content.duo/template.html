@@ -1,0 +1,10 @@
+<section id="{{@id}}" class="cms-duo">
+  {{#items}}{{#@first}}<div class="cms-duo__grid">{{/@first}}<article class="cms-duo__tile">
+    {{#image}}{{image sizes="(max-width: 768px) 100vw, 50vw" class="cms-duo__photo"}}{{/image}}
+    <div class="cms-duo__body">
+      {{#eyebrow}}<p class="cms-duo__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@hsub}} class="cms-duo__title">{{title}}</{{@hsub}}>{{/title}}
+      {{#link}}<a class="cms-duo__more" href="{{link}}"><span aria-hidden="true">──</span> {{#linkText}}{{linkText}}{{/linkText}}{{^linkText}}{{@t.learnMore}}{{/linkText}}</a>{{/link}}
+    </div>
+  </article>{{#@last}}</div>{{/@last}}{{/items}}
+</section>

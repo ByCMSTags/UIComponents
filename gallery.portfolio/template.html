@@ -1,0 +1,20 @@
+<section id="{{@id}}" class="cms-folio" data-cms-all="{{#allLabel}}{{allLabel}}{{/allLabel}}{{^allLabel}}{{@t.all}}{{/allLabel}}">
+  <div class="cms-folio__intro">
+    <div>
+      {{#eyebrow}}<p class="cms-folio__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-folio__title">{{title}}</{{@h}}>{{/title}}
+    </div>
+    {{#description}}<p class="cms-folio__lead">{{description}}</p>{{/description}}
+  </div>
+  <div class="cms-folio__filters" role="group" aria-label="{{#title}}{{title}}{{/title}}{{^title}}{{@label}}{{/title}}" data-cms-filters hidden></div>
+  {{#items}}{{#@first}}<ul class="cms-folio__grid" data-cms-grid>{{/@first}}<li class="cms-folio__item" data-cms-item data-category="{{category}}">
+    <figure class="cms-folio__figure">
+      {{#image}}{{image sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" class="cms-folio__photo"}}{{/image}}
+      <figcaption class="cms-folio__caption">
+        {{#category}}<span class="cms-folio__cat">{{category}}</span>{{/category}}
+        {{#title}}<span class="cms-folio__name">{{#link}}<a class="cms-folio__link" href="{{link}}">{{/link}}{{title}}{{#link}}</a>{{/link}}</span>{{/title}}
+        {{#location}}<span class="cms-folio__place">{{location}}</span>{{/location}}
+      </figcaption>
+    </figure>
+  </li>{{#@last}}</ul>{{/@last}}{{/items}}
+</section>

@@ -52,7 +52,8 @@
       "subFields": [
         {
           "key": "icon",
-          "type": "image",
+          "type": "icon",
+          "placeholder": "fi-rr-check",
           "label": {
             "en": "Icon",
             "ar": "الأيقونة"
@@ -141,7 +142,7 @@
     {
       "token": "{{icon}}",
       "field": "items.icon",
-      "type": "image",
+      "type": "icon",
       "label": {
         "en": "Icon",
         "ar": "الأيقونة"

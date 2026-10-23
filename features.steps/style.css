@@ -3,6 +3,13 @@
   --cms-feat-steps-muted: #5c5c5c;
   --cms-feat-steps-line: #ececec;
   --cms-feat-steps-icon: #3d5c56;
+  background: #fff;
+}
+
+.cms-section.cms-feat-steps {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 3rem;
 }
 
 .cms-feat-steps__row {
@@ -13,9 +20,10 @@
 .cms-feat-steps__item {
   min-width: 0;
   padding: 1.75rem 0;
+  border-top: 1px solid var(--cms-feat-steps-line);
 }
 
-.cms-feat-steps__item:not(:last-child) {
+.cms-feat-steps__item:last-child {
   border-bottom: 1px solid var(--cms-feat-steps-line);
 }
 
@@ -31,17 +39,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 5rem;
+  height: 5rem;
   color: var(--cms-feat-steps-icon);
 }
 
 .cms-feat-steps__icon img,
-.cms-feat-steps__icon svg,
-.cms-feat-steps__icon .cms-icon {
-  width: 2.85rem;
-  height: 2.85rem;
+.cms-feat-steps__icon svg {
+  width: 4.75rem;
+  height: 4.75rem;
   object-fit: contain;
+}
+
+.cms-feat-steps__icon .fi {
+  font-size: 2.5rem;
 }
 
 .cms-feat-steps__num {
@@ -51,8 +62,8 @@
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background: #f2f2f2;
-  color: #8a8a8a;
+  background: var(--cms-secondary);
+  color: #111;
   font-size: 0.78rem;
   font-weight: 500;
   line-height: 1;
@@ -64,6 +75,7 @@
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.3;
+  letter-spacing: var(--cms-title-tracking);
 }
 
 .cms-feat-steps__text {
@@ -88,8 +100,8 @@
     border-inline-end: 1px solid var(--cms-feat-steps-line);
   }
 
-  .cms-feat-steps__item:nth-child(n + 3) {
-    border-top: 1px solid var(--cms-feat-steps-line);
+  .cms-feat-steps__item:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--cms-feat-steps-line);
   }
 }
 
@@ -101,6 +113,8 @@
   .cms-feat-steps__item {
     padding: 1.25rem 2.25rem;
     border: 0;
+    border-top: 1px solid var(--cms-feat-steps-line);
+    border-bottom: 1px solid var(--cms-feat-steps-line);
     border-inline-end: 1px solid var(--cms-feat-steps-line);
   }
 
@@ -108,11 +122,15 @@
     border-inline-end: 1px solid var(--cms-feat-steps-line);
   }
 
-  .cms-feat-steps__item:nth-child(n + 3) {
-    border-top: 0;
-  }
-
   .cms-feat-steps__item:nth-child(4n) {
     border-inline-end: 0;
   }
+}
+
+/* After a full-bleed photo section the columns need room above them. */
+.cms-split-story + .cms-feat-steps,
+.cms-split-tabs + .cms-feat-steps,
+.cms-htitle + .cms-feat-steps,
+.cms-hero-band + .cms-feat-steps {
+  padding-top: clamp(3rem, 6vw, 5rem);
 }

@@ -1,0 +1,15 @@
+<section id="{{@id}}" class="cms-rows">
+  <div class="cms-rows__intro">
+    {{#eyebrow}}<p class="cms-rows__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-rows__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-rows__lead">{{description}}</p>{{/description}}
+  </div>
+  <div class="cms-rows__table">
+    {{#col2Label}}<div class="cms-rows__head" aria-hidden="true"><span>{{col1Label}}</span><span>{{col2Label}}</span><span>{{col3Label}}</span></div>{{/col2Label}}
+    {{#items}}{{#@first}}<ul class="cms-rows__list">{{/@first}}<li class="cms-rows__row">
+      <span class="cms-rows__mark">{{#mark}}{{mark}}{{/mark}}</span>
+      <{{@hsub}} class="cms-rows__name">{{#link}}<a class="cms-rows__link" href="{{link}}" rel="noopener">{{/link}}{{title}}{{#link}}</a>{{/link}}</{{@hsub}}>
+      <span class="cms-rows__meta">{{meta}}{{#link}}<span class="cms-rows__arrow" aria-hidden="true">↗</span>{{/link}}</span>
+    </li>{{#@last}}</ul>{{/@last}}{{/items}}
+  </div>
+</section>

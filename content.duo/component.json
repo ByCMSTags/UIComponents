@@ -1,0 +1,172 @@
+{
+  "id": "content.duo",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Two photo tiles",
+    "ar": "بطاقتان بالصور"
+  },
+  "description": {
+    "en": "Two large photo tiles, each with a label, a title and a link.",
+    "ar": "بطاقتان كبيرتان بالصور، لكل منهما تسمية وعنوان ورابط."
+  },
+  "fields": [
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Tiles",
+        "ar": "البطاقات"
+      },
+      "aliases": [
+        "tiles",
+        "cards",
+        "list"
+      ],
+      "subFields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "photo",
+            "picture",
+            "backgroundImage",
+            "img"
+          ]
+        },
+        {
+          "key": "eyebrow",
+          "type": "shortText",
+          "label": {
+            "en": "Small label",
+            "ar": "التسمية الصغيرة"
+          },
+          "localized": true,
+          "aliases": [
+            "kicker",
+            "tagline",
+            "label"
+          ]
+        },
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "heading",
+            "headline",
+            "name"
+          ]
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": {
+            "en": "Link",
+            "ar": "الرابط"
+          },
+          "aliases": [
+            "href",
+            "url",
+            "buttonLink"
+          ]
+        },
+        {
+          "key": "linkText",
+          "type": "shortText",
+          "label": {
+            "en": "Link text",
+            "ar": "نص الرابط"
+          },
+          "localized": true,
+          "aliases": [
+            "buttonText",
+            "more"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Tiles",
+        "ar": "البطاقات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{eyebrow}}",
+      "field": "items.eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link}}",
+      "field": "items.link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{linkText}}",
+      "field": "items.linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      },
+      "scope": "items"
+    }
+  ]
+}

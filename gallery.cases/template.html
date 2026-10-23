@@ -16,11 +16,11 @@
     {{#items}}{{#@first}}{{^@last}}<div class="cms-cases__nav" data-cms-nav>
       <button class="cms-cases__arrow" type="button" data-cms-prev>
         <span class="visually-hidden">{{@t.prevSlide}}</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M15.4 5.3 8.7 12l6.7 6.7 1.4-1.4L11.5 12l5.3-5.3z"/></svg>
+        {{prevIcon}}
       </button>
       <button class="cms-cases__arrow" type="button" data-cms-next>
         <span class="visually-hidden">{{@t.nextSlide}}</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8.6 5.3 14.9 12l-6.3 6.7-1.4-1.4L12.5 12 7.2 6.7z"/></svg>
+        {{nextIcon}}
       </button>
     </div>{{/@last}}{{/@first}}{{/items}}
   </div>

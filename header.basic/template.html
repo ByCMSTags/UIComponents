@@ -1,19 +1,15 @@
-<header class="sticky-top">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="{{@t.menu}}">
+<header class="sticky-top bg-body cms-header-basic">
+  <nav class="navbar navbar-expand-lg bg-body" aria-label="{{@t.menu}}">
     <div class="container-fluid">
       <a class="navbar-brand cms-brand d-flex align-items-center" href="{{@home}}">{{#@site.logo}}{{@site.logo sizes="160px" max="160" eager="true"}}{{/@site.logo}}{{^@site.logo}}{{@site.name}}{{/@site.logo}}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-basic" aria-controls="navbar-basic" aria-expanded="false" aria-label="{{@t.menu}}"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbar-basic">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">{{#@nav}}<li class="nav-item"><a class="nav-link{{#current}} active{{/current}}" href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a></li>{{/@nav}}</ul>
-        {{#@multilingual}}<div class="dropdown me-lg-2 mb-2 mb-lg-0">
-          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">{{@t.language}}: </span>{{@lang}}</button>
-          <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="static">{{#@langs}}<li><a class="dropdown-item" href="{{href}}" lang="{{code}}" hreflang="{{code}}"{{#current}} aria-current="true"{{/current}}>{{label}}</a></li>{{/@langs}}</ul>
+        {{#@multilingual}}<div class="dropdown cms-lang">
+          <button class="cms-lang__btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{@t.language}}">{{#@site.languageIcon}}{{@site.languageIcon}}{{/@site.languageIcon}}{{^@site.languageIcon}}{{@lang}}{{/@site.languageIcon}}</button>
+          <ul class="dropdown-menu dropdown-menu-end cms-lang__menu">{{#@langs}}<li><a class="dropdown-item cms-lang__item{{#current}} active{{/current}}" href="{{href}}" lang="{{code}}" hreflang="{{code}}"{{#current}} aria-current="true"{{/current}}>{{code}}</a></li>{{/@langs}}</ul>
         </div>{{/@multilingual}}
-        {{#@site.phone}}<a class="btn btn-outline-secondary me-lg-2 mb-2 mb-lg-0" href="tel:{{@site.phone|tel}}">{{@icon.phone}}<span class="ms-2" dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
-        <form class="d-flex" role="search" action="{{@home}}" method="get">
-          <input class="form-control me-2" type="search" name="q" placeholder="{{@t.search}}" aria-label="{{@t.search}}"/>
-          <button class="btn btn-outline-success" type="submit">{{@t.search}}</button>
-        </form>
+        {{#@site.phone}}<a class="cms-header-phone" href="tel:{{@site.phone|tel}}" aria-label="{{@site.phone}}">{{@site.phoneIcon}}</a>{{/@site.phone}}
       </div>
     </div>
   </nav>

@@ -3,10 +3,10 @@
     {{#heading}}<{{@h}} class="h1 fw-bold text-center mb-3">{{heading}}</{{@h}}>{{/heading}}
     {{#lead}}<p class="lead text-body-secondary text-center cms-lead mb-5">{{lead}}</p>{{/lead}}
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-      {{#address}}<div class="col"><div class="bg-white rounded-4 p-4 h-100"><span class="text-primary fs-3">{{@icon.pin}}</span><p class="fw-bold mt-2 mb-1">{{@t.address}}</p><p class="text-body-secondary mb-2">{{address}}</p>{{#mapLink}}<a href="{{mapLink}}" rel="noopener" target="_blank">{{@t.openMap}}</a>{{/mapLink}}</div></div>{{/address}}
-      {{#phone}}<div class="col"><div class="bg-white rounded-4 p-4 h-100"><span class="text-primary fs-3">{{@icon.phone}}</span><p class="fw-bold mt-2 mb-1">{{@t.phone}}</p><a href="tel:{{phone|tel}}" dir="ltr">{{phone}}</a></div></div>{{/phone}}
-      {{#email}}<div class="col"><div class="bg-white rounded-4 p-4 h-100"><span class="text-primary fs-3">{{@icon.mail}}</span><p class="fw-bold mt-2 mb-1">{{@t.email}}</p><a class="text-break" href="mailto:{{email}}">{{email}}</a></div></div>{{/email}}
-      {{#hours}}<div class="col"><div class="bg-white rounded-4 p-4 h-100"><span class="text-primary fs-3">{{@icon.clock}}</span><p class="fw-bold mt-2 mb-1">{{@t.hours}}</p><p class="text-body-secondary mb-0">{{hours}}</p></div></div>{{/hours}}
+      {{#address}}<div class="col"><div class="bg-white rounded-4 p-4 h-100"><span class="text-primary fs-3">{{addressIcon}}</span><p class="fw-bold mt-2 mb-1">{{@t.address}}</p><p class="text-body-secondary mb-2">{{address}}</p>{{#mapLink}}<a href="{{mapLink}}" rel="noopener" target="_blank">{{@t.openMap}}</a>{{/mapLink}}</div></div>{{/address}}
+      {{#phone}}<div class="col"><div class="bg-white rounded-4 p-4 h-100"><span class="text-primary fs-3">{{phoneIcon}}</span><p class="fw-bold mt-2 mb-1">{{@t.phone}}</p><a href="tel:{{phone|tel}}" dir="ltr">{{phone}}</a></div></div>{{/phone}}
+      {{#email}}<div class="col"><div class="bg-white rounded-4 p-4 h-100"><span class="text-primary fs-3">{{emailIcon}}</span><p class="fw-bold mt-2 mb-1">{{@t.email}}</p><a class="text-break" href="mailto:{{email}}">{{email}}</a></div></div>{{/email}}
+      {{#hours}}<div class="col"><div class="bg-white rounded-4 p-4 h-100"><span class="text-primary fs-3">{{hoursIcon}}</span><p class="fw-bold mt-2 mb-1">{{@t.hours}}</p><p class="text-body-secondary mb-0">{{hours}}</p></div></div>{{/hours}}
     </div>
   </div>
 </section>

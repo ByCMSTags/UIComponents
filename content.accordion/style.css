@@ -10,8 +10,8 @@
   display: inline-block;
   margin: 0 0 1.15rem;
   padding: 0.28rem 0.55rem;
-  background: #ececec;
-  color: #6a6a6a;
+  background: var(--cms-badge);
+  color: #fff;
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -27,7 +27,7 @@
   font-size: clamp(1.25rem, 5vw, 2.35rem);
   font-weight: 700;
   line-height: 1.28;
-  letter-spacing: -0.025em;
+  letter-spacing: var(--cms-title-tracking);
 }
 
 .cms-split-acc__title p {
@@ -36,6 +36,8 @@
 }
 
 .cms-split-acc__title u {
+  color: var(--cms-primary);
+  text-decoration-color: var(--cms-primary);
   text-underline-offset: 0.16em;
   text-decoration-thickness: 1.5px;
 }

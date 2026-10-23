@@ -13,6 +13,16 @@
       }
     },
     {
+      "id": "contact.studio",
+      "version": "1.0.0",
+      "category": "contact",
+      "kind": "single",
+      "name": {
+        "en": "Contact details grid",
+        "ar": "شبكة بيانات التواصل"
+      }
+    },
+    {
       "id": "content.accordion",
       "version": "1.0.0",
       "category": "content",
@@ -23,6 +33,26 @@
       }
     },
     {
+      "id": "content.cards",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Photo cards with heading",
+        "ar": "بطاقات بالصور مع عنوان"
+      }
+    },
+    {
+      "id": "content.duo",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Two photo tiles",
+        "ar": "بطاقتان بالصور"
+      }
+    },
+    {
       "id": "content.media",
       "version": "1.0.0",
       "category": "content",
@@ -30,6 +60,16 @@
       "name": {
         "en": "Text beside image",
         "ar": "نص بجانب صورة"
+      }
+    },
+    {
+      "id": "content.rows",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Text beside a table of rows",
+        "ar": "نص بجانب جدول صفوف"
       }
     },
     {
@@ -80,6 +120,16 @@
       "name": {
         "en": "Offer with slideshow",
         "ar": "عرض مع شرائح"
+      }
+    },
+    {
+      "id": "cta.contact",
+      "version": "1.0.0",
+      "category": "cta",
+      "kind": "single",
+      "name": {
+        "en": "Dark contact call",
+        "ar": "دعوة تواصل داكنة"
       }
     },
     {
@@ -143,6 +193,16 @@
       }
     },
     {
+      "id": "features.process",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Process in numbered steps",
+        "ar": "مراحل العمل المرقّمة"
+      }
+    },
+    {
       "id": "features.steps",
       "version": "1.0.0",
       "category": "features",
@@ -180,6 +240,16 @@
       "name": {
         "en": "Minimal",
         "ar": "بسيط"
+      }
+    },
+    {
+      "id": "footer.studio",
+      "version": "1.0.0",
+      "category": "footer",
+      "kind": "site",
+      "name": {
+        "en": "Studio footer",
+        "ar": "تذييل الاستوديو"
       }
     },
     {
@@ -230,6 +300,16 @@
       "name": {
         "en": "Photo panels",
         "ar": "ألواح صور"
+      }
+    },
+    {
+      "id": "gallery.portfolio",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Project grid with filters",
+        "ar": "شبكة مشاريع مع تصنيفات"
       }
     },
     {
@@ -313,6 +393,16 @@
       }
     },
     {
+      "id": "header.studio",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Studio header",
+        "ar": "ترويسة الاستوديو"
+      }
+    },
+    {
       "id": "hero.band",
       "version": "1.0.0",
       "category": "hero",
@@ -370,6 +460,16 @@
       "name": {
         "en": "Text and image",
         "ar": "نص وصورة"
+      }
+    },
+    {
+      "id": "hero.title",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Page title over photo",
+        "ar": "عنوان الصفحة فوق صورة"
       }
     },
     {

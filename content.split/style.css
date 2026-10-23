@@ -5,6 +5,7 @@
   grid-template-columns: 1fr;
   min-width: 0;
   background: #fff;
+  border-bottom: 1px solid #ececec;
 }
 
 .cms-split-story__media {
@@ -35,8 +36,8 @@
   align-self: flex-start;
   margin: 0 0 1.35rem;
   padding: 0.28rem 0.55rem;
-  background: #ececec;
-  color: #6a6a6a;
+  background: var(--cms-badge);
+  color: #fff;
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -52,7 +53,7 @@
   font-size: clamp(2.1rem, 4.6vw, 3.5rem);
   font-weight: 700;
   line-height: 1.08;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--cms-title-tracking);
 }
 
 .cms-split-story__text {

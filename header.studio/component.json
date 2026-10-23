@@ -1,0 +1,16 @@
+{
+  "id": "header.studio",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Studio header",
+    "ar": "ترويسة الاستوديو"
+  },
+  "description": {
+    "en": "Contact strip with language switch, then the logo and the pages menu.",
+    "ar": "شريط تواصل مع تبديل اللغة، ثم الشعار وقائمة الصفحات."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "placeholders": []
+}

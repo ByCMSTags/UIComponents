@@ -1,0 +1,28 @@
+<header class="cms-hstudio" data-cms-header>
+  <div class="cms-hstudio__util">
+    <div class="cms-hstudio__wrap">
+      <div class="cms-hstudio__reach">
+        {{#@site.phone}}<a class="cms-hstudio__reach-link" href="tel:{{@site.phone|tel}}">{{@site.phoneIcon}}<span dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
+        {{#@site.email}}<a class="cms-hstudio__reach-link" href="mailto:{{@site.email}}">{{@site.emailIcon}}<span>{{@site.email}}</span></a>{{/@site.email}}
+        {{#@site.address}}<span class="cms-hstudio__reach-link">{{@site.address}}</span>{{/@site.address}}
+      </div>
+      <div class="cms-hstudio__util-end">
+        {{#@social}}{{#@first}}<ul class="cms-hstudio__social"><li><a href="{{href}}" rel="noopener" target="_blank">{{icon}}<span>{{name}}</span></a></li></ul>{{/@first}}{{/@social}}
+        {{#@multilingual}}<ul class="cms-hstudio__langs" aria-label="{{@t.language}}">{{#@langs}}<li><a href="{{href}}" lang="{{code}}" hreflang="{{code}}"{{#current}} aria-current="true"{{/current}}>{{label}}</a></li>{{/@langs}}</ul>{{/@multilingual}}
+      </div>
+    </div>
+  </div>
+  <nav class="cms-hstudio__bar navbar navbar-expand-lg" aria-label="{{@t.menu}}">
+    <div class="cms-hstudio__wrap">
+      <a class="cms-hstudio__brand" href="{{@home}}">{{#@site.logo}}{{@site.logo sizes="160px" max="320" eager="true" img="cms-hstudio__logo"}}{{/@site.logo}}{{^@site.logo}}<span class="cms-hstudio__name">{{@site.name}}</span>{{/@site.logo}}</a>
+      <div class="cms-hstudio__tools">
+        {{#@multilingual}}<ul class="cms-hstudio__langs cms-hstudio__langs--bar" aria-label="{{@t.language}}">{{#@langs}}{{^current}}<li><a href="{{href}}" lang="{{code}}" hreflang="{{code}}">{{label}}</a></li>{{/current}}{{/@langs}}</ul>{{/@multilingual}}
+        <button class="cms-hstudio__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="{{@t.menu}}"><span></span><span></span><span></span></button>
+      </div>
+      <div class="collapse navbar-collapse cms-hstudio__menu" id="site-nav">
+        <ul class="navbar-nav cms-hstudio__nav">{{#@nav}}<li class="nav-item"><a class="nav-link cms-hstudio__link" href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a></li>{{/@nav}}</ul>
+        {{#@site.phone}}<a class="cms-hstudio__call" href="tel:{{@site.phone|tel}}"><span class="cms-hstudio__call-label">{{@t.callUs}}</span><span dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
+      </div>
+    </div>
+  </nav>
+</header>

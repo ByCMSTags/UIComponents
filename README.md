@@ -84,6 +84,28 @@ $env:GITHUB_TOKEN = "github_pat_..."
 npm run cmstags -- publish hero.split
 ```
 
+## Studio components
+
+Ten designs in the style of an architecture studio site (used by the Value website):
+
+| Id | What it shows |
+| --- | --- |
+| `header.studio` | Contact strip (phone, email, address, main social link, languages) above the logo and menu. |
+| `footer.studio` | Dark footer: logo, footer text, phone, email, address, pages, all social links. |
+| `hero.title` | Page title over a darkened photo, with a small label, text and an optional link. |
+| `features.process` | Heading beside numbered steps (01 / Title). |
+| `content.duo` | Two large photo tiles with a label, a title and a link. |
+| `content.rows` | Heading beside a table of rows (mark, name, detail, link): brands, awards, partners. |
+| `content.cards` | Heading and text, then photo cards with tags. |
+| `cta.contact` | Dark invitation with the site phone and email and a button. |
+| `contact.studio` | Contact details grid, map link and social links. |
+| `gallery.portfolio` | Project grid that visitors filter by category. |
+
+They also read site values the website provides: `{{@site.tagline}}`, `{{@site.address}}`,
+`{{@site.hours}}` (from the CMS collection `website-settings`), and the texts `{{@t.callUs}}`,
+`{{@t.writeUs}}`, `{{@t.visitUs}}`, `{{@t.pages}}`, `{{@t.followUs}}`, `{{@t.backToTop}}`,
+`{{@t.openMap}}`, `{{@t.all}}`, `{{@t.scrollDown}}`. Every design works right to left (Arabic).
+
 ## تثبيت مكوّن واحد
 
 المستودع الخاص هو `ByCMSTags/UIComponents`. كل مكوّن مجلد في جذر المستودع.

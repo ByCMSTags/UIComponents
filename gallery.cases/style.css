@@ -1,8 +1,14 @@
 .cms-cases {
+  --cms-cases-shadow-x: 0.85rem;
+  --cms-cases-shadow-t: 1.2rem;
+  --cms-cases-shadow-b: 2.35rem;
   display: grid;
   grid-template-columns: 1fr;
   background: #fff;
   min-width: 0;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  padding-block: clamp(1.75rem, 3vw, 2.5rem);
 }
 
 .cms-cases__side {
@@ -11,12 +17,20 @@
 }
 
 .cms-cases__eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  width: max-content;
+  max-width: 100%;
   margin: 0 0 0.65rem;
-  color: #111;
-  font-size: 0.72rem;
+  padding: 0.28rem 0.55rem;
+  background: var(--cms-badge);
+  color: #fff;
+  font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.14em;
+  line-height: 1.2;
   text-transform: uppercase;
+  border-radius: 0.2rem;
 }
 
 .cms-cases__title {
@@ -26,12 +40,12 @@
   font-size: clamp(1.9rem, 2.8vw, 2.45rem);
   font-weight: 700;
   line-height: 1.08;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--cms-title-tracking);
 }
 
 .cms-cases__filters {
   display: grid;
-  gap: 0.15rem;
+  gap: 0.25rem;
   margin: 0;
   padding: 0;
 }
@@ -40,12 +54,12 @@
   display: block;
   width: max-content;
   max-width: 100%;
-  padding: 0.4rem 0;
+  padding: 0.5rem 0;
   border: 0;
   border-bottom: 1px solid transparent;
   background: none;
   color: #c5c5c5;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.4;
   text-align: start;
@@ -73,6 +87,7 @@
   position: relative;
   min-width: 0;
   overflow-x: auto;
+  padding: var(--cms-cases-shadow-t) var(--cms-cases-shadow-x) var(--cms-cases-shadow-b);
 }
 
 .cms-cases.is-ready .cms-cases__stage {
@@ -81,7 +96,7 @@
 
 .cms-cases__track {
   display: flex;
-  gap: 0.7rem;
+  gap: 1.15rem;
   min-height: 22rem;
   transition: transform 0.45s ease;
 }
@@ -93,6 +108,7 @@
   min-height: 22rem;
   overflow: hidden;
   background: #d9d9d9;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
 }
 
 .cms-cases__hit {
@@ -122,13 +138,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.85rem;
+  width: 4.25rem;
   pointer-events: none;
 }
 
 .cms-cases__label-text {
   color: #fff;
-  font-size: 0.92rem;
+  font-size: 1.55rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   line-height: 1;
@@ -140,34 +156,46 @@
 
 .cms-cases__nav {
   position: absolute;
-  inset-inline-start: 0;
-  bottom: 0;
+  inset-inline-start: var(--cms-cases-shadow-x);
+  bottom: var(--cms-cases-shadow-b);
   z-index: 2;
   display: flex;
-  background: #fff;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
 }
 
 .cms-cases__arrow {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 4.75rem;
+  height: 4.75rem;
   padding: 0;
   border: 0;
-  background: #fff;
-  color: #111;
+  background: transparent;
+  color: #fff;
   cursor: pointer;
 }
 
-.cms-cases__arrow svg {
-  width: 1.15rem;
-  height: 1.15rem;
+.cms-cases__arrow + .cms-cases__arrow {
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.cms-cases__arrow svg,
+.cms-cases__arrow .fi {
+  width: 2.15rem;
+  height: 2.15rem;
+  font-size: 2.15rem;
 }
 
 .cms-cases__arrow:hover,
 .cms-cases__arrow:focus-visible {
-  background: #f4f4f4;
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
 }
 
 .cms-cases__slide[hidden] {

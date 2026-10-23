@@ -1,0 +1,142 @@
+.cms-ctac {
+  position: relative;
+  overflow: hidden;
+  background: #1b1b1b;
+  color: #fff;
+  isolation: isolate;
+}
+
+.cms-ctac__media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.cms-ctac__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cms-ctac--photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(15, 15, 15, 0.9) 0%, rgba(15, 15, 15, 0.7) 50%, rgba(15, 15, 15, 0.4) 100%);
+}
+
+[dir="rtl"] .cms-ctac--photo::after {
+  background: linear-gradient(270deg, rgba(15, 15, 15, 0.9) 0%, rgba(15, 15, 15, 0.7) 50%, rgba(15, 15, 15, 0.4) 100%);
+}
+
+.cms-ctac__inner {
+  display: grid;
+  gap: 2.5rem;
+  padding: clamp(4rem, 9vw, 7rem) clamp(1.25rem, 5vw, 4.5rem);
+}
+
+.cms-ctac__eyebrow {
+  display: inline-block;
+  margin: 0 0 1.25rem;
+  padding: 0.28rem 0.55rem;
+  background: var(--cms-badge, #fff);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-radius: 0.2rem;
+}
+
+.cms-ctac__title {
+  max-width: 18ch;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 4.6vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: var(--cms-title-tracking, 0);
+}
+
+.cms-ctac__text {
+  max-width: 34rem;
+  margin: 1.5rem 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.cms-ctac__side {
+  display: grid;
+  gap: 1.75rem;
+  align-content: end;
+}
+
+.cms-ctac__label {
+  margin: 0 0 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.cms-ctac__big {
+  color: #fff;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.cms-ctac__big:hover,
+.cms-ctac__big:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.cms-ctac__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  justify-self: start;
+  padding: 1rem 1.6rem;
+  background: #fff;
+  color: #111;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.cms-ctac__btn:hover,
+.cms-ctac__btn:focus-visible {
+  background: var(--cms-secondary, #e9edc9);
+  color: #111;
+}
+
+[dir="rtl"] .cms-ctac__btn span {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .cms-ctac__label,
+[dir="rtl"] .cms-ctac__btn,
+[dir="rtl"] .cms-ctac__eyebrow {
+  letter-spacing: 0;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 992px) {
+  .cms-ctac__inner {
+    grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 1fr);
+    align-items: end;
+    gap: 4rem;
+  }
+}

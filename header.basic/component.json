@@ -7,8 +7,8 @@
     "ar": "شريط Bootstrap"
   },
   "description": {
-    "en": "Light Bootstrap navbar: logo, links, languages and a search field.",
-    "ar": "شريط Bootstrap فاتح: الشعار والروابط واللغات وحقل بحث."
+    "en": "Light Bootstrap navbar: logo, links, languages and phone.",
+    "ar": "شريط Bootstrap فاتح: الشعار والروابط واللغات والهاتف."
   },
   "fields": [],
   "version": "1.0.0",

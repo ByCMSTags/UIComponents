@@ -1,0 +1,120 @@
+.cms-process {
+  --cms-process-ink: #111;
+  --cms-process-body: #6a6a6a;
+  --cms-process-line: #e6e6e6;
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+  padding: clamp(3.5rem, 8vw, 6.5rem) clamp(1.25rem, 5vw, 4.5rem);
+  background: #fff;
+}
+
+.cms-process__eyebrow {
+  display: inline-block;
+  margin: 0 0 1.15rem;
+  padding: 0.28rem 0.55rem;
+  background: var(--cms-badge, #111);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-radius: 0.2rem;
+}
+
+.cms-process__title {
+  max-width: 11ch;
+  margin: 0;
+  color: var(--cms-process-ink);
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: var(--cms-title-tracking, 0);
+}
+
+.cms-process__lead {
+  max-width: 24rem;
+  margin: 1.25rem 0 0;
+  color: var(--cms-process-body);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.cms-process__steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: cms-step;
+}
+
+.cms-process__step {
+  counter-increment: cms-step;
+  min-width: 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--cms-process-line);
+}
+
+.cms-process__head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 0.85rem;
+  color: var(--cms-process-ink);
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.cms-process__num::before {
+  content: counter(cms-step, decimal-leading-zero);
+  font-family: var(--cms-font-display, inherit);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.cms-process__name::before {
+  content: "/ ";
+}
+
+.cms-process__text {
+  margin: 0;
+  color: var(--cms-process-body);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .cms-process__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cms-process {
+    grid-template-columns: minmax(14rem, 0.8fr) minmax(0, 3fr);
+    align-items: start;
+    gap: 3rem;
+  }
+
+  .cms-process__title {
+    max-width: 12ch;
+    font-size: clamp(2rem, 2.6vw, 2.5rem);
+  }
+
+  .cms-process__steps {
+    grid-template-columns: none;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    column-gap: 0;
+  }
+
+  .cms-process__step {
+    padding: 0.25rem 1.6rem 0.5rem;
+    border-top: 0;
+    border-inline-start: 1px solid var(--cms-process-line);
+  }
+}

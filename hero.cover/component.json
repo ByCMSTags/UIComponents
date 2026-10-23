@@ -15,6 +15,21 @@
   ],
   "fields": [
     {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      },
+      "localized": true,
+      "aliases": [
+        "tagline",
+        "kicker",
+        "subheading",
+        "overline"
+      ]
+    },
+    {
       "key": "title",
       "type": "shortText",
       "label": {
@@ -111,10 +126,44 @@
         "link",
         "href"
       ]
+    },
+    {
+      "key": "secondaryText",
+      "type": "shortText",
+      "label": {
+        "en": "Second button text",
+        "ar": "نص الزر الثاني"
+      },
+      "localized": true,
+      "aliases": [
+        "secondaryLabel",
+        "cta2label"
+      ]
+    },
+    {
+      "key": "secondaryLink",
+      "type": "url",
+      "label": {
+        "en": "Second button link",
+        "ar": "رابط الزر الثاني"
+      },
+      "aliases": [
+        "secondaryUrl",
+        "cta2url"
+      ]
     }
   ],
   "version": "1.0.0",
   "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small title",
+        "ar": "عنوان صغير"
+      }
+    },
     {
       "token": "{{title}}",
       "field": "title",
@@ -158,6 +207,24 @@
       "label": {
         "en": "Button link",
         "ar": "رابط الزر"
+      }
+    },
+    {
+      "token": "{{secondaryText}}",
+      "field": "secondaryText",
+      "type": "shortText",
+      "label": {
+        "en": "Second button text",
+        "ar": "نص الزر الثاني"
+      }
+    },
+    {
+      "token": "{{secondaryLink}}",
+      "field": "secondaryLink",
+      "type": "url",
+      "label": {
+        "en": "Second button link",
+        "ar": "رابط الزر الثاني"
       }
     }
   ]

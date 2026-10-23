@@ -1,0 +1,15 @@
+<section id="{{@id}}" class="cms-ctac{{#image}} cms-ctac--photo{{/image}}">
+  {{#image}}<div class="cms-ctac__media">{{image sizes="100vw" class="cms-ctac__photo" decorative="true"}}</div>{{/image}}
+  <div class="cms-ctac__inner">
+    <div class="cms-ctac__copy">
+      {{#eyebrow}}<p class="cms-ctac__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-ctac__title">{{title}}</{{@h}}>{{/title}}
+      {{#description}}<p class="cms-ctac__text">{{description}}</p>{{/description}}
+    </div>
+    <div class="cms-ctac__side">
+      {{#@site.phone}}<div class="cms-ctac__reach"><p class="cms-ctac__label">{{@t.callUs}}</p><a class="cms-ctac__big" href="tel:{{@site.phone|tel}}" dir="ltr">{{@site.phone}}</a></div>{{/@site.phone}}
+      {{#@site.email}}<div class="cms-ctac__reach"><p class="cms-ctac__label">{{@t.writeUs}}</p><a class="cms-ctac__big" href="mailto:{{@site.email}}">{{@site.email}}</a></div>{{/@site.email}}
+      {{#buttonText}}{{#buttonLink}}<a class="cms-ctac__btn" href="{{buttonLink}}">{{buttonText}}<span aria-hidden="true">→</span></a>{{/buttonLink}}{{/buttonText}}
+    </div>
+  </div>
+</section>

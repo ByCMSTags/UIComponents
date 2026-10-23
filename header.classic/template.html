@@ -7,7 +7,7 @@
           <button class="btn btn-sm btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">{{@t.language}}: </span>{{@lang}}</button>
           <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="static">{{#@langs}}<li><a class="dropdown-item" href="{{href}}" lang="{{code}}" hreflang="{{code}}"{{#current}} aria-current="true"{{/current}}>{{label}}</a></li>{{/@langs}}</ul>
         </div>{{/@multilingual}}
-        {{#@site.phone}}<a class="btn btn-link link-light cms-icon-btn" href="tel:{{@site.phone|tel}}" aria-label="{{@site.phone}}">{{@icon.phone}}</a>{{/@site.phone}}
+        {{#@site.phone}}<a class="btn btn-link link-light cms-icon-btn" href="tel:{{@site.phone|tel}}" aria-label="{{@site.phone}}">{{@site.phoneIcon}}</a>{{/@site.phone}}
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="{{@t.menu}}"><span class="navbar-toggler-icon"></span></button>
       </div>
       <div class="collapse navbar-collapse" id="site-nav">

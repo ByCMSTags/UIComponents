@@ -1,0 +1,18 @@
+<section id="{{@id}}" class="cms-cards">
+  <div class="cms-cards__intro">
+    <div>
+      {{#eyebrow}}<p class="cms-cards__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-cards__title">{{title}}</{{@h}}>{{/title}}
+    </div>
+    {{#description}}<p class="cms-cards__lead">{{description}}</p>{{/description}}
+  </div>
+  {{#items}}{{#@first}}<div class="cms-cards__grid">{{/@first}}<article class="cms-cards__card">
+    <div class="cms-cards__media">
+      {{#image}}{{image sizes="(max-width: 768px) 100vw, 33vw" class="cms-cards__photo"}}{{/image}}
+      {{#tag}}<div class="cms-cards__tags"><span class="cms-cards__tag">{{tag}}</span>{{#category}}<span class="cms-cards__cat">{{category}}</span>{{/category}}</div>{{/tag}}
+      {{^tag}}{{#category}}<div class="cms-cards__tags"><span class="cms-cards__cat">{{category}}</span></div>{{/category}}{{/tag}}
+    </div>
+    {{#title}}<{{@hsub}} class="cms-cards__name">{{#link}}<a class="cms-cards__link" href="{{link}}">{{/link}}{{title}}{{#link}}</a>{{/link}}</{{@hsub}}>{{/title}}
+    {{#description}}<p class="cms-cards__text">{{description}}</p>{{/description}}
+  </article>{{#@last}}</div>{{/@last}}{{/items}}
+</section>

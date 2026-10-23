@@ -1,0 +1,251 @@
+{
+  "id": "contact.studio",
+  "category": "contact",
+  "kind": "single",
+  "name": {
+    "en": "Contact details grid",
+    "ar": "شبكة بيانات التواصل"
+  },
+  "description": {
+    "en": "A heading and text beside contact details, a map link and the social links.",
+    "ar": "عنوان ونص بجانب بيانات التواصل ورابط الخريطة وروابط التواصل الاجتماعي."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "lead",
+        "subtitle",
+        "intro",
+        "content"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Details",
+        "ar": "البيانات"
+      },
+      "aliases": [
+        "details",
+        "contacts",
+        "list"
+      ],
+      "subFields": [
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Label",
+            "ar": "التسمية"
+          },
+          "localized": true,
+          "aliases": [
+            "title",
+            "name"
+          ]
+        },
+        {
+          "key": "value",
+          "type": "shortText",
+          "label": {
+            "en": "Value",
+            "ar": "القيمة"
+          },
+          "localized": true,
+          "aliases": [
+            "text",
+            "description"
+          ]
+        },
+        {
+          "key": "link",
+          "type": "shortText",
+          "label": {
+            "en": "Link (https://, tel: or mailto:)",
+            "ar": "الرابط (https:// أو tel: أو mailto:)"
+          },
+          "aliases": [
+            "href",
+            "url"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mapLink",
+      "type": "url",
+      "label": {
+        "en": "Map link",
+        "ar": "رابط الخريطة"
+      },
+      "aliases": [
+        "map",
+        "location"
+      ]
+    },
+    {
+      "key": "mapText",
+      "type": "shortText",
+      "label": {
+        "en": "Map link text",
+        "ar": "نص رابط الخريطة"
+      },
+      "localized": true
+    },
+    {
+      "key": "socialTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Social title",
+        "ar": "عنوان روابط التواصل"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Details",
+        "ar": "البيانات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{label}}",
+      "field": "items.label",
+      "type": "shortText",
+      "label": {
+        "en": "Label",
+        "ar": "التسمية"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{value}}",
+      "field": "items.value",
+      "type": "shortText",
+      "label": {
+        "en": "Value",
+        "ar": "القيمة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link}}",
+      "field": "items.link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (https://, tel: or mailto:)",
+        "ar": "الرابط (https:// أو tel: أو mailto:)"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{mapLink}}",
+      "field": "mapLink",
+      "type": "url",
+      "label": {
+        "en": "Map link",
+        "ar": "رابط الخريطة"
+      }
+    },
+    {
+      "token": "{{mapText}}",
+      "field": "mapText",
+      "type": "shortText",
+      "label": {
+        "en": "Map link text",
+        "ar": "نص رابط الخريطة"
+      }
+    },
+    {
+      "token": "{{socialTitle}}",
+      "field": "socialTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Social title",
+        "ar": "عنوان روابط التواصل"
+      }
+    }
+  ]
+}

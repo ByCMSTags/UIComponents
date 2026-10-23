@@ -1,5 +1,5 @@
-<header class="sticky-top">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="{{@t.menu}}">
+<header class="sticky-top bg-body">
+  <nav class="navbar navbar-expand-lg bg-body" aria-label="{{@t.menu}}">
     <div class="container-fluid">
       <a class="navbar-brand cms-brand d-flex align-items-center" href="{{@home}}">{{#@site.logo}}{{@site.logo sizes="160px" max="160" eager="true"}}{{/@site.logo}}{{^@site.logo}}{{@site.name}}{{/@site.logo}}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-offcanvas" aria-controls="navbar-offcanvas" aria-label="{{@t.menu}}"><span class="navbar-toggler-icon"></span></button>
@@ -15,7 +15,7 @@
               <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">{{@t.language}}: </span>{{@lang}}</button>
               <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="static">{{#@langs}}<li><a class="dropdown-item" href="{{href}}" lang="{{code}}" hreflang="{{code}}"{{#current}} aria-current="true"{{/current}}>{{label}}</a></li>{{/@langs}}</ul>
             </div>{{/@multilingual}}
-            {{#@site.phone}}<a class="btn btn-outline-secondary" href="tel:{{@site.phone|tel}}">{{@icon.phone}}<span class="ms-2" dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
+            {{#@site.phone}}<a class="btn btn-outline-secondary" href="tel:{{@site.phone|tel}}">{{@site.phoneIcon}}<span class="ms-2" dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
           </div>
         </div>
       </div>

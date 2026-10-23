@@ -1,15 +1,17 @@
-<section id="{{@id}}" class="cms-hero-band position-relative overflow-hidden bg-dark text-white">
-  {{#image}}{{image sizes="100vw" class="cms-hero-band__photo" decorative="true"}}{{/image}}
+<section id="{{@id}}" class="cms-hero-band position-relative overflow-hidden text-white">
+  {{#image}}<div class="cms-hero-band__media">{{image sizes="100vw" class="cms-hero-band__photo" decorative="true"}}</div>{{/image}}
   <div class="cms-hero-band__scrim" aria-hidden="true"></div>
   <div class="cms-hero-band__layout">
     <div class="cms-hero-band__stage">
-      {{#title}}<{{@h}} class="cms-hero-band__title">{{title}}</{{@h}}>{{/title}}
+      <div class="container">
+        {{#title}}<{{@h}} class="cms-hero-band__title">{{title}}</{{@h}}>{{/title}}
+      </div>
     </div>
     <div class="cms-hero-band__bar">
       {{#description}}<div class="cms-hero-band__lead"><p class="mb-0">{{description}}</p></div>{{/description}}
       {{#subtitle}}<div class="cms-hero-band__aside"><p class="mb-0">{{subtitle}}</p></div>{{/subtitle}}
-      {{#buttonText}}{{#buttonLink}}<a class="cms-hero-band__cta" href="{{buttonLink}}"><span>{{buttonText}}</span></a>{{/buttonLink}}{{/buttonText}}
-      {{^buttonLink}}{{#@next}}<a class="cms-hero-band__cta" href="{{@next}}"><span>{{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}{{@t.learnMore}}{{/buttonText}}</span></a>{{/@next}}{{/buttonLink}}
+      {{#buttonText}}{{#buttonLink}}<a class="cms-hero-band__cta" href="{{buttonLink}}"><span>{{buttonText}}</span>{{buttonIcon}}</a>{{/buttonLink}}{{/buttonText}}
+      {{^buttonLink}}{{#@next}}<a class="cms-hero-band__cta" href="{{@next}}"><span>{{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}{{@t.learnMore}}{{/buttonText}}</span>{{buttonIcon}}</a>{{/@next}}{{/buttonLink}}
     </div>
   </div>
 </section>

@@ -9,7 +9,7 @@
           <button class="btn btn-sm btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">{{@t.language}}: </span>{{@lang}}</button>
           <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="static">{{#@langs}}<li><a class="dropdown-item" href="{{href}}" lang="{{code}}" hreflang="{{code}}"{{#current}} aria-current="true"{{/current}}>{{label}}</a></li>{{/@langs}}</ul>
         </div>{{/@multilingual}}
-        {{#@site.phone}}<a class="btn btn-outline-light" href="tel:{{@site.phone|tel}}">{{@icon.phone}}<span class="ms-2" dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
+        {{#@site.phone}}<a class="btn btn-outline-light" href="tel:{{@site.phone|tel}}">{{@site.phoneIcon}}<span class="ms-2" dir="ltr">{{@site.phone}}</span></a>{{/@site.phone}}
       </div>
     </div>
   </nav>

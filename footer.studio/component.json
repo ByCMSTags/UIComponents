@@ -1,0 +1,16 @@
+{
+  "id": "footer.studio",
+  "category": "footer",
+  "kind": "site",
+  "name": {
+    "en": "Studio footer",
+    "ar": "تذييل الاستوديو"
+  },
+  "description": {
+    "en": "Dark footer with the site text, phone, email, address, pages and social links.",
+    "ar": "تذييل داكن فيه نص الموقع والهاتف والبريد والعنوان والصفحات وروابط التواصل."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "placeholders": []
+}

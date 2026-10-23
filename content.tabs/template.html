@@ -4,10 +4,13 @@
     {{#title}}<{{@h}} class="cms-split-tabs__title">{{title}}</{{@h}}>{{/title}}
     <div class="cms-split-tabs__nav" role="tablist" aria-label="{{#title}}{{title}}{{/title}}{{^title}}{{@label}}{{/title}}">
       {{#items}}<button class="cms-split-tabs__tab{{#@first}} is-active{{/@first}}" type="button" role="tab" id="{{@id}}-tab{{@number}}" data-cms-tab aria-selected="{{#@first}}true{{/@first}}{{^@first}}false{{/@first}}" aria-controls="{{@id}}-pane{{@number}}">{{title}}</button>{{/items}}
+      <span class="cms-split-tabs__ink" aria-hidden="true"></span>
     </div>
-    {{#items}}<div class="cms-split-tabs__pane" id="{{@id}}-pane{{@number}}" role="tabpanel" data-cms-pane aria-labelledby="{{@id}}-tab{{@number}}"{{^@first}} hidden{{/@first}}>{{#description}}<p class="cms-split-tabs__text">{{description}}</p>{{/description}}</div>{{/items}}
+    <div class="cms-split-tabs__panels">
+      {{#items}}<div class="cms-split-tabs__pane{{#@first}} is-active{{/@first}}" id="{{@id}}-pane{{@number}}" role="tabpanel" data-cms-pane aria-labelledby="{{@id}}-tab{{@number}}">{{#description}}<p class="cms-split-tabs__text">{{description}}</p>{{/description}}</div>{{/items}}
+    </div>
   </div>
   <div class="cms-split-tabs__media">
-    {{#items}}<div class="cms-split-tabs__shot" data-cms-shot{{^@first}} hidden{{/@first}}>{{#image}}{{image sizes="(max-width: 992px) 100vw, 50vw" class="cms-split-tabs__photo" decorative="true"}}{{/image}}</div>{{/items}}
+    {{#items}}<div class="cms-split-tabs__shot{{#@first}} is-active{{/@first}}" data-cms-shot>{{#image}}{{image sizes="(max-width: 992px) 100vw, 50vw" class="cms-split-tabs__photo" decorative="true"}}{{/image}}</div>{{/items}}
   </div>
 </section>

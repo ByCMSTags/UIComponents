@@ -1,1 +1,33 @@
-/* hero.cover */
+.hero-cover .cms-cover {
+  object-fit: cover;
+}
+
+.hero-cover-overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 35%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.hero-cover-bar {
+  background: rgba(20, 20, 20, 0.88);
+}
+
+.hero-cover-cta {
+  min-width: 14rem;
+  background: #fff;
+  color: #111;
+}
+
+.hero-cover-cta:hover {
+  background: #f3f3f3;
+  color: #111;
+}
+
+.hero-cover-cta-secondary {
+  background: transparent;
+  color: #fff;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-cover-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}

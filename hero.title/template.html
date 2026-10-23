@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-htitle{{#image}} cms-htitle--photo{{/image}}">
+  {{#image}}<div class="cms-htitle__media">{{image sizes="100vw" class="cms-htitle__photo" decorative="true" eager="true"}}</div>{{/image}}
+  <div class="cms-htitle__inner">
+    {{#eyebrow}}<p class="cms-htitle__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-htitle__title">{{title}}</{{@h}}>{{/title}}
+    <div class="cms-htitle__foot">
+      {{#description}}<p class="cms-htitle__text">{{description}}</p>{{/description}}
+      {{#buttonText}}{{#buttonLink}}<a class="cms-htitle__cta" href="{{buttonLink}}"><span aria-hidden="true">──</span> {{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+      {{^buttonLink}}{{#@next}}<a class="cms-htitle__scroll" href="{{@next}}" aria-label="{{@t.scrollDown}}"><span aria-hidden="true"></span></a>{{/@next}}{{/buttonLink}}
+    </div>
+  </div>
+</section>

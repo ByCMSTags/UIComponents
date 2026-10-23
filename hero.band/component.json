@@ -125,6 +125,15 @@
         "link",
         "href"
       ]
+    },
+    {
+      "key": "buttonIcon",
+      "type": "icon",
+      "label": {
+        "en": "Button icon",
+        "ar": "أيقونة الزر"
+      },
+      "placeholder": "fi-rr-arrow-small-right"
     }
   ],
   "version": "1.0.0",
@@ -181,6 +190,15 @@
       "label": {
         "en": "Button link",
         "ar": "رابط الزر"
+      }
+    },
+    {
+      "token": "{{buttonIcon}}",
+      "field": "buttonIcon",
+      "type": "icon",
+      "label": {
+        "en": "Button icon",
+        "ar": "أيقونة الزر"
       }
     }
   ]

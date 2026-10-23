@@ -1,0 +1,173 @@
+.cms-fstudio {
+  --cms-fstudio-bg: #121212;
+  --cms-fstudio-ink: #fff;
+  --cms-fstudio-muted: rgba(255, 255, 255, 0.58);
+  --cms-fstudio-line: rgba(255, 255, 255, 0.12);
+  background: var(--cms-fstudio-bg);
+  color: var(--cms-fstudio-ink);
+}
+
+.cms-fstudio__wrap {
+  padding: clamp(3.5rem, 7vw, 6rem) clamp(1.25rem, 4vw, 4.5rem) 1.75rem;
+}
+
+.cms-fstudio__top {
+  display: grid;
+  gap: 2.5rem;
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--cms-fstudio-line);
+}
+
+.cms-fstudio__brand {
+  display: inline-flex;
+  color: var(--cms-fstudio-ink);
+  text-decoration: none;
+}
+
+.cms-fstudio__logo {
+  display: block;
+  width: auto;
+  height: 4.5rem;
+  max-width: 12rem;
+  object-fit: contain;
+}
+
+.cms-fstudio__name {
+  font-family: var(--cms-font-display, inherit);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.cms-fstudio__tagline {
+  max-width: 26rem;
+  margin: 1.5rem 0 0;
+  color: var(--cms-fstudio-ink);
+  font-family: var(--cms-font-display, inherit);
+  font-size: clamp(1.2rem, 2.1vw, 1.6rem);
+  font-weight: 500;
+  line-height: 1.35;
+  white-space: pre-line;
+}
+
+.cms-fstudio__reach {
+  display: grid;
+  gap: 1.75rem;
+  align-content: start;
+}
+
+.cms-fstudio__label {
+  margin: 0 0 0.6rem;
+  color: var(--cms-fstudio-muted);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.cms-fstudio__big {
+  display: inline-block;
+  margin: 0;
+  color: var(--cms-fstudio-ink);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+a.cms-fstudio__big:hover,
+a.cms-fstudio__big:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.cms-fstudio__cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 2.25rem;
+  padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+}
+
+.cms-fstudio__list {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cms-fstudio__list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.cms-fstudio__list a:hover,
+.cms-fstudio__list a:focus-visible,
+.cms-fstudio__list a[aria-current] {
+  color: var(--cms-fstudio-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.cms-fstudio__text {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.cms-fstudio__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cms-fstudio-line);
+}
+
+.cms-fstudio__copy {
+  margin: 0;
+  color: var(--cms-fstudio-muted);
+  font-size: 0.8rem;
+}
+
+.cms-fstudio__up {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--cms-fstudio-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cms-fstudio__up:hover,
+.cms-fstudio__up:focus-visible {
+  color: var(--cms-fstudio-ink);
+}
+
+[dir="rtl"] .cms-fstudio__label,
+[dir="rtl"] .cms-fstudio__up {
+  letter-spacing: 0;
+  font-size: 0.82rem;
+}
+
+@media (min-width: 992px) {
+  .cms-fstudio__top {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 4rem;
+  }
+
+  .cms-fstudio__reach {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

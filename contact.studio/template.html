@@ -1,0 +1,15 @@
+<section id="{{@id}}" class="cms-cstudio">
+  <div class="cms-cstudio__intro">
+    {{#eyebrow}}<p class="cms-cstudio__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-cstudio__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-cstudio__lead">{{description}}</p>{{/description}}
+    {{#mapLink}}<a class="cms-cstudio__map" href="{{mapLink}}" rel="noopener" target="_blank"><span aria-hidden="true">──</span> {{#mapText}}{{mapText}}{{/mapText}}{{^mapText}}{{@t.openMap}}{{/mapText}}</a>{{/mapLink}}
+  </div>
+  <div class="cms-cstudio__body">
+    {{#items}}{{#@first}}<dl class="cms-cstudio__grid">{{/@first}}<div class="cms-cstudio__item">
+      <dt class="cms-cstudio__label">{{label}}</dt>
+      <dd class="cms-cstudio__value">{{#link}}<a href="{{link}}">{{/link}}{{value}}{{#link}}</a>{{/link}}</dd>
+    </div>{{#@last}}</dl>{{/@last}}{{/items}}
+    {{#@social}}{{#@first}}<div class="cms-cstudio__social"><p class="cms-cstudio__label">{{#socialTitle}}{{socialTitle}}{{/socialTitle}}{{^socialTitle}}{{@t.followUs}}{{/socialTitle}}</p><ul class="cms-cstudio__links">{{/@first}}<li><a href="{{href}}" rel="noopener" target="_blank">{{icon}}<span>{{name}}</span><span class="cms-cstudio__arrow" aria-hidden="true">↗</span></a></li>{{#@last}}</ul></div>{{/@last}}{{/@social}}
+  </div>
+</section>

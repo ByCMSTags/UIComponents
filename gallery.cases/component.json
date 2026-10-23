@@ -57,6 +57,24 @@
       ]
     },
     {
+      "key": "prevIcon",
+      "type": "icon",
+      "label": {
+        "en": "Previous icon",
+        "ar": "أيقونة السابق"
+      },
+      "placeholder": "fi-rr-angle-small-left"
+    },
+    {
+      "key": "nextIcon",
+      "type": "icon",
+      "label": {
+        "en": "Next icon",
+        "ar": "أيقونة التالي"
+      },
+      "placeholder": "fi-rr-angle-small-right"
+    },
+    {
       "key": "items",
       "type": "repeater",
       "label": {

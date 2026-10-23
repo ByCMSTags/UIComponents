@@ -1,12 +1,22 @@
-<section id="{{@id}}" class="position-relative overflow-hidden bg-dark text-white text-center d-flex align-items-center min-vh-75">
+<section id="{{@id}}" class="hero-cover position-relative overflow-hidden bg-dark text-white d-flex flex-column min-vh-100">
   {{#image}}{{image sizes="100vw" class="position-absolute top-0 start-0 w-100 h-100 cms-cover" decorative="true"}}{{/image}}
-  <div class="position-absolute top-0 start-0 w-100 h-100 cms-overlay"></div>
-  <div class="container position-relative z-1 py-5">
-    <div class="col-lg-9 mx-auto py-5">
-      {{#title}}<{{@h}} class="display-3 fw-bold mb-3">{{title}}</{{@h}}>{{/title}}
-      {{#description}}<p class="lead mb-4 text-white-85">{{description}}</p>{{/description}}
-      {{#buttonText}}{{#buttonLink}}<a class="btn btn-primary btn-lg" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
-      {{^buttonLink}}{{#@next}}<a class="btn btn-primary btn-lg" href="{{@next}}">{{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}{{@t.learnMore}}{{/buttonText}}</a>{{/@next}}{{/buttonLink}}
+  <div class="position-absolute top-0 start-0 w-100 h-100 hero-cover-overlay"></div>
+
+  <div class="container-fluid position-relative z-1 px-4 px-xl-5 pt-5 mt-auto">
+    <div class="col-lg-8 col-xl-7 py-4 py-lg-5">
+      {{#eyebrow}}<p class="cms-eyebrow mb-3 text-white-50">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="display-1 fw-bold lh-1 mb-0">{{title}}</{{@h}}>{{/title}}
+    </div>
+  </div>
+
+  <div class="position-relative z-1 mt-auto">
+    <div class="d-flex flex-column flex-lg-row align-items-stretch">
+      <div class="hero-cover-bar px-4 px-xl-5 py-4 flex-grow-1">
+        {{#description}}<p class="lead mb-0 col-lg-8">{{description}}</p>{{/description}}
+      </div>
+      {{#buttonText}}{{#buttonLink}}<a class="hero-cover-cta d-flex align-items-center justify-content-center px-5 py-4 text-uppercase fw-semibold text-decoration-none" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+      {{^buttonLink}}{{#@next}}<a class="hero-cover-cta d-flex align-items-center justify-content-center px-5 py-4 text-uppercase fw-semibold text-decoration-none" href="{{@next}}">{{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}{{@t.learnMore}}{{/buttonText}}</a>{{/@next}}{{/buttonLink}}
+      {{#secondaryText}}{{#secondaryLink}}<a class="hero-cover-cta hero-cover-cta-secondary d-flex align-items-center justify-content-center px-5 py-4 text-uppercase fw-semibold text-decoration-none" href="{{secondaryLink}}">{{secondaryText}}</a>{{/secondaryLink}}{{/secondaryText}}
     </div>
   </div>
 </section>

@@ -1,7 +1,8 @@
 .cms-stat-bars {
   --cms-stat-bars-ink: #111;
   --cms-stat-bars-body: #6a6a6a;
-  --cms-stat-bars-track: #e4e4e4;
+  --cms-stat-bars-track: var(--cms-secondary);
+  --cms-stat-bars-fill: var(--cms-primary);
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -11,15 +12,17 @@
 
 .cms-stat-bars__photo {
   position: absolute;
-  inset: 0;
+  top: 50%;
+  left: 50%;
   z-index: 0;
-  width: 100%;
-  height: 100%;
+  display: block;
+  width: min(46rem, 62%);
+  height: auto;
+  max-height: 88%;
   object-fit: contain;
-  object-position: 78% 58%;
-  opacity: 0.16;
+  object-position: center;
   pointer-events: none;
-  mix-blend-mode: multiply;
+  transform: translate(-50%, -50%);
 }
 
 .cms-stat-bars__layout {
@@ -29,7 +32,7 @@
   grid-template-columns: 1fr;
   gap: clamp(2.5rem, 6vw, 5rem);
   align-items: center;
-  padding: clamp(4.5rem, 11vw, 8rem) clamp(1.35rem, 6vw, 6.5rem);
+  padding: clamp(3.5rem, 7vw, 5.5rem) clamp(1.35rem, 6vw, 6.5rem);
 }
 
 .cms-stat-bars__copy {
@@ -57,7 +60,7 @@
   font-size: clamp(2rem, 4.4vw, 3.15rem);
   font-weight: 700;
   line-height: 1.08;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--cms-title-tracking);
 }
 
 .cms-stat-bars__text {
@@ -101,16 +104,24 @@
 
 .cms-stat-bars__track {
   position: relative;
-  height: 1px;
+  height: 5px;
   background: var(--cms-stat-bars-track);
 }
 
 .cms-stat-bars__fill {
   position: absolute;
-  inset-block: -0.5px;
+  inset-block: 0;
   inset-inline-start: 0;
   width: calc(var(--cms-bar, 0) * 1%);
-  background: var(--cms-stat-bars-ink);
+  background: var(--cms-stat-bars-fill);
+  transform: scaleX(1);
+  transform-origin: inline-start;
+  transition: transform 1.8s cubic-bezier(0.22, 1, 0.36, 1) 0.28s;
+}
+
+.cms-stat-bars__panel[data-cms-reveal]:not(.is-in) .cms-stat-bars__fill {
+  transform: scaleX(0);
+  transition: none;
 }
 
 @media (min-width: 992px) {

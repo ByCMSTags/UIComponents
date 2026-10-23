@@ -4,13 +4,22 @@
   window.CmsTagsComponents["content.tabs"] = {
     init: function (root) {
       if (!root) return;
+      const nav = root.querySelector(".cms-split-tabs__nav");
+      const ink = root.querySelector(".cms-split-tabs__ink");
       const tabs = root.querySelectorAll("[data-cms-tab]");
       const panes = root.querySelectorAll("[data-cms-pane]");
       const shots = root.querySelectorAll("[data-cms-shot]");
-      if (tabs.length < 2) return;
+      if (!tabs.length) return;
       tabs.forEach((tab, i) => {
         tab.tabIndex = i === 0 ? 0 : -1;
       });
+
+      function moveInk(index) {
+        if (!nav || !ink || !tabs[index]) return;
+        const tab = tabs[index];
+        ink.style.width = `${tab.offsetWidth}px`;
+        ink.style.transform = `translate(${tab.offsetLeft}px, ${tab.offsetTop + tab.offsetHeight - 2}px)`;
+      }
 
       function show(index) {
         tabs.forEach((tab, i) => {
@@ -20,11 +29,12 @@
           tab.tabIndex = on ? 0 : -1;
         });
         panes.forEach((pane, i) => {
-          pane.hidden = i !== index;
+          pane.classList.toggle("is-active", i === index);
         });
         shots.forEach((shot, i) => {
-          shot.hidden = i !== index;
+          shot.classList.toggle("is-active", i === index);
         });
+        moveInk(index);
       }
 
       tabs.forEach((tab, i) => {
@@ -37,6 +47,12 @@
           tabs[next].focus();
           show(next);
         });
+      });
+
+      requestAnimationFrame(() => moveInk(0));
+      window.addEventListener("resize", () => {
+        const index = [...tabs].findIndex((tab) => tab.classList.contains("is-active"));
+        moveInk(index < 0 ? 0 : index);
       });
     },
   };

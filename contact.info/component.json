@@ -105,6 +105,30 @@
         "mapUrl",
         "location"
       ]
+    },
+    {
+      "key": "addressIcon",
+      "type": "icon",
+      "label": { "en": "Address icon", "ar": "أيقونة العنوان" },
+      "placeholder": "fi-rr-marker"
+    },
+    {
+      "key": "phoneIcon",
+      "type": "icon",
+      "label": { "en": "Phone icon", "ar": "أيقونة الهاتف" },
+      "placeholder": "fi-rr-phone-call"
+    },
+    {
+      "key": "emailIcon",
+      "type": "icon",
+      "label": { "en": "Email icon", "ar": "أيقونة البريد" },
+      "placeholder": "fi-rr-envelope"
+    },
+    {
+      "key": "hoursIcon",
+      "type": "icon",
+      "label": { "en": "Hours icon", "ar": "أيقونة الساعات" },
+      "placeholder": "fi-rr-clock"
     }
   ],
   "version": "1.0.0",
@@ -171,6 +195,30 @@
         "en": "Map link",
         "ar": "رابط الخريطة"
       }
+    },
+    {
+      "token": "{{addressIcon}}",
+      "field": "addressIcon",
+      "type": "icon",
+      "label": { "en": "Address icon", "ar": "أيقونة العنوان" }
+    },
+    {
+      "token": "{{phoneIcon}}",
+      "field": "phoneIcon",
+      "type": "icon",
+      "label": { "en": "Phone icon", "ar": "أيقونة الهاتف" }
+    },
+    {
+      "token": "{{emailIcon}}",
+      "field": "emailIcon",
+      "type": "icon",
+      "label": { "en": "Email icon", "ar": "أيقونة البريد" }
+    },
+    {
+      "token": "{{hoursIcon}}",
+      "field": "hoursIcon",
+      "type": "icon",
+      "label": { "en": "Hours icon", "ar": "أيقونة الساعات" }
     }
   ]
 }

@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-hslides" data-cms-slides aria-roledescription="carousel" aria-label="{{#title}}{{title}}{{/title}}{{^title}}{{@label}}{{/title}}">
+  <div class="cms-hslides__stage" aria-hidden="true">
+    {{#images}}<div class="cms-hslides__slide{{#@first}} is-active{{/@first}}" data-cms-slide>{{image sizes="100vw" class="cms-hslides__photo" decorative="true"}}</div>{{/images}}
+    {{^images}}{{#image}}<div class="cms-hslides__slide is-active" data-cms-slide>{{image sizes="100vw" class="cms-hslides__photo" decorative="true" eager="true"}}</div>{{/image}}{{/images}}
+  </div>
+  <div class="cms-hslides__scrim" aria-hidden="true"></div>
+  <div class="cms-hslides__content">
+    {{#title}}<{{@h}} class="cms-hslides__title">{{title}}</{{@h}}>{{/title}}
+    {{#buttonText}}{{#buttonLink}}<a class="cms-hslides__btn" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+  </div>
+  {{#images}}{{#@first}}{{^@last}}<div class="cms-hslides__dots" role="group" aria-label="{{@t.slides}}">{{/@last}}{{/@first}}<button class="cms-hslides__dot{{#@first}} is-active{{/@first}}" type="button" data-cms-dot="{{@index}}" aria-label="{{@t.slide}} {{@number}}"{{#@first}} aria-current="true"{{/@first}}></button>{{#@last}}{{^@first}}</div>{{/@first}}{{/@last}}{{/images}}
+</section>

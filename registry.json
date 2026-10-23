@@ -583,6 +583,16 @@
       }
     },
     {
+      "id": "hero.slides",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Title over a photo slider",
+        "ar": "عنوان فوق شرائح صور"
+      }
+    },
+    {
       "id": "hero.split",
       "version": "1.0.0",
       "category": "hero",

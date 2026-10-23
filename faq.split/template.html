@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-faqs">
+  <div class="cms-faqs__intro">
+    {{#eyebrow}}<p class="cms-faqs__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-faqs__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-faqs__lead">{{description}}</p>{{/description}}
+    {{#buttonText}}{{#buttonLink}}<a class="cms-faqs__btn" href="{{buttonLink}}">{{buttonText}}<span aria-hidden="true">→</span></a>{{/buttonLink}}{{/buttonText}}
+  </div>
+  {{#items}}{{#@first}}<div class="cms-faqs__list">{{/@first}}<details class="cms-faqs__item"{{#@first}} open{{/@first}}>
+    <summary class="cms-faqs__q"><span class="cms-faqs__num" aria-hidden="true"></span><span class="cms-faqs__question">{{question}}</span><span class="cms-faqs__mark" aria-hidden="true"></span></summary>
+    {{#answer}}<div class="cms-faqs__a"><p>{{answer}}</p></div>{{/answer}}
+  </details>{{#@last}}</div>{{/@last}}{{/items}}
+</section>

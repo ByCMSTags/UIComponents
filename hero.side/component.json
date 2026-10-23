@@ -1,0 +1,178 @@
+{
+  "id": "hero.side",
+  "category": "hero",
+  "kind": "single",
+  "name": {
+    "en": "Title beside photo",
+    "ar": "عنوان بجانب صورة"
+  },
+  "description": {
+    "en": "Page title, text and a link on one side, a framed photo with a caption on the other.",
+    "ar": "عنوان الصفحة ونص ورابط في جهة، وصورة بإطار مع تعليق في الجهة الأخرى."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "lead",
+        "subtitle",
+        "intro",
+        "content"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "aliases": [
+        "photo",
+        "picture",
+        "backgroundImage",
+        "img"
+      ]
+    },
+    {
+      "key": "caption",
+      "type": "shortText",
+      "label": {
+        "en": "Photo caption",
+        "ar": "تعليق الصورة"
+      },
+      "localized": true,
+      "aliases": [
+        "meta",
+        "note"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctaText",
+        "button"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaLink",
+        "link"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{caption}}",
+      "field": "caption",
+      "type": "shortText",
+      "label": {
+        "en": "Photo caption",
+        "ar": "تعليق الصورة"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ]
+}

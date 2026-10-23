@@ -1,0 +1,32 @@
+<article class="cms-pdet">
+  <header class="cms-pdet__head">
+    <nav class="cms-pdet__crumbs" aria-label="{{@t.breadcrumb}}"><a href="{{@home}}">{{@t.home}}</a><span aria-hidden="true">/</span>{{#@back}}<a href="{{@back}}">{{@backLabel}}</a><span aria-hidden="true">/</span>{{/@back}}<span aria-current="page">{{title}}</span></nav>
+    <div class="cms-pdet__titlerow">
+      <div>
+        {{#category}}<p class="cms-pdet__cat">{{category}}</p>{{/category}}
+        {{#title}}<{{@h}} class="cms-pdet__title">{{title}}</{{@h}}>{{/title}}
+      </div>
+      {{#summary}}<p class="cms-pdet__summary">{{summary}}</p>{{/summary}}
+    </div>
+  </header>
+  {{#image}}<div class="cms-pdet__cover">{{image sizes="100vw" class="cms-pdet__photo" eager="true"}}</div>{{/image}}
+  <div class="cms-pdet__main">
+    <aside class="cms-pdet__facts" aria-label="{{@t.projectFacts}}">
+      <p class="cms-pdet__facts-title">{{@t.projectFacts}}</p>
+      <dl>
+        {{#category}}<div><dt>{{@t.type}}</dt><dd>{{category}}</dd></div>{{/category}}
+        {{#location}}<div><dt>{{@t.location}}</dt><dd>{{location}}</dd></div>{{/location}}
+        {{#year}}<div><dt>{{@t.year}}</dt><dd>{{year}}</dd></div>{{/year}}
+        {{#area}}<div><dt>{{@t.area}}</dt><dd>{{area}}</dd></div>{{/area}}
+        {{#scope}}<div><dt>{{@t.scope}}</dt><dd class="cms-pdet__scope">{{scope}}</dd></div>{{/scope}}
+      </dl>
+      <a class="cms-pdet__ask" href="{{@contact}}">{{@t.similarProject}} <span aria-hidden="true">→</span></a>
+    </aside>
+    <div class="cms-pdet__body">{{#body}}{{body}}{{/body}}{{^body}}{{#summary}}<p>{{summary}}</p>{{/summary}}{{/body}}</div>
+  </div>
+  {{#gallery}}{{#@first}}<section class="cms-pdet__gallery" aria-label="{{@t.photos}}"><p class="cms-pdet__gtitle">{{@t.photos}}</p><div class="cms-pdet__grid">{{/@first}}<figure class="cms-pdet__shot">{{image sizes="(max-width: 768px) 100vw, 50vw" class="cms-pdet__gphoto"}}{{#caption}}<figcaption>{{caption}}</figcaption>{{/caption}}</figure>{{#@last}}</div></section>{{/@last}}{{/gallery}}
+  <nav class="cms-pdet__pager" aria-label="{{@t.moreProjects}}">
+    {{#@back}}<a class="cms-pdet__all" href="{{@back}}"><span aria-hidden="true">←</span> {{@t.allProjects}}</a>{{/@back}}
+    {{#@next}}<a class="cms-pdet__next" href="{{@next}}"><span class="cms-pdet__nlabel">{{@t.nextProject}}</span><span class="cms-pdet__ntitle">{{@nextTitle}} <span aria-hidden="true">→</span></span></a>{{/@next}}
+  </nav>
+</article>

@@ -53,6 +53,16 @@
       }
     },
     {
+      "id": "content.intro",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Statement with two text columns",
+        "ar": "عبارة مع عمودين من النص"
+      }
+    },
+    {
       "id": "content.media",
       "version": "1.0.0",
       "category": "content",
@@ -60,6 +70,16 @@
       "name": {
         "en": "Text beside image",
         "ar": "نص بجانب صورة"
+      }
+    },
+    {
+      "id": "content.quote",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Large statement",
+        "ar": "مقولة كبيرة"
       }
     },
     {
@@ -83,6 +103,16 @@
       }
     },
     {
+      "id": "content.sticky",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Photo beside numbered points",
+        "ar": "صورة بجانب نقاط مرقمة"
+      }
+    },
+    {
       "id": "content.tabs",
       "version": "1.0.0",
       "category": "content",
@@ -100,6 +130,26 @@
       "name": {
         "en": "Text block",
         "ar": "كتلة نص"
+      }
+    },
+    {
+      "id": "content.timeline",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Vertical timeline",
+        "ar": "خط زمني عمودي"
+      }
+    },
+    {
+      "id": "cta.band",
+      "version": "1.0.0",
+      "category": "cta",
+      "kind": "single",
+      "name": {
+        "en": "Olive call band",
+        "ar": "شريط دعوة زيتوني"
       }
     },
     {
@@ -143,6 +193,16 @@
       }
     },
     {
+      "id": "faq.split",
+      "version": "1.0.0",
+      "category": "faq",
+      "kind": "single",
+      "name": {
+        "en": "Numbered questions",
+        "ar": "أسئلة مرقمة"
+      }
+    },
+    {
       "id": "features.alternating",
       "version": "1.0.0",
       "category": "features",
@@ -150,6 +210,16 @@
       "name": {
         "en": "Alternating rows",
         "ar": "صفوف متناوبة"
+      }
+    },
+    {
+      "id": "features.badges",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Icon points on dark grid",
+        "ar": "نقاط بأيقونات على شبكة داكنة"
       }
     },
     {
@@ -203,6 +273,16 @@
       }
     },
     {
+      "id": "features.specs",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Specification table",
+        "ar": "جدول مواصفات"
+      }
+    },
+    {
       "id": "features.steps",
       "version": "1.0.0",
       "category": "features",
@@ -210,6 +290,16 @@
       "name": {
         "en": "Numbered columns",
         "ar": "أعمدة مرقّمة"
+      }
+    },
+    {
+      "id": "features.tiles",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Numbered icon tiles",
+        "ar": "مربعات بأيقونات مرقمة"
       }
     },
     {
@@ -280,6 +370,16 @@
       "name": {
         "en": "Case studies carousel",
         "ar": "سلايدر دراسات حالة"
+      }
+    },
+    {
+      "id": "gallery.compare",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Before and after slider",
+        "ar": "مقارنة قبل وبعد"
       }
     },
     {
@@ -413,6 +513,16 @@
       }
     },
     {
+      "id": "hero.blueprint",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Title on a blueprint grid",
+        "ar": "عنوان على شبكة مخطط"
+      }
+    },
+    {
       "id": "hero.centered",
       "version": "1.0.0",
       "category": "hero",
@@ -420,6 +530,16 @@
       "name": {
         "en": "Centred with image",
         "ar": "في الوسط مع صورة"
+      }
+    },
+    {
+      "id": "hero.compact",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Compact page title",
+        "ar": "عنوان صفحة مختصر"
       }
     },
     {
@@ -453,6 +573,16 @@
       }
     },
     {
+      "id": "hero.side",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Title beside photo",
+        "ar": "عنوان بجانب صورة"
+      }
+    },
+    {
       "id": "hero.split",
       "version": "1.0.0",
       "category": "hero",
@@ -473,6 +603,16 @@
       }
     },
     {
+      "id": "list.articles",
+      "version": "1.0.0",
+      "category": "list",
+      "kind": "list",
+      "name": {
+        "en": "Articles in editorial rows",
+        "ar": "مقالات بصفوف تحريرية"
+      }
+    },
+    {
       "id": "list.cards",
       "version": "1.0.0",
       "category": "list",
@@ -490,6 +630,26 @@
       "name": {
         "en": "News cards",
         "ar": "بطاقات أخبار"
+      }
+    },
+    {
+      "id": "list.press",
+      "version": "1.0.0",
+      "category": "list",
+      "kind": "list",
+      "name": {
+        "en": "News: featured and list",
+        "ar": "أخبار: خبر رئيسي وقائمة"
+      }
+    },
+    {
+      "id": "list.projects",
+      "version": "1.0.0",
+      "category": "list",
+      "kind": "list",
+      "name": {
+        "en": "Projects with detail pages",
+        "ar": "مشاريع مع صفحات تفاصيل"
       }
     },
     {
@@ -550,6 +710,16 @@
       "name": {
         "en": "Text beside progress bars",
         "ar": "نص بجانب أشرطة نسب"
+      }
+    },
+    {
+      "id": "stats.counters",
+      "version": "1.0.0",
+      "category": "stats",
+      "kind": "single",
+      "name": {
+        "en": "Counting numbers",
+        "ar": "أرقام بعدّاد"
       }
     },
     {

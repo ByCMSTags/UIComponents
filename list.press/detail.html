@@ -1,0 +1,15 @@
+<article class="cms-adet">
+  <header class="cms-adet__head">
+    <nav class="cms-adet__crumbs" aria-label="{{@t.breadcrumb}}"><a href="{{@home}}">{{@t.home}}</a><span aria-hidden="true">/</span>{{#@back}}<a href="{{@back}}">{{@backLabel}}</a>{{/@back}}</nav>
+    <p class="cms-adet__meta">{{#date}}<time datetime="{{date}}" data-cms-date="{{date}}">{{date}}</time>{{/date}}{{#category}}<span>{{category}}</span>{{/category}}</p>
+    {{#title}}<{{@h}} class="cms-adet__title">{{title}}</{{@h}}>{{/title}}
+    {{#summary}}<p class="cms-adet__summary">{{summary}}</p>{{/summary}}
+  </header>
+  {{#image}}<figure class="cms-adet__cover">{{image sizes="(max-width: 1100px) 100vw, 1100px" class="cms-adet__photo" eager="true"}}</figure>{{/image}}
+  <div class="cms-adet__body">{{body}}</div>
+  {{#gallery}}{{#@first}}<div class="cms-adet__gallery">{{/@first}}<figure>{{image sizes="(max-width: 768px) 100vw, 50vw" class="cms-adet__gphoto"}}{{#caption}}<figcaption>{{caption}}</figcaption>{{/caption}}</figure>{{#@last}}</div>{{/@last}}{{/gallery}}
+  <nav class="cms-adet__pager" aria-label="{{@t.moreNews}}">
+    {{#@back}}<a class="cms-adet__all" href="{{@back}}"><span aria-hidden="true">←</span> {{@backLabel}}</a>{{/@back}}
+    {{#@next}}<a class="cms-adet__next" href="{{@next}}"><span class="cms-adet__nlabel">{{@t.next}}</span><span class="cms-adet__ntitle">{{@nextTitle}}</span></a>{{/@next}}
+  </nav>
+</article>

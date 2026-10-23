@@ -1,0 +1,15 @@
+<section id="{{@id}}" class="cms-compare">
+  <div class="cms-compare__intro">
+    <div>
+      {{#eyebrow}}<p class="cms-compare__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-compare__title">{{title}}</{{@h}}>{{/title}}
+    </div>
+    {{#description}}<p class="cms-compare__lead">{{description}}</p>{{/description}}
+  </div>
+  <div class="cms-compare__stage" data-cms-compare>
+    <div class="cms-compare__layer cms-compare__layer--after">{{#after}}{{after sizes="100vw" class="cms-compare__photo"}}{{/after}}{{#afterLabel}}<span class="cms-compare__tag cms-compare__tag--after">{{afterLabel}}</span>{{/afterLabel}}</div>
+    <div class="cms-compare__layer cms-compare__layer--before" data-cms-before>{{#before}}{{before sizes="100vw" class="cms-compare__photo"}}{{/before}}{{#beforeLabel}}<span class="cms-compare__tag cms-compare__tag--before">{{beforeLabel}}</span>{{/beforeLabel}}</div>
+    <div class="cms-compare__handle" data-cms-handle aria-hidden="true"><span></span></div>
+    <input class="cms-compare__range" type="range" min="0" max="100" value="50" data-cms-range aria-label="{{#title}}{{title}}{{/title}}{{^title}}{{@label}}{{/title}}">
+  </div>
+</section>

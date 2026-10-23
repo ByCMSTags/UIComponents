@@ -1,0 +1,90 @@
+{
+  "id": "hero.compact",
+  "category": "hero",
+  "kind": "single",
+  "name": {
+    "en": "Compact page title",
+    "ar": "عنوان صفحة مختصر"
+  },
+  "description": {
+    "en": "A light, short page heading with a label and text, for lists and articles.",
+    "ar": "عنوان صفحة فاتح وقصير مع تسمية ونص، للقوائم والمقالات."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "lead",
+        "subtitle",
+        "intro",
+        "content"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    }
+  ]
+}

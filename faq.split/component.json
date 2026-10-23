@@ -1,0 +1,214 @@
+{
+  "id": "faq.split",
+  "category": "faq",
+  "kind": "single",
+  "name": {
+    "en": "Numbered questions",
+    "ar": "أسئلة مرقمة"
+  },
+  "description": {
+    "en": "A heading and a link beside numbered questions that open one by one.",
+    "ar": "عنوان ورابط بجانب أسئلة مرقمة تفتح واحدًا تلو الآخر."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "lead",
+        "subtitle",
+        "intro",
+        "content"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctaText",
+        "button"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaLink",
+        "link"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Questions",
+        "ar": "الأسئلة"
+      },
+      "aliases": [
+        "questions",
+        "faq",
+        "list"
+      ],
+      "subFields": [
+        {
+          "key": "question",
+          "type": "shortText",
+          "label": {
+            "en": "Question",
+            "ar": "السؤال"
+          },
+          "localized": true,
+          "aliases": [
+            "title"
+          ]
+        },
+        {
+          "key": "answer",
+          "type": "longText",
+          "label": {
+            "en": "Answer",
+            "ar": "الإجابة"
+          },
+          "localized": true,
+          "aliases": [
+            "description",
+            "text"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Questions",
+        "ar": "الأسئلة"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{question}}",
+      "field": "items.question",
+      "type": "shortText",
+      "label": {
+        "en": "Question",
+        "ar": "السؤال"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{answer}}",
+      "field": "items.answer",
+      "type": "longText",
+      "label": {
+        "en": "Answer",
+        "ar": "الإجابة"
+      },
+      "scope": "items"
+    }
+  ]
+}

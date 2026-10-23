@@ -1,0 +1,16 @@
+<section id="{{@id}}" class="cms-sticky">
+  <div class="cms-sticky__media">
+    <div class="cms-sticky__pin">{{#image}}{{image sizes="(max-width: 992px) 100vw, 50vw" class="cms-sticky__photo" decorative="true"}}{{/image}}</div>
+  </div>
+  <div class="cms-sticky__copy">
+    {{#eyebrow}}<p class="cms-sticky__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-sticky__title">{{title}}</{{@h}}>{{/title}}
+    {{#items}}{{#@first}}<ol class="cms-sticky__points">{{/@first}}<li class="cms-sticky__point">
+      <span class="cms-sticky__num" aria-hidden="true"></span>
+      <div>
+        {{#title}}<{{@hsub}} class="cms-sticky__name">{{title}}</{{@hsub}}>{{/title}}
+        {{#description}}<p class="cms-sticky__text">{{description}}</p>{{/description}}
+      </div>
+    </li>{{#@last}}</ol>{{/@last}}{{/items}}
+  </div>
+</section>

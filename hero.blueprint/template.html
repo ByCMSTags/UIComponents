@@ -1,0 +1,11 @@
+<section id="{{@id}}" class="cms-hblue">
+  <div class="cms-hblue__grid" aria-hidden="true"></div>
+  <div class="cms-hblue__inner">
+    <div class="cms-hblue__head">
+      {{#eyebrow}}<p class="cms-hblue__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-hblue__title">{{title}}</{{@h}}>{{/title}}
+    </div>
+    {{#description}}<p class="cms-hblue__text">{{description}}</p>{{/description}}
+    {{#items}}{{#@first}}<dl class="cms-hblue__facts">{{/@first}}<div class="cms-hblue__fact"><dt class="cms-hblue__label">{{label}}</dt><dd class="cms-hblue__value">{{value}}</dd></div>{{#@last}}</dl>{{/@last}}{{/items}}
+  </div>
+</section>

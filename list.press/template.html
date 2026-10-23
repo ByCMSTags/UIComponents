@@ -1,0 +1,20 @@
+<section id="{{@id}}" class="cms-press">
+  {{#@items}}{{#@first}}<article class="cms-press__lead">
+    <div class="cms-press__media">{{#image}}{{image sizes="(max-width: 992px) 100vw, 55vw" class="cms-press__photo"}}{{/image}}</div>
+    <div class="cms-press__copy">
+      <p class="cms-press__meta"><span class="cms-press__badge">{{@t.latest}}</span>{{#date}}<time datetime="{{date}}" data-cms-date="{{date}}">{{date}}</time>{{/date}}{{#category}}<span>{{category}}</span>{{/category}}</p>
+      {{#title}}<{{@hsub}} class="cms-press__title">{{#link}}<a class="cms-press__link" href="{{link}}">{{/link}}{{title}}{{#link}}</a>{{/link}}</{{@hsub}}>{{/title}}
+      {{#summary}}<p class="cms-press__text">{{summary}}</p>{{/summary}}
+      {{#link}}<span class="cms-press__more" aria-hidden="true">{{@t.readMore}} →</span>{{/link}}
+    </div>
+  </article>{{/@first}}{{/@items}}
+  {{#@items}}{{^@first}}<article class="cms-press__row">
+    {{#date}}<time class="cms-press__date" datetime="{{date}}" data-cms-date="{{date}}">{{date}}</time>{{/date}}
+    <div class="cms-press__rowbody">
+      {{#category}}<p class="cms-press__cat">{{category}}</p>{{/category}}
+      {{#title}}<{{@hsub}} class="cms-press__rtitle">{{#link}}<a class="cms-press__link" href="{{link}}">{{/link}}{{title}}{{#link}}</a>{{/link}}</{{@hsub}}>{{/title}}
+    </div>
+    <div class="cms-press__thumb">{{#image}}{{image sizes="160px" max="320" class="cms-press__tphoto" decorative="true"}}{{/image}}</div>
+  </article>{{/@first}}{{/@items}}
+  {{^@items}}<p class="cms-press__empty">{{@t.empty}}</p>{{/@items}}
+</section>

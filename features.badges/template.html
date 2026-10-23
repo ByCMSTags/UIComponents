@@ -1,0 +1,13 @@
+<section id="{{@id}}" class="cms-badges">
+  <div class="cms-badges__intro">
+    {{#eyebrow}}<p class="cms-badges__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-badges__title">{{title}}</{{@h}}>{{/title}}
+  </div>
+  {{#items}}{{#@first}}<ul class="cms-badges__grid">{{/@first}}<li class="cms-badges__item">
+    <span class="cms-badges__icon">{{icon}}</span>
+    <div>
+      {{#title}}<{{@hsub}} class="cms-badges__name">{{title}}</{{@hsub}}>{{/title}}
+      {{#description}}<p class="cms-badges__text">{{description}}</p>{{/description}}
+    </div>
+  </li>{{#@last}}</ul>{{/@last}}{{/items}}
+</section>

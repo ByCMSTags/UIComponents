@@ -1,0 +1,170 @@
+{
+  "id": "features.badges",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Icon points on dark grid",
+    "ar": "نقاط بأيقونات على شبكة داكنة"
+  },
+  "description": {
+    "en": "A heading beside points with a round icon, a title and text, on a dark technical grid.",
+    "ar": "عنوان بجانب نقاط بأيقونة دائرية وعنوان ونص على شبكة فنية داكنة."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Points",
+        "ar": "النقاط"
+      },
+      "aliases": [
+        "points",
+        "features",
+        "list"
+      ],
+      "subFields": [
+        {
+          "key": "icon",
+          "type": "icon",
+          "label": {
+            "en": "Icon",
+            "ar": "الأيقونة"
+          },
+          "placeholder": "fi-rr-check"
+        },
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "heading",
+            "headline",
+            "name"
+          ]
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "body",
+            "text",
+            "lead",
+            "subtitle",
+            "intro",
+            "content"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Points",
+        "ar": "النقاط"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{icon}}",
+      "field": "items.icon",
+      "type": "icon",
+      "label": {
+        "en": "Icon",
+        "ar": "الأيقونة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    }
+  ]
+}

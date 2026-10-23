@@ -1,0 +1,9 @@
+<section id="{{@id}}" class="cms-quote{{#image}} cms-quote--photo{{/image}}">
+  <div class="cms-quote__inner">
+    {{#eyebrow}}<p class="cms-quote__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    <figure class="cms-quote__figure">
+      <blockquote class="cms-quote__text"><p>{{quote}}</p></blockquote>
+      {{#author}}<figcaption class="cms-quote__by">{{#image}}<span class="cms-quote__face">{{image sizes="64px" max="128" decorative="true"}}</span>{{/image}}<span><strong>{{author}}</strong>{{#role}}<span class="cms-quote__role">{{role}}</span>{{/role}}</span></figcaption>{{/author}}
+    </figure>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<section id="{{@id}}" class="cms-specs">
+  <div class="cms-specs__intro">
+    {{#eyebrow}}<p class="cms-specs__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-specs__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-specs__lead">{{description}}</p>{{/description}}
+  </div>
+  <div class="cms-specs__sheet">
+    <table class="cms-specs__table">
+      {{#col1Label}}<thead><tr><th scope="col">{{col1Label}}</th><th scope="col">{{col2Label}}</th><th scope="col">{{col3Label}}</th></tr></thead>{{/col1Label}}
+      <tbody>
+        {{#items}}<tr>
+          <th scope="row"><span class="cms-specs__ref">{{@number}}</span>{{label}}</th>
+          <td>{{value}}</td>
+          <td class="cms-specs__note">{{note}}</td>
+        </tr>{{/items}}
+      </tbody>
+    </table>
+  </div>
+</section>

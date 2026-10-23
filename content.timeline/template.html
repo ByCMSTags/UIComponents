@@ -1,0 +1,13 @@
+<section id="{{@id}}" class="cms-tline">
+  <div class="cms-tline__intro">
+    {{#eyebrow}}<p class="cms-tline__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-tline__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-tline__lead">{{description}}</p>{{/description}}
+  </div>
+  {{#items}}{{#@first}}<ol class="cms-tline__list">{{/@first}}<li class="cms-tline__item">
+    <span class="cms-tline__dot" aria-hidden="true"></span>
+    {{#time}}<p class="cms-tline__time">{{time}}</p>{{/time}}
+    {{#title}}<{{@hsub}} class="cms-tline__name">{{title}}</{{@hsub}}>{{/title}}
+    {{#description}}<p class="cms-tline__text">{{description}}</p>{{/description}}
+  </li>{{#@last}}</ol>{{/@last}}{{/items}}
+</section>

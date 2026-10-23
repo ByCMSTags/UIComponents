@@ -1,0 +1,20 @@
+<section id="{{@id}}" class="cms-plist" data-cms-all="{{@t.all}}">
+  <div class="cms-plist__filters" role="group" aria-label="{{@t.filter}}" data-cms-filters hidden></div>
+  <ul class="cms-plist__grid">
+    {{#@items}}<li class="cms-plist__item" data-cms-item data-category="{{category}}">
+      <article class="cms-plist__card">
+        <div class="cms-plist__media">
+          {{#image}}{{image sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" class="cms-plist__photo"}}{{/image}}
+          <span class="cms-plist__index" aria-hidden="true"></span>
+        </div>
+        <div class="cms-plist__body">
+          <p class="cms-plist__meta">{{#category}}<span>{{category}}</span>{{/category}}{{#location}}<span>{{location}}</span>{{/location}}{{#year}}<span>{{year}}</span>{{/year}}</p>
+          {{#title}}<{{@hsub}} class="cms-plist__name">{{#link}}<a class="cms-plist__link" href="{{link}}">{{/link}}{{title}}{{#link}}</a>{{/link}}</{{@hsub}}>{{/title}}
+          {{#summary}}<p class="cms-plist__text">{{summary}}</p>{{/summary}}
+          {{#link}}<span class="cms-plist__more" aria-hidden="true">{{@t.viewProject}} <span class="cms-plist__arrow">→</span></span>{{/link}}
+        </div>
+      </article>
+    </li>{{/@items}}
+  </ul>
+  {{^@items}}<p class="cms-plist__empty">{{@t.empty}}</p>{{/@items}}
+</section>

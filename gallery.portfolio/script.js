@@ -6,11 +6,25 @@
       if (!root) return;
       const bar = root.querySelector("[data-cms-filters]");
       const items = Array.from(root.querySelectorAll("[data-cms-item]"));
-      // Every fifth visible project (1st, 6th, …) is wide, so rows stay full.
+      const grid = root.querySelector("[data-cms-grid]");
+      // Some projects take two columns so every row is full: as many as the last row needs (1st, 6th, …).
       function layout() {
-        items.filter((el) => !el.hidden).forEach((el, i) => el.classList.toggle("is-wide", i % 5 === 0));
+        const shown = items.filter((el) => !el.hidden);
+        const cols = grid ? getComputedStyle(grid).gridTemplateColumns.split(" ").filter(Boolean).length : 1;
+        const need = cols > 1 ? (cols - (shown.length % cols)) % cols : 0;
+        let left = need;
+        shown.forEach((el, i) => {
+          const wide = left > 0 && i % 5 === 0;
+          if (wide) left -= 1;
+          el.classList.toggle("is-wide", wide);
+        });
+        items.filter((el) => el.hidden).forEach((el) => el.classList.remove("is-wide"));
       }
       layout();
+      window.addEventListener("resize", () => {
+        clearTimeout(root._cmsFolioT);
+        root._cmsFolioT = setTimeout(layout, 150);
+      });
       if (!bar || items.length < 2) return;
       const keyOf = (el) => String(el.getAttribute("data-category") || "").trim();
       const counts = new Map();

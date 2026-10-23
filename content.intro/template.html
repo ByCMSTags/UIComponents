@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-intro">
+  <div class="cms-intro__rail" aria-hidden="true"><span class="cms-intro__mark">{{#eyebrow}}{{eyebrow}}{{/eyebrow}}</span></div>
+  <div class="cms-intro__main">
+    {{#eyebrow}}<p class="cms-intro__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-intro__title">{{title}}</{{@h}}>{{/title}}
+    <div class="cms-intro__cols">
+      {{#description}}<p class="cms-intro__text">{{description}}</p>{{/description}}
+      {{#text2}}<p class="cms-intro__text">{{text2}}</p>{{/text2}}
+    </div>
+    {{#buttonText}}{{#buttonLink}}<a class="cms-intro__more" href="{{buttonLink}}"><span aria-hidden="true">──</span> {{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+  </div>
+</section>

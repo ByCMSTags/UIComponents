@@ -1,0 +1,7 @@
+<section id="{{@id}}" class="cms-hcomp">
+  <nav class="cms-hcomp__crumbs" aria-label="{{@t.breadcrumb}}"><a href="{{@home}}">{{@t.home}}</a><span aria-hidden="true">/</span><span aria-current="page">{{#eyebrow}}{{eyebrow}}{{/eyebrow}}{{^eyebrow}}{{@label}}{{/eyebrow}}</span></nav>
+  <div class="cms-hcomp__row">
+    {{#title}}<{{@h}} class="cms-hcomp__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-hcomp__text">{{description}}</p>{{/description}}
+  </div>
+</section>

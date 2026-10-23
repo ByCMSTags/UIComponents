@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-hside">
+  <div class="cms-hside__copy">
+    {{#eyebrow}}<p class="cms-hside__eyebrow"><span class="cms-hside__tick" aria-hidden="true"></span>{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-hside__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-hside__text">{{description}}</p>{{/description}}
+    {{#buttonText}}{{#buttonLink}}<a class="cms-hside__btn" href="{{buttonLink}}">{{buttonText}}<span aria-hidden="true">→</span></a>{{/buttonLink}}{{/buttonText}}
+  </div>
+  <figure class="cms-hside__figure">
+    <div class="cms-hside__frame">{{#image}}{{image sizes="(max-width: 992px) 100vw, 50vw" class="cms-hside__photo" eager="true"}}{{/image}}</div>
+    {{#caption}}<figcaption class="cms-hside__caption">{{caption}}</figcaption>{{/caption}}
+  </figure>
+</section>

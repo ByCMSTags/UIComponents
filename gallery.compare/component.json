@@ -1,0 +1,168 @@
+{
+  "id": "gallery.compare",
+  "category": "gallery",
+  "kind": "single",
+  "name": {
+    "en": "Before and after slider",
+    "ar": "مقارنة قبل وبعد"
+  },
+  "description": {
+    "en": "Two photos of the same view; visitors drag the handle to compare them (e.g. 3D visual and finished space).",
+    "ar": "صورتان لنفس المشهد يسحب الزائر المقبض للمقارنة بينهما (مثل التصور ثلاثي الأبعاد والمساحة المنفذة)."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "lead",
+        "subtitle",
+        "intro",
+        "content"
+      ]
+    },
+    {
+      "key": "before",
+      "type": "image",
+      "label": {
+        "en": "First photo",
+        "ar": "الصورة الأولى"
+      },
+      "aliases": [
+        "image",
+        "imageBefore"
+      ]
+    },
+    {
+      "key": "after",
+      "type": "image",
+      "label": {
+        "en": "Second photo",
+        "ar": "الصورة الثانية"
+      },
+      "aliases": [
+        "imageAfter",
+        "image2"
+      ]
+    },
+    {
+      "key": "beforeLabel",
+      "type": "shortText",
+      "label": {
+        "en": "First label",
+        "ar": "تسمية الأولى"
+      },
+      "localized": true
+    },
+    {
+      "key": "afterLabel",
+      "type": "shortText",
+      "label": {
+        "en": "Second label",
+        "ar": "تسمية الثانية"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{before}}",
+      "field": "before",
+      "type": "image",
+      "label": {
+        "en": "First photo",
+        "ar": "الصورة الأولى"
+      }
+    },
+    {
+      "token": "{{after}}",
+      "field": "after",
+      "type": "image",
+      "label": {
+        "en": "Second photo",
+        "ar": "الصورة الثانية"
+      }
+    },
+    {
+      "token": "{{beforeLabel}}",
+      "field": "beforeLabel",
+      "type": "shortText",
+      "label": {
+        "en": "First label",
+        "ar": "تسمية الأولى"
+      }
+    },
+    {
+      "token": "{{afterLabel}}",
+      "field": "afterLabel",
+      "type": "shortText",
+      "label": {
+        "en": "Second label",
+        "ar": "تسمية الثانية"
+      }
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "hero.blueprint",
+  "category": "hero",
+  "kind": "single",
+  "name": {
+    "en": "Title on a blueprint grid",
+    "ar": "عنوان على شبكة مخطط"
+  },
+  "description": {
+    "en": "Dark page title on a technical grid with up to four key facts.",
+    "ar": "عنوان داكن على شبكة فنية مع حتى أربع معلومات رئيسية."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "lead",
+        "subtitle",
+        "intro",
+        "content"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Key facts",
+        "ar": "معلومات رئيسية"
+      },
+      "aliases": [
+        "facts",
+        "stats",
+        "list"
+      ],
+      "subFields": [
+        {
+          "key": "value",
+          "type": "shortText",
+          "label": {
+            "en": "Value",
+            "ar": "القيمة"
+          },
+          "localized": true,
+          "aliases": [
+            "number"
+          ]
+        },
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Label",
+            "ar": "التسمية"
+          },
+          "localized": true,
+          "aliases": [
+            "title",
+            "name"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Key facts",
+        "ar": "معلومات رئيسية"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{value}}",
+      "field": "items.value",
+      "type": "shortText",
+      "label": {
+        "en": "Value",
+        "ar": "القيمة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{label}}",
+      "field": "items.label",
+      "type": "shortText",
+      "label": {
+        "en": "Label",
+        "ar": "التسمية"
+      },
+      "scope": "items"
+    }
+  ]
+}

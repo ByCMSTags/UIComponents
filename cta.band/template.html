@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-band">
+  <div class="cms-band__inner">
+    <div class="cms-band__copy">
+      {{#eyebrow}}<p class="cms-band__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-band__title">{{title}}</{{@h}}>{{/title}}
+    </div>
+    <div class="cms-band__actions">
+      {{#@site.phone}}<a class="cms-band__phone" href="tel:{{@site.phone|tel}}" dir="ltr">{{@site.phoneIcon}}<span>{{@site.phone}}</span></a>{{/@site.phone}}
+      {{#buttonText}}{{#buttonLink}}<a class="cms-band__btn" href="{{buttonLink}}">{{buttonText}}<span aria-hidden="true">→</span></a>{{/buttonLink}}{{/buttonText}}
+    </div>
+  </div>
+</section>

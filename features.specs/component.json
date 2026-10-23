@@ -1,0 +1,249 @@
+{
+  "id": "features.specs",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Specification table",
+    "ar": "جدول مواصفات"
+  },
+  "description": {
+    "en": "A technical table of materials or specifications: item, specification and note.",
+    "ar": "جدول فني للمواد أو المواصفات: البند والمواصفة والملاحظة."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "lead",
+        "subtitle",
+        "intro",
+        "content"
+      ]
+    },
+    {
+      "key": "col1Label",
+      "type": "shortText",
+      "label": {
+        "en": "Column 1 title",
+        "ar": "عنوان العمود 1"
+      },
+      "localized": true
+    },
+    {
+      "key": "col2Label",
+      "type": "shortText",
+      "label": {
+        "en": "Column 2 title",
+        "ar": "عنوان العمود 2"
+      },
+      "localized": true
+    },
+    {
+      "key": "col3Label",
+      "type": "shortText",
+      "label": {
+        "en": "Column 3 title",
+        "ar": "عنوان العمود 3"
+      },
+      "localized": true
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Rows",
+        "ar": "الصفوف"
+      },
+      "aliases": [
+        "rows",
+        "list",
+        "specs"
+      ],
+      "subFields": [
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Item",
+            "ar": "البند"
+          },
+          "localized": true,
+          "aliases": [
+            "title",
+            "name"
+          ]
+        },
+        {
+          "key": "value",
+          "type": "shortText",
+          "label": {
+            "en": "Specification",
+            "ar": "المواصفة"
+          },
+          "localized": true,
+          "aliases": [
+            "spec",
+            "description"
+          ]
+        },
+        {
+          "key": "note",
+          "type": "shortText",
+          "label": {
+            "en": "Note",
+            "ar": "ملاحظة"
+          },
+          "localized": true,
+          "aliases": [
+            "meta",
+            "detail"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{col1Label}}",
+      "field": "col1Label",
+      "type": "shortText",
+      "label": {
+        "en": "Column 1 title",
+        "ar": "عنوان العمود 1"
+      }
+    },
+    {
+      "token": "{{col2Label}}",
+      "field": "col2Label",
+      "type": "shortText",
+      "label": {
+        "en": "Column 2 title",
+        "ar": "عنوان العمود 2"
+      }
+    },
+    {
+      "token": "{{col3Label}}",
+      "field": "col3Label",
+      "type": "shortText",
+      "label": {
+        "en": "Column 3 title",
+        "ar": "عنوان العمود 3"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Rows",
+        "ar": "الصفوف"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{label}}",
+      "field": "items.label",
+      "type": "shortText",
+      "label": {
+        "en": "Item",
+        "ar": "البند"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{value}}",
+      "field": "items.value",
+      "type": "shortText",
+      "label": {
+        "en": "Specification",
+        "ar": "المواصفة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{note}}",
+      "field": "items.note",
+      "type": "shortText",
+      "label": {
+        "en": "Note",
+        "ar": "ملاحظة"
+      },
+      "scope": "items"
+    }
+  ]
+}

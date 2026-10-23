@@ -1,0 +1,189 @@
+{
+  "id": "list.press",
+  "category": "list",
+  "kind": "list",
+  "name": {
+    "en": "News: featured and list",
+    "ar": "أخبار: خبر رئيسي وقائمة"
+  },
+  "description": {
+    "en": "The newest record large with its photo, the rest as a dated list; each has its own page.",
+    "ar": "أحدث سجل كبير بصورته، والباقي قائمة بالتواريخ؛ لكل منها صفحته."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "category",
+      "type": "shortText",
+      "label": {
+        "en": "Category",
+        "ar": "التصنيف"
+      },
+      "localized": true,
+      "aliases": [
+        "type",
+        "tag"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "aliases": [
+        "photo",
+        "picture",
+        "backgroundImage",
+        "img"
+      ]
+    },
+    {
+      "key": "summary",
+      "type": "longText",
+      "label": {
+        "en": "Summary",
+        "ar": "الملخص"
+      },
+      "localized": true,
+      "aliases": [
+        "excerpt",
+        "description",
+        "lead",
+        "intro"
+      ]
+    },
+    {
+      "key": "date",
+      "type": "date",
+      "label": {
+        "en": "Date",
+        "ar": "التاريخ"
+      },
+      "aliases": [
+        "publishedAt"
+      ]
+    },
+    {
+      "key": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "content",
+        "text"
+      ]
+    },
+    {
+      "key": "gallery",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      },
+      "aliases": [
+        "images"
+      ]
+    },
+    {
+      "key": "link",
+      "type": "url",
+      "label": {
+        "en": "Link (optional)",
+        "ar": "رابط (اختياري)"
+      }
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{category}}",
+      "field": "category",
+      "type": "shortText",
+      "label": {
+        "en": "Category",
+        "ar": "التصنيف"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{summary}}",
+      "field": "summary",
+      "type": "longText",
+      "label": {
+        "en": "Summary",
+        "ar": "الملخص"
+      }
+    },
+    {
+      "token": "{{date}}",
+      "field": "date",
+      "type": "date",
+      "label": {
+        "en": "Date",
+        "ar": "التاريخ"
+      }
+    },
+    {
+      "token": "{{body}}",
+      "field": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{gallery}}",
+      "field": "gallery",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      }
+    },
+    {
+      "token": "{{link}}",
+      "field": "link",
+      "type": "url",
+      "label": {
+        "en": "Link (optional)",
+        "ar": "رابط (اختياري)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "content.quote",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Large statement",
+    "ar": "مقولة كبيرة"
+  },
+  "description": {
+    "en": "A large statement or quote with the name and role of who said it, and an optional photo.",
+    "ar": "مقولة أو اقتباس كبير مع اسم القائل وصفته، وصورة اختيارية."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label"
+      ]
+    },
+    {
+      "key": "quote",
+      "type": "longText",
+      "label": {
+        "en": "Statement",
+        "ar": "المقولة"
+      },
+      "localized": true,
+      "aliases": [
+        "title",
+        "text",
+        "description"
+      ]
+    },
+    {
+      "key": "author",
+      "type": "shortText",
+      "label": {
+        "en": "Name",
+        "ar": "الاسم"
+      },
+      "localized": true,
+      "aliases": [
+        "name"
+      ]
+    },
+    {
+      "key": "role",
+      "type": "shortText",
+      "label": {
+        "en": "Role",
+        "ar": "الصفة"
+      },
+      "localized": true,
+      "aliases": [
+        "position",
+        "company"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "aliases": [
+        "photo",
+        "picture",
+        "backgroundImage",
+        "img"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{quote}}",
+      "field": "quote",
+      "type": "longText",
+      "label": {
+        "en": "Statement",
+        "ar": "المقولة"
+      }
+    },
+    {
+      "token": "{{author}}",
+      "field": "author",
+      "type": "shortText",
+      "label": {
+        "en": "Name",
+        "ar": "الاسم"
+      }
+    },
+    {
+      "token": "{{role}}",
+      "field": "role",
+      "type": "shortText",
+      "label": {
+        "en": "Role",
+        "ar": "الصفة"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      }
+    }
+  ]
+}

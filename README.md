@@ -86,7 +86,7 @@ npm run cmstags -- publish hero.split
 
 ## Studio components
 
-Ten designs in the style of an architecture studio site (used by the Value website):
+Designs in the style of an architecture studio site (used by the Value website):
 
 | Id | What it shows |
 | --- | --- |
@@ -100,6 +100,28 @@ Ten designs in the style of an architecture studio site (used by the Value websi
 | `cta.contact` | Dark invitation with the site phone and email and a button. |
 | `contact.studio` | Contact details grid, map link and social links. |
 | `gallery.portfolio` | Project grid that visitors filter by category. |
+| `hero.side` | Page title, text and a button beside a framed photo with a caption. |
+| `hero.blueprint` | Dark page title on a technical grid with key facts. |
+| `hero.compact` | Short light page title with a breadcrumb (lists and articles). |
+| `content.intro` | Large opening sentence with two text columns and a vertical label. |
+| `content.timeline` | Sticky heading beside phases on a dotted vertical line. |
+| `content.sticky` | Photo that stays in view beside numbered points. |
+| `content.quote` | Large statement with name and role. |
+| `features.tiles` | Numbered service tiles with icons that turn dark on hover. |
+| `features.badges` | Icon points on a dark technical grid. |
+| `features.specs` | Specification table (item, specification, note). |
+| `faq.split` | Numbered questions (Q01…) that open one by one. |
+| `gallery.compare` | Before / after slider (3D visual and finished space). |
+| `stats.counters` | Numbers that count up when they come into view. |
+| `cta.band` | Olive band with a sentence, the site phone and a button. |
+| `list.projects` | List section: project cards with filters. Has `detail.html`. |
+| `list.press` | List section: newest item large, the rest as a dated list. Has `detail.html`. |
+| `list.articles` | List section: editorial rows with date and reading time. Has `detail.html`. |
+
+**Detail pages.** A list design may ship a `detail.html` next to `template.html`. The website uses
+it for the page of one record (`#/<collection>/<record id>`), with the same fields, plus
+`{{@back}}` / `{{@backLabel}}` (the page that shows the list) and `{{@next}}` / `{{@nextTitle}}`
+(the next record). Without `detail.html` the website shows its plain article page.
 
 They also read site values the website provides: `{{@site.tagline}}`, `{{@site.address}}`,
 `{{@site.hours}}` (from the CMS collection `website-settings`), and the texts `{{@t.callUs}}`,

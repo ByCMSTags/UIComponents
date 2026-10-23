@@ -1,0 +1,211 @@
+{
+  "id": "list.articles",
+  "category": "list",
+  "kind": "list",
+  "name": {
+    "en": "Articles in editorial rows",
+    "ar": "مقالات بصفوف تحريرية"
+  },
+  "description": {
+    "en": "Articles as rows with date, category, title, summary and a small photo; each has its own page.",
+    "ar": "مقالات كصفوف فيها التاريخ والتصنيف والعنوان والملخص وصورة صغيرة؛ لكل منها صفحته."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "name"
+      ]
+    },
+    {
+      "key": "category",
+      "type": "shortText",
+      "label": {
+        "en": "Category",
+        "ar": "التصنيف"
+      },
+      "localized": true,
+      "aliases": [
+        "type",
+        "tag"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "aliases": [
+        "photo",
+        "picture",
+        "backgroundImage",
+        "img"
+      ]
+    },
+    {
+      "key": "summary",
+      "type": "longText",
+      "label": {
+        "en": "Summary",
+        "ar": "الملخص"
+      },
+      "localized": true,
+      "aliases": [
+        "excerpt",
+        "description",
+        "lead",
+        "intro"
+      ]
+    },
+    {
+      "key": "date",
+      "type": "date",
+      "label": {
+        "en": "Date",
+        "ar": "التاريخ"
+      },
+      "aliases": [
+        "publishedAt"
+      ]
+    },
+    {
+      "key": "readTime",
+      "type": "shortText",
+      "label": {
+        "en": "Reading time",
+        "ar": "مدة القراءة"
+      },
+      "localized": true,
+      "aliases": [
+        "minutes"
+      ]
+    },
+    {
+      "key": "author",
+      "type": "shortText",
+      "label": {
+        "en": "Author",
+        "ar": "الكاتب"
+      },
+      "localized": true,
+      "aliases": [
+        "writer"
+      ]
+    },
+    {
+      "key": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "content",
+        "text"
+      ]
+    },
+    {
+      "key": "link",
+      "type": "url",
+      "label": {
+        "en": "Link (optional)",
+        "ar": "رابط (اختياري)"
+      }
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{category}}",
+      "field": "category",
+      "type": "shortText",
+      "label": {
+        "en": "Category",
+        "ar": "التصنيف"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{summary}}",
+      "field": "summary",
+      "type": "longText",
+      "label": {
+        "en": "Summary",
+        "ar": "الملخص"
+      }
+    },
+    {
+      "token": "{{date}}",
+      "field": "date",
+      "type": "date",
+      "label": {
+        "en": "Date",
+        "ar": "التاريخ"
+      }
+    },
+    {
+      "token": "{{readTime}}",
+      "field": "readTime",
+      "type": "shortText",
+      "label": {
+        "en": "Reading time",
+        "ar": "مدة القراءة"
+      }
+    },
+    {
+      "token": "{{author}}",
+      "field": "author",
+      "type": "shortText",
+      "label": {
+        "en": "Author",
+        "ar": "الكاتب"
+      }
+    },
+    {
+      "token": "{{body}}",
+      "field": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{link}}",
+      "field": "link",
+      "type": "url",
+      "label": {
+        "en": "Link (optional)",
+        "ar": "رابط (اختياري)"
+      }
+    }
+  ]
+}

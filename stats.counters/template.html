@@ -1,0 +1,8 @@
+<section id="{{@id}}" class="cms-count">
+  {{#title}}<div class="cms-count__intro">{{#eyebrow}}<p class="cms-count__eyebrow">{{eyebrow}}</p>{{/eyebrow}}<{{@h}} class="cms-count__title">{{title}}</{{@h}}></div>{{/title}}
+  {{#items}}{{#@first}}<dl class="cms-count__grid">{{/@first}}<div class="cms-count__item">
+    <dt class="cms-count__label">{{label}}</dt>
+    <dd class="cms-count__value"><span data-cms-count="{{value}}">{{value}}</span>{{#suffix}}<span class="cms-count__suffix">{{suffix}}</span>{{/suffix}}</dd>
+    {{#description}}<dd class="cms-count__text">{{description}}</dd>{{/description}}
+  </div>{{#@last}}</dl>{{/@last}}{{/items}}
+</section>

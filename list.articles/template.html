@@ -1,0 +1,13 @@
+<section id="{{@id}}" class="cms-arts">
+  {{#@items}}<article class="cms-arts__row">
+    <p class="cms-arts__date">{{#date}}<time datetime="{{date}}" data-cms-date="{{date}}">{{date}}</time>{{/date}}{{#readTime}}<span>{{readTime}}</span>{{/readTime}}</p>
+    <div class="cms-arts__body">
+      {{#category}}<p class="cms-arts__cat">{{category}}</p>{{/category}}
+      {{#title}}<{{@hsub}} class="cms-arts__title">{{#link}}<a class="cms-arts__link" href="{{link}}">{{/link}}{{title}}{{#link}}</a>{{/link}}</{{@hsub}}>{{/title}}
+      {{#summary}}<p class="cms-arts__text">{{summary}}</p>{{/summary}}
+      {{#author}}<p class="cms-arts__author">{{author}}</p>{{/author}}
+    </div>
+    <div class="cms-arts__media">{{#image}}{{image sizes="(max-width: 768px) 100vw, 320px" max="640" class="cms-arts__photo" decorative="true"}}{{/image}}<span class="cms-arts__go" aria-hidden="true">↗</span></div>
+  </article>{{/@items}}
+  {{^@items}}<p class="cms-arts__empty">{{@t.empty}}</p>{{/@items}}
+</section>

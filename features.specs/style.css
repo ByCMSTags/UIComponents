@@ -1,0 +1,117 @@
+.cms-specs {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+  padding: clamp(3.5rem, 8vw, 6.5rem) clamp(1.25rem, 5vw, 4.5rem);
+  background: var(--cms-surface-alt, #f4f2ec);
+}
+
+.cms-specs__eyebrow {
+  margin: 0 0 1rem;
+  color: var(--cms-primary, #656d4a);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.cms-specs__title {
+  max-width: 13ch;
+  margin: 0;
+  color: var(--cms-ink, #141414);
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: var(--cms-title-tracking, 0);
+}
+
+.cms-specs__lead {
+  max-width: 26rem;
+  margin: 1.25rem 0 0;
+  color: #5d5d5d;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.cms-specs__sheet {
+  min-width: 0;
+  overflow-x: auto;
+  padding: clamp(1rem, 2vw, 1.75rem);
+  background: #fff;
+  border: 1px solid var(--cms-line, #e4e1d8);
+  box-shadow: 0 0 0 6px #fff, 0 0 0 7px var(--cms-line, #e4e1d8);
+}
+
+.cms-specs__table {
+  width: 100%;
+  min-width: 34rem;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.cms-specs__table thead th {
+  padding: 0 1rem 0.85rem 0;
+  color: #8a8a8a;
+  font-family: var(--cms-font-mono, monospace);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-align: start;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid var(--cms-ink, #141414);
+}
+
+.cms-specs__table tbody th,
+.cms-specs__table td {
+  padding: 1.05rem 1rem 1.05rem 0;
+  vertical-align: top;
+  text-align: start;
+  border-bottom: 1px solid var(--cms-line, #e4e1d8);
+}
+
+[dir="rtl"] .cms-specs__table thead th,
+[dir="rtl"] .cms-specs__table tbody th,
+[dir="rtl"] .cms-specs__table td {
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+.cms-specs__table tbody th {
+  color: var(--cms-ink, #141414);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cms-specs__table td {
+  color: #444;
+  line-height: 1.6;
+}
+
+.cms-specs__ref {
+  display: inline-block;
+  min-width: 2.25rem;
+  color: #9a9a9a;
+  font-family: var(--cms-font-mono, monospace);
+  font-size: 0.74rem;
+  font-weight: 400;
+}
+
+.cms-specs__ref::before {
+  content: "S-";
+}
+
+.cms-specs__note {
+  color: #7a7a7a !important;
+  font-size: 0.85rem;
+}
+
+[dir="rtl"] .cms-specs__table thead th {
+  font-size: 0.82rem;
+}
+
+@media (min-width: 1200px) {
+  .cms-specs {
+    grid-template-columns: minmax(16rem, 0.8fr) minmax(0, 2fr);
+    gap: 4rem;
+    align-items: start;
+  }
+}

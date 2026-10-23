@@ -90,6 +90,7 @@ a.cms-hstudio__reach-link:focus-visible {
 }
 
 .cms-hstudio__bar .cms-hstudio__wrap {
+  position: relative;
   flex-wrap: wrap;
   min-height: 4.75rem;
 }
@@ -162,7 +163,23 @@ a.cms-hstudio__reach-link:focus-visible {
 }
 
 .cms-hstudio__menu {
-  flex-basis: 100%;
+  position: absolute;
+  z-index: 20;
+  top: 100%;
+  inset-inline-end: clamp(1.25rem, 4vw, 4.5rem);
+  flex-basis: auto;
+  width: min(22rem, calc(100% - 2.5rem));
+  max-height: calc(100vh - 6rem);
+  overflow: hidden;
+  padding: 0.35rem 1.15rem 0.85rem;
+  background: var(--cms-hstudio-bg);
+  border: 1px solid var(--cms-hstudio-line);
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.35);
+  text-align: end;
+}
+
+.cms-hstudio__menu.show {
+  overflow: auto;
 }
 
 .cms-hstudio__nav {
@@ -230,7 +247,17 @@ a.cms-hstudio__reach-link:focus-visible {
   }
 
   .cms-hstudio__menu {
+    position: static;
+    inset: auto;
     flex-basis: auto;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    text-align: start;
     justify-content: space-between;
     gap: 2rem;
   }

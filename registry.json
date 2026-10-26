@@ -443,6 +443,16 @@
       }
     },
     {
+      "id": "gallery.stories",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "News cards carousel",
+        "ar": "دوار بطاقات أخبار"
+      }
+    },
+    {
       "id": "gallery.tiles",
       "version": "1.0.0",
       "category": "gallery",

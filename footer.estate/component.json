@@ -1,0 +1,244 @@
+{
+  "id": "footer.estate",
+  "category": "footer",
+  "kind": "site",
+  "name": {
+    "en": "Estate dark footer",
+    "ar": "تذييل داكن (إستيت)"
+  },
+  "description": {
+    "en": "Dark footer: logo and footer text, two link columns, a contact column (site phone, email, address), and a bottom line with the copyright. The column titles, links, copyright and bottom note come from Website settings.",
+    "ar": "تذييل داكن: الشعار ونص التذييل وعمودا روابط وعمود تواصل (هاتف الموقع والبريد والعنوان) وسطر سفلي بحقوق النشر. عناوين الأعمدة والروابط وحقوق النشر والملاحظة من إعدادات الموقع."
+  },
+  "fields": [
+    {
+      "key": "footerLinksTitle",
+      "type": "shortText",
+      "label": {
+        "en": "First column title",
+        "ar": "عنوان العمود الأول"
+      },
+      "localized": true
+    },
+    {
+      "key": "footerLinks",
+      "type": "repeater",
+      "label": {
+        "en": "First column links",
+        "ar": "روابط العمود الأول"
+      },
+      "subFields": [
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "shortText",
+          "label": {
+            "en": "Link (#section or address)",
+            "ar": "الرابط (#قسم أو عنوان)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "footerMoreTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Second column title",
+        "ar": "عنوان العمود الثاني"
+      },
+      "localized": true
+    },
+    {
+      "key": "footerMoreLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Second column links",
+        "ar": "روابط العمود الثاني"
+      },
+      "subFields": [
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "shortText",
+          "label": {
+            "en": "Link (#section or address)",
+            "ar": "الرابط (#قسم أو عنوان)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "footerContactTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Contact column title",
+        "ar": "عنوان عمود التواصل"
+      },
+      "localized": true
+    },
+    {
+      "key": "copyright",
+      "type": "shortText",
+      "label": {
+        "en": "Copyright (after © and the year)",
+        "ar": "حقوق النشر (بعد © والسنة)"
+      },
+      "localized": true
+    },
+    {
+      "key": "footerNote",
+      "type": "shortText",
+      "label": {
+        "en": "Bottom line note",
+        "ar": "ملاحظة السطر السفلي"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{footerLinksTitle}}",
+      "field": "footerLinksTitle",
+      "type": "shortText",
+      "label": {
+        "en": "First column title",
+        "ar": "عنوان العمود الأول"
+      }
+    },
+    {
+      "token": "{{footerLinks}}",
+      "field": "footerLinks",
+      "type": "repeater",
+      "label": {
+        "en": "First column links",
+        "ar": "روابط العمود الأول"
+      }
+    },
+    {
+      "token": "{{#footerLinks}}",
+      "field": "footerLinks",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/footerLinks}}",
+      "field": "footerLinks",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{label}}",
+      "field": "footerLinks.label",
+      "type": "shortText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "footerLinks"
+    },
+    {
+      "token": "{{link}}",
+      "field": "footerLinks.link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (#section or address)",
+        "ar": "الرابط (#قسم أو عنوان)"
+      },
+      "scope": "footerLinks"
+    },
+    {
+      "token": "{{footerMoreTitle}}",
+      "field": "footerMoreTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Second column title",
+        "ar": "عنوان العمود الثاني"
+      }
+    },
+    {
+      "token": "{{footerMoreLinks}}",
+      "field": "footerMoreLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Second column links",
+        "ar": "روابط العمود الثاني"
+      }
+    },
+    {
+      "token": "{{#footerMoreLinks}}",
+      "field": "footerMoreLinks",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/footerMoreLinks}}",
+      "field": "footerMoreLinks",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{label}}",
+      "field": "footerMoreLinks.label",
+      "type": "shortText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "footerMoreLinks"
+    },
+    {
+      "token": "{{link}}",
+      "field": "footerMoreLinks.link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (#section or address)",
+        "ar": "الرابط (#قسم أو عنوان)"
+      },
+      "scope": "footerMoreLinks"
+    },
+    {
+      "token": "{{footerContactTitle}}",
+      "field": "footerContactTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Contact column title",
+        "ar": "عنوان عمود التواصل"
+      }
+    },
+    {
+      "token": "{{copyright}}",
+      "field": "copyright",
+      "type": "shortText",
+      "label": {
+        "en": "Copyright (after © and the year)",
+        "ar": "حقوق النشر (بعد © والسنة)"
+      }
+    },
+    {
+      "token": "{{footerNote}}",
+      "field": "footerNote",
+      "type": "shortText",
+      "label": {
+        "en": "Bottom line note",
+        "ar": "ملاحظة السطر السفلي"
+      }
+    }
+  ]
+}

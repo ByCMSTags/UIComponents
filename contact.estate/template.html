@@ -1,0 +1,13 @@
+<section id="{{@id}}" class="cms-contact-estate">
+  <div class="cms-contact-estate__media">{{#image}}{{image class="cms-contact-estate__img"}}{{/image}}</div>
+  <div class="cms-contact-estate__panel">
+    {{#eyebrow}}<p class="cms-contact-estate__label">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-contact-estate__title">{{title}}{{#highlight}} <em>{{highlight}}</em>{{/highlight}}</{{@h}}>{{/title}}
+    {{#description|lines}}<p class="cms-contact-estate__text">{{.}}</p>{{/description|lines}}
+    <div class="cms-contact-estate__form" data-cms-form-slot data-submit-text="{{buttonText}}"></div>
+    <div class="cms-contact-estate__call">
+      {{#callText}}<a href="tel:{{@site.phone|tel}}" class="cms-contact-estate__link">{{callText}} <span aria-hidden="true">&rarr;</span></a>{{/callText}}
+      {{#note}}<p class="cms-contact-estate__serving">{{note}}</p>{{/note}}
+    </div>
+  </div>
+</section>

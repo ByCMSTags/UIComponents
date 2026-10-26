@@ -1,0 +1,18 @@
+<section id="{{@id}}" class="cms-showcase-estate">
+  <div class="cms-estate-wrap">
+    <div class="cms-showcase-estate__header">
+      <div class="cms-showcase-estate__heading">
+        {{#eyebrow}}<p class="cms-showcase-estate__label">{{eyebrow}}</p>{{/eyebrow}}
+        {{#title}}<{{@h}} class="cms-showcase-estate__title">{{title}}{{#highlight}} <em>{{highlight}}</em>{{/highlight}}</{{@h}}>{{/title}}
+      </div>
+      <div class="cms-showcase-estate__intro">
+        {{#description|lines}}<p class="cms-showcase-estate__desc">{{.}}</p>{{/description|lines}}
+        {{#linkText}}<a href="{{link}}" class="cms-showcase-estate__link" target="_blank" rel="noopener noreferrer">{{linkText}} <span aria-hidden="true">&rarr;</span></a>{{/linkText}}
+      </div>
+    </div>
+    {{#items}}{{#@first}}<div class="cms-showcase-estate__grid">{{/@first}}<article class="cms-showcase-estate__card">
+      {{#image}}{{image class="cms-showcase-estate__img"}}{{/image}}
+      {{#buttonText}}<div class="cms-showcase-estate__overlay cms-showcase-estate__overlay--center"><a href="{{link}}" class="cms-showcase-estate__btn" target="_blank" rel="noopener noreferrer">{{buttonText}}</a></div>{{/buttonText}}{{^buttonText}}<div class="cms-showcase-estate__overlay">{{#title}}<strong class="cms-showcase-estate__name">{{title}}</strong>{{/title}}{{#location}}<span class="cms-showcase-estate__loc">{{location}}</span>{{/location}}</div>{{/buttonText}}
+    </article>{{#@last}}</div>{{/@last}}{{/items}}
+  </div>
+</section>

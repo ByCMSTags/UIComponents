@@ -1,0 +1,11 @@
+<section id="{{@id}}" class="cms-phases-estate">
+  <div class="cms-estate-wrap">
+    {{#eyebrow}}<p class="cms-phases-estate__label">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-phases-estate__title">{{title}}{{#highlight}} <em>{{highlight}}</em>{{/highlight}}</{{@h}}>{{/title}}
+    {{#items}}{{#@first}}<div class="cms-phases-estate__grid">{{/@first}}<article class="cms-phases-estate__item">
+      <span class="cms-phases-estate__num" aria-hidden="true"></span>
+      <{{@hsub}} class="cms-phases-estate__name">{{title}}</{{@hsub}}>
+      {{#description}}<p class="cms-phases-estate__text">{{description}}</p>{{/description}}
+    </article>{{#@last}}</div>{{/@last}}{{/items}}
+  </div>
+</section>

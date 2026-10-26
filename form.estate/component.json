@@ -1,0 +1,16 @@
+{
+  "id": "form.estate",
+  "category": "form",
+  "kind": "form",
+  "name": {
+    "en": "Estate underline",
+    "ar": "خط سفلي (إستيت)"
+  },
+  "description": {
+    "en": "Small uppercase labels, underlined fields that turn gold, and a black uppercase button. After an \"Estate photo beside contact form\" section it moves into that section.",
+    "ar": "عناوين صغيرة بأحرف كبيرة وحقول بخط سفلي يصبح ذهبيًا وزر أسود. إذا جاء بعد قسم \"صورة بجانب نموذج التواصل\" ينتقل إلى داخله."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "placeholders": []
+}

@@ -1,0 +1,28 @@
+<footer class="cms-festate">
+  <div class="cms-estate-wrap cms-festate__grid">
+    <div class="cms-festate__brand">
+      <a href="{{@home}}" class="cms-festate__logo" aria-label="{{@site.name}}">{{#@site.logo}}{{@site.logo img="cms-festate__img"}}{{/@site.logo}}{{^@site.logo}}<span class="cms-festate__name">{{@site.name}}</span>{{/@site.logo}}</a>
+      {{#@site.tagline}}<p class="cms-festate__tagline">{{@site.tagline}}</p>{{/@site.tagline}}
+    </div>
+    <div class="cms-festate__col">
+      {{#footerLinksTitle}}<h3 class="cms-festate__heading">{{footerLinksTitle}}</h3>{{/footerLinksTitle}}
+      <ul class="cms-festate__links">{{#footerLinks}}<li><a href="{{link}}">{{label}}</a></li>{{/footerLinks}}{{^footerLinks}}{{#@nav}}<li><a href="{{href}}">{{label}}</a></li>{{/@nav}}{{/footerLinks}}</ul>
+    </div>
+    {{#footerMoreLinks}}{{#@first}}<div class="cms-festate__col">
+      {{#footerMoreTitle}}<h3 class="cms-festate__heading">{{footerMoreTitle}}</h3>{{/footerMoreTitle}}
+      <ul class="cms-festate__links">{{/@first}}<li><a href="{{link}}">{{label}}</a></li>{{#@last}}</ul>
+    </div>{{/@last}}{{/footerMoreLinks}}
+    <div class="cms-festate__col">
+      {{#footerContactTitle}}<h3 class="cms-festate__heading">{{footerContactTitle}}</h3>{{/footerContactTitle}}
+      <ul class="cms-festate__links cms-festate__links--contact">
+        {{#@site.phone}}<li><a href="tel:{{@site.phone|tel}}" class="cms-festate__phone">{{@site.phone}}</a></li>{{/@site.phone}}
+        {{#@site.email}}<li><a href="mailto:{{@site.email}}">{{@site.email}}</a></li>{{/@site.email}}
+        {{#@site.address}}<li>{{@site.address}}</li>{{/@site.address}}
+      </ul>
+    </div>
+  </div>
+  <div class="cms-estate-wrap cms-festate__bar">
+    <p>&copy; {{@year}} {{#copyright}}{{copyright}}{{/copyright}}{{^copyright}}{{@site.name}}. {{@t.rights}}{{/copyright}}</p>
+    {{#footerNote}}<p>{{footerNote}}</p>{{/footerNote}}
+  </div>
+</footer>

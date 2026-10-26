@@ -1,0 +1,10 @@
+<header class="cms-hestate" data-cms-header>
+  <div class="cms-estate-wrap cms-hestate__inner">
+    <a href="{{@home}}" class="cms-hestate__brand" aria-label="{{@site.name}}">{{#@site.logo}}{{@site.logo eager="true" img="cms-hestate__logo"}}{{/@site.logo}}{{^@site.logo}}<span class="cms-hestate__name">{{@site.name}}</span>{{/@site.logo}}</a>
+    <button class="cms-hestate__toggle" type="button" aria-label="{{@t.menu}}" aria-expanded="false" aria-controls="cms-hestate-nav"><span></span><span></span><span></span></button>
+    <nav class="cms-hestate__nav" id="cms-hestate-nav" aria-label="{{@t.menu}}">
+      {{#headerLinks}}<a href="{{link}}" class="cms-hestate__link">{{label}}</a>{{/headerLinks}}{{^headerLinks}}{{#@nav}}<a href="{{href}}" class="cms-hestate__link"{{#current}} aria-current="page"{{/current}}>{{label}}</a>{{/@nav}}{{/headerLinks}}
+      {{#@site.phone}}<a href="tel:{{@site.phone|tel}}" class="cms-hestate__call">{{#headerButton}}{{headerButton}}{{/headerButton}}{{^headerButton}}{{@t.callUs}}{{/headerButton}}</a>{{/@site.phone}}
+    </nav>
+  </div>
+</header>

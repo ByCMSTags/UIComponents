@@ -1,0 +1,143 @@
+{
+  "id": "content.estate",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Estate text block",
+    "ar": "نص (إستيت)"
+  },
+  "description": {
+    "en": "Gold label, serif title ending in gold italic, paragraphs, an optional gold note line and an arrow link, on a light background.",
+    "ar": "تسمية ذهبية وعنوان ينتهي بخط ذهبي مائل وفقرات وسطر ملاحظة ذهبي اختياري ورابط بسهم، على خلفية فاتحة."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      },
+      "localized": true
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      },
+      "localized": true
+    },
+    {
+      "key": "note",
+      "type": "shortText",
+      "label": {
+        "en": "Gold note line",
+        "ar": "سطر الملاحظة الذهبي"
+      },
+      "localized": true
+    },
+    {
+      "key": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      },
+      "localized": true
+    },
+    {
+      "key": "link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (#section or address)",
+        "ar": "الرابط (#قسم أو عنوان)"
+      }
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      }
+    },
+    {
+      "token": "{{note}}",
+      "field": "note",
+      "type": "shortText",
+      "label": {
+        "en": "Gold note line",
+        "ar": "سطر الملاحظة الذهبي"
+      }
+    },
+    {
+      "token": "{{linkText}}",
+      "field": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      }
+    },
+    {
+      "token": "{{link}}",
+      "field": "link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (#section or address)",
+        "ar": "الرابط (#قسم أو عنوان)"
+      }
+    }
+  ]
+}

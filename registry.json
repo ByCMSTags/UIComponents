@@ -3,6 +3,16 @@
   "repository": "ByCMSTags/UIComponents",
   "components": [
     {
+      "id": "contact.estate",
+      "version": "1.0.0",
+      "category": "contact",
+      "kind": "single",
+      "name": {
+        "en": "Estate photo beside contact form",
+        "ar": "صورة بجانب نموذج التواصل (إستيت)"
+      }
+    },
+    {
       "id": "contact.info",
       "version": "1.0.0",
       "category": "contact",
@@ -53,6 +63,16 @@
       }
     },
     {
+      "id": "content.estate",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Estate text block",
+        "ar": "نص (إستيت)"
+      }
+    },
+    {
       "id": "content.intro",
       "version": "1.0.0",
       "category": "content",
@@ -80,6 +100,16 @@
       "name": {
         "en": "Text beside image",
         "ar": "نص بجانب صورة"
+      }
+    },
+    {
+      "id": "content.note",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Estate text block, warm background",
+        "ar": "نص على خلفية دافئة (إستيت)"
       }
     },
     {
@@ -283,6 +313,16 @@
       }
     },
     {
+      "id": "features.ledger",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Estate two-column list",
+        "ar": "قائمة بعمودين (إستيت)"
+      }
+    },
+    {
       "id": "features.list",
       "version": "1.0.0",
       "category": "features",
@@ -293,6 +333,16 @@
       }
     },
     {
+      "id": "features.phases",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Estate four steps",
+        "ar": "أربع مراحل (إستيت)"
+      }
+    },
+    {
       "id": "features.process",
       "version": "1.0.0",
       "category": "features",
@@ -300,6 +350,16 @@
       "name": {
         "en": "Process in numbered steps",
         "ar": "مراحل العمل المرقّمة"
+      }
+    },
+    {
+      "id": "features.ribbon",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Estate numbered ribbon",
+        "ar": "شريط مرقّم (إستيت)"
       }
     },
     {
@@ -343,6 +403,16 @@
       }
     },
     {
+      "id": "features.trio",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Estate three-column reasons",
+        "ar": "أسباب في ثلاثة أعمدة (إستيت)"
+      }
+    },
+    {
       "id": "footer.classic",
       "version": "1.0.0",
       "category": "footer",
@@ -373,6 +443,16 @@
       }
     },
     {
+      "id": "footer.estate",
+      "version": "1.0.0",
+      "category": "footer",
+      "kind": "site",
+      "name": {
+        "en": "Estate dark footer",
+        "ar": "تذييل داكن (إستيت)"
+      }
+    },
+    {
       "id": "footer.minimal",
       "version": "1.0.0",
       "category": "footer",
@@ -400,6 +480,16 @@
       "name": {
         "en": "Form card",
         "ar": "بطاقة نموذج"
+      }
+    },
+    {
+      "id": "form.estate",
+      "version": "1.0.0",
+      "category": "form",
+      "kind": "form",
+      "name": {
+        "en": "Estate underline",
+        "ar": "خط سفلي (إستيت)"
       }
     },
     {
@@ -483,6 +573,16 @@
       }
     },
     {
+      "id": "gallery.showcase",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Estate dark project cards",
+        "ar": "بطاقات مشاريع داكنة (إستيت)"
+      }
+    },
+    {
       "id": "gallery.stories",
       "version": "1.0.0",
       "category": "gallery",
@@ -560,6 +660,16 @@
       "name": {
         "en": "Dark Bootstrap bar",
         "ar": "شريط Bootstrap داكن"
+      }
+    },
+    {
+      "id": "header.estate",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Estate dark bar",
+        "ar": "شريط داكن (إستيت)"
       }
     },
     {
@@ -650,6 +760,16 @@
       "name": {
         "en": "Full-screen image",
         "ar": "صورة بملء الشاشة"
+      }
+    },
+    {
+      "id": "hero.estate",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Estate full-screen photo",
+        "ar": "صورة بملء الشاشة (إستيت)"
       }
     },
     {

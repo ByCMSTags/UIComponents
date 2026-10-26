@@ -1,0 +1,212 @@
+{
+  "id": "hero.estate",
+  "category": "hero",
+  "kind": "single",
+  "name": {
+    "en": "Estate full-screen photo",
+    "ar": "صورة بملء الشاشة (إستيت)"
+  },
+  "description": {
+    "en": "Full-height photo with a dark shade, a gold label, a serif title ending in gold italic, a gold button, a text link and a vertical side link.",
+    "ar": "صورة بارتفاع الشاشة مع تظليل داكن وتسمية ذهبية وعنوان ينتهي بخط ذهبي مائل وزر ذهبي ورابط نصي ورابط جانبي عمودي."
+  },
+  "fields": [
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Background photo",
+        "ar": "صورة الخلفية"
+      }
+    },
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      },
+      "localized": true
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonLink",
+      "type": "shortText",
+      "label": {
+        "en": "Button link (#section or address)",
+        "ar": "رابط الزر (#قسم أو عنوان)"
+      }
+    },
+    {
+      "key": "secondaryText",
+      "type": "shortText",
+      "label": {
+        "en": "Second link text",
+        "ar": "نص الرابط الثاني"
+      },
+      "localized": true
+    },
+    {
+      "key": "secondaryLink",
+      "type": "shortText",
+      "label": {
+        "en": "Second link (#section or address)",
+        "ar": "الرابط الثاني (#قسم أو عنوان)"
+      }
+    },
+    {
+      "key": "sideText",
+      "type": "shortText",
+      "label": {
+        "en": "Vertical side link text",
+        "ar": "نص الرابط الجانبي العمودي"
+      },
+      "localized": true
+    },
+    {
+      "key": "sideLink",
+      "type": "shortText",
+      "label": {
+        "en": "Vertical side link",
+        "ar": "الرابط الجانبي العمودي"
+      }
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Background photo",
+        "ar": "صورة الخلفية"
+      }
+    },
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "shortText",
+      "label": {
+        "en": "Button link (#section or address)",
+        "ar": "رابط الزر (#قسم أو عنوان)"
+      }
+    },
+    {
+      "token": "{{secondaryText}}",
+      "field": "secondaryText",
+      "type": "shortText",
+      "label": {
+        "en": "Second link text",
+        "ar": "نص الرابط الثاني"
+      }
+    },
+    {
+      "token": "{{secondaryLink}}",
+      "field": "secondaryLink",
+      "type": "shortText",
+      "label": {
+        "en": "Second link (#section or address)",
+        "ar": "الرابط الثاني (#قسم أو عنوان)"
+      }
+    },
+    {
+      "token": "{{sideText}}",
+      "field": "sideText",
+      "type": "shortText",
+      "label": {
+        "en": "Vertical side link text",
+        "ar": "نص الرابط الجانبي العمودي"
+      }
+    },
+    {
+      "token": "{{sideLink}}",
+      "field": "sideLink",
+      "type": "shortText",
+      "label": {
+        "en": "Vertical side link",
+        "ar": "الرابط الجانبي العمودي"
+      }
+    }
+  ]
+}

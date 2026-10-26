@@ -1,0 +1,141 @@
+/* Estate family: shared tokens and a reset scoped to this section (Bootstrap is loaded by the site). */
+.cms-content-note {
+  --est-black: var(--cms-estate-black, #121212);
+  --est-black-soft: var(--cms-estate-black-soft, #1a1a1a);
+  --est-cream: var(--cms-estate-cream, #faf9f6);
+  --est-cream-dark: var(--cms-estate-cream-dark, #f0ece4);
+  --est-gold: var(--cms-estate-gold, #c5a059);
+  --est-gold-dark: var(--cms-estate-gold-dark, #a8863f);
+  --est-white: #fff;
+  --est-text: var(--cms-estate-text, #1c1c1c);
+  --est-muted: var(--cms-estate-muted, #5c5c5c);
+  --est-light: var(--cms-estate-light, #b0b0b0);
+  --est-border: var(--cms-estate-border, #2a2a2a);
+  --est-border-light: var(--cms-estate-border-light, #d9d0c0);
+  --est-serif: var(--cms-estate-serif, "Playfair Display", Georgia, serif);
+  --est-sans: var(--cms-estate-sans, "Inter", system-ui, sans-serif);
+  --est-header-h: var(--cms-estate-header-h, 88px);
+  font-family: var(--est-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--est-text);
+  -webkit-font-smoothing: antialiased;
+  scroll-margin-top: var(--est-header-h);
+}
+
+.cms-content-note :is(h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, strong) {
+  margin: 0;
+  padding: 0;
+}
+
+.cms-content-note :is(ul, ol) {
+  list-style: none;
+}
+
+.cms-content-note a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cms-content-note img {
+  display: block;
+  max-width: 100%;
+}
+
+.cms-content-note button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  border-radius: 0;
+}
+
+.cms-content-note .cms-estate-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 1024px) {
+  .cms-content-note .cms-estate-wrap {
+    padding: 0 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cms-content-note {
+    --est-header-h: var(--cms-estate-header-h, 72px);
+  }
+}
+
+.cms-content-note {
+  padding: 120px 0;
+  background: var(--est-cream-dark);
+}
+
+.cms-content-note .cms-content-note__inner {
+  max-width: 720px;
+}
+
+.cms-content-note .cms-content-note__label {
+  font-family: var(--est-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--est-gold);
+  margin-bottom: 20px;
+}
+
+.cms-content-note .cms-content-note__title {
+  font-family: var(--est-serif);
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--est-text);
+  letter-spacing: -0.01em;
+  margin-bottom: 28px;
+}
+
+.cms-content-note .cms-content-note__title em {
+  font-style: italic;
+  color: var(--est-gold);
+}
+
+.cms-content-note .cms-content-note__text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--est-muted);
+  max-width: 520px;
+}
+
+.cms-content-note .cms-content-note__text + .cms-content-note__text {
+  margin-top: 20px;
+}
+
+.cms-content-note .cms-content-note__link {
+  display: inline-block;
+  margin-top: 32px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--est-gold);
+  transition: color 0.2s;
+}
+
+.cms-content-note .cms-content-note__link:hover {
+  color: var(--est-gold-dark);
+}
+
+.cms-content-note .cms-content-note__note {
+  margin-top: 32px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--est-gold);
+}

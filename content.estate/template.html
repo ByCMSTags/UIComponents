@@ -1,0 +1,9 @@
+<section id="{{@id}}" class="cms-content-estate">
+  <div class="cms-estate-wrap cms-content-estate__inner">
+    {{#eyebrow}}<p class="cms-content-estate__label">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-content-estate__title">{{title}}{{#highlight}} <em>{{highlight}}</em>{{/highlight}}</{{@h}}>{{/title}}
+    {{#description|lines}}<p class="cms-content-estate__text">{{.}}</p>{{/description|lines}}
+    {{#note}}<p class="cms-content-estate__note">{{note}}</p>{{/note}}
+    {{#linkText}}<a href="{{link}}" class="cms-content-estate__link">{{linkText}} <span aria-hidden="true">&rarr;</span></a>{{/linkText}}
+  </div>
+</section>

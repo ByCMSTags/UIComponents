@@ -1,0 +1,161 @@
+{
+  "id": "contact.estate",
+  "category": "contact",
+  "kind": "single",
+  "name": {
+    "en": "Estate photo beside contact form",
+    "ar": "صورة بجانب نموذج التواصل (إستيت)"
+  },
+  "description": {
+    "en": "Photo on one half; on the other a heading, text, the page form (put the form right after this section and give it the \"Estate underline\" form design), a call link with the site phone and a note.",
+    "ar": "صورة في نصف، وفي النصف الآخر عنوان ونص ونموذج الصفحة (ضع النموذج بعد هذا القسم مباشرة واختر له تصميم \"Estate underline\") ورابط اتصال برقم الموقع وملاحظة."
+  },
+  "fields": [
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Photo",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      },
+      "localized": true
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Form button text",
+        "ar": "نص زر النموذج"
+      },
+      "localized": true
+    },
+    {
+      "key": "callText",
+      "type": "shortText",
+      "label": {
+        "en": "Call link text (uses the site phone)",
+        "ar": "نص رابط الاتصال (برقم الموقع)"
+      },
+      "localized": true
+    },
+    {
+      "key": "note",
+      "type": "shortText",
+      "label": {
+        "en": "Note under the call link",
+        "ar": "ملاحظة تحت رابط الاتصال"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Photo",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Form button text",
+        "ar": "نص زر النموذج"
+      }
+    },
+    {
+      "token": "{{callText}}",
+      "field": "callText",
+      "type": "shortText",
+      "label": {
+        "en": "Call link text (uses the site phone)",
+        "ar": "نص رابط الاتصال (برقم الموقع)"
+      }
+    },
+    {
+      "token": "{{note}}",
+      "field": "note",
+      "type": "shortText",
+      "label": {
+        "en": "Note under the call link",
+        "ar": "ملاحظة تحت رابط الاتصال"
+      }
+    }
+  ]
+}

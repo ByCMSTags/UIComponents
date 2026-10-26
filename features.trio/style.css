@@ -1,0 +1,160 @@
+/* Estate family: shared tokens and a reset scoped to this section (Bootstrap is loaded by the site). */
+.cms-trio-estate {
+  --est-black: var(--cms-estate-black, #121212);
+  --est-black-soft: var(--cms-estate-black-soft, #1a1a1a);
+  --est-cream: var(--cms-estate-cream, #faf9f6);
+  --est-cream-dark: var(--cms-estate-cream-dark, #f0ece4);
+  --est-gold: var(--cms-estate-gold, #c5a059);
+  --est-gold-dark: var(--cms-estate-gold-dark, #a8863f);
+  --est-white: #fff;
+  --est-text: var(--cms-estate-text, #1c1c1c);
+  --est-muted: var(--cms-estate-muted, #5c5c5c);
+  --est-light: var(--cms-estate-light, #b0b0b0);
+  --est-border: var(--cms-estate-border, #2a2a2a);
+  --est-border-light: var(--cms-estate-border-light, #d9d0c0);
+  --est-serif: var(--cms-estate-serif, "Playfair Display", Georgia, serif);
+  --est-sans: var(--cms-estate-sans, "Inter", system-ui, sans-serif);
+  --est-header-h: var(--cms-estate-header-h, 88px);
+  font-family: var(--est-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--est-text);
+  -webkit-font-smoothing: antialiased;
+  scroll-margin-top: var(--est-header-h);
+}
+
+.cms-trio-estate :is(h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, strong) {
+  margin: 0;
+  padding: 0;
+}
+
+.cms-trio-estate :is(ul, ol) {
+  list-style: none;
+}
+
+.cms-trio-estate a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cms-trio-estate img {
+  display: block;
+  max-width: 100%;
+}
+
+.cms-trio-estate button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  border-radius: 0;
+}
+
+.cms-trio-estate .cms-estate-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 1024px) {
+  .cms-trio-estate .cms-estate-wrap {
+    padding: 0 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cms-trio-estate {
+    --est-header-h: var(--cms-estate-header-h, 72px);
+  }
+}
+
+.cms-trio-estate {
+  padding: 120px 0;
+  background: var(--est-cream-dark);
+}
+
+.cms-trio-estate .cms-trio-estate__label {
+  font-family: var(--est-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--est-gold);
+  margin-bottom: 20px;
+}
+
+.cms-trio-estate .cms-trio-estate__title {
+  font-family: var(--est-serif);
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--est-text);
+  letter-spacing: -0.01em;
+  margin-bottom: 28px;
+}
+
+.cms-trio-estate .cms-trio-estate__title em {
+  font-style: italic;
+  color: var(--est-gold);
+}
+
+.cms-trio-estate .cms-trio-estate__grid {
+  counter-reset: cms-estate-item;
+}
+
+.cms-trio-estate .cms-trio-estate__item {
+  counter-increment: cms-estate-item;
+}
+
+.cms-trio-estate .cms-trio-estate__num {
+  display: block;
+  font-family: var(--est-serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--est-gold);
+  margin-bottom: 12px;
+}
+
+.cms-trio-estate .cms-trio-estate__num::before {
+  content: counter(cms-estate-item, decimal-leading-zero);
+}
+
+.cms-trio-estate .cms-trio-estate__text {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--est-muted);
+}
+
+.cms-trio-estate .cms-trio-estate__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px 40px;
+  margin-top: 16px;
+}
+
+.cms-trio-estate .cms-trio-estate__name {
+  font-family: var(--est-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: var(--est-text);
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1024px) {
+  .cms-trio-estate .cms-trio-estate__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .cms-trio-estate .cms-trio-estate__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

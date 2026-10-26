@@ -1,0 +1,14 @@
+<section id="{{@id}}" class="cms-hero-estate">
+  {{#image}}<div class="cms-hero-estate__bg">{{image eager="true" decorative="true" class="cms-hero-estate__img"}}</div>{{/image}}
+  <div class="cms-hero-estate__shade"></div>
+  <div class="cms-estate-wrap cms-hero-estate__content">
+    {{#eyebrow}}<p class="cms-hero-estate__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+    {{#title}}<{{@h}} class="cms-hero-estate__title">{{title}}{{#highlight}} <em>{{highlight}}</em>{{/highlight}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-hero-estate__desc">{{description}}</p>{{/description}}
+    <div class="cms-hero-estate__actions">
+      {{#buttonText}}<a href="{{buttonLink}}" class="cms-hero-estate__btn">{{buttonText}}</a>{{/buttonText}}
+      {{#secondaryText}}<a href="{{secondaryLink}}" class="cms-hero-estate__link">{{secondaryText}} <span aria-hidden="true">&rarr;</span></a>{{/secondaryText}}
+    </div>
+  </div>
+  {{#sideText}}<a href="{{sideLink}}" class="cms-hero-estate__side">{{sideText}}</a>{{/sideText}}
+</section>

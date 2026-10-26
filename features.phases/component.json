@@ -1,0 +1,141 @@
+{
+  "id": "features.phases",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Estate four steps",
+    "ar": "أربع مراحل (إستيت)"
+  },
+  "description": {
+    "en": "Heading, then numbered steps in four columns, each under a thin line: how we work.",
+    "ar": "عنوان ثم مراحل مرقّمة في أربعة أعمدة، كل مرحلة تحت خط رفيع: كيف نعمل."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      },
+      "localized": true
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Items",
+        "ar": "العناصر"
+      },
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Items",
+        "ar": "العناصر"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    }
+  ]
+}

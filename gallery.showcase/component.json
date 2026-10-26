@@ -1,0 +1,249 @@
+{
+  "id": "gallery.showcase",
+  "category": "gallery",
+  "kind": "single",
+  "name": {
+    "en": "Estate dark project cards",
+    "ar": "بطاقات مشاريع داكنة (إستيت)"
+  },
+  "description": {
+    "en": "Dark section: heading beside a short text and link, then tall photo cards with a name and place. A card with button text shows a gold button instead (for a QR code or a link to more work).",
+    "ar": "قسم داكن: عنوان بجانب نص قصير ورابط، ثم بطاقات صور طويلة بالاسم والمكان. البطاقة التي لها نص زر تعرض زرًا ذهبيًا بدلًا منهما (لرمز QR أو رابط لأعمال أكثر)."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      },
+      "localized": true
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      },
+      "localized": true
+    },
+    {
+      "key": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      },
+      "localized": true
+    },
+    {
+      "key": "link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (address)",
+        "ar": "الرابط (عنوان)"
+      }
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Cards",
+        "ar": "البطاقات"
+      },
+      "subFields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Photo",
+            "ar": "الصورة"
+          }
+        },
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true
+        },
+        {
+          "key": "location",
+          "type": "shortText",
+          "label": {
+            "en": "Place",
+            "ar": "المكان"
+          },
+          "localized": true
+        },
+        {
+          "key": "buttonText",
+          "type": "shortText",
+          "label": {
+            "en": "Button text (shows a button instead)",
+            "ar": "نص الزر (يظهر زر بدلًا من الاسم)"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "shortText",
+          "label": {
+            "en": "Button link",
+            "ar": "رابط الزر"
+          }
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label (e.g. 01 / Services)",
+        "ar": "التسمية الصغيرة (مثل 01 / الخدمات)"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (gold italic)",
+        "ar": "نهاية العنوان (ذهبي مائل)"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      }
+    },
+    {
+      "token": "{{linkText}}",
+      "field": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      }
+    },
+    {
+      "token": "{{link}}",
+      "field": "link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (address)",
+        "ar": "الرابط (عنوان)"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Cards",
+        "ar": "البطاقات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Photo",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{location}}",
+      "field": "items.location",
+      "type": "shortText",
+      "label": {
+        "en": "Place",
+        "ar": "المكان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "items.buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text (shows a button instead)",
+        "ar": "نص الزر (يظهر زر بدلًا من الاسم)"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link}}",
+      "field": "items.link",
+      "type": "shortText",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "scope": "items"
+    }
+  ]
+}

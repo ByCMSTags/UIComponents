@@ -1,0 +1,133 @@
+/* Estate family: shared tokens and a reset scoped to this section (Bootstrap is loaded by the site). */
+.cms-ribbon-estate {
+  --est-black: var(--cms-estate-black, #121212);
+  --est-black-soft: var(--cms-estate-black-soft, #1a1a1a);
+  --est-cream: var(--cms-estate-cream, #faf9f6);
+  --est-cream-dark: var(--cms-estate-cream-dark, #f0ece4);
+  --est-gold: var(--cms-estate-gold, #c5a059);
+  --est-gold-dark: var(--cms-estate-gold-dark, #a8863f);
+  --est-white: #fff;
+  --est-text: var(--cms-estate-text, #1c1c1c);
+  --est-muted: var(--cms-estate-muted, #5c5c5c);
+  --est-light: var(--cms-estate-light, #b0b0b0);
+  --est-border: var(--cms-estate-border, #2a2a2a);
+  --est-border-light: var(--cms-estate-border-light, #d9d0c0);
+  --est-serif: var(--cms-estate-serif, "Playfair Display", Georgia, serif);
+  --est-sans: var(--cms-estate-sans, "Inter", system-ui, sans-serif);
+  --est-header-h: var(--cms-estate-header-h, 88px);
+  font-family: var(--est-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--est-text);
+  -webkit-font-smoothing: antialiased;
+  scroll-margin-top: var(--est-header-h);
+}
+
+.cms-ribbon-estate :is(h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, strong) {
+  margin: 0;
+  padding: 0;
+}
+
+.cms-ribbon-estate :is(ul, ol) {
+  list-style: none;
+}
+
+.cms-ribbon-estate a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cms-ribbon-estate img {
+  display: block;
+  max-width: 100%;
+}
+
+.cms-ribbon-estate button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  border-radius: 0;
+}
+
+.cms-ribbon-estate .cms-estate-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 1024px) {
+  .cms-ribbon-estate .cms-estate-wrap {
+    padding: 0 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cms-ribbon-estate {
+    --est-header-h: var(--cms-estate-header-h, 72px);
+  }
+}
+
+.cms-ribbon-estate {
+  background: var(--est-black);
+  border-bottom: 1px solid var(--est-gold);
+}
+
+.cms-ribbon-estate .cms-ribbon-estate__inner {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  counter-reset: cms-estate-item;
+}
+
+.cms-ribbon-estate .cms-ribbon-estate__item {
+  counter-increment: cms-estate-item;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 24px;
+  border-inline-end: 1px solid var(--est-border);
+}
+
+.cms-ribbon-estate .cms-ribbon-estate__item:last-child {
+  border-inline-end: none;
+}
+
+.cms-ribbon-estate .cms-ribbon-estate__num {
+  font-family: var(--est-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--est-gold);
+  flex-shrink: 0;
+}
+
+.cms-ribbon-estate .cms-ribbon-estate__num::before {
+  content: counter(cms-estate-item, decimal-leading-zero);
+}
+
+.cms-ribbon-estate .cms-ribbon-estate__text {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--est-white);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .cms-ribbon-estate .cms-ribbon-estate__inner {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+
+  .cms-ribbon-estate .cms-ribbon-estate__item {
+    border-inline-end: none;
+    border-bottom: 1px solid var(--est-border);
+  }
+
+  .cms-ribbon-estate .cms-ribbon-estate__item:last-child {
+    border-bottom: none;
+  }
+}

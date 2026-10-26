@@ -1,0 +1,68 @@
+{
+  "id": "features.ribbon",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Estate numbered ribbon",
+    "ar": "شريط مرقّم (إستيت)"
+  },
+  "description": {
+    "en": "Dark band with a gold line under it: short points numbered 01, 02, 03 side by side (credentials, promises).",
+    "ar": "شريط داكن بخط ذهبي أسفله: نقاط قصيرة مرقّمة 01 و02 و03 جنبًا إلى جنب (اعتمادات أو وعود)."
+  },
+  "fields": [
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Points",
+        "ar": "النقاط"
+      },
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Points",
+        "ar": "النقاط"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "header.estate",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Estate dark bar",
+    "ar": "شريط داكن (إستيت)"
+  },
+  "description": {
+    "en": "Fixed dark bar: logo, uppercase menu and a gold call button. The menu slides in on phones. Menu links and the button text come from Website settings (headerLinks, headerButton); without them it lists the pages.",
+    "ar": "شريط داكن ثابت: الشعار وقائمة بأحرف كبيرة وزر اتصال ذهبي. القائمة تنزلق على الهاتف. روابط القائمة ونص الزر من إعدادات الموقع (headerLinks و headerButton)، وبدونها تظهر الصفحات."
+  },
+  "fields": [
+    {
+      "key": "headerLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Menu links",
+        "ar": "روابط القائمة"
+      },
+      "subFields": [
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "shortText",
+          "label": {
+            "en": "Link (#section or address)",
+            "ar": "الرابط (#قسم أو عنوان)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "headerButton",
+      "type": "shortText",
+      "label": {
+        "en": "Call button text",
+        "ar": "نص زر الاتصال"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{headerLinks}}",
+      "field": "headerLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Menu links",
+        "ar": "روابط القائمة"
+      }
+    },
+    {
+      "token": "{{#headerLinks}}",
+      "field": "headerLinks",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/headerLinks}}",
+      "field": "headerLinks",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{label}}",
+      "field": "headerLinks.label",
+      "type": "shortText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "headerLinks"
+    },
+    {
+      "token": "{{link}}",
+      "field": "headerLinks.link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (#section or address)",
+        "ar": "الرابط (#قسم أو عنوان)"
+      },
+      "scope": "headerLinks"
+    },
+    {
+      "token": "{{headerButton}}",
+      "field": "headerButton",
+      "type": "shortText",
+      "label": {
+        "en": "Call button text",
+        "ar": "نص زر الاتصال"
+      }
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "id": "team.split",
+  "category": "team",
+  "kind": "single",
+  "name": {
+    "en": "Photos beside a contact call",
+    "ar": "صور بجانب دعوة تواصل"
+  },
+  "description": {
+    "en": "Three portrait photos beside a script label, a title, text, a link and a button.",
+    "ar": "ثلاث صور عمودية بجانب تسمية بخط يد وعنوان ونص ورابط وزر."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Script label",
+        "ar": "التسمية بخط اليد"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label",
+        "script"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "lead",
+        "subtitle",
+        "intro",
+        "content"
+      ]
+    },
+    {
+      "key": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      },
+      "localized": true,
+      "aliases": [
+        "site",
+        "urlText",
+        "phone"
+      ]
+    },
+    {
+      "key": "link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "aliases": [
+        "href",
+        "url",
+        "website"
+      ]
+    },
+    {
+      "key": "separator",
+      "type": "shortText",
+      "label": {
+        "en": "Between",
+        "ar": "بينهما"
+      },
+      "localized": true,
+      "aliases": [
+        "or"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctaText",
+        "button"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaLink",
+        "href"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      },
+      "aliases": [
+        "photos",
+        "people",
+        "gallery",
+        "list"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Caption",
+            "ar": "التسمية"
+          },
+          "localized": true,
+          "aliases": [
+            "caption",
+            "name",
+            "heading",
+            "label"
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "photo",
+            "picture",
+            "img",
+            "cover",
+            "media"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Script label",
+        "ar": "التسمية بخط اليد"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{linkText}}",
+      "field": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      }
+    },
+    {
+      "token": "{{link}}",
+      "field": "link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      }
+    },
+    {
+      "token": "{{separator}}",
+      "field": "separator",
+      "type": "shortText",
+      "label": {
+        "en": "Between",
+        "ar": "بينهما"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Caption",
+        "ar": "التسمية"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    }
+  ]
+}

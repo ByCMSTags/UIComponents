@@ -853,6 +853,16 @@
       }
     },
     {
+      "id": "team.split",
+      "version": "1.0.0",
+      "category": "team",
+      "kind": "single",
+      "name": {
+        "en": "Photos beside a contact call",
+        "ar": "صور بجانب دعوة تواصل"
+      }
+    },
+    {
       "id": "testimonials.cards",
       "version": "1.0.0",
       "category": "testimonials",

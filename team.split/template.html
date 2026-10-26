@@ -1,0 +1,20 @@
+<section id="{{@id}}" class="cms-tsplit">
+  <div class="cms-tsplit__wrap">
+    <div class="cms-tsplit__people">
+      {{#items}}<figure class="cms-tsplit__person">
+        {{#image}}{{image sizes="(max-width: 900px) 30vw, 320px" class="cms-tsplit__photo"}}{{/image}}
+        {{#title}}<figcaption>{{title}}</figcaption>{{/title}}
+      </figure>{{/items}}
+    </div>
+    <aside class="cms-tsplit__aside">
+      {{#eyebrow}}<p class="cms-tsplit__script">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-tsplit__title">{{title}}</{{@h}}>{{/title}}
+      {{#description}}<p class="cms-tsplit__text">{{description}}</p>{{/description}}
+      <div class="cms-tsplit__contact">
+        {{#linkText}}{{#link}}<a class="cms-tsplit__link" href="{{link}}">{{linkText}}</a>{{/link}}{{/linkText}}
+        {{#linkText}}{{#buttonText}}<span class="cms-tsplit__or">{{#separator}}{{separator}}{{/separator}}{{^separator}}or{{/separator}}</span>{{/buttonText}}{{/linkText}}
+        {{#buttonText}}{{#buttonLink}}<a class="cms-tsplit__btn" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+      </div>
+    </aside>
+  </div>
+</section>

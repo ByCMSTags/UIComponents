@@ -363,6 +363,16 @@
       }
     },
     {
+      "id": "footer.dark",
+      "version": "1.0.0",
+      "category": "footer",
+      "kind": "site",
+      "name": {
+        "en": "Olive dark with badges",
+        "ar": "تذييل زيتوني داكن مع شارات"
+      }
+    },
+    {
       "id": "footer.minimal",
       "version": "1.0.0",
       "category": "footer",

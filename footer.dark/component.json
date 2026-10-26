@@ -1,0 +1,389 @@
+{
+  "id": "footer.dark",
+  "category": "footer",
+  "kind": "site",
+  "name": {
+    "en": "Olive dark with badges",
+    "ar": "تذييل زيتوني داكن مع شارات"
+  },
+  "description": {
+    "en": "Dark olive footer with logos, a large site line, social links, and four link columns.",
+    "ar": "تذييل زيتوني داكن بشعارات وسطر موقع كبير وروابط تواصل وأربعة أعمدة روابط."
+  },
+  "fields": [
+    {
+      "key": "logo2",
+      "type": "image",
+      "label": {
+        "en": "Second logo",
+        "ar": "الشعار الثاني"
+      },
+      "aliases": [
+        "badge",
+        "mark"
+      ]
+    },
+    {
+      "key": "logo3",
+      "type": "image",
+      "label": {
+        "en": "Third logo",
+        "ar": "الشعار الثالث"
+      },
+      "aliases": [
+        "badge2",
+        "wordmark"
+      ]
+    },
+    {
+      "key": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Large link text",
+        "ar": "نص الرابط الكبير"
+      },
+      "localized": true,
+      "aliases": [
+        "website",
+        "siteText"
+      ]
+    },
+    {
+      "key": "linkUrl",
+      "type": "url",
+      "label": {
+        "en": "Large link",
+        "ar": "الرابط الكبير"
+      },
+      "aliases": [
+        "websiteUrl",
+        "siteUrl"
+      ]
+    },
+    {
+      "key": "navTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Pages heading",
+        "ar": "عنوان الصفحات"
+      },
+      "localized": true,
+      "aliases": [
+        "pagesTitle"
+      ]
+    },
+    {
+      "key": "creditName",
+      "type": "shortText",
+      "label": {
+        "en": "Credit name",
+        "ar": "اسم الاعتماد"
+      },
+      "localized": true,
+      "aliases": [
+        "createdBy",
+        "maker"
+      ]
+    },
+    {
+      "key": "creditLogo",
+      "type": "image",
+      "label": {
+        "en": "Credit logo",
+        "ar": "شعار الاعتماد"
+      }
+    },
+    {
+      "key": "creditText",
+      "type": "longText",
+      "label": {
+        "en": "Credit text",
+        "ar": "نص الاعتماد"
+      },
+      "localized": true
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Extra columns",
+        "ar": "الأعمدة الإضافية"
+      },
+      "aliases": [
+        "columns",
+        "groups",
+        "links"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Heading",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "heading",
+            "name",
+            "label"
+          ]
+        },
+        {
+          "key": "linkText",
+          "type": "shortText",
+          "label": {
+            "en": "Link 1",
+            "ar": "الرابط 1"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": {
+            "en": "Link 1 URL",
+            "ar": "عنوان الرابط 1"
+          }
+        },
+        {
+          "key": "linkText2",
+          "type": "shortText",
+          "label": {
+            "en": "Link 2",
+            "ar": "الرابط 2"
+          },
+          "localized": true
+        },
+        {
+          "key": "link2",
+          "type": "url",
+          "label": {
+            "en": "Link 2 URL",
+            "ar": "عنوان الرابط 2"
+          }
+        },
+        {
+          "key": "linkText3",
+          "type": "shortText",
+          "label": {
+            "en": "Link 3",
+            "ar": "الرابط 3"
+          },
+          "localized": true
+        },
+        {
+          "key": "link3",
+          "type": "url",
+          "label": {
+            "en": "Link 3 URL",
+            "ar": "عنوان الرابط 3"
+          }
+        },
+        {
+          "key": "linkText4",
+          "type": "shortText",
+          "label": {
+            "en": "Link 4",
+            "ar": "الرابط 4"
+          },
+          "localized": true
+        },
+        {
+          "key": "link4",
+          "type": "url",
+          "label": {
+            "en": "Link 4 URL",
+            "ar": "عنوان الرابط 4"
+          }
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{logo2}}",
+      "field": "logo2",
+      "type": "image",
+      "label": {
+        "en": "Second logo",
+        "ar": "الشعار الثاني"
+      }
+    },
+    {
+      "token": "{{logo3}}",
+      "field": "logo3",
+      "type": "image",
+      "label": {
+        "en": "Third logo",
+        "ar": "الشعار الثالث"
+      }
+    },
+    {
+      "token": "{{linkText}}",
+      "field": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Large link text",
+        "ar": "نص الرابط الكبير"
+      }
+    },
+    {
+      "token": "{{linkUrl}}",
+      "field": "linkUrl",
+      "type": "url",
+      "label": {
+        "en": "Large link",
+        "ar": "الرابط الكبير"
+      }
+    },
+    {
+      "token": "{{navTitle}}",
+      "field": "navTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Pages heading",
+        "ar": "عنوان الصفحات"
+      }
+    },
+    {
+      "token": "{{creditName}}",
+      "field": "creditName",
+      "type": "shortText",
+      "label": {
+        "en": "Credit name",
+        "ar": "اسم الاعتماد"
+      }
+    },
+    {
+      "token": "{{creditLogo}}",
+      "field": "creditLogo",
+      "type": "image",
+      "label": {
+        "en": "Credit logo",
+        "ar": "شعار الاعتماد"
+      }
+    },
+    {
+      "token": "{{creditText}}",
+      "field": "creditText",
+      "type": "longText",
+      "label": {
+        "en": "Credit text",
+        "ar": "نص الاعتماد"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Extra columns",
+        "ar": "الأعمدة الإضافية"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{linkText}}",
+      "field": "items.linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link 1",
+        "ar": "الرابط 1"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link}}",
+      "field": "items.link",
+      "type": "url",
+      "label": {
+        "en": "Link 1 URL",
+        "ar": "عنوان الرابط 1"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{linkText2}}",
+      "field": "items.linkText2",
+      "type": "shortText",
+      "label": {
+        "en": "Link 2",
+        "ar": "الرابط 2"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link2}}",
+      "field": "items.link2",
+      "type": "url",
+      "label": {
+        "en": "Link 2 URL",
+        "ar": "عنوان الرابط 2"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{linkText3}}",
+      "field": "items.linkText3",
+      "type": "shortText",
+      "label": {
+        "en": "Link 3",
+        "ar": "الرابط 3"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link3}}",
+      "field": "items.link3",
+      "type": "url",
+      "label": {
+        "en": "Link 3 URL",
+        "ar": "عنوان الرابط 3"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{linkText4}}",
+      "field": "items.linkText4",
+      "type": "shortText",
+      "label": {
+        "en": "Link 4",
+        "ar": "الرابط 4"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link4}}",
+      "field": "items.link4",
+      "type": "url",
+      "label": {
+        "en": "Link 4 URL",
+        "ar": "عنوان الرابط 4"
+      },
+      "scope": "items"
+    }
+  ]
+}

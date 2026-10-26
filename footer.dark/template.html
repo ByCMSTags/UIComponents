@@ -1,0 +1,52 @@
+<footer class="cms-fdark">
+  <div class="cms-fdark__wrap">
+    <div class="cms-fdark__top">
+      <div class="cms-fdark__badges">
+        {{#@site.logo}}<a class="cms-fdark__brand" href="{{@home}}">{{@site.logo sizes="120px" max="240" img="cms-fdark__badge"}}</a>{{/@site.logo}}
+        {{#logo2}}{{logo2 sizes="72px" max="144" img="cms-fdark__badge"}}{{/logo2}}
+        {{#logo3}}{{logo3 sizes="120px" max="240" img="cms-fdark__badge"}}{{/logo3}}
+        {{^@site.logo}}<a class="cms-fdark__name-fallback" href="{{@home}}">{{@site.name}}</a>{{/@site.logo}}
+      </div>
+      <div class="cms-fdark__reach">
+        {{#@social}}{{#@first}}<div class="cms-fdark__social">{{/@first}}<a href="{{href}}" rel="noopener" target="_blank" aria-label="{{name}}">{{icon}}</a>{{#@last}}</div>{{/@last}}{{/@social}}
+        <div class="cms-fdark__details">
+          {{#linkText}}{{#linkUrl}}<a class="cms-fdark__web" href="{{linkUrl}}">{{linkText}}</a>{{/linkUrl}}{{/linkText}}
+          {{^linkText}}{{#@site.phone}}<a class="cms-fdark__web" href="tel:{{@site.phone|tel}}" dir="ltr">{{@site.phone}}</a>{{/@site.phone}}{{/linkText}}
+          <a class="cms-fdark__mail" href="{{@home}}">{{@site.name}}</a>
+        </div>
+      </div>
+    </div>
+    <hr class="cms-fdark__rule" />
+    <div class="cms-fdark__nav">
+      {{#@nav}}{{#@first}}<nav class="cms-fdark__col cms-fdark__col--end" aria-label="{{@t.pages}}">
+        <h3>{{#navTitle}}{{navTitle}}{{/navTitle}}{{^navTitle}}{{@t.pages}}{{/navTitle}}</h3>
+        <ul>{{/@first}}<li><a href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a></li>{{#@last}}</ul>
+      </nav>{{/@last}}{{/@nav}}
+      {{#items}}<nav class="cms-fdark__col">
+        {{#title}}<h3>{{title}}</h3>{{/title}}
+        <ul>
+          {{#linkText}}{{#link}}<li><a href="{{link}}">{{linkText}}</a></li>{{/link}}{{/linkText}}
+          {{#linkText2}}{{#link2}}<li><a href="{{link2}}">{{linkText2}}</a></li>{{/link2}}{{/linkText2}}
+          {{#linkText3}}{{#link3}}<li><a href="{{link3}}">{{linkText3}}</a></li>{{/link3}}{{/linkText3}}
+          {{#linkText4}}{{#link4}}<li><a href="{{link4}}">{{linkText4}}</a></li>{{/link4}}{{/linkText4}}
+        </ul>
+      </nav>{{/items}}
+    </div>
+    <hr class="cms-fdark__rule" />
+    <div class="cms-fdark__credit">
+      <p class="cms-fdark__copy">© {{@year}} {{@site.name}}</p>
+      <div class="cms-fdark__by">
+        <span>{{@t.createdBy}}</span>
+        {{#creditName}}<span class="cms-fdark__maker">
+          {{#creditLogo}}{{creditLogo sizes="120px" max="240" img="cms-fdark__maker-logo"}}{{/creditLogo}}
+          {{^creditLogo}}<strong>{{creditName}}</strong>{{/creditLogo}}
+          {{#creditText}}<span class="cms-fdark__tooltip" role="tooltip">
+            {{#creditLogo}}{{creditLogo sizes="140px" max="280" img="cms-fdark__tooltip-logo"}}{{/creditLogo}}
+            <strong>{{creditName}}</strong>
+            <span>{{creditText}}</span>
+          </span>{{/creditText}}
+        </span>{{/creditName}}
+      </div>
+    </div>
+  </div>
+</footer>

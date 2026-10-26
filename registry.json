@@ -433,6 +433,16 @@
       }
     },
     {
+      "id": "gallery.tiles",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Photo tile grid",
+        "ar": "شبكة بلاطات صور"
+      }
+    },
+    {
       "id": "generic.list",
       "version": "1.0.0",
       "category": "generic",

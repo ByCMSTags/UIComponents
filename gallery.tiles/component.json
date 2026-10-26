@@ -1,0 +1,201 @@
+{
+  "id": "gallery.tiles",
+  "category": "gallery",
+  "kind": "single",
+  "name": {
+    "en": "Photo tile grid",
+    "ar": "شبكة بلاطات صور"
+  },
+  "description": {
+    "en": "A title, a short line, photo tiles with captions, and a button.",
+    "ar": "عنوان وخط قصير وبلاطات صور مع تسميات وزر."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Tiles",
+        "ar": "البلاطات"
+      },
+      "aliases": [
+        "cards",
+        "tiles",
+        "pillars",
+        "gallery",
+        "list",
+        "photos"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Caption",
+            "ar": "التسمية"
+          },
+          "localized": true,
+          "aliases": [
+            "label",
+            "name",
+            "heading",
+            "caption"
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "photo",
+            "picture",
+            "img",
+            "cover",
+            "media"
+          ]
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": {
+            "en": "Link",
+            "ar": "الرابط"
+          },
+          "aliases": [
+            "href",
+            "url",
+            "buttonLink"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctaText",
+        "button",
+        "linkText"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaLink",
+        "url",
+        "href"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Tiles",
+        "ar": "البلاطات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Caption",
+        "ar": "التسمية"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link}}",
+      "field": "items.link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ]
+}

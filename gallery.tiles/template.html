@@ -1,0 +1,14 @@
+<section id="{{@id}}" class="cms-tiles">
+  <div class="cms-tiles__wrap">
+    {{#title}}<{{@h}} class="cms-tiles__title">{{title}}</{{@h}}>{{/title}}
+    <div class="cms-tiles__rule" aria-hidden="true"></div>
+    <div class="cms-tiles__grid">
+      {{#items}}{{#link}}<a class="cms-tiles__card" href="{{link}}">{{/link}}{{^link}}<article class="cms-tiles__card">{{/link}}
+        {{#image}}{{image sizes="(max-width: 520px) 100vw, (max-width: 1000px) 50vw, 25vw" class="cms-tiles__photo"}}{{/image}}
+        {{#title}}<span class="cms-tiles__label">{{title}}</span>{{/title}}
+      {{#link}}</a>{{/link}}{{^link}}</article>{{/link}}{{/items}}
+    </div>
+    {{#buttonText}}{{#buttonLink}}<div class="cms-tiles__cta"><a class="cms-tiles__btn" href="{{buttonLink}}">{{buttonText}}</a></div>{{/buttonLink}}{{/buttonText}}
+    {{^buttonLink}}{{#@next}}<div class="cms-tiles__cta"><a class="cms-tiles__btn" href="{{@next}}">{{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}{{@t.learnMore}}{{/buttonText}}</a></div>{{/@next}}{{/buttonLink}}
+  </div>
+</section>

@@ -503,6 +503,16 @@
       }
     },
     {
+      "id": "header.topbar",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Logo bar and menu",
+        "ar": "شريط الشعار والقائمة"
+      }
+    },
+    {
       "id": "hero.band",
       "version": "1.0.0",
       "category": "hero",

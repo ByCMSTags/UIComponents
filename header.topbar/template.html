@@ -1,0 +1,29 @@
+<header class="cms-htop" data-cms-header>
+  <div class="cms-htop__bar">
+    <div class="cms-htop__wrap">
+      <a class="cms-htop__brand" href="{{@home}}">{{#@site.logo}}{{@site.logo sizes="280px" max="420" eager="true" img="cms-htop__logo"}}{{/@site.logo}}{{^@site.logo}}<span class="cms-htop__name">{{@site.name}}</span>{{/@site.logo}}</a>
+      <div class="cms-htop__actions">
+        {{#linkText}}{{#linkUrl}}<a class="cms-htop__web" href="{{linkUrl}}">{{linkText}}</a>{{/linkUrl}}{{/linkText}}
+        {{^linkText}}{{#@site.phone}}<a class="cms-htop__web" href="tel:{{@site.phone|tel}}" dir="ltr">{{@site.phone}}</a>{{/@site.phone}}{{/linkText}}
+        {{#buttonText}}{{#buttonLink}}<a class="cms-htop__btn" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+      </div>
+      <button class="cms-htop__toggle" type="button" data-cms-nav-toggle aria-expanded="false" aria-controls="cms-htop-nav" aria-label="{{@t.menu}}"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="cms-htop__nav" id="cms-htop-nav" data-cms-nav-panel>
+    <div class="cms-htop__wrap cms-htop__wrap--nav">
+      <nav class="cms-htop__primary" aria-label="{{@t.menu}}">
+        {{#@nav}}<a class="cms-htop__link" href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a>{{/@nav}}
+        <div class="cms-htop__mobile">
+          {{#links}}<a class="cms-htop__link" href="{{link}}">{{title}}</a>{{/links}}
+          {{#@multilingual}}{{#@langs}}{{^current}}<a class="cms-htop__link" href="{{href}}" lang="{{code}}" hreflang="{{code}}">{{label}}</a>{{/current}}{{/@langs}}{{/@multilingual}}
+          {{#buttonText}}{{#buttonLink}}<a class="cms-htop__btn cms-htop__btn--menu" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+        </div>
+      </nav>
+      <nav class="cms-htop__secondary" aria-label="{{@t.pages}}">
+        {{#links}}<a class="cms-htop__link cms-htop__link--small" href="{{link}}">{{title}}</a>{{/links}}
+        {{#@multilingual}}{{#@langs}}{{^current}}<a class="cms-htop__link cms-htop__link--small" href="{{href}}" lang="{{code}}" hreflang="{{code}}">{{label}}</a>{{/current}}{{/@langs}}{{/@multilingual}}
+      </nav>
+    </div>
+  </div>
+</header>

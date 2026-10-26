@@ -1,0 +1,208 @@
+{
+  "id": "header.topbar",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Logo bar and menu",
+    "ar": "شريط الشعار والقائمة"
+  },
+  "description": {
+    "en": "Dark two-row header: logo and contact on top, pages on the left and smaller links on the right.",
+    "ar": "ترويسة داكنة من صفين: الشعار والتواصل أعلى، والصفحات يسار والروابط الأصغر يمين."
+  },
+  "fields": [
+    {
+      "key": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Top link text",
+        "ar": "نص الرابط العلوي"
+      },
+      "localized": true,
+      "aliases": [
+        "website",
+        "siteText",
+        "phoneLabel"
+      ]
+    },
+    {
+      "key": "linkUrl",
+      "type": "url",
+      "label": {
+        "en": "Top link",
+        "ar": "الرابط العلوي"
+      },
+      "aliases": [
+        "websiteUrl",
+        "siteUrl",
+        "href"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctaText",
+        "button"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaLink",
+        "buttonUrl"
+      ]
+    },
+    {
+      "key": "links",
+      "type": "repeater",
+      "label": {
+        "en": "Right-side links",
+        "ar": "روابط الجهة اليمنى"
+      },
+      "aliases": [
+        "secondary",
+        "extra",
+        "aside"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Label",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "label",
+            "name",
+            "text"
+          ]
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": {
+            "en": "Link",
+            "ar": "الرابط"
+          },
+          "aliases": [
+            "href",
+            "url"
+          ]
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "linkText": "govreform.jo",
+    "linkUrl": "https://govreform.jo/Default/En",
+    "buttonText": "Contact Us",
+    "buttonLink": "#contact",
+    "links": [
+      {
+        "title": "Governorates",
+        "link": "#governorates"
+      },
+      {
+        "title": "News",
+        "link": "#news"
+      },
+      {
+        "title": "About Us",
+        "link": "#about"
+      }
+    ]
+  },
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{linkText}}",
+      "field": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Top link text",
+        "ar": "نص الرابط العلوي"
+      }
+    },
+    {
+      "token": "{{linkUrl}}",
+      "field": "linkUrl",
+      "type": "url",
+      "label": {
+        "en": "Top link",
+        "ar": "الرابط العلوي"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    },
+    {
+      "token": "{{links}}",
+      "field": "links",
+      "type": "repeater",
+      "label": {
+        "en": "Right-side links",
+        "ar": "روابط الجهة اليمنى"
+      }
+    },
+    {
+      "token": "{{#links}}",
+      "field": "links",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/links}}",
+      "field": "links",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "links.title",
+      "type": "shortText",
+      "label": {
+        "en": "Label",
+        "ar": "النص"
+      },
+      "scope": "links"
+    },
+    {
+      "token": "{{link}}",
+      "field": "links.link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "scope": "links"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<section id="{{@id}}" class="cms-places">
+  <div class="cms-places__wrap">
+    <div class="cms-places__copy">
+      {{#eyebrow}}<p class="cms-places__script">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-places__title">{{title}}</{{@h}}>{{/title}}
+      {{#description}}<p class="cms-places__text">{{description}}</p>{{/description}}
+    </div>
+    <div class="cms-places__stage" data-cms-carousel>
+      <div class="cms-places__track" data-cms-track>
+        {{#items}}{{#link}}<a class="cms-places__card" href="{{link}}">{{/link}}{{^link}}<article class="cms-places__card">{{/link}}
+          {{#image}}{{image sizes="(max-width: 992px) 70vw, 240px" class="cms-places__photo"}}{{/image}}
+          {{#title}}<span class="cms-places__label">{{title}}{{#subtitle}}<small>{{subtitle}}</small>{{/subtitle}}</span>{{/title}}
+        {{#link}}</a>{{/link}}{{^link}}</article>{{/link}}{{/items}}
+      </div>
+      {{#items}}{{#@first}}{{^@last}}<div class="cms-places__nav">
+        <button class="cms-places__arrow" type="button" data-cms-prev>
+          <span class="visually-hidden">{{@t.prevSlide}}</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"></path></svg>
+        </button>
+        <button class="cms-places__arrow" type="button" data-cms-next>
+          <span class="visually-hidden">{{@t.nextSlide}}</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"></path></svg>
+        </button>
+      </div>{{/@last}}{{/@first}}{{/items}}
+    </div>
+  </div>
+</section>

@@ -443,6 +443,16 @@
       }
     },
     {
+      "id": "gallery.places",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Places beside a title",
+        "ar": "أماكن بجانب عنوان"
+      }
+    },
+    {
       "id": "gallery.portfolio",
       "version": "1.0.0",
       "category": "gallery",

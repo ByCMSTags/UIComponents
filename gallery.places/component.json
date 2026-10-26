@@ -1,0 +1,230 @@
+{
+  "id": "gallery.places",
+  "category": "gallery",
+  "kind": "single",
+  "name": {
+    "en": "Places beside a title",
+    "ar": "أماكن بجانب عنوان"
+  },
+  "description": {
+    "en": "A script label, title and text beside portrait photo cards that scroll.",
+    "ar": "تسمية بخط يد وعنوان ونص بجانب بطاقات صور عمودية تتمرّر."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Script label",
+        "ar": "التسمية بخط اليد"
+      },
+      "localized": true,
+      "aliases": [
+        "kicker",
+        "tagline",
+        "label",
+        "script"
+      ]
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "lead",
+        "subtitle",
+        "intro",
+        "content"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Cards",
+        "ar": "البطاقات"
+      },
+      "aliases": [
+        "cards",
+        "places",
+        "centres",
+        "locations",
+        "gallery",
+        "list",
+        "slides"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Caption",
+            "ar": "التسمية"
+          },
+          "localized": true,
+          "aliases": [
+            "label",
+            "name",
+            "heading",
+            "caption"
+          ]
+        },
+        {
+          "key": "subtitle",
+          "type": "shortText",
+          "label": {
+            "en": "Small line",
+            "ar": "السطر الصغير"
+          },
+          "localized": true,
+          "aliases": [
+            "kicker",
+            "role",
+            "tagline"
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "photo",
+            "picture",
+            "img",
+            "cover",
+            "media"
+          ]
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": {
+            "en": "Link",
+            "ar": "الرابط"
+          },
+          "aliases": [
+            "href",
+            "url",
+            "buttonLink"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Script label",
+        "ar": "التسمية بخط اليد"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Cards",
+        "ar": "البطاقات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Caption",
+        "ar": "التسمية"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{subtitle}}",
+      "field": "items.subtitle",
+      "type": "shortText",
+      "label": {
+        "en": "Small line",
+        "ar": "السطر الصغير"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{image}}",
+      "field": "items.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link}}",
+      "field": "items.link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "scope": "items"
+    }
+  ]
+}

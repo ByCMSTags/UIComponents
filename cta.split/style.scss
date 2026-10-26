@@ -1,0 +1,189 @@
+.cms-csplit {
+  --cms-csplit-accent: #8b2e2e;
+  --cms-csplit-accent-hover: #6f2424;
+  --cms-csplit-sage: #69765c;
+  --cms-csplit-sans: "Noto Sans", "Segoe UI", sans-serif;
+  --cms-csplit-condensed: "Roboto Condensed", "Arial Narrow", sans-serif;
+  padding: 0;
+  background: transparent;
+  font-family: var(--cms-csplit-sans);
+}
+
+.cms-csplit__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.cms-csplit__panel {
+  display: flex;
+  justify-content: center;
+  padding: 1.75rem 1.25rem;
+}
+
+.cms-csplit__inner {
+  width: min(100%, 34rem);
+  text-align: center;
+}
+
+.cms-csplit__title {
+  margin: 0;
+  font-family: var(--cms-csplit-condensed);
+  font-size: clamp(1.85rem, 3.5vw, 2.65rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.cms-csplit__rule {
+  width: 3rem;
+  height: 1px;
+  margin: 0.85rem auto 0;
+}
+
+.cms-csplit__text {
+  margin: 0.85rem 0 0;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+
+.cms-csplit__panel--signup {
+  background: #6a6a6a;
+  color: #fff;
+}
+
+.cms-csplit__panel--signup .cms-csplit__rule {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.cms-csplit__panel--signup .cms-csplit__text {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.cms-csplit__panel--touch {
+  background: #d8dcd5;
+  color: #3c3d38;
+}
+
+.cms-csplit__panel--touch .cms-csplit__title {
+  color: var(--cms-csplit-accent);
+}
+
+.cms-csplit__panel--touch .cms-csplit__rule {
+  background: var(--cms-csplit-accent);
+}
+
+.cms-csplit__panel--touch .cms-csplit__text {
+  color: #4a4a4a;
+}
+
+.cms-csplit__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  max-width: 28rem;
+  margin: 1.25rem auto 0;
+}
+
+.cms-csplit__form input {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.9rem;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  color: #2c2c2c;
+  font-family: var(--cms-csplit-sans);
+  font-size: 1rem;
+}
+
+.cms-csplit__form input:focus-visible {
+  outline: 2px solid var(--cms-csplit-accent);
+  outline-offset: 2px;
+}
+
+.cms-csplit__submit {
+  display: grid;
+  place-items: center;
+  min-width: 3rem;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--cms-csplit-accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.cms-csplit__submit:hover,
+.cms-csplit__submit:focus-visible {
+  background: var(--cms-csplit-accent-hover);
+}
+
+.cms-csplit__status {
+  flex: 1 1 100%;
+  margin: 0.65rem 0 0;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.cms-csplit__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.cms-csplit__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.6rem 1.4rem;
+  border: 2px solid var(--cms-csplit-sage);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--cms-csplit-sage);
+  font-family: var(--cms-csplit-condensed);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.cms-csplit__btn:hover,
+.cms-csplit__btn:focus-visible {
+  background: var(--cms-csplit-sage);
+  color: #fff;
+}
+
+.cms-csplit .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+[dir="rtl"] .cms-csplit__title,
+[dir="rtl"] .cms-csplit__btn {
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .cms-csplit__submit svg {
+  transform: scaleX(-1);
+}
+
+@media (min-width: 801px) {
+  .cms-csplit__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

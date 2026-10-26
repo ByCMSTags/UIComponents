@@ -193,6 +193,16 @@
       }
     },
     {
+      "id": "cta.split",
+      "version": "1.0.0",
+      "category": "cta",
+      "kind": "single",
+      "name": {
+        "en": "Signup and contact pair",
+        "ar": "زوج اشتراك وتواصل"
+      }
+    },
+    {
       "id": "faq.accordion",
       "version": "1.0.0",
       "category": "faq",

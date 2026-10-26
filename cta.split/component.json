@@ -1,0 +1,242 @@
+{
+  "id": "cta.split",
+  "category": "cta",
+  "kind": "single",
+  "name": {
+    "en": "Signup and contact pair",
+    "ar": "زوج اشتراك وتواصل"
+  },
+  "description": {
+    "en": "A grey email signup beside a sage panel with two outline buttons.",
+    "ar": "اشتراك بالبريد على رمادي بجانب لوحة بلون المريمية وزرّين بحدود."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "headline",
+        "titel",
+        "name"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "body",
+        "text",
+        "intro",
+        "content"
+      ]
+    },
+    {
+      "key": "placeholder",
+      "type": "shortText",
+      "label": {
+        "en": "Email hint",
+        "ar": "تلميح البريد"
+      },
+      "localized": true,
+      "aliases": [
+        "emailPlaceholder",
+        "hint"
+      ]
+    },
+    {
+      "key": "formAction",
+      "type": "url",
+      "label": {
+        "en": "Form link",
+        "ar": "رابط النموذج"
+      },
+      "aliases": [
+        "action",
+        "formUrl"
+      ]
+    },
+    {
+      "key": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان الثاني"
+      },
+      "localized": true,
+      "aliases": [
+        "heading2",
+        "title2"
+      ]
+    },
+    {
+      "key": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Details",
+        "ar": "النص الثاني"
+      },
+      "localized": true,
+      "aliases": [
+        "text2",
+        "body2",
+        "details"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctaText",
+        "button",
+        "linkText"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaLink",
+        "url",
+        "href"
+      ]
+    },
+    {
+      "key": "buttonText2",
+      "type": "shortText",
+      "label": {
+        "en": "Second button",
+        "ar": "نص الزر الثاني"
+      },
+      "localized": true,
+      "aliases": [
+        "ctaText2",
+        "button2"
+      ]
+    },
+    {
+      "key": "buttonLink2",
+      "type": "url",
+      "label": {
+        "en": "Second button link",
+        "ar": "رابط الزر الثاني"
+      },
+      "aliases": [
+        "ctaLink2",
+        "href2"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{placeholder}}",
+      "field": "placeholder",
+      "type": "shortText",
+      "label": {
+        "en": "Email hint",
+        "ar": "تلميح البريد"
+      }
+    },
+    {
+      "token": "{{formAction}}",
+      "field": "formAction",
+      "type": "url",
+      "label": {
+        "en": "Form link",
+        "ar": "رابط النموذج"
+      }
+    },
+    {
+      "token": "{{heading}}",
+      "field": "heading",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان الثاني"
+      }
+    },
+    {
+      "token": "{{lead}}",
+      "field": "lead",
+      "type": "longText",
+      "label": {
+        "en": "Details",
+        "ar": "النص الثاني"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    },
+    {
+      "token": "{{buttonText2}}",
+      "field": "buttonText2",
+      "type": "shortText",
+      "label": {
+        "en": "Second button",
+        "ar": "نص الزر الثاني"
+      }
+    },
+    {
+      "token": "{{buttonLink2}}",
+      "field": "buttonLink2",
+      "type": "url",
+      "label": {
+        "en": "Second button link",
+        "ar": "رابط الزر الثاني"
+      }
+    }
+  ]
+}

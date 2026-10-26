@@ -1,0 +1,93 @@
+{
+  "id": "content.lead",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Title, line and copy",
+    "ar": "عنوان وخط ونص"
+  },
+  "description": {
+    "en": "A left-aligned title, a full-width line, a bold opening paragraph and more text.",
+    "ar": "عنوان بمحاذاة البداية، وخط بعرض كامل، وفقرة افتتاحية عريضة ثم نص إضافي."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Opening paragraph",
+        "ar": "الفقرة الافتتاحية"
+      },
+      "localized": true,
+      "aliases": [
+        "lead",
+        "intro",
+        "subtitle",
+        "summary",
+        "excerpt"
+      ]
+    },
+    {
+      "key": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "content",
+        "text",
+        "details",
+        "paragraph"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Opening paragraph",
+        "ar": "الفقرة الافتتاحية"
+      }
+    },
+    {
+      "token": "{{body}}",
+      "field": "body",
+      "type": "richText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    }
+  ]
+}

@@ -63,6 +63,16 @@
       }
     },
     {
+      "id": "content.lead",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Title, line and copy",
+        "ar": "عنوان وخط ونص"
+      }
+    },
+    {
       "id": "content.media",
       "version": "1.0.0",
       "category": "content",

@@ -393,6 +393,16 @@
       }
     },
     {
+      "id": "gallery.hubs",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Card strip with title",
+        "ar": "شريط بطاقات مع عنوان"
+      }
+    },
+    {
       "id": "gallery.masonry",
       "version": "1.0.0",
       "category": "gallery",

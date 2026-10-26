@@ -851,6 +851,16 @@
         "en": "Quote slideshow",
         "ar": "آراء متتالية"
       }
+    },
+    {
+      "id": "testimonials.quotes",
+      "version": "1.0.0",
+      "category": "testimonials",
+      "kind": "single",
+      "name": {
+        "en": "Centered quote rotator",
+        "ar": "دوار اقتباسات في الوسط"
+      }
     }
   ]
 }

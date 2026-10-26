@@ -1,0 +1,170 @@
+.cms-tquotes {
+  --cms-tquotes-accent: #8b2e2e;
+  --cms-tquotes-ink: #2c2c2c;
+  --cms-tquotes-muted: #5a5a5a;
+  --cms-tquotes-sans: "Noto Sans", "Segoe UI", sans-serif;
+  --cms-tquotes-condensed: "Roboto Condensed", "Arial Narrow", sans-serif;
+  --cms-tquotes-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  padding: 1.75rem 0;
+  background: #fff;
+  color: var(--cms-tquotes-ink);
+  font-family: var(--cms-tquotes-sans);
+}
+
+.cms-tquotes__wrap {
+  position: relative;
+  width: min(calc(100% - 1.5rem), 1320px);
+  margin-inline: auto;
+}
+
+.cms-tquotes__title {
+  margin: 0;
+  color: var(--cms-tquotes-accent);
+  font-family: var(--cms-tquotes-condensed);
+  font-size: clamp(1.85rem, 3.5vw, 2.65rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cms-tquotes__rule {
+  width: 3rem;
+  height: 2px;
+  margin: 0.55rem auto 0;
+  background: var(--cms-tquotes-accent);
+}
+
+.cms-tquotes__stage {
+  position: relative;
+  max-width: 44rem;
+  margin: 1.25rem auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cms-tquotes__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(0);
+  transition: transform 0.5s var(--cms-tquotes-ease), opacity 0.5s var(--cms-tquotes-ease);
+}
+
+.cms-tquotes__item.is-active {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.cms-tquotes__item.is-out-left {
+  opacity: 0;
+  transform: translateX(-55%);
+}
+
+.cms-tquotes__item.is-out-right {
+  opacity: 0;
+  transform: translateX(55%);
+}
+
+.cms-tquotes__item.is-in-right {
+  opacity: 0;
+  transform: translateX(55%);
+  transition: none;
+}
+
+.cms-tquotes__item.is-in-left {
+  opacity: 0;
+  transform: translateX(-55%);
+  transition: none;
+}
+
+.cms-tquotes__item p {
+  margin: 0;
+  color: var(--cms-tquotes-muted);
+  font-size: 1.0625rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.cms-tquotes__item footer {
+  display: grid;
+  gap: 0.1rem;
+  margin-top: 0.65rem;
+}
+
+.cms-tquotes__item cite {
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cms-tquotes__nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  pointer-events: none;
+  transform: translateY(-20%);
+}
+
+.cms-tquotes__arrow {
+  pointer-events: auto;
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  border: 0;
+  background: #fff;
+  color: var(--cms-tquotes-ink);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.cms-tquotes__arrow svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.cms-tquotes__arrow:hover,
+.cms-tquotes__arrow:focus-visible {
+  color: var(--cms-tquotes-accent);
+}
+
+.cms-tquotes .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+[dir="rtl"] .cms-tquotes__title,
+[dir="rtl"] .cms-tquotes__item cite {
+  letter-spacing: 0;
+}
+
+@media (max-width: 900px) {
+  .cms-tquotes {
+    padding: 1.5rem 0;
+  }
+}

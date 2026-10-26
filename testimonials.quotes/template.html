@@ -1,0 +1,22 @@
+<section id="{{@id}}" class="cms-tquotes">
+  <div class="cms-tquotes__wrap">
+    {{#title}}<{{@h}} class="cms-tquotes__title">{{title}}</{{@h}}>{{/title}}
+    <div class="cms-tquotes__rule" aria-hidden="true"></div>
+    <div class="cms-tquotes__stage" data-cms-stage>
+      {{#items}}<blockquote class="cms-tquotes__item{{#@first}} is-active{{/@first}}" data-cms-item>
+        {{#quote}}<p>“{{quote}}”</p>{{/quote}}
+        {{#name}}<footer><cite>{{name}}</cite></footer>{{/name}}
+      </blockquote>{{/items}}
+    </div>
+    {{#items}}{{#@first}}{{^@last}}<div class="cms-tquotes__nav">
+      <button class="cms-tquotes__arrow" type="button" data-cms-prev>
+        <span class="visually-hidden">{{@t.prevSlide}}</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"></path></svg>
+      </button>
+      <button class="cms-tquotes__arrow" type="button" data-cms-next>
+        <span class="visually-hidden">{{@t.nextSlide}}</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"></path></svg>
+      </button>
+    </div>{{/@last}}{{/@first}}{{/items}}
+  </div>
+</section>

@@ -1,0 +1,134 @@
+{
+  "id": "testimonials.quotes",
+  "category": "testimonials",
+  "kind": "single",
+  "name": {
+    "en": "Centered quote rotator",
+    "ar": "دوار اقتباسات في الوسط"
+  },
+  "description": {
+    "en": "A centred title and a short line, then one italic quote at a time with arrows.",
+    "ar": "عنوان في الوسط وخط قصير، ثم اقتباس مائل واحد في كل مرة مع أسهم."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Quotes",
+        "ar": "الاقتباسات"
+      },
+      "aliases": [
+        "quotes",
+        "testimonials",
+        "reviews",
+        "slides",
+        "list"
+      ],
+      "subFields": [
+        {
+          "key": "quote",
+          "type": "longText",
+          "label": {
+            "en": "Quote",
+            "ar": "الاقتباس"
+          },
+          "localized": true,
+          "aliases": [
+            "text",
+            "body",
+            "description",
+            "review",
+            "comment"
+          ]
+        },
+        {
+          "key": "name",
+          "type": "shortText",
+          "label": {
+            "en": "Source",
+            "ar": "المصدر"
+          },
+          "localized": true,
+          "aliases": [
+            "cite",
+            "author",
+            "caption",
+            "source",
+            "title"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Quotes",
+        "ar": "الاقتباسات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{quote}}",
+      "field": "items.quote",
+      "type": "longText",
+      "label": {
+        "en": "Quote",
+        "ar": "الاقتباس"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{name}}",
+      "field": "items.name",
+      "type": "shortText",
+      "label": {
+        "en": "Source",
+        "ar": "المصدر"
+      },
+      "scope": "items"
+    }
+  ]
+}

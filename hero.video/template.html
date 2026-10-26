@@ -1,0 +1,13 @@
+<section id="{{@id}}" class="cms-hvideo">
+  <div class="cms-hvideo__media" aria-hidden="true">
+    {{#image}}{{image sizes="100vw" class="cms-hvideo__photo" decorative="true" eager="true"}}{{/image}}
+    {{#video}}<video class="cms-hvideo__film" autoplay muted loop playsinline><source src="{{video}}" type="video/mp4" /></video>{{/video}}
+  </div>
+  <div class="cms-hvideo__scrim" aria-hidden="true"></div>
+  <div class="cms-hvideo__content">
+    {{#title}}<{{@h}} class="cms-hvideo__title">{{title}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-hvideo__text">{{description}}</p>{{/description}}
+    {{#buttonText}}{{#buttonLink}}<a class="cms-hvideo__btn" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonLink}}{{/buttonText}}
+    {{^buttonLink}}{{#@next}}<a class="cms-hvideo__btn" href="{{@next}}">{{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}{{@t.learnMore}}{{/buttonText}}</a>{{/@next}}{{/buttonLink}}
+  </div>
+</section>

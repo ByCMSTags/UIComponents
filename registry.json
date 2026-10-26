@@ -623,6 +623,16 @@
       }
     },
     {
+      "id": "hero.video",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Video cover",
+        "ar": "غلاف فيديو"
+      }
+    },
+    {
       "id": "list.articles",
       "version": "1.0.0",
       "category": "list",

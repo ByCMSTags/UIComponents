@@ -1,0 +1,183 @@
+{
+  "id": "hero.video",
+  "category": "hero",
+  "kind": "single",
+  "name": {
+    "en": "Video cover",
+    "ar": "غلاف فيديو"
+  },
+  "description": {
+    "en": "A looping video behind a title, text and an outlined button.",
+    "ar": "فيديو متكرر خلف عنوان ونص وزر بإطار."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "homesection1",
+        "headline",
+        "heading",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      },
+      "localized": true,
+      "aliases": [
+        "Coverdescription",
+        "subtitle",
+        "body",
+        "text",
+        "content",
+        "desc",
+        "summary",
+        "excerpt",
+        "details",
+        "lead",
+        "intro",
+        "paragraph"
+      ]
+    },
+    {
+      "key": "video",
+      "type": "url",
+      "label": {
+        "en": "Video",
+        "ar": "الفيديو"
+      },
+      "aliases": [
+        "videoUrl",
+        "film",
+        "mp4",
+        "media"
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Fallback image",
+        "ar": "صورة احتياطية"
+      },
+      "aliases": [
+        "imges",
+        "Coverbackground",
+        "background",
+        "photo",
+        "imegs",
+        "images",
+        "img",
+        "picture",
+        "backgroundimage",
+        "cover",
+        "poster"
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true,
+      "aliases": [
+        "ctalabel",
+        "cta",
+        "ctaText",
+        "buttonLabel",
+        "btnText",
+        "linkText",
+        "linkLabel"
+      ]
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      },
+      "aliases": [
+        "ctaurl",
+        "ctaLink",
+        "buttonUrl",
+        "btnLink",
+        "url",
+        "link",
+        "href"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Description",
+        "ar": "الوصف"
+      }
+    },
+    {
+      "token": "{{video}}",
+      "field": "video",
+      "type": "url",
+      "label": {
+        "en": "Video",
+        "ar": "الفيديو"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Fallback image",
+        "ar": "صورة احتياطية"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ]
+}

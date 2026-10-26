@@ -1,0 +1,104 @@
+.cms-fbars {
+  --cms-fbars-accent: #8b2e2e;
+  --cms-fbars-trust: #6a7a4d;
+  --cms-fbars-muted: #5a5a5a;
+  --cms-fbars-sans: "Noto Sans", "Segoe UI", sans-serif;
+  --cms-fbars-condensed: "Roboto Condensed", "Arial Narrow", sans-serif;
+  padding: 1.75rem 0;
+  background: #fff;
+  font-family: var(--cms-fbars-sans);
+}
+
+.cms-fbars__wrap {
+  width: min(calc(100% - 1.5rem), 1320px);
+  margin-inline: auto;
+}
+
+.cms-fbars__title {
+  margin: 0;
+  color: var(--cms-fbars-accent);
+  font-family: var(--cms-fbars-condensed);
+  font-size: clamp(1.85rem, 3.5vw, 2.65rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cms-fbars__rule {
+  width: 3rem;
+  height: 2px;
+  margin: 0.85rem auto 0;
+  background: var(--cms-fbars-accent);
+}
+
+.cms-fbars__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.cms-fbars__col {
+  min-width: 0;
+  padding: 0 0.5rem;
+}
+
+.cms-fbars__heading {
+  margin: 0 0 0.85rem;
+  padding: 0.7rem 0.75rem;
+  background: var(--cms-fbars-trust);
+  color: #fff;
+  font-family: var(--cms-fbars-condensed);
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cms-fbars__list {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cms-fbars__list li {
+  position: relative;
+  padding-inline-start: 1.1rem;
+  color: var(--cms-fbars-muted);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+
+.cms-fbars__list li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cms-fbars-trust);
+}
+
+[dir="rtl"] .cms-fbars__title,
+[dir="rtl"] .cms-fbars__heading {
+  letter-spacing: 0;
+}
+
+@media (min-width: 801px) {
+  .cms-fbars__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .cms-fbars {
+    padding: 1.5rem 0;
+  }
+}

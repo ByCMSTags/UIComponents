@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-fbars">
+  <div class="cms-fbars__wrap">
+    {{#title}}<{{@h}} class="cms-fbars__title">{{title}}</{{@h}}>{{/title}}
+    <div class="cms-fbars__rule" aria-hidden="true"></div>
+    <div class="cms-fbars__grid">
+      {{#items}}<article class="cms-fbars__col">
+        {{#title}}<{{@hsub}} class="cms-fbars__heading">{{title}}</{{@hsub}}>{{/title}}
+        {{#features}}<ul class="cms-fbars__list">{{#features|lines}}<li>{{.}}</li>{{/features|lines}}</ul>{{/features}}
+      </article>{{/items}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,133 @@
+{
+  "id": "features.bars",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Olive heading columns",
+    "ar": "أعمدة بعناوين زيتونية"
+  },
+  "description": {
+    "en": "A centred title and a short line, then three columns with an olive heading and a dotted list.",
+    "ar": "عنوان في الوسط وخط قصير، ثم ثلاثة أعمدة بعنوان زيتوني وقائمة منقّطة."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Columns",
+        "ar": "الأعمدة"
+      },
+      "aliases": [
+        "columns",
+        "cards",
+        "features",
+        "points",
+        "list"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Heading",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "heading",
+            "headline",
+            "name",
+            "label"
+          ]
+        },
+        {
+          "key": "features",
+          "type": "longText",
+          "label": {
+            "en": "Points (one per line)",
+            "ar": "النقاط (واحدة في كل سطر)"
+          },
+          "localized": true,
+          "aliases": [
+            "points",
+            "list",
+            "body",
+            "description",
+            "text"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Columns",
+        "ar": "الأعمدة"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{features}}",
+      "field": "items.features",
+      "type": "longText",
+      "label": {
+        "en": "Points (one per line)",
+        "ar": "النقاط (واحدة في كل سطر)"
+      },
+      "scope": "items"
+    }
+  ]
+}

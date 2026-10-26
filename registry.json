@@ -243,6 +243,16 @@
       }
     },
     {
+      "id": "features.bars",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Olive heading columns",
+        "ar": "أعمدة بعناوين زيتونية"
+      }
+    },
+    {
       "id": "features.cards",
       "version": "1.0.0",
       "category": "features",

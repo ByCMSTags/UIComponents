@@ -283,6 +283,16 @@
       }
     },
     {
+      "id": "features.script",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Script headings in columns",
+        "ar": "عناوين بخط اليد على أعمدة"
+      }
+    },
+    {
       "id": "features.specs",
       "version": "1.0.0",
       "category": "features",

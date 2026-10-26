@@ -1,0 +1,12 @@
+<section id="{{@id}}" class="cms-fscript">
+  <div class="cms-fscript__wrap">
+    {{#title}}<{{@h}} class="cms-fscript__title">{{title}}</{{@h}}>{{/title}}
+    <div class="cms-fscript__rule" aria-hidden="true"></div>
+    <div class="cms-fscript__grid">
+      {{#items}}<article class="cms-fscript__item">
+        {{#title}}<{{@hsub}} class="cms-fscript__name">{{title}}</{{@hsub}}>{{/title}}
+        {{#description}}<p class="cms-fscript__text">{{description}}</p>{{/description}}
+      </article>{{/items}}
+    </div>
+  </div>
+</section>

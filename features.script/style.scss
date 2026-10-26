@@ -1,0 +1,79 @@
+.cms-fscript {
+  --cms-fscript-accent: #8b2e2e;
+  --cms-fscript-muted: #5a5a5a;
+  --cms-fscript-sans: "Noto Sans", "Segoe UI", sans-serif;
+  --cms-fscript-condensed: "Roboto Condensed", "Arial Narrow", sans-serif;
+  --cms-fscript-script: "Vujahday Script", "Segoe Script", cursive;
+  padding: 1.75rem 0;
+  background: #f5f3f1;
+  font-family: var(--cms-fscript-sans);
+}
+
+.cms-fscript__wrap {
+  width: min(calc(100% - 1.5rem), 1320px);
+  margin-inline: auto;
+}
+
+.cms-fscript__title {
+  margin: 0;
+  color: var(--cms-fscript-accent);
+  font-family: var(--cms-fscript-condensed);
+  font-size: clamp(1.85rem, 3.5vw, 2.65rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cms-fscript__rule {
+  width: 3rem;
+  height: 2px;
+  margin: 0.85rem auto 0;
+  background: var(--cms-fscript-accent);
+}
+
+.cms-fscript__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.cms-fscript__item {
+  max-width: 22rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.cms-fscript__name {
+  margin: 0 0 0.75rem;
+  color: var(--cms-fscript-accent);
+  font-family: var(--cms-fscript-script);
+  font-size: clamp(2.6rem, 4.2vw, 3.6rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.cms-fscript__text {
+  margin: 0;
+  color: var(--cms-fscript-muted);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+
+[dir="rtl"] .cms-fscript__title {
+  letter-spacing: 0;
+}
+
+@media (min-width: 801px) {
+  .cms-fscript__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .cms-fscript {
+    padding: 1.5rem 0;
+  }
+}

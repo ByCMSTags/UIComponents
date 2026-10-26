@@ -1,0 +1,134 @@
+{
+  "id": "features.script",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Script headings in columns",
+    "ar": "عناوين بخط اليد على أعمدة"
+  },
+  "description": {
+    "en": "A centred title and a short line, then three text columns with large script headings.",
+    "ar": "عنوان في الوسط وخط قصير، ثم ثلاثة أعمدة نص بعناوين كبيرة بخط اليد."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "required": true,
+      "aliases": [
+        "heading",
+        "headline",
+        "titel",
+        "name",
+        "label"
+      ]
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Columns",
+        "ar": "الأعمدة"
+      },
+      "aliases": [
+        "columns",
+        "points",
+        "features",
+        "list",
+        "cards",
+        "steps"
+      ],
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Heading",
+            "ar": "العنوان"
+          },
+          "localized": true,
+          "aliases": [
+            "heading",
+            "headline",
+            "name",
+            "label"
+          ]
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true,
+          "aliases": [
+            "body",
+            "text",
+            "content",
+            "lead",
+            "intro"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Columns",
+        "ar": "الأعمدة"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Heading",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    }
+  ]
+}

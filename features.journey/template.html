@@ -1,0 +1,15 @@
+<section id="{{@id}}" class="cms-ag-journey">
+  <span class="ag-orb ag-orb--c" aria-hidden="true"></span>
+  <div class="ag-wrap">
+    <div class="cms-ag-journey__head">
+      {{#eyebrow}}<p class="ag-eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="ag-title cms-ag-journey__title">{{title}}{{#highlight}} <span class="ag-mark">{{highlight}}</span>{{/highlight}}</{{@h}}>{{/title}}
+      {{#description}}<p class="cms-ag-journey__lead">{{description}}</p>{{/description}}
+    </div>
+    {{#items}}{{#@first}}<ol class="cms-ag-journey__steps">{{/@first}}<li class="cms-ag-journey__step">
+      <span class="cms-ag-journey__num" aria-hidden="true"></span>
+      <{{@hsub}} class="cms-ag-journey__name">{{title}}</{{@hsub}}>
+      {{#description}}<p class="cms-ag-journey__text">{{description}}</p>{{/description}}
+    </li>{{#@last}}</ol>{{/@last}}{{/items}}
+  </div>
+</section>

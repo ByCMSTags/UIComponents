@@ -1,0 +1,144 @@
+{
+  "id": "contact.agency",
+  "category": "contact",
+  "kind": "single",
+  "name": {
+    "en": "Agency contact details and form",
+    "ar": "بيانات التواصل والنموذج (وكالة)"
+  },
+  "description": {
+    "en": "Navy card with the site phone, email, address, hours and social links beside the page form (place the form right after this section).",
+    "ar": "بطاقة كحلية فيها هاتف الموقع والبريد والعنوان والساعات وروابط التواصل بجانب نموذج الصفحة (ضع النموذج بعد هذا القسم مباشرة)."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      },
+      "localized": true
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true
+    },
+    {
+      "key": "formTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Form title",
+        "ar": "عنوان النموذج"
+      },
+      "localized": true
+    },
+    {
+      "key": "formText",
+      "type": "longText",
+      "label": {
+        "en": "Form text",
+        "ar": "نص النموذج"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Form button text",
+        "ar": "نص زر النموذج"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{formTitle}}",
+      "field": "formTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Form title",
+        "ar": "عنوان النموذج"
+      }
+    },
+    {
+      "token": "{{formText}}",
+      "field": "formText",
+      "type": "longText",
+      "label": {
+        "en": "Form text",
+        "ar": "نص النموذج"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Form button text",
+        "ar": "نص زر النموذج"
+      }
+    }
+  ]
+}

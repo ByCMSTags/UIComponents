@@ -1,0 +1,125 @@
+{
+  "id": "cta.agency",
+  "category": "cta",
+  "kind": "single",
+  "name": {
+    "en": "Agency orange invitation",
+    "ar": "دعوة برتقالية (وكالة)"
+  },
+  "description": {
+    "en": "A large orange panel with a heading, text, a navy button and the site phone, with floating orbs.",
+    "ar": "لوحة برتقالية كبيرة فيها عنوان ونص وزر كحلي ورقم هاتف الموقع، مع كرات عائمة."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      },
+      "localized": true
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ]
+}

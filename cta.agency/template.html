@@ -1,0 +1,16 @@
+<section id="{{@id}}" class="cms-ag-cta">
+  <div class="ag-wrap">
+    <div class="cms-ag-cta__panel">
+      <span class="ag-orb ag-orb--a" aria-hidden="true"></span><span class="ag-orb ag-orb--b" aria-hidden="true"></span><span class="ag-orb ag-orb--c" aria-hidden="true"></span>
+      <div class="cms-ag-cta__copy">
+        {{#eyebrow}}<p class="cms-ag-cta__eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+        {{#title}}<{{@h}} class="cms-ag-cta__title">{{title}}{{#highlight}} <span class="cms-ag-cta__mark">{{highlight}}</span>{{/highlight}}</{{@h}}>{{/title}}
+        {{#description}}<p class="cms-ag-cta__text">{{description}}</p>{{/description}}
+      </div>
+      <div class="cms-ag-cta__actions">
+        {{#buttonText}}<a class="ag-btn ag-btn--dark cms-ag-cta__btn" href="{{buttonLink}}">{{buttonText}}<svg class="ag-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>{{/buttonText}}
+        {{#@site.phone}}<a class="cms-ag-cta__call" href="tel:{{@site.phone|tel}}"><span class="cms-ag-cta__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4.1-2 1.5a12 12 0 0 0 6.3 6.3l1.5-2 4.1 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><span><small>{{@t.callUs}}</small><strong dir="ltr">{{@site.phone}}</strong></span></a>{{/@site.phone}}
+      </div>
+    </div>
+  </div>
+</section>

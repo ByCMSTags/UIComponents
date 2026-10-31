@@ -1,0 +1,69 @@
+{
+  "id": "features.ticker",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Agency moving ribbon",
+    "ar": "شريط متحرك (وكالة)"
+  },
+  "description": {
+    "en": "A slightly tilted orange ribbon where short words (services, skills) slide by in a loop.",
+    "ar": "شريط برتقالي مائل قليلًا تمر فيه كلمات قصيرة (خدمات أو مهارات) بشكل متواصل."
+  },
+  "fields": [
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Words",
+        "ar": "الكلمات"
+      },
+      "localized": true,
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Word",
+            "ar": "الكلمة"
+          },
+          "localized": true
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Words",
+        "ar": "الكلمات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Word",
+        "ar": "الكلمة"
+      },
+      "scope": "items"
+    }
+  ]
+}

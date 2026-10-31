@@ -1,0 +1,16 @@
+<section id="{{@id}}" class="cms-ag-about">
+  <div class="ag-wrap cms-ag-about__grid">
+    <div class="cms-ag-about__media">
+      <span class="ag-orb ag-orb--a" aria-hidden="true"></span>
+      {{#image}}<div class="cms-ag-about__frame">{{image class="cms-ag-about__img"}}</div>{{/image}}
+      {{#badgeValue}}<div class="cms-ag-about__badge"><strong>{{badgeValue}}</strong>{{#badgeText}}<span>{{badgeText}}</span>{{/badgeText}}</div>{{/badgeValue}}
+    </div>
+    <div class="cms-ag-about__copy">
+      {{#eyebrow}}<p class="ag-eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="ag-title cms-ag-about__title">{{title}}{{#highlight}} <span class="ag-mark">{{highlight}}</span>{{/highlight}}</{{@h}}>{{/title}}
+      {{#description|lines}}<p class="ag-lead cms-ag-about__text">{{.}}</p>{{/description|lines}}
+      {{#items}}{{#@first}}<ul class="cms-ag-about__list">{{/@first}}<li><svg class="ag-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{title}}</span></li>{{#@last}}</ul>{{/@last}}{{/items}}
+      {{#buttonText}}<a class="ag-btn ag-btn--primary cms-ag-about__btn" href="{{buttonLink}}">{{buttonText}}<svg class="ag-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>{{/buttonText}}
+    </div>
+  </div>
+</section>

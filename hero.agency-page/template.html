@@ -1,0 +1,8 @@
+<section id="{{@id}}" class="cms-ag-pagehero">
+  <span class="ag-orb ag-orb--a" aria-hidden="true"></span><span class="ag-orb ag-orb--b" aria-hidden="true"></span><span class="ag-orb ag-orb--c" aria-hidden="true"></span>
+  <div class="ag-wrap cms-ag-pagehero__inner">
+    <nav class="cms-ag-pagehero__crumbs" aria-label="{{@t.breadcrumb}}"><a href="{{@home}}">{{@t.home}}</a><span class="cms-ag-pagehero__sep" aria-hidden="true"></span>{{#eyebrow}}<span aria-current="page">{{eyebrow}}</span>{{/eyebrow}}</nav>
+    {{#title}}<{{@h}} class="cms-ag-pagehero__title">{{title}}{{#highlight}} <span class="ag-mark">{{highlight}}</span>{{/highlight}}</{{@h}}>{{/title}}
+    {{#description}}<p class="cms-ag-pagehero__lead">{{description}}</p>{{/description}}
+  </div>
+</section>

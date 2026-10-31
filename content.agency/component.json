@@ -1,0 +1,229 @@
+{
+  "id": "content.agency",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Agency photo and story",
+    "ar": "صورة وقصة (وكالة)"
+  },
+  "description": {
+    "en": "A framed photo with a small badge beside a heading, paragraphs, a checklist and a button.",
+    "ar": "صورة بإطار وشارة صغيرة بجانب عنوان وفقرات وقائمة نقاط وزر."
+  },
+  "fields": [
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Photo",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "key": "badgeValue",
+      "type": "shortText",
+      "label": {
+        "en": "Badge big text",
+        "ar": "النص الكبير في الشارة"
+      },
+      "localized": true
+    },
+    {
+      "key": "badgeText",
+      "type": "shortText",
+      "label": {
+        "en": "Badge small text",
+        "ar": "النص الصغير في الشارة"
+      },
+      "localized": true
+    },
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      },
+      "localized": true
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      },
+      "localized": true
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Checklist",
+        "ar": "قائمة النقاط"
+      },
+      "localized": true,
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Point",
+            "ar": "النقطة"
+          },
+          "localized": true
+        }
+      ]
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Photo",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{badgeValue}}",
+      "field": "badgeValue",
+      "type": "shortText",
+      "label": {
+        "en": "Badge big text",
+        "ar": "النص الكبير في الشارة"
+      }
+    },
+    {
+      "token": "{{badgeText}}",
+      "field": "badgeText",
+      "type": "shortText",
+      "label": {
+        "en": "Badge small text",
+        "ar": "النص الصغير في الشارة"
+      }
+    },
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Checklist",
+        "ar": "قائمة النقاط"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Point",
+        "ar": "النقطة"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ]
+}

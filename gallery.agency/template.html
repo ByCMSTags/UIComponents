@@ -1,0 +1,19 @@
+<section id="{{@id}}" class="cms-ag-posters">
+  <div class="ag-wrap">
+    <div class="cms-ag-posters__head">
+      <div>
+        {{#eyebrow}}<p class="ag-eyebrow">{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="ag-title cms-ag-posters__title">{{title}}{{#highlight}} <span class="ag-mark">{{highlight}}</span>{{/highlight}}</{{@h}}>{{/title}}
+      </div>
+      {{#description}}<p class="ag-lead">{{description}}</p>{{/description}}
+    </div>
+    {{#items}}{{#@first}}<div class="cms-ag-posters__grid">{{/@first}}<article class="cms-ag-posters__card">
+      {{#image}}<div class="cms-ag-posters__media">{{image class="cms-ag-posters__img"}}</div>{{/image}}
+      <div class="cms-ag-posters__body">
+        <span class="cms-ag-posters__num" aria-hidden="true"></span>
+        <{{@hsub}} class="cms-ag-posters__name">{{title}}</{{@hsub}}>
+        {{#description}}<p class="cms-ag-posters__text">{{description}}</p>{{/description}}
+      </div>
+    </article>{{#@last}}</div>{{/@last}}{{/items}}
+  </div>
+</section>

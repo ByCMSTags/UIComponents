@@ -1,0 +1,29 @@
+<footer class="cms-ag-footer">
+  <div class="ag-wrap">
+    <div class="cms-ag-footer__top">
+      <div class="cms-ag-footer__brand">
+        <a class="cms-ag-footer__logo" href="{{@home}}" aria-label="{{@site.name}}">{{#@site.logo}}{{@site.logo img="cms-ag-footer__img"}}{{/@site.logo}}{{^@site.logo}}<span class="cms-ag-footer__name">{{@site.name}}</span>{{/@site.logo}}</a>
+        {{#@site.tagline}}<p class="cms-ag-footer__tagline">{{@site.tagline}}</p>{{/@site.tagline}}
+        {{#@social}}{{#@first}}<ul class="cms-ag-footer__social">{{/@first}}<li><a href="{{href}}" target="_blank" rel="noopener" aria-label="{{name}}">{{icon}}</a></li>{{#@last}}</ul>{{/@last}}{{/@social}}
+      </div>
+      <nav class="cms-ag-footer__col" aria-label="{{@t.pages}}">
+        <p class="cms-ag-footer__label">{{@t.pages}}</p>
+        <ul class="cms-ag-footer__links">{{#@nav}}<li><a href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a></li>{{/@nav}}</ul>
+      </nav>
+      <div class="cms-ag-footer__col">
+        <p class="cms-ag-footer__label">{{@t.writeUs}}</p>
+        <ul class="cms-ag-footer__links cms-ag-footer__links--contact">
+          {{#@site.phone}}<li><span class="cms-ag-footer__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4.1-2 1.5a12 12 0 0 0 6.3 6.3l1.5-2 4.1 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><a href="tel:{{@site.phone|tel}}" dir="ltr">{{@site.phone}}</a></li>{{/@site.phone}}
+          {{#@site.email}}<li><span class="cms-ag-footer__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><a href="mailto:{{@site.email}}">{{@site.email}}</a></li>{{/@site.email}}
+          {{#@site.address}}<li><span class="cms-ag-footer__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span><span>{{@site.address}}</span></li>{{/@site.address}}
+        </ul>
+        <a class="ag-btn ag-btn--primary cms-ag-footer__cta" href="{{@contact}}">{{@t.writeUs}}<svg class="ag-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    {{#footerWord}}<p class="cms-ag-footer__word" aria-hidden="true">{{footerWord}}</p>{{/footerWord}}
+    <div class="cms-ag-footer__bottom">
+      <p>&copy; {{@year}} {{@site.name}}. {{@t.rights}}</p>
+      <a class="cms-ag-footer__up" href="#main"><span>{{@t.backToTop}}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,160 @@
+{
+  "id": "features.journey",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Agency numbered journey",
+    "ar": "رحلة مرقّمة (وكالة)"
+  },
+  "description": {
+    "en": "Navy section: a heading and text, then numbered steps joined by an orange line.",
+    "ar": "قسم كحلي: عنوان ونص، ثم خطوات مرقّمة يربطها خط برتقالي."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      },
+      "localized": true
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Steps",
+        "ar": "الخطوات"
+      },
+      "localized": true,
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Steps",
+        "ar": "الخطوات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    }
+  ]
+}

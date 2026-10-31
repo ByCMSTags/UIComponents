@@ -1,0 +1,16 @@
+{
+  "id": "form.agency",
+  "category": "form",
+  "kind": "form",
+  "name": {
+    "en": "Agency rounded form",
+    "ar": "نموذج دائري (وكالة)"
+  },
+  "description": {
+    "en": "Soft rounded fields with an orange focus ring and an orange pill button. After an Agency contact section it moves into it.",
+    "ar": "حقول دائرية ناعمة مع إطار برتقالي عند الكتابة وزر برتقالي. إذا جاء بعد قسم تواصل الوكالة ينتقل إلى داخله."
+  },
+  "fields": [],
+  "version": "1.0.0",
+  "placeholders": []
+}

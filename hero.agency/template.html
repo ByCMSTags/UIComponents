@@ -1,0 +1,16 @@
+<section id="{{@id}}" class="cms-ag-hero">
+  <span class="ag-orb ag-orb--a" aria-hidden="true"></span><span class="ag-orb ag-orb--b" aria-hidden="true"></span><span class="ag-orb ag-orb--c" aria-hidden="true"></span>
+  <div class="ag-wrap cms-ag-hero__grid">
+    <div class="cms-ag-hero__copy">
+      {{#eyebrow}}<p class="cms-ag-hero__badge"><span class="cms-ag-hero__dot" aria-hidden="true"></span>{{eyebrow}}</p>{{/eyebrow}}
+      {{#title}}<{{@h}} class="cms-ag-hero__title">{{title}}{{#highlight}} <span class="ag-mark">{{highlight}}</span>{{/highlight}}</{{@h}}>{{/title}}
+      {{#description}}<p class="cms-ag-hero__lead">{{description}}</p>{{/description}}
+      <div class="cms-ag-hero__actions">
+        {{#buttonText}}<a class="ag-btn ag-btn--primary" href="{{buttonLink}}">{{buttonText}}<svg class="ag-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>{{/buttonText}}
+        {{#secondaryText}}<a class="ag-btn ag-btn--ghost" href="{{secondaryLink}}">{{secondaryText}}</a>{{/secondaryText}}
+      </div>
+      {{#items}}{{#@first}}<ul class="cms-ag-hero__points">{{/@first}}<li><svg class="ag-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{title}}</span></li>{{#@last}}</ul>{{/@last}}{{/items}}
+    </div>
+    {{#images}}{{#@first}}<div class="cms-ag-hero__stack" aria-hidden="true">{{/@first}}<figure class="cms-ag-hero__card">{{image eager="true" decorative="true" class="cms-ag-hero__img"}}</figure>{{#@last}}</div>{{/@last}}{{/images}}
+  </div>
+</section>

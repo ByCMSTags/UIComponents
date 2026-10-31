@@ -3,6 +3,16 @@
   "repository": "ByCMSTags/UIComponents",
   "components": [
     {
+      "id": "contact.agency",
+      "version": "1.0.0",
+      "category": "contact",
+      "kind": "single",
+      "name": {
+        "en": "Agency contact details and form",
+        "ar": "بيانات التواصل والنموذج (وكالة)"
+      }
+    },
+    {
       "id": "contact.estate",
       "version": "1.0.0",
       "category": "contact",
@@ -40,6 +50,16 @@
       "name": {
         "en": "Text beside accordion",
         "ar": "نص بجانب قائمة قابلة للفتح"
+      }
+    },
+    {
+      "id": "content.agency",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Agency photo and story",
+        "ar": "صورة وقصة (وكالة)"
       }
     },
     {
@@ -183,6 +203,16 @@
       }
     },
     {
+      "id": "cta.agency",
+      "version": "1.0.0",
+      "category": "cta",
+      "kind": "single",
+      "name": {
+        "en": "Agency orange invitation",
+        "ar": "دعوة برتقالية (وكالة)"
+      }
+    },
+    {
       "id": "cta.band",
       "version": "1.0.0",
       "category": "cta",
@@ -253,6 +283,16 @@
       }
     },
     {
+      "id": "features.agency",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Agency icon cards",
+        "ar": "بطاقات بأيقونات (وكالة)"
+      }
+    },
+    {
       "id": "features.alternating",
       "version": "1.0.0",
       "category": "features",
@@ -310,6 +350,16 @@
       "name": {
         "en": "Feature grid",
         "ar": "شبكة مزايا"
+      }
+    },
+    {
+      "id": "features.journey",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Agency numbered journey",
+        "ar": "رحلة مرقّمة (وكالة)"
       }
     },
     {
@@ -393,6 +443,16 @@
       }
     },
     {
+      "id": "features.ticker",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Agency moving ribbon",
+        "ar": "شريط متحرك (وكالة)"
+      }
+    },
+    {
       "id": "features.tiles",
       "version": "1.0.0",
       "category": "features",
@@ -410,6 +470,16 @@
       "name": {
         "en": "Estate three-column reasons",
         "ar": "أسباب في ثلاثة أعمدة (إستيت)"
+      }
+    },
+    {
+      "id": "footer.agency",
+      "version": "1.0.0",
+      "category": "footer",
+      "kind": "site",
+      "name": {
+        "en": "Agency navy footer",
+        "ar": "تذييل كحلي (وكالة)"
       }
     },
     {
@@ -473,6 +543,16 @@
       }
     },
     {
+      "id": "form.agency",
+      "version": "1.0.0",
+      "category": "form",
+      "kind": "form",
+      "name": {
+        "en": "Agency rounded form",
+        "ar": "نموذج دائري (وكالة)"
+      }
+    },
+    {
       "id": "form.card",
       "version": "1.0.0",
       "category": "form",
@@ -490,6 +570,16 @@
       "name": {
         "en": "Estate underline",
         "ar": "خط سفلي (إستيت)"
+      }
+    },
+    {
+      "id": "gallery.agency",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Agency service posters",
+        "ar": "ملصقات الخدمات (وكالة)"
       }
     },
     {
@@ -623,6 +713,16 @@
       }
     },
     {
+      "id": "header.agency",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Agency navy bar",
+        "ar": "شريط كحلي (وكالة)"
+      }
+    },
+    {
       "id": "header.basic",
       "version": "1.0.0",
       "category": "header",
@@ -710,6 +810,26 @@
       "name": {
         "en": "Logo bar and menu",
         "ar": "شريط الشعار والقائمة"
+      }
+    },
+    {
+      "id": "hero.agency",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Agency hero with posters",
+        "ar": "واجهة مع ملصقات (وكالة)"
+      }
+    },
+    {
+      "id": "hero.agency-page",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Agency page title",
+        "ar": "عنوان صفحة (وكالة)"
       }
     },
     {

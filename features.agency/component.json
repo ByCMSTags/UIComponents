@@ -1,0 +1,250 @@
+{
+  "id": "features.agency",
+  "category": "features",
+  "kind": "single",
+  "name": {
+    "en": "Agency icon cards",
+    "ar": "بطاقات بأيقونات (وكالة)"
+  },
+  "description": {
+    "en": "Heading with text and a button, then numbered cards with an icon, title, text and an optional link. Cards turn navy on hover.",
+    "ar": "عنوان مع نص وزر، ثم بطاقات مرقّمة بأيقونة وعنوان ونص ورابط اختياري. تصبح البطاقة كحلية عند المرور عليها."
+  },
+  "fields": [
+    {
+      "key": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      },
+      "localized": true
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      },
+      "localized": true
+    },
+    {
+      "key": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    },
+    {
+      "key": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Cards",
+        "ar": "البطاقات"
+      },
+      "localized": true,
+      "subFields": [
+        {
+          "key": "icon",
+          "type": "icon",
+          "label": {
+            "en": "Icon (fi-rr-…)",
+            "ar": "الأيقونة (fi-rr-…)"
+          }
+        },
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Title",
+            "ar": "العنوان"
+          },
+          "localized": true
+        },
+        {
+          "key": "description",
+          "type": "longText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true
+        },
+        {
+          "key": "linkText",
+          "type": "shortText",
+          "label": {
+            "en": "Link text",
+            "ar": "نص الرابط"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": {
+            "en": "Link",
+            "ar": "الرابط"
+          }
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{eyebrow}}",
+      "field": "eyebrow",
+      "type": "shortText",
+      "label": {
+        "en": "Small label",
+        "ar": "التسمية الصغيرة"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{highlight}}",
+      "field": "highlight",
+      "type": "shortText",
+      "label": {
+        "en": "Title ending (orange block)",
+        "ar": "نهاية العنوان (خلفية برتقالية)"
+      }
+    },
+    {
+      "token": "{{description}}",
+      "field": "description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    },
+    {
+      "token": "{{items}}",
+      "field": "items",
+      "type": "repeater",
+      "label": {
+        "en": "Cards",
+        "ar": "البطاقات"
+      }
+    },
+    {
+      "token": "{{#items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/items}}",
+      "field": "items",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{icon}}",
+      "field": "items.icon",
+      "type": "icon",
+      "label": {
+        "en": "Icon (fi-rr-…)",
+        "ar": "الأيقونة (fi-rr-…)"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{title}}",
+      "field": "items.title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{description}}",
+      "field": "items.description",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{linkText}}",
+      "field": "items.linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      },
+      "scope": "items"
+    },
+    {
+      "token": "{{link}}",
+      "field": "items.link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "scope": "items"
+    }
+  ]
+}

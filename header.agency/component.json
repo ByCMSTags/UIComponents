@@ -1,0 +1,36 @@
+{
+  "id": "header.agency",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Agency navy bar",
+    "ar": "شريط كحلي (وكالة)"
+  },
+  "description": {
+    "en": "Sticky navy bar: logo, page menu, language switch and an orange button to the contact page. Full-screen menu on phones.",
+    "ar": "شريط كحلي ثابت: الشعار وقائمة الصفحات وتبديل اللغة وزر برتقالي لصفحة التواصل. قائمة بملء الشاشة على الهاتف."
+  },
+  "fields": [
+    {
+      "key": "headerButton",
+      "type": "shortText",
+      "label": {
+        "en": "Header button text",
+        "ar": "نص زر الترويسة"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{headerButton}}",
+      "field": "headerButton",
+      "type": "shortText",
+      "label": {
+        "en": "Header button text",
+        "ar": "نص زر الترويسة"
+      }
+    }
+  ]
+}

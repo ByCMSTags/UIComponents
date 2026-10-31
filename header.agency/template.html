@@ -1,0 +1,13 @@
+<header class="cms-ag-header" data-cms-ag-header>
+  <div class="ag-wrap cms-ag-header__bar">
+    <a class="cms-ag-header__brand" href="{{@home}}" aria-label="{{@site.name}}">{{#@site.logo}}{{@site.logo eager="true" img="cms-ag-header__logo"}}{{/@site.logo}}{{^@site.logo}}<span class="cms-ag-header__name">{{@site.name}}</span>{{/@site.logo}}</a>
+    <nav class="cms-ag-header__nav" id="cms-ag-nav" aria-label="{{@t.menu}}">
+      <ul class="cms-ag-header__links">{{#@nav}}<li><a class="cms-ag-header__link" href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a></li>{{/@nav}}</ul>
+      <div class="cms-ag-header__tools">
+        {{#@multilingual}}{{#@langs}}{{^current}}<a class="cms-ag-header__lang" href="{{href}}" lang="{{code}}" hreflang="{{code}}"><span class="cms-ag-header__code">{{code}}</span></a>{{/current}}{{/@langs}}{{/@multilingual}}
+        <a class="ag-btn ag-btn--primary cms-ag-header__cta" href="{{@contact}}">{{#headerButton}}{{headerButton}}{{/headerButton}}{{^headerButton}}{{@t.writeUs}}{{/headerButton}}<svg class="ag-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </nav>
+    <button class="cms-ag-header__toggle" type="button" aria-label="{{@t.menu}}" aria-expanded="false" aria-controls="cms-ag-nav"><span></span><span></span></button>
+  </div>
+</header>

@@ -1,0 +1,36 @@
+{
+  "id": "footer.agency",
+  "category": "footer",
+  "kind": "site",
+  "name": {
+    "en": "Agency navy footer",
+    "ar": "تذييل كحلي (وكالة)"
+  },
+  "description": {
+    "en": "Navy footer: logo, footer text and social icons, the pages, the site contact details, a large outlined word and a copyright line.",
+    "ar": "تذييل كحلي: الشعار ونص التذييل وأيقونات التواصل والصفحات وبيانات التواصل وكلمة كبيرة مفرّغة وسطر حقوق النشر."
+  },
+  "fields": [
+    {
+      "key": "footerWord",
+      "type": "shortText",
+      "label": {
+        "en": "Large outlined word",
+        "ar": "الكلمة الكبيرة المفرّغة"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{footerWord}}",
+      "field": "footerWord",
+      "type": "shortText",
+      "label": {
+        "en": "Large outlined word",
+        "ar": "الكلمة الكبيرة المفرّغة"
+      }
+    }
+  ]
+}

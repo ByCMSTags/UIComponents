@@ -1,0 +1,9 @@
+<section id="{{@id}}" class="cms-or-hero">
+  {{#image}}{{image eager="true" decorative="true" sizes="100vw" class="cms-or-hero__bg"}}{{/image}}
+  <div class="cms-or-hero__content">
+    {{#title}}<{{@h}} class="cms-or-hero__title">{{title}}</{{@h}}>{{/title}}
+    {{#subtitle}}<p class="cms-or-hero__subtitle">{{subtitle}}</p>{{/subtitle}}
+    {{#meta}}<p class="cms-or-hero__meta">{{meta}}</p>{{/meta}}
+    {{#buttonText}}<a class="cms-or-hero__cta" href="{{buttonLink}}">{{buttonText}}</a>{{/buttonText}}
+  </div>
+</section>

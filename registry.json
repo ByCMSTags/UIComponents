@@ -33,6 +33,16 @@
       }
     },
     {
+      "id": "contact.orchid-map",
+      "version": "1.0.0",
+      "category": "contact",
+      "kind": "single",
+      "name": {
+        "en": "Orchid map with link",
+        "ar": "خريطة مع رابط (أوركيد)"
+      }
+    },
+    {
       "id": "contact.studio",
       "version": "1.0.0",
       "category": "contact",
@@ -130,6 +140,26 @@
       "name": {
         "en": "Estate text block, warm background",
         "ar": "نص على خلفية دافئة (إستيت)"
+      }
+    },
+    {
+      "id": "content.orchid",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Orchid photo beside text",
+        "ar": "صورة بجانب نص (أوركيد)"
+      }
+    },
+    {
+      "id": "content.orchid-quote",
+      "version": "1.0.0",
+      "category": "content",
+      "kind": "single",
+      "name": {
+        "en": "Orchid brown statement band",
+        "ar": "شريط بني لعبارة (أوركيد)"
       }
     },
     {
@@ -383,6 +413,16 @@
       }
     },
     {
+      "id": "features.orchid",
+      "version": "1.0.0",
+      "category": "features",
+      "kind": "single",
+      "name": {
+        "en": "Orchid service cards",
+        "ar": "بطاقات خدمات (أوركيد)"
+      }
+    },
+    {
       "id": "features.phases",
       "version": "1.0.0",
       "category": "features",
@@ -533,6 +573,16 @@
       }
     },
     {
+      "id": "footer.orchid",
+      "version": "1.0.0",
+      "category": "footer",
+      "kind": "site",
+      "name": {
+        "en": "Orchid brown footer",
+        "ar": "تذييل بني (أوركيد)"
+      }
+    },
+    {
       "id": "footer.studio",
       "version": "1.0.0",
       "category": "footer",
@@ -630,6 +680,16 @@
       "name": {
         "en": "Photo wall",
         "ar": "جدار صور"
+      }
+    },
+    {
+      "id": "gallery.orchid",
+      "version": "1.0.0",
+      "category": "gallery",
+      "kind": "single",
+      "name": {
+        "en": "Orchid gallery with three views",
+        "ar": "معرض صور بثلاث طرق عرض (أوركيد)"
       }
     },
     {
@@ -793,6 +853,16 @@
       }
     },
     {
+      "id": "header.orchid",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Orchid white bar with language buttons",
+        "ar": "شريط أبيض مع أزرار اللغة (أوركيد)"
+      }
+    },
+    {
       "id": "header.studio",
       "version": "1.0.0",
       "category": "header",
@@ -900,6 +970,16 @@
       "name": {
         "en": "Text only",
         "ar": "نص فقط"
+      }
+    },
+    {
+      "id": "hero.orchid",
+      "version": "1.0.0",
+      "category": "hero",
+      "kind": "single",
+      "name": {
+        "en": "Orchid photo opening with text box",
+        "ar": "افتتاحية بصورة وصندوق نص (أوركيد)"
       }
     },
     {
@@ -1020,6 +1100,16 @@
       "name": {
         "en": "Simple list",
         "ar": "قائمة بسيطة"
+      }
+    },
+    {
+      "id": "logos.orchid",
+      "version": "1.0.0",
+      "category": "logos",
+      "kind": "single",
+      "name": {
+        "en": "Orchid clients slider",
+        "ar": "شريط العملاء المتحرك (أوركيد)"
       }
     },
     {

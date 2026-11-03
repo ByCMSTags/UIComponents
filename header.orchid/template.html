@@ -1,0 +1,12 @@
+<header class="cms-or-header">
+  <div class="cms-or-header__inner">
+    <a class="cms-or-header__logo" href="{{@home}}" aria-label="{{@site.name}}">{{#logo}}{{logo eager="true" img="cms-or-header__img"}}{{/logo}}{{^logo}}{{#@site.logo}}{{@site.logo eager="true" img="cms-or-header__img"}}{{/@site.logo}}{{^@site.logo}}<span class="cms-or-header__name">{{@site.name}}</span>{{/@site.logo}}{{/logo}}</a>
+    <nav class="cms-or-header__nav" id="cms-or-nav" aria-label="{{@t.menu}}">
+      <ul class="cms-or-header__list">{{#headerLinks}}<li><a class="cms-or-header__link" href="{{link}}">{{label}}</a></li>{{/headerLinks}}{{^headerLinks}}{{#@nav}}<li><a class="cms-or-header__link" href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a></li>{{/@nav}}{{/headerLinks}}</ul>
+    </nav>
+    <div class="cms-or-header__actions">
+      {{#@multilingual}}<div class="cms-or-header__lang">{{#@langs}}<a class="cms-or-header__langbtn{{#current}} is-active{{/current}}" href="{{href}}" lang="{{code}}" hreflang="{{code}}"{{#current}} aria-current="true"{{/current}}>{{code}}</a>{{/@langs}}</div>{{/@multilingual}}
+      <button class="cms-or-header__toggle" type="button" aria-expanded="false" aria-controls="cms-or-nav" aria-label="{{@t.menu}}"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>

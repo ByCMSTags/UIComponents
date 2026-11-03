@@ -1,0 +1,24 @@
+<section id="{{@id}}" class="cms-or-gallery" data-or-view="{{view}}">
+  <div class="or-inner">
+    <div class="cms-or-gallery__head">
+      <div>
+        {{#title}}<{{@h}} class="or-title">{{title}}</{{@h}}>{{/title}}
+        {{#subtitle}}<p class="cms-or-gallery__sub">{{subtitle}}</p>{{/subtitle}}
+      </div>
+      <div class="cms-or-gallery__views" role="group">
+        <button class="cms-or-gallery__vbtn" type="button" data-view="grid" aria-label="Grid"><i class="fi fi-rr-apps" aria-hidden="true"></i></button>
+        <button class="cms-or-gallery__vbtn" type="button" data-view="masonry" aria-label="Masonry"><i class="fi fi-rr-grid" aria-hidden="true"></i></button>
+        <button class="cms-or-gallery__vbtn" type="button" data-view="slider" aria-label="Slider"><i class="fi fi-rr-picture" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    {{#images}}{{#@first}}<div class="cms-or-gallery__grid is-slider" data-or-grid>{{/@first}}<button class="cms-or-gallery__item" type="button" data-or-item aria-label="{{@number}}">{{image sizes="(max-width: 767px) 50vw, 360px" class="cms-or-gallery__img"}}</button>{{#@last}}</div>{{/@last}}{{/images}}
+    <div class="or-nav" data-or-snav><button class="or-round" type="button" data-or-prev aria-label="{{@t.prevSlide}}"><i class="fi fi-rr-angle-small-left" aria-hidden="true"></i></button><button class="or-round" type="button" data-or-next aria-label="{{@t.nextSlide}}"><i class="fi fi-rr-angle-small-right" aria-hidden="true"></i></button></div>
+    <button class="cms-or-gallery__more" type="button" data-or-more hidden>{{#moreText}}{{moreText}}{{/moreText}}{{^moreText}}{{@t.learnMore}}{{/moreText}}</button>
+  </div>
+  <div class="cms-or-gallery__box" data-or-box role="dialog" aria-modal="true" hidden>
+    <button class="cms-or-gallery__bbtn cms-or-gallery__close" type="button" data-or-close aria-label="Close"><i class="fi fi-rr-cross" aria-hidden="true"></i></button>
+    <button class="cms-or-gallery__bbtn cms-or-gallery__bprev" type="button" data-or-bprev aria-label="{{@t.prevSlide}}"><i class="fi fi-rr-angle-small-left" aria-hidden="true"></i></button>
+    <button class="cms-or-gallery__bbtn cms-or-gallery__bnext" type="button" data-or-bnext aria-label="{{@t.nextSlide}}"><i class="fi fi-rr-angle-small-right" aria-hidden="true"></i></button>
+    <img class="cms-or-gallery__big" data-or-big src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+  </div>
+</section>

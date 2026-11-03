@@ -1,0 +1,22 @@
+<footer class="cms-or-footer" id="contact">
+  <div class="cms-or-footer__inner">
+    <div class="cms-or-footer__grid">
+      <div>
+        {{#footerContactTitle}}<h3 class="cms-or-footer__title">{{footerContactTitle}}</h3>{{/footerContactTitle}}
+        <ul class="cms-or-footer__contact">
+          {{#footerContacts}}<li><span class="cms-or-footer__label">{{label}}</span>: {{#link}}<a href="{{link}}" dir="ltr">{{value}}</a>{{/link}}{{^link}}<span>{{value}}</span>{{/link}}</li>{{/footerContacts}}
+          {{^footerContacts}}{{#@site.phone}}<li><a href="tel:{{@site.phone|tel}}" dir="ltr">{{@site.phone}}</a></li>{{/@site.phone}}{{#@site.email}}<li><a href="mailto:{{@site.email}}">{{@site.email}}</a></li>{{/@site.email}}{{/footerContacts}}
+        </ul>
+      </div>
+      <div>
+        {{#footerLinksTitle}}<h3 class="cms-or-footer__title">{{footerLinksTitle}}</h3>{{/footerLinksTitle}}
+        <ul class="cms-or-footer__links">{{#footerLinks}}<li><a href="{{link}}">{{label}}</a></li>{{/footerLinks}}{{^footerLinks}}{{#@nav}}<li><a href="{{href}}">{{label}}</a></li>{{/@nav}}{{/footerLinks}}</ul>
+      </div>
+      <div>
+        {{#footerSocialTitle}}<h3 class="cms-or-footer__title">{{footerSocialTitle}}</h3>{{/footerSocialTitle}}
+        <ul class="cms-or-footer__links cms-or-footer__social">{{#footerSocial}}<li><a href="{{link}}" target="_blank" rel="noopener noreferrer">{{icon}}<span>{{label}}</span></a></li>{{/footerSocial}}{{^footerSocial}}{{#@social}}<li><a href="{{href}}" target="_blank" rel="noopener noreferrer">{{icon}}<span>{{name}}</span></a></li>{{/@social}}{{/footerSocial}}</ul>
+      </div>
+    </div>
+    <div class="cms-or-footer__bottom"><p><span dir="ltr">{{#copyrightStart}}{{copyrightStart}} – {{/copyrightStart}}{{@year}}</span>{{#copyright}} · {{copyright}}{{/copyright}}{{^copyright}} · {{@t.rights}}{{/copyright}}</p></div>
+  </div>
+</footer>

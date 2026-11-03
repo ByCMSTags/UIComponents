@@ -1,0 +1,13 @@
+<section id="{{@id}}" class="cms-or-services">
+  <div class="or-inner">
+    <div class="cms-or-services__head">
+      {{#title}}<{{@h}} class="or-title">{{title}}</{{@h}}>{{/title}}
+      {{#description}}<p class="cms-or-services__intro">{{description}}</p>{{/description}}
+    </div>
+    {{#items}}{{#@first}}<div class="cms-or-services__grid">{{/@first}}<article class="cms-or-services__card">
+      <span class="cms-or-services__icon" aria-hidden="true">{{icon}}</span>
+      <{{@hsub}} class="cms-or-services__name">{{title}}</{{@hsub}}>
+      {{#description}}<p class="cms-or-services__text">{{description}}</p>{{/description}}
+    </article>{{#@last}}</div>{{/@last}}{{/items}}
+  </div>
+</section>

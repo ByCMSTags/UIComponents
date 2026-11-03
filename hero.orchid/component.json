@@ -1,0 +1,124 @@
+{
+  "id": "hero.orchid",
+  "category": "hero",
+  "kind": "single",
+  "name": {
+    "en": "Orchid photo opening with text box",
+    "ar": "افتتاحية بصورة وصندوق نص (أوركيد)"
+  },
+  "description": {
+    "en": "A full-width photo with a dark see-through box at the bottom: large name, a line under it, a small line and a brown button.",
+    "ar": "صورة بعرض الصفحة مع صندوق شفاف داكن في الأسفل: اسم كبير وسطر تحته وسطر صغير وزر بني."
+  },
+  "fields": [
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Background photo",
+        "ar": "صورة الخلفية"
+      }
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Name or title",
+        "ar": "الاسم أو العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "subtitle",
+      "type": "shortText",
+      "label": {
+        "en": "Line under the title",
+        "ar": "السطر تحت العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "meta",
+      "type": "shortText",
+      "label": {
+        "en": "Small line",
+        "ar": "السطر الصغير"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      },
+      "localized": true
+    },
+    {
+      "key": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Background photo",
+        "ar": "صورة الخلفية"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Name or title",
+        "ar": "الاسم أو العنوان"
+      }
+    },
+    {
+      "token": "{{subtitle}}",
+      "field": "subtitle",
+      "type": "shortText",
+      "label": {
+        "en": "Line under the title",
+        "ar": "السطر تحت العنوان"
+      }
+    },
+    {
+      "token": "{{meta}}",
+      "field": "meta",
+      "type": "shortText",
+      "label": {
+        "en": "Small line",
+        "ar": "السطر الصغير"
+      }
+    },
+    {
+      "token": "{{buttonText}}",
+      "field": "buttonText",
+      "type": "shortText",
+      "label": {
+        "en": "Button text",
+        "ar": "نص الزر"
+      }
+    },
+    {
+      "token": "{{buttonLink}}",
+      "field": "buttonLink",
+      "type": "url",
+      "label": {
+        "en": "Button link",
+        "ar": "رابط الزر"
+      }
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "id": "footer.orchid",
+  "category": "footer",
+  "kind": "site",
+  "name": {
+    "en": "Orchid brown footer",
+    "ar": "تذييل بني (أوركيد)"
+  },
+  "description": {
+    "en": "Brown footer with three columns: contact lines, quick links and social links with names, then one copyright line. Texts come from Website settings.",
+    "ar": "تذييل بني بثلاثة أعمدة: بيانات التواصل والروابط السريعة وروابط التواصل بأسمائها، ثم سطر الحقوق. النصوص من إعدادات الموقع."
+  },
+  "fields": [
+    {
+      "key": "footerContactTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Contact title",
+        "ar": "عنوان التواصل"
+      },
+      "localized": true
+    },
+    {
+      "key": "footerContacts",
+      "type": "repeater",
+      "label": {
+        "en": "Contact lines",
+        "ar": "سطور التواصل"
+      },
+      "localized": true,
+      "subFields": [
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Label (Mob)",
+            "ar": "التسمية (موبايل)"
+          },
+          "localized": true
+        },
+        {
+          "key": "value",
+          "type": "shortText",
+          "label": {
+            "en": "Value",
+            "ar": "القيمة"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "shortText",
+          "label": {
+            "en": "Link (tel:, mailto: or address)",
+            "ar": "الرابط (tel: أو mailto: أو عنوان)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "footerLinksTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Links title",
+        "ar": "عنوان الروابط"
+      },
+      "localized": true
+    },
+    {
+      "key": "footerLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Links",
+        "ar": "الروابط"
+      },
+      "localized": true,
+      "subFields": [
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "shortText",
+          "label": {
+            "en": "Link (#section or address)",
+            "ar": "الرابط (#قسم أو عنوان)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "footerSocialTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Social title",
+        "ar": "عنوان التواصل الاجتماعي"
+      },
+      "localized": true
+    },
+    {
+      "key": "footerSocial",
+      "type": "repeater",
+      "label": {
+        "en": "Social links",
+        "ar": "روابط التواصل الاجتماعي"
+      },
+      "localized": true,
+      "subFields": [
+        {
+          "key": "icon",
+          "type": "icon",
+          "label": {
+            "en": "Icon (fi-brands-…)",
+            "ar": "الأيقونة (fi-brands-…)"
+          }
+        },
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Name",
+            "ar": "الاسم"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "shortText",
+          "label": {
+            "en": "Link",
+            "ar": "الرابط"
+          }
+        }
+      ]
+    },
+    {
+      "key": "copyrightStart",
+      "type": "shortText",
+      "label": {
+        "en": "Before the year (ORCHID © 1992)",
+        "ar": "قبل السنة (ORCHID © 1992)"
+      }
+    },
+    {
+      "key": "copyright",
+      "type": "shortText",
+      "label": {
+        "en": "After the year",
+        "ar": "بعد السنة"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{footerContactTitle}}",
+      "field": "footerContactTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Contact title",
+        "ar": "عنوان التواصل"
+      }
+    },
+    {
+      "token": "{{footerContacts}}",
+      "field": "footerContacts",
+      "type": "repeater",
+      "label": {
+        "en": "Contact lines",
+        "ar": "سطور التواصل"
+      }
+    },
+    {
+      "token": "{{#footerContacts}}",
+      "field": "footerContacts",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/footerContacts}}",
+      "field": "footerContacts",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{label}}",
+      "field": "footerContacts.label",
+      "type": "shortText",
+      "label": {
+        "en": "Label (Mob)",
+        "ar": "التسمية (موبايل)"
+      },
+      "scope": "footerContacts"
+    },
+    {
+      "token": "{{value}}",
+      "field": "footerContacts.value",
+      "type": "shortText",
+      "label": {
+        "en": "Value",
+        "ar": "القيمة"
+      },
+      "scope": "footerContacts"
+    },
+    {
+      "token": "{{link}}",
+      "field": "footerContacts.link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (tel:, mailto: or address)",
+        "ar": "الرابط (tel: أو mailto: أو عنوان)"
+      },
+      "scope": "footerContacts"
+    },
+    {
+      "token": "{{footerLinksTitle}}",
+      "field": "footerLinksTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Links title",
+        "ar": "عنوان الروابط"
+      }
+    },
+    {
+      "token": "{{footerLinks}}",
+      "field": "footerLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Links",
+        "ar": "الروابط"
+      }
+    },
+    {
+      "token": "{{#footerLinks}}",
+      "field": "footerLinks",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/footerLinks}}",
+      "field": "footerLinks",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{label}}",
+      "field": "footerLinks.label",
+      "type": "shortText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "footerLinks"
+    },
+    {
+      "token": "{{link}}",
+      "field": "footerLinks.link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (#section or address)",
+        "ar": "الرابط (#قسم أو عنوان)"
+      },
+      "scope": "footerLinks"
+    },
+    {
+      "token": "{{footerSocialTitle}}",
+      "field": "footerSocialTitle",
+      "type": "shortText",
+      "label": {
+        "en": "Social title",
+        "ar": "عنوان التواصل الاجتماعي"
+      }
+    },
+    {
+      "token": "{{footerSocial}}",
+      "field": "footerSocial",
+      "type": "repeater",
+      "label": {
+        "en": "Social links",
+        "ar": "روابط التواصل الاجتماعي"
+      }
+    },
+    {
+      "token": "{{#footerSocial}}",
+      "field": "footerSocial",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/footerSocial}}",
+      "field": "footerSocial",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{icon}}",
+      "field": "footerSocial.icon",
+      "type": "icon",
+      "label": {
+        "en": "Icon (fi-brands-…)",
+        "ar": "الأيقونة (fi-brands-…)"
+      },
+      "scope": "footerSocial"
+    },
+    {
+      "token": "{{label}}",
+      "field": "footerSocial.label",
+      "type": "shortText",
+      "label": {
+        "en": "Name",
+        "ar": "الاسم"
+      },
+      "scope": "footerSocial"
+    },
+    {
+      "token": "{{link}}",
+      "field": "footerSocial.link",
+      "type": "shortText",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "scope": "footerSocial"
+    },
+    {
+      "token": "{{copyrightStart}}",
+      "field": "copyrightStart",
+      "type": "shortText",
+      "label": {
+        "en": "Before the year (ORCHID © 1992)",
+        "ar": "قبل السنة (ORCHID © 1992)"
+      }
+    },
+    {
+      "token": "{{copyright}}",
+      "field": "copyright",
+      "type": "shortText",
+      "label": {
+        "en": "After the year",
+        "ar": "بعد السنة"
+      }
+    }
+  ]
+}

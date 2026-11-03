@@ -1,0 +1,88 @@
+{
+  "id": "content.orchid",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Orchid photo beside text",
+    "ar": "صورة بجانب نص (أوركيد)"
+  },
+  "description": {
+    "en": "A brown title, then a photo beside paragraphs, with a smaller picture set into the text after the first paragraph.",
+    "ar": "عنوان بني، ثم صورة بجانب فقرات، مع صورة أصغر داخل النص بعد الفقرة الأولى."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": {
+        "en": "Photo",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "key": "text",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      },
+      "localized": true
+    },
+    {
+      "key": "inlineImage",
+      "type": "image",
+      "label": {
+        "en": "Small picture in the text",
+        "ar": "صورة صغيرة داخل النص"
+      }
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{image}}",
+      "field": "image",
+      "type": "image",
+      "label": {
+        "en": "Photo",
+        "ar": "الصورة"
+      }
+    },
+    {
+      "token": "{{text}}",
+      "field": "text",
+      "type": "longText",
+      "label": {
+        "en": "Text (one paragraph per line)",
+        "ar": "النص (فقرة في كل سطر)"
+      }
+    },
+    {
+      "token": "{{inlineImage}}",
+      "field": "inlineImage",
+      "type": "image",
+      "label": {
+        "en": "Small picture in the text",
+        "ar": "صورة صغيرة داخل النص"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<section id="{{@id}}" class="cms-or-about">
+  <div class="or-inner">
+    {{#title}}<{{@h}} class="or-title">{{title}}</{{@h}}>{{/title}}
+    <div class="cms-or-about__grid">
+      {{#image}}<div class="cms-or-about__media">{{image sizes="(max-width: 767px) 100vw, 600px" class="cms-or-about__img"}}</div>{{/image}}
+      <div class="cms-or-about__text">
+        {{#text|lines}}<p>{{.}}</p>{{#@first}}{{#inlineImage}}{{inlineImage sizes="300px" class="cms-or-about__inline"}}{{/inlineImage}}{{/@first}}{{/text|lines}}
+      </div>
+    </div>
+  </div>
+</section>

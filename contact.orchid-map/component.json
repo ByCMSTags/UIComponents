@@ -1,0 +1,88 @@
+{
+  "id": "contact.orchid-map",
+  "category": "contact",
+  "kind": "single",
+  "name": {
+    "en": "Orchid map with link",
+    "ar": "خريطة مع رابط (أوركيد)"
+  },
+  "description": {
+    "en": "A centred title, a Google map of the place and a link that opens it in Google Maps.",
+    "ar": "عنوان في المنتصف وخريطة جوجل للمكان ورابط لفتحه في خرائط جوجل."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "place",
+      "type": "shortText",
+      "label": {
+        "en": "Place: address or latitude,longitude",
+        "ar": "المكان: العنوان أو خط العرض,خط الطول"
+      }
+    },
+    {
+      "key": "zoom",
+      "type": "number",
+      "label": {
+        "en": "Map zoom (17)",
+        "ar": "تكبير الخريطة (17)"
+      }
+    },
+    {
+      "key": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{place}}",
+      "field": "place",
+      "type": "shortText",
+      "label": {
+        "en": "Place: address or latitude,longitude",
+        "ar": "المكان: العنوان أو خط العرض,خط الطول"
+      }
+    },
+    {
+      "token": "{{zoom}}",
+      "field": "zoom",
+      "type": "number",
+      "label": {
+        "en": "Map zoom (17)",
+        "ar": "تكبير الخريطة (17)"
+      }
+    },
+    {
+      "token": "{{linkText}}",
+      "field": "linkText",
+      "type": "shortText",
+      "label": {
+        "en": "Link text",
+        "ar": "نص الرابط"
+      }
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+/* Orchid family: tokens and a reset scoped to this section (Bootstrap is loaded by the site). */
+.cms-or-hero {
+  --or-brown: var(--cms-or-brown, #5c4033);
+  --or-brown-light: var(--cms-or-brown-light, #6b5344);
+  --or-white: #ffffff;
+  --or-paper: var(--cms-or-paper, #f5f5f5);
+  --or-text: var(--cms-or-text, #2c2419);
+  --or-muted: var(--cms-or-muted, #666666);
+  --or-line: var(--cms-or-line, #e0e0e0);
+  --or-head: var(--cms-or-head, "Playfair Display", "Tajawal", Georgia, serif);
+  --or-body: var(--cms-or-body, "Inter", "Tajawal", -apple-system, BlinkMacSystemFont, sans-serif);
+  --or-fast: 0.2s ease;
+  --or-normal: 0.3s ease;
+  font-family: var(--or-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--or-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] .cms-or-hero {
+  --or-body: var(--cms-or-body-ar, "Tajawal", "Inter", -apple-system, BlinkMacSystemFont, sans-serif);
+}
+
+.cms-or-hero :is(h1, h2, h3, h4, p, ul, ol, li, figure, blockquote) {
+  margin: 0;
+  padding: 0;
+}
+
+.cms-or-hero :is(h1, h2, h3, h4) {
+  font-family: var(--or-head);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.cms-or-hero :is(ul, ol) {
+  list-style: none;
+}
+
+.cms-or-hero a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cms-or-hero img {
+  display: block;
+  max-width: 100%;
+}
+
+.cms-or-hero button {
+  font: inherit;
+}
+
+.cms-or-hero .or-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cms-or-hero .or-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--or-brown);
+}
+
+.cms-or-hero .or-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 2px solid var(--or-brown);
+  border-radius: 50%;
+  background: var(--or-white);
+  color: var(--or-brown);
+  cursor: pointer;
+  transition: background var(--or-fast), color var(--or-fast);
+}
+
+.cms-or-hero .or-round:hover {
+  background: var(--or-brown);
+  color: var(--or-white);
+}
+
+.cms-or-hero .or-round .fi {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+[dir="rtl"] .cms-or-hero .or-round .fi {
+  transform: scaleX(-1);
+}
+
+.cms-or-hero .or-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cms-or-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-height: 70vh;
+  padding: 6rem 2rem;
+  overflow: hidden;
+  background: #3a2b22;
+  border-bottom: 2px solid var(--or-line);
+}
+
+.cms-or-hero .cms-or-hero__bg {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cms-or-hero .cms-or-hero__content {
+  position: relative;
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.cms-or-hero .cms-or-hero__title {
+  margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 5.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.08em;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cms-or-hero .cms-or-hero__subtitle {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.cms-or-hero .cms-or-hero__meta {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.cms-or-hero .cms-or-hero__cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--or-brown);
+  background: var(--or-brown);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all var(--or-fast);
+}
+
+.cms-or-hero .cms-or-hero__cta:hover {
+  border-color: #fff;
+  background: transparent;
+  color: #fff;
+}

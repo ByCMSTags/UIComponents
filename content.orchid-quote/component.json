@@ -1,0 +1,71 @@
+{
+  "id": "content.orchid-quote",
+  "category": "content",
+  "kind": "single",
+  "name": {
+    "en": "Orchid brown statement band",
+    "ar": "شريط بني لعبارة (أوركيد)"
+  },
+  "description": {
+    "en": "A brown band with an icon and a title in the centre, then a statement in italics beside a light line. It rises into place when it comes into view.",
+    "ar": "شريط بني بأيقونة وعنوان في المنتصف، ثم عبارة مائلة بجانب خط فاتح. تظهر بحركة خفيفة عند الوصول إليها."
+  },
+  "fields": [
+    {
+      "key": "icon",
+      "type": "icon",
+      "label": {
+        "en": "Icon (fi-rr-…)",
+        "ar": "الأيقونة (fi-rr-…)"
+      }
+    },
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "text",
+      "type": "longText",
+      "label": {
+        "en": "Statement",
+        "ar": "العبارة"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{icon}}",
+      "field": "icon",
+      "type": "icon",
+      "label": {
+        "en": "Icon (fi-rr-…)",
+        "ar": "الأيقونة (fi-rr-…)"
+      }
+    },
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{text}}",
+      "field": "text",
+      "type": "longText",
+      "label": {
+        "en": "Statement",
+        "ar": "العبارة"
+      }
+    }
+  ]
+}

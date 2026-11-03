@@ -1,0 +1,189 @@
+/* Orchid family: tokens and a reset scoped to this section (Bootstrap is loaded by the site). */
+.cms-or-clients {
+  --or-brown: var(--cms-or-brown, #5c4033);
+  --or-brown-light: var(--cms-or-brown-light, #6b5344);
+  --or-white: #ffffff;
+  --or-paper: var(--cms-or-paper, #f5f5f5);
+  --or-text: var(--cms-or-text, #2c2419);
+  --or-muted: var(--cms-or-muted, #666666);
+  --or-line: var(--cms-or-line, #e0e0e0);
+  --or-head: var(--cms-or-head, "Playfair Display", "Tajawal", Georgia, serif);
+  --or-body: var(--cms-or-body, "Inter", "Tajawal", -apple-system, BlinkMacSystemFont, sans-serif);
+  --or-fast: 0.2s ease;
+  --or-normal: 0.3s ease;
+  font-family: var(--or-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--or-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] .cms-or-clients {
+  --or-body: var(--cms-or-body-ar, "Tajawal", "Inter", -apple-system, BlinkMacSystemFont, sans-serif);
+}
+
+.cms-or-clients :is(h1, h2, h3, h4, p, ul, ol, li, figure, blockquote) {
+  margin: 0;
+  padding: 0;
+}
+
+.cms-or-clients :is(h1, h2, h3, h4) {
+  font-family: var(--or-head);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.cms-or-clients :is(ul, ol) {
+  list-style: none;
+}
+
+.cms-or-clients a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cms-or-clients img {
+  display: block;
+  max-width: 100%;
+}
+
+.cms-or-clients button {
+  font: inherit;
+}
+
+.cms-or-clients .or-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cms-or-clients .or-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--or-brown);
+}
+
+.cms-or-clients .or-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 2px solid var(--or-brown);
+  border-radius: 50%;
+  background: var(--or-white);
+  color: var(--or-brown);
+  cursor: pointer;
+  transition: background var(--or-fast), color var(--or-fast);
+}
+
+.cms-or-clients .or-round:hover {
+  background: var(--or-brown);
+  color: var(--or-white);
+}
+
+.cms-or-clients .or-round .fi {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+[dir="rtl"] .cms-or-clients .or-round .fi {
+  transform: scaleX(-1);
+}
+
+.cms-or-clients .or-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cms-or-clients {
+  padding: 6rem 2rem;
+  background: var(--or-white);
+}
+
+.cms-or-clients .cms-or-clients__highlight {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--or-brown);
+}
+
+.cms-or-clients .cms-or-clients__intro {
+  max-width: 800px;
+  margin-bottom: 4rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--or-text);
+}
+
+.cms-or-clients .cms-or-clients__slider {
+  margin: 0 -2rem;
+  padding: 0 2rem;
+}
+
+.cms-or-clients .cms-or-clients__track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding: 1rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.cms-or-clients .cms-or-clients__track::-webkit-scrollbar {
+  display: none;
+}
+
+.cms-or-clients .cms-or-clients__card {
+  flex: 0 0 auto;
+  width: 160px;
+  min-width: 160px;
+  margin: 0;
+  overflow: hidden;
+  background: var(--or-paper);
+  border: 1px solid var(--or-line);
+  scroll-snap-align: start;
+  transition: border-color var(--or-fast);
+}
+
+.cms-or-clients .cms-or-clients__card:hover {
+  border-color: var(--or-brown);
+}
+
+.cms-or-clients .cms-or-clients__img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  max-width: none;
+  object-fit: cover;
+  background: #eee;
+}
+
+.cms-or-clients .cms-or-clients__name {
+  padding: 0.5rem 1rem;
+  border-top: 1px solid var(--or-line);
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--or-text);
+}
+
+@media (min-width: 768px) {
+  .cms-or-clients .cms-or-clients__slider {
+    margin: 0 -2rem;
+    padding: 0 3rem;
+  }
+
+  .cms-or-clients .cms-or-clients__card {
+    width: 200px;
+    min-width: 200px;
+  }
+
+  .cms-or-clients .cms-or-clients__img {
+    height: 150px;
+  }
+}

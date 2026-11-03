@@ -1,0 +1,104 @@
+{
+  "id": "header.orchid",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Orchid white bar with language buttons",
+    "ar": "شريط أبيض مع أزرار اللغة (أوركيد)"
+  },
+  "description": {
+    "en": "White sticky bar with a brown line under it: logo, menu links, square language buttons and a menu for phones. Logo and links come from Website settings.",
+    "ar": "شريط أبيض ثابت بخط بني أسفله: الشعار وروابط القائمة وأزرار لغة مربعة وقائمة للهاتف. الشعار والروابط من إعدادات الموقع."
+  },
+  "fields": [
+    {
+      "key": "logo",
+      "type": "image",
+      "label": {
+        "en": "Logo (optional; else the project logo)",
+        "ar": "الشعار (اختياري؛ وإلا شعار المشروع)"
+      }
+    },
+    {
+      "key": "headerLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Menu links",
+        "ar": "روابط القائمة"
+      },
+      "localized": true,
+      "subFields": [
+        {
+          "key": "label",
+          "type": "shortText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "shortText",
+          "label": {
+            "en": "Link (#section or address)",
+            "ar": "الرابط (#قسم أو عنوان)"
+          }
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{logo}}",
+      "field": "logo",
+      "type": "image",
+      "label": {
+        "en": "Logo (optional; else the project logo)",
+        "ar": "الشعار (اختياري؛ وإلا شعار المشروع)"
+      }
+    },
+    {
+      "token": "{{headerLinks}}",
+      "field": "headerLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Menu links",
+        "ar": "روابط القائمة"
+      }
+    },
+    {
+      "token": "{{#headerLinks}}",
+      "field": "headerLinks",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/headerLinks}}",
+      "field": "headerLinks",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{label}}",
+      "field": "headerLinks.label",
+      "type": "shortText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "headerLinks"
+    },
+    {
+      "token": "{{link}}",
+      "field": "headerLinks.link",
+      "type": "shortText",
+      "label": {
+        "en": "Link (#section or address)",
+        "ar": "الرابط (#قسم أو عنوان)"
+      },
+      "scope": "headerLinks"
+    }
+  ]
+}

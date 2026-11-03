@@ -1,0 +1,118 @@
+{
+  "id": "gallery.orchid",
+  "category": "gallery",
+  "kind": "single",
+  "name": {
+    "en": "Orchid gallery with three views",
+    "ar": "معرض صور بثلاث طرق عرض (أوركيد)"
+  },
+  "description": {
+    "en": "A title and a line, buttons to switch between grid, masonry and a sliding row, a View more button and a full-screen viewer with arrows.",
+    "ar": "عنوان وسطر، وأزرار للتبديل بين الشبكة والأعمدة والشريط المتحرك، وزر عرض المزيد، وعارض بملء الشاشة مع أسهم."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "subtitle",
+      "type": "shortText",
+      "label": {
+        "en": "Line under the title",
+        "ar": "السطر تحت العنوان"
+      },
+      "localized": true
+    },
+    {
+      "key": "images",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      }
+    },
+    {
+      "key": "view",
+      "type": "shortText",
+      "label": {
+        "en": "First view: slider, grid or masonry",
+        "ar": "العرض الأول: slider أو grid أو masonry"
+      }
+    },
+    {
+      "key": "moreText",
+      "type": "shortText",
+      "label": {
+        "en": "View more button",
+        "ar": "زر عرض المزيد"
+      },
+      "localized": true
+    }
+  ],
+  "version": "1.0.0",
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{subtitle}}",
+      "field": "subtitle",
+      "type": "shortText",
+      "label": {
+        "en": "Line under the title",
+        "ar": "السطر تحت العنوان"
+      }
+    },
+    {
+      "token": "{{images}}",
+      "field": "images",
+      "type": "gallery",
+      "label": {
+        "en": "Photos",
+        "ar": "الصور"
+      }
+    },
+    {
+      "token": "{{#images}}",
+      "field": "images",
+      "type": "gallery",
+      "role": "open"
+    },
+    {
+      "token": "{{/images}}",
+      "field": "images",
+      "type": "gallery",
+      "role": "close"
+    },
+    {
+      "token": "{{view}}",
+      "field": "view",
+      "type": "shortText",
+      "label": {
+        "en": "First view: slider, grid or masonry",
+        "ar": "العرض الأول: slider أو grid أو masonry"
+      }
+    },
+    {
+      "token": "{{moreText}}",
+      "field": "moreText",
+      "type": "shortText",
+      "label": {
+        "en": "View more button",
+        "ar": "زر عرض المزيد"
+      }
+    }
+  ]
+}

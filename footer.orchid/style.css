@@ -1,0 +1,203 @@
+/* Orchid family: tokens and a reset scoped to this section (Bootstrap is loaded by the site). */
+.cms-or-footer {
+  --or-brown: var(--cms-or-brown, #5c4033);
+  --or-brown-light: var(--cms-or-brown-light, #6b5344);
+  --or-white: #ffffff;
+  --or-paper: var(--cms-or-paper, #f5f5f5);
+  --or-text: var(--cms-or-text, #2c2419);
+  --or-muted: var(--cms-or-muted, #666666);
+  --or-line: var(--cms-or-line, #e0e0e0);
+  --or-head: var(--cms-or-head, "Playfair Display", "Tajawal", Georgia, serif);
+  --or-body: var(--cms-or-body, "Inter", "Tajawal", -apple-system, BlinkMacSystemFont, sans-serif);
+  --or-fast: 0.2s ease;
+  --or-normal: 0.3s ease;
+  font-family: var(--or-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--or-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] .cms-or-footer {
+  --or-body: var(--cms-or-body-ar, "Tajawal", "Inter", -apple-system, BlinkMacSystemFont, sans-serif);
+}
+
+.cms-or-footer :is(h1, h2, h3, h4, p, ul, ol, li, figure, blockquote) {
+  margin: 0;
+  padding: 0;
+}
+
+.cms-or-footer :is(h1, h2, h3, h4) {
+  font-family: var(--or-head);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.cms-or-footer :is(ul, ol) {
+  list-style: none;
+}
+
+.cms-or-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cms-or-footer img {
+  display: block;
+  max-width: 100%;
+}
+
+.cms-or-footer button {
+  font: inherit;
+}
+
+.cms-or-footer .or-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cms-or-footer .or-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--or-brown);
+}
+
+.cms-or-footer .or-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 2px solid var(--or-brown);
+  border-radius: 50%;
+  background: var(--or-white);
+  color: var(--or-brown);
+  cursor: pointer;
+  transition: background var(--or-fast), color var(--or-fast);
+}
+
+.cms-or-footer .or-round:hover {
+  background: var(--or-brown);
+  color: var(--or-white);
+}
+
+.cms-or-footer .or-round .fi {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+[dir="rtl"] .cms-or-footer .or-round .fi {
+  transform: scaleX(-1);
+}
+
+.cms-or-footer .or-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cms-or-footer {
+  padding: 2rem;
+  background: var(--or-brown);
+  color: #fff;
+}
+
+.cms-or-footer .cms-or-footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cms-or-footer .cms-or-footer__grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cms-or-footer .cms-or-footer__title {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+[dir="rtl"] .cms-or-footer .cms-or-footer__title {
+  letter-spacing: 0;
+}
+
+.cms-or-footer .cms-or-footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cms-or-footer .cms-or-footer__contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cms-or-footer .cms-or-footer__label {
+  display: inline-block;
+  min-width: 60px;
+}
+
+.cms-or-footer .cms-or-footer__contact a {
+  transition: color var(--or-fast);
+}
+
+.cms-or-footer .cms-or-footer__contact a:hover,
+.cms-or-footer .cms-or-footer__links a:hover {
+  color: #fff;
+}
+
+.cms-or-footer .cms-or-footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cms-or-footer .cms-or-footer__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color var(--or-fast);
+}
+
+.cms-or-footer .cms-or-footer__social .fi {
+  width: 1.2rem;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.cms-or-footer .cms-or-footer__bottom {
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.cms-or-footer .cms-or-footer__bottom p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 768px) {
+  .cms-or-footer .cms-or-footer__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cms-or-footer .cms-or-footer__grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 4rem;
+  }
+}

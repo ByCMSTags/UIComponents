@@ -1,0 +1,13 @@
+<section id="{{@id}}" class="cms-or-clients">
+  <div class="or-inner">
+    {{#title}}<{{@h}} class="or-title">{{title}}</{{@h}}>{{/title}}
+    {{#highlight}}<p class="cms-or-clients__highlight">{{highlight}}</p>{{/highlight}}
+    {{#description}}<p class="cms-or-clients__intro">{{description}}</p>{{/description}}
+    {{#items}}{{#@first}}<div class="cms-or-clients__slider"><div class="cms-or-clients__track" data-or-track>{{/@first}}<figure class="cms-or-clients__card">
+      {{#image}}{{image sizes="200px" class="cms-or-clients__img"}}{{/image}}{{^image}}<span class="cms-or-clients__img"></span>{{/image}}
+      <figcaption class="cms-or-clients__name">{{title}}</figcaption>
+    </figure>{{#@last}}</div>
+      <div class="or-nav"><button class="or-round" type="button" data-or-prev aria-label="{{@t.prevSlide}}"><i class="fi fi-rr-angle-small-left" aria-hidden="true"></i></button><button class="or-round" type="button" data-or-next aria-label="{{@t.nextSlide}}"><i class="fi fi-rr-angle-small-right" aria-hidden="true"></i></button></div>
+    </div>{{/@last}}{{/items}}
+  </div>
+</section>

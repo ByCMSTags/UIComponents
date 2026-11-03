@@ -1,0 +1,9 @@
+<section id="{{@id}}" class="cms-or-map" data-or-place="{{place}}" data-or-zoom="{{zoom}}">
+  <div class="or-inner">
+    {{#title}}<{{@h}} class="cms-or-map__title">{{title}}</{{@h}}>{{/title}}
+    <div class="cms-or-map__box">
+      <div class="cms-or-map__frame" data-or-frame data-or-title="{{title}}"></div>
+      <a class="cms-or-map__link" data-or-link href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">{{#linkText}}{{linkText}}{{/linkText}}{{^linkText}}{{@t.openMap}}{{/linkText}} <i class="fi fi-rr-arrow-up-right-from-square" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>

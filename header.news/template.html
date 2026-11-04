@@ -1,0 +1,57 @@
+<header class="cms-hnews" data-cms-header>
+  <div class="cms-hnews__meta">
+    <div class="cms-hnews__wrap">
+      <p class="cms-hnews__clock">
+        <time class="cms-hnews__date" data-cms-date></time>
+        <time class="cms-hnews__hour" data-cms-time dir="ltr"></time>
+      </p>
+      <nav class="cms-hnews__meta-links" aria-label="{{@t.pages}}">{{#topLinks}}<a href="{{link}}">{{title}}</a>{{/topLinks}}</nav>
+      <div class="cms-hnews__tools">
+        {{#@multilingual}}{{#@langs}}{{^current}}<a class="cms-hnews__lang" href="{{href}}" lang="{{code}}" hreflang="{{code}}">{{code}}</a>{{/current}}{{/@langs}}{{/@multilingual}}
+        <button class="cms-hnews__theme" type="button" data-cms-theme aria-pressed="false" aria-label="Theme">
+          <svg class="cms-hnews__moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.6 2.4a8.4 8.4 0 1 0 7.2 13.1A6.7 6.7 0 0 1 14.6 2.4z"/></svg>
+          <svg class="cms-hnews__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.1 5.1l1.6 1.6M17.3 17.3l1.6 1.6M18.9 5.1l-1.6 1.6M6.7 17.3l-1.6 1.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="cms-hnews__brand">
+    <div class="cms-hnews__wrap">
+      <a class="cms-hnews__logo" href="{{@home}}" aria-label="{{@site.name}}">{{#logo}}{{logo eager="true" img="cms-hnews__logo-img" sizes="220px" max="280"}}{{/logo}}{{^logo}}{{#@site.logo}}{{@site.logo eager="true" img="cms-hnews__logo-img" sizes="220px" max="280"}}{{/@site.logo}}{{^@site.logo}}<span class="cms-hnews__wordmark">{{@site.name}}</span>{{/@site.logo}}{{/logo}}</a>
+      {{#advertisementimage}}{{#@first}}
+      <div class="cms-hnews__spot">
+        {{#adname}}<span class="cms-hnews__spot-label">{{adname}}</span>{{/adname}}
+        <div class="cms-hnews__slides" data-cms-ads>
+      {{/@first}}
+          {{#advertisementlink}}<a class="cms-hnews__ad cms-hnews__ad--image{{#@first}} is-active{{/@first}}" href="{{advertisementlink}}">{{/advertisementlink}}
+          {{^advertisementlink}}<div class="cms-hnews__ad cms-hnews__ad--image{{#@first}} is-active{{/@first}}">{{/advertisementlink}}
+            {{#image}}{{image eager="true" img="cms-hnews__ad-img" sizes="(min-width: 900px) 760px, 100vw"}}{{/image}}
+          {{#advertisementlink}}</a>{{/advertisementlink}}
+          {{^advertisementlink}}</div>{{/advertisementlink}}
+      {{#@last}}
+        </div>
+      </div>
+      {{/@last}}{{/advertisementimage}}
+    </div>
+  </div>
+  <div class="cms-hnews__bar">
+    <div class="cms-hnews__wrap cms-hnews__wrap--bar">
+      {{#subscribeText}}<a class="cms-hnews__sub" href="{{#subscribeLink}}{{subscribeLink}}{{/subscribeLink}}{{^subscribeLink}}#{{/subscribeLink}}">{{subscribeText}}</a>{{/subscribeText}}
+      <button class="cms-hnews__iconbtn" type="button" data-cms-search-toggle aria-expanded="false" aria-controls="{{@id}}-search" aria-label="{{searchPlaceholder}}">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.25" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.8 15.8 20.2 20.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="cms-hnews__pages" id="{{@id}}-nav" data-cms-nav-panel aria-label="{{@t.menu}}">
+        {{#@nav}}<a class="cms-hnews__page" href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a>{{/@nav}}
+        <div class="cms-hnews__drawer-links">{{#topLinks}}<a href="{{link}}">{{title}}</a>{{/topLinks}}</div>
+      </nav>
+      <a class="cms-hnews__iconbtn cms-hnews__home" href="{{@home}}" aria-label="{{#homeLabel}}{{homeLabel}}{{/homeLabel}}{{^homeLabel}}{{@site.name}}{{/homeLabel}}">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.6 12 4l8 6.6V20a1 1 0 0 1-1 1h-5.2v-6.2H10.2V21H5a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="cms-hnews__iconbtn cms-hnews__burger" type="button" data-cms-nav-toggle aria-expanded="false" aria-controls="{{@id}}-nav" aria-label="{{@t.menu}}"><span></span><span></span><span></span></button>
+    </div>
+    <form class="cms-hnews__search" id="{{@id}}-search" data-cms-search role="search" method="get" action="{{searchLink}}" hidden>
+      <label class="cms-hnews__sr" for="{{@id}}-q">{{searchPlaceholder}}</label>
+      <input id="{{@id}}-q" type="search" name="q" placeholder="{{searchPlaceholder}}" autocomplete="off" enterkeyhint="search">
+    </form>
+  </div>
+</header>

@@ -1,0 +1,320 @@
+{
+  "id": "header.news",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "News masthead",
+    "ar": "ترويسة الأخبار"
+  },
+  "description": {
+    "en": "News masthead: date and clock, language and light/dark switch, logo, linked ad images, and the page menu with search and subscribe.",
+    "ar": "ترويسة أخبار: التاريخ والساعة، تبديل اللغة والوضع، الشعار، صور إعلانية لكل منها رابط، وقائمة الصفحات مع البحث والاشتراك."
+  },
+  "fields": [
+    {
+      "key": "logo",
+      "type": "image",
+      "label": {
+        "en": "Logo (optional; else the project logo)",
+        "ar": "الشعار (اختياري؛ وإلا شعار المشروع)"
+      }
+    },
+    {
+      "key": "topLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Top links",
+        "ar": "روابط الشريط العلوي"
+      },
+      "localized": true,
+      "subFields": [
+        {
+          "key": "title",
+          "type": "shortText",
+          "label": {
+            "en": "Text",
+            "ar": "النص"
+          },
+          "localized": true
+        },
+        {
+          "key": "link",
+          "type": "url",
+          "label": {
+            "en": "Link",
+            "ar": "الرابط"
+          }
+        }
+      ]
+    },
+    {
+      "key": "subscribeText",
+      "type": "shortText",
+      "label": {
+        "en": "Subscribe button",
+        "ar": "زر الاشتراك"
+      },
+      "localized": true
+    },
+    {
+      "key": "subscribeLink",
+      "type": "url",
+      "label": {
+        "en": "Subscribe link",
+        "ar": "رابط الاشتراك"
+      }
+    },
+    {
+      "key": "homeLabel",
+      "type": "shortText",
+      "label": {
+        "en": "Home button label",
+        "ar": "تسمية زر الرئيسية"
+      },
+      "localized": true
+    },
+    {
+      "key": "searchPlaceholder",
+      "type": "shortText",
+      "label": {
+        "en": "Search placeholder",
+        "ar": "نص البحث"
+      },
+      "localized": true
+    },
+    {
+      "key": "searchLink",
+      "type": "url",
+      "label": {
+        "en": "Search page",
+        "ar": "صفحة البحث"
+      }
+    },
+    {
+      "key": "adname",
+      "type": "shortText",
+      "label": {
+        "en": "Ad name",
+        "ar": "اسم الإعلان"
+      },
+      "localized": true,
+      "aliases": [
+        "adCaption",
+        "name"
+      ]
+    },
+    {
+      "key": "advertisementimage",
+      "type": "repeater",
+      "label": {
+        "en": "Ad images",
+        "ar": "صور الإعلان"
+      },
+      "aliases": [
+        "ads",
+        "adImages",
+        "banners"
+      ],
+      "subFields": [
+        {
+          "key": "advertisementlink",
+          "type": "url",
+          "label": {
+            "en": "Image link",
+            "ar": "رابط الصورة"
+          },
+          "aliases": [
+            "link",
+            "href",
+            "url",
+            "adLink"
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": {
+            "en": "Image",
+            "ar": "الصورة"
+          },
+          "aliases": [
+            "advertisementimage",
+            "adImage",
+            "picture",
+            "photo"
+          ]
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "topLinks": [
+      {
+        "title": "اتصل بنا",
+        "link": "#contact"
+      },
+      {
+        "title": "أعلن معنا",
+        "link": "#advertise"
+      },
+      {
+        "title": "من نحن",
+        "link": "#about"
+      }
+    ],
+    "subscribeText": "اشترك",
+    "subscribeLink": "#subscribe",
+    "homeLabel": "الرئيسية",
+    "searchPlaceholder": "بحث",
+    "searchLink": "",
+    "adname": "إعلان"
+  },
+  "version": "1.1.0",
+  "placeholders": [
+    {
+      "token": "{{logo}}",
+      "field": "logo",
+      "type": "image",
+      "label": {
+        "en": "Logo (optional; else the project logo)",
+        "ar": "الشعار (اختياري؛ وإلا شعار المشروع)"
+      }
+    },
+    {
+      "token": "{{topLinks}}",
+      "field": "topLinks",
+      "type": "repeater",
+      "label": {
+        "en": "Top links",
+        "ar": "روابط الشريط العلوي"
+      }
+    },
+    {
+      "token": "{{#topLinks}}",
+      "field": "topLinks",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/topLinks}}",
+      "field": "topLinks",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{title}}",
+      "field": "topLinks.title",
+      "type": "shortText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "scope": "topLinks"
+    },
+    {
+      "token": "{{link}}",
+      "field": "topLinks.link",
+      "type": "url",
+      "label": {
+        "en": "Link",
+        "ar": "الرابط"
+      },
+      "scope": "topLinks"
+    },
+    {
+      "token": "{{subscribeText}}",
+      "field": "subscribeText",
+      "type": "shortText",
+      "label": {
+        "en": "Subscribe button",
+        "ar": "زر الاشتراك"
+      }
+    },
+    {
+      "token": "{{subscribeLink}}",
+      "field": "subscribeLink",
+      "type": "url",
+      "label": {
+        "en": "Subscribe link",
+        "ar": "رابط الاشتراك"
+      }
+    },
+    {
+      "token": "{{homeLabel}}",
+      "field": "homeLabel",
+      "type": "shortText",
+      "label": {
+        "en": "Home button label",
+        "ar": "تسمية زر الرئيسية"
+      }
+    },
+    {
+      "token": "{{searchPlaceholder}}",
+      "field": "searchPlaceholder",
+      "type": "shortText",
+      "label": {
+        "en": "Search placeholder",
+        "ar": "نص البحث"
+      }
+    },
+    {
+      "token": "{{searchLink}}",
+      "field": "searchLink",
+      "type": "url",
+      "label": {
+        "en": "Search page",
+        "ar": "صفحة البحث"
+      }
+    },
+    {
+      "token": "{{adname}}",
+      "field": "adname",
+      "type": "shortText",
+      "label": {
+        "en": "Ad name",
+        "ar": "اسم الإعلان"
+      }
+    },
+    {
+      "token": "{{advertisementimage}}",
+      "field": "advertisementimage",
+      "type": "repeater",
+      "label": {
+        "en": "Ad images",
+        "ar": "صور الإعلان"
+      }
+    },
+    {
+      "token": "{{#advertisementimage}}",
+      "field": "advertisementimage",
+      "type": "repeater",
+      "role": "open"
+    },
+    {
+      "token": "{{/advertisementimage}}",
+      "field": "advertisementimage",
+      "type": "repeater",
+      "role": "close"
+    },
+    {
+      "token": "{{advertisementlink}}",
+      "field": "advertisementimage.advertisementlink",
+      "type": "url",
+      "label": {
+        "en": "Image link",
+        "ar": "رابط الصورة"
+      },
+      "scope": "advertisementimage"
+    },
+    {
+      "token": "{{image}}",
+      "field": "advertisementimage.image",
+      "type": "image",
+      "label": {
+        "en": "Image",
+        "ar": "الصورة"
+      },
+      "scope": "advertisementimage"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "header.members",
+  "version": "1.0.0",
+  "category": "header",
+  "kind": "site",
+  "name": {
+    "en": "Bar with sign in",
+    "ar": "شريط مع تسجيل الدخول"
+  },
+  "description": {
+    "en": "Bootstrap navbar with a Sign in button that becomes the visitor's account menu after signing in.",
+    "ar": "شريط Bootstrap فيه زر تسجيل الدخول، ويصبح قائمة حساب الزائر بعد دخوله."
+  },
+  "fields": [
+    {
+      "key": "signinPage",
+      "type": "shortText",
+      "label": {
+        "en": "Sign-in page",
+        "ar": "صفحة تسجيل الدخول"
+      },
+      "helpText": {
+        "en": "Slug of the page with the sign-in section, e.g. login.",
+        "ar": "رابط الصفحة التي فيها قسم الدخول، مثل login."
+      },
+      "aliases": [
+        "loginPage"
+      ]
+    },
+    {
+      "key": "accountPage",
+      "type": "shortText",
+      "label": {
+        "en": "My account page",
+        "ar": "صفحة حسابي"
+      },
+      "helpText": {
+        "en": "Slug of the page with the My account section, e.g. account.",
+        "ar": "رابط الصفحة التي فيها قسم حسابي، مثل account."
+      },
+      "aliases": [
+        "profilePage"
+      ]
+    },
+    {
+      "key": "contentPage",
+      "type": "shortText",
+      "label": {
+        "en": "My content page",
+        "ar": "صفحة محتواي"
+      },
+      "helpText": {
+        "en": "Optional: slug of the page with the My content section, shown in the account menu.",
+        "ar": "اختياري: رابط صفحة محتواي، تظهر في قائمة الحساب."
+      },
+      "aliases": [
+        "itemsPage",
+        "projectsPage"
+      ]
+    },
+    {
+      "key": "contentLabel",
+      "type": "shortText",
+      "label": {
+        "en": "My content label",
+        "ar": "اسم صفحة محتواي"
+      },
+      "localized": true,
+      "aliases": [
+        "itemsLabel"
+      ]
+    }
+  ],
+  "defaults": {
+    "signinPage": "login",
+    "accountPage": "account"
+  },
+  "placeholders": [
+    {
+      "token": "{{signinPage}}",
+      "field": "signinPage",
+      "type": "shortText",
+      "label": {
+        "en": "Sign-in page",
+        "ar": "صفحة تسجيل الدخول"
+      }
+    },
+    {
+      "token": "{{accountPage}}",
+      "field": "accountPage",
+      "type": "shortText",
+      "label": {
+        "en": "My account page",
+        "ar": "صفحة حسابي"
+      }
+    },
+    {
+      "token": "{{contentPage}}",
+      "field": "contentPage",
+      "type": "shortText",
+      "label": {
+        "en": "My content page",
+        "ar": "صفحة محتواي"
+      }
+    },
+    {
+      "token": "{{contentLabel}}",
+      "field": "contentLabel",
+      "type": "shortText",
+      "label": {
+        "en": "My content label",
+        "ar": "اسم صفحة محتواي"
+      }
+    }
+  ]
+}

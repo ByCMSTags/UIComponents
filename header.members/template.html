@@ -1,0 +1,17 @@
+<header class="sticky-top bg-body cms-header-members">
+  <nav class="navbar navbar-expand-lg bg-body" aria-label="{{@t.menu}}">
+    <div class="container-fluid">
+      <a class="navbar-brand cms-brand d-flex align-items-center" href="{{@home}}">{{#@site.logo}}{{@site.logo sizes="160px" max="160" eager="true"}}{{/@site.logo}}{{^@site.logo}}{{@site.name}}{{/@site.logo}}</a>
+      <div class="cms-account-slot ms-auto ms-lg-0 order-lg-last" data-cms-account-link data-signin="{{signinPage}}" data-account="{{accountPage}}" data-content="{{contentPage}}" data-content-label="{{contentLabel}}" hidden></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-members" aria-controls="navbar-members" aria-expanded="false" aria-label="{{@t.menu}}"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbar-members">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">{{#@nav}}<li class="nav-item"><a class="nav-link{{#current}} active{{/current}}" href="{{href}}"{{#current}} aria-current="page"{{/current}}>{{label}}</a></li>{{/@nav}}</ul>
+        {{#@multilingual}}<div class="dropdown cms-lang">
+          <button class="cms-lang__btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{@t.language}}">{{#@site.languageIcon}}{{@site.languageIcon}}{{/@site.languageIcon}}{{^@site.languageIcon}}{{@lang}}{{/@site.languageIcon}}</button>
+          <ul class="dropdown-menu dropdown-menu-end cms-lang__menu">{{#@langs}}<li><a class="dropdown-item cms-lang__item{{#current}} active{{/current}}" href="{{href}}" lang="{{code}}" hreflang="{{code}}"{{#current}} aria-current="true"{{/current}}>{{code}}</a></li>{{/@langs}}</ul>
+        </div>{{/@multilingual}}
+        {{#@site.phone}}<a class="cms-header-phone" href="tel:{{@site.phone|tel}}" aria-label="{{@site.phone}}">{{@site.phoneIcon}}</a>{{/@site.phone}}
+      </div>
+    </div>
+  </nav>
+</header>

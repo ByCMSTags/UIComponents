@@ -1,0 +1,90 @@
+{
+  "id": "account.profile",
+  "version": "1.0.0",
+  "category": "account",
+  "kind": "single",
+  "name": {
+    "en": "My account",
+    "ar": "حسابي"
+  },
+  "description": {
+    "en": "The signed-in visitor's page: name and details, password and sign out. Visitors who are not signed in go to the sign-in page.",
+    "ar": "صفحة الزائر المسجّل: الاسم والبيانات وكلمة المرور وتسجيل الخروج. غير المسجّل يُحوَّل لصفحة الدخول."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline"
+      ]
+    },
+    {
+      "key": "text",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "intro",
+        "description",
+        "body"
+      ]
+    },
+    {
+      "key": "signinPage",
+      "type": "shortText",
+      "label": {
+        "en": "Sign-in page",
+        "ar": "صفحة تسجيل الدخول"
+      },
+      "helpText": {
+        "en": "Slug of the page with the sign-in section, e.g. login.",
+        "ar": "رابط الصفحة التي فيها قسم الدخول، مثل login."
+      },
+      "aliases": [
+        "loginPage"
+      ]
+    }
+  ],
+  "defaults": {
+    "signinPage": "login"
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{text}}",
+      "field": "text",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{signinPage}}",
+      "field": "signinPage",
+      "type": "shortText",
+      "label": {
+        "en": "Sign-in page",
+        "ar": "صفحة تسجيل الدخول"
+      }
+    }
+  ]
+}

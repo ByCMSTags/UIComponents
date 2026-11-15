@@ -128,6 +128,48 @@ They also read site values the website provides: `{{@site.tagline}}`, `{{@site.a
 `{{@t.writeUs}}`, `{{@t.visitUs}}`, `{{@t.pages}}`, `{{@t.followUs}}`, `{{@t.backToTop}}`,
 `{{@t.openMap}}`, `{{@t.all}}`, `{{@t.scrollDown}}`. Every design works right to left (Arabic).
 
+## Website accounts
+
+Visitors sign in on the website, keep their details, and add their own content (projects, stories,
+photos…). Turn it on in the CMS: **Website accounts** (sign-in ways, open sign-up or approval, profile
+fields, Google), then in a collection's builder, **Website accounts** (visitors add records, review or
+publish at once). Visitors fill in only the fields marked **Writable through the API**.
+
+| Id | Kind | What it shows |
+| --- | --- | --- |
+| `account.signin` | single | Sign in / create account card: password, email code, Google, forgot password, email check and "waiting for approval". Shows only the ways the project turned on. Field `redirect`: the page to open afterwards (e.g. `account`). |
+| `account.profile` | single | "My account": name, profile fields, password, sign out. Field `signinPage` (default `login`). |
+| `account.items` | single | "My content": the visitor's own records in one collection, with add, edit and delete, photo uploads, and the review state of each. Field `collection`: the collection's slug. The form is built from that collection's writable fields. |
+| `header.members` | site | Bootstrap navbar with a **Sign in** button that becomes the visitor's account menu. Fields `signinPage`, `accountPage`, `contentPage`, `contentLabel`. |
+
+A usual site has three pages: `login` (account.signin), `account` (account.profile) and, for example,
+`my-projects` (account.items). Pages that need a signed-in visitor send others to the sign-in page and
+back afterwards (`?next=`). `?mode=signup` opens the sign-in page on "Create account".
+
+**Sign-in button in another header.** Put this element in the header's `template.html`:
+
+```html
+<div class="cms-account-slot" data-cms-account-link data-signin="login" data-account="account" hidden></div>
+```
+
+and copy into its `script.js` the `CmsAccount` block (the top of `header.members/script.js`) and the
+`drawAll` / `draw` part of `header.members`' `init`.
+
+**How it works.** The components call the project's public API (`/auth/*`, `/me/*`). The session token
+is kept in `localStorage` under `cmstags.account.<project>` and sent in the `X-Account-Token` header.
+The texts are in English and Arabic and follow the page's language; every design works right to left.
+
+**Members-only collections.** A collection set to "signed-in visitors only" is left out of pages for
+visitors who are not signed in (the page API lists it in `locked`). For signed-in visitors to see it,
+the website's `site.js` must send the token with its requests: in `headers()` add
+
+```js
+try {
+  const s = JSON.parse(localStorage.getItem(`cmstags.account.${cfg().project}`) || 'null');
+  if (s?.token) h['X-Account-Token'] = s.token;
+} catch {}
+```
+
 ## تثبيت مكوّن واحد
 
 المستودع الخاص هو `ByCMSTags/UIComponents`. كل مكوّن مجلد في جذر المستودع.

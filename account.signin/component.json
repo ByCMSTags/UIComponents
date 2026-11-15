@@ -1,0 +1,91 @@
+{
+  "id": "account.signin",
+  "version": "1.0.0",
+  "category": "account",
+  "kind": "single",
+  "name": {
+    "en": "Sign in and create account",
+    "ar": "تسجيل الدخول وإنشاء حساب"
+  },
+  "description": {
+    "en": "Sign-in and sign-up card for website accounts: password, email code and Google, as turned on in the project's Website accounts settings.",
+    "ar": "بطاقة دخول وتسجيل لحسابات الموقع: كلمة مرور ورمز على البريد وGoogle، حسب ما هو مفعّل في إعدادات حسابات الموقع."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      },
+      "localized": true,
+      "aliases": [
+        "heading",
+        "headline"
+      ]
+    },
+    {
+      "key": "text",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      },
+      "localized": true,
+      "aliases": [
+        "intro",
+        "description",
+        "body"
+      ]
+    },
+    {
+      "key": "redirect",
+      "type": "shortText",
+      "label": {
+        "en": "Page after signing in",
+        "ar": "الصفحة بعد تسجيل الدخول"
+      },
+      "helpText": {
+        "en": "Slug of the page to open after signing in, e.g. account.",
+        "ar": "رابط الصفحة التي تُفتح بعد الدخول، مثل account."
+      },
+      "aliases": [
+        "next",
+        "after"
+      ]
+    }
+  ],
+  "defaults": {
+    "redirect": "account"
+  },
+  "placeholders": [
+    {
+      "token": "{{title}}",
+      "field": "title",
+      "type": "shortText",
+      "label": {
+        "en": "Title",
+        "ar": "العنوان"
+      }
+    },
+    {
+      "token": "{{text}}",
+      "field": "text",
+      "type": "longText",
+      "label": {
+        "en": "Text",
+        "ar": "النص"
+      }
+    },
+    {
+      "token": "{{redirect}}",
+      "field": "redirect",
+      "type": "shortText",
+      "label": {
+        "en": "Page after signing in",
+        "ar": "الصفحة بعد تسجيل الدخول"
+      }
+    }
+  ]
+}

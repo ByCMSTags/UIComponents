@@ -1,0 +1,366 @@
+/* account.items */
+/* Website accounts: shared look (the same rules ship with every account.* component). */
+.cms-acc {
+  --cms-acc-ink: var(--cms-ink, #141414);
+  --cms-acc-line: var(--cms-line, #e4e1d8);
+  --cms-acc-soft: #f6f5f1;
+  --cms-acc-radius: 14px;
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(3rem, 7vw, 5.5rem);
+}
+
+.cms-acc__wrap {
+  max-width: 460px;
+}
+
+.cms-acc__wrap--wide {
+  max-width: 760px;
+}
+
+.cms-acc__wrap--list {
+  max-width: 1080px;
+}
+
+.cms-acc__title {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--cms-acc-ink);
+}
+
+.cms-acc__lead {
+  color: #5d5d5d;
+  margin-bottom: 1.75rem;
+}
+
+.cms-acc-card {
+  background: #fff;
+  border: 1px solid var(--cms-acc-line);
+  border-radius: var(--cms-acc-radius);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  box-shadow: 0 10px 30px rgba(20, 20, 20, 0.05);
+}
+
+.cms-acc-card + .cms-acc-card {
+  margin-top: 1.25rem;
+}
+
+.cms-acc-form .form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cms-acc-optional {
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+.cms-acc-form .invalid-feedback:empty {
+  display: none !important;
+}
+
+.cms-acc-form[aria-busy="true"] {
+  opacity: 0.75;
+}
+
+.cms-acc-alert {
+  font-size: 0.92rem;
+  border-radius: 10px;
+}
+
+.cms-acc-link {
+  color: var(--cms-acc-ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cms-acc-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  background: var(--cms-acc-soft);
+  border-radius: 12px;
+}
+
+.cms-acc-tab {
+  border: 0;
+  background: transparent;
+  border-radius: 9px;
+  padding: 0.6rem 0.75rem;
+  font-weight: 600;
+  color: #6b6b6b;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cms-acc-tab.is-active {
+  background: #fff;
+  color: var(--cms-acc-ink);
+  box-shadow: 0 1px 4px rgba(20, 20, 20, 0.1);
+}
+
+.cms-acc-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-weight: 600;
+}
+
+.cms-acc-google__mark {
+  display: inline-grid;
+  place-items: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid var(--cms-acc-line);
+  color: #4285f4;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.cms-acc-or {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+  color: #8a8a8a;
+  font-size: 0.85rem;
+}
+
+.cms-acc-or::before,
+.cms-acc-or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--cms-acc-line);
+}
+
+.cms-acc-code {
+  font-size: 1.4rem;
+  letter-spacing: 0.4em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.cms-acc-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background: #e8f5ec;
+  color: #1f7a3d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cms-acc-avatar {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--cms-acc-ink);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.cms-acc .min-w-0 {
+  min-width: 0;
+}
+
+/* account.items */
+.cms-acc-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cms-acc-note {
+  color: #6b6b6b;
+  font-size: 0.92rem;
+}
+
+.cms-acc-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.cms-acc-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--cms-acc-line);
+  border-radius: var(--cms-acc-radius);
+}
+
+.cms-acc-item__media {
+  aspect-ratio: 4 / 3;
+  background: var(--cms-acc-soft);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.cms-acc-item__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cms-acc-item__blank {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #c4c0b4;
+}
+
+.cms-acc-item__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem 1.1rem;
+  flex: 1;
+}
+
+.cms-acc-item__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0.25rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.cms-acc-item__date {
+  font-size: 0.82rem;
+  color: #8a8a8a;
+  margin: 0;
+}
+
+.cms-acc-item__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: auto;
+  padding-top: 0.6rem;
+}
+
+.cms-acc-state {
+  align-self: flex-start;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #fff4d6;
+  color: #7a5a00;
+}
+
+.cms-acc-state--published {
+  background: #e3f4e8;
+  color: #1f6b37;
+}
+
+.cms-acc-state--changes_pending {
+  background: #e6effc;
+  color: #24508f;
+}
+
+.cms-acc-state--archived {
+  background: #eee;
+  color: #666;
+}
+
+.cms-acc-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  border: 1px dashed var(--cms-acc-line);
+  border-radius: var(--cms-acc-radius);
+  color: #6b6b6b;
+}
+
+.cms-acc-editor {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.cms-acc-media {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 0.6rem;
+}
+
+.cms-acc-media:empty {
+  display: none;
+}
+
+.cms-acc-media__tile {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--cms-acc-soft);
+  border: 1px solid var(--cms-acc-line);
+  display: grid;
+  place-items: center;
+}
+
+.cms-acc-media__tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cms-acc-media__file {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.cms-acc-media__remove {
+  position: absolute;
+  top: 6px;
+  inset-inline-end: 6px;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(20, 20, 20, 0.72);
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cms-acc-uploader .btn.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.cms-acc-rows__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  padding: 0.9rem 2.6rem 0.9rem 0.9rem;
+  margin-bottom: 0.6rem;
+  border: 1px solid var(--cms-acc-line);
+  border-radius: 10px;
+  background: var(--cms-acc-soft);
+}
+
+[dir="rtl"] .cms-acc-rows__row {
+  padding: 0.9rem 0.9rem 0.9rem 2.6rem;
+}
+
+.cms-acc-rows__remove {
+  top: 10px;
+}

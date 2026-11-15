@@ -3,6 +3,36 @@
   "repository": "ByCMSTags/UIComponents",
   "components": [
     {
+      "id": "account.items",
+      "version": "1.0.0",
+      "category": "account",
+      "kind": "single",
+      "name": {
+        "en": "My content (add and edit)",
+        "ar": "محتواي (إضافة وتعديل)"
+      }
+    },
+    {
+      "id": "account.profile",
+      "version": "1.0.0",
+      "category": "account",
+      "kind": "single",
+      "name": {
+        "en": "My account",
+        "ar": "حسابي"
+      }
+    },
+    {
+      "id": "account.signin",
+      "version": "1.0.0",
+      "category": "account",
+      "kind": "single",
+      "name": {
+        "en": "Sign in and create account",
+        "ar": "تسجيل الدخول وإنشاء حساب"
+      }
+    },
+    {
       "id": "contact.agency",
       "version": "1.0.0",
       "category": "contact",
@@ -840,6 +870,16 @@
       "name": {
         "en": "Light with button",
         "ar": "فاتح مع زر"
+      }
+    },
+    {
+      "id": "header.members",
+      "version": "1.0.0",
+      "category": "header",
+      "kind": "site",
+      "name": {
+        "en": "Bar with sign in",
+        "ar": "شريط مع تسجيل الدخول"
       }
     },
     {
